@@ -92,7 +92,7 @@ await (async () => {
 
   console.log(`[*] ${chalk.greenBright(`Done!\n`)}`);
 
-  for (let i = 0; i < 575; i += 25) {
+  for (let i = 0; i < 600; i += 25) {
     let response = await axios.get(
       `https://canary.discord.com/api/v9/guilds/603970300668805120/messages/search?content=Experiment%20Added&offset=${i}`,
       {
@@ -105,7 +105,9 @@ await (async () => {
     console.log(
       `[*] ${gradient.pastel(
         `Downloading Experiment Metadata... [${
-          i + 25 > response.data.total_results ? 563 : i + 25
+          i + 25 > response.data.total_results
+            ? response.data.total_results
+            : i + 25
         }/${response.data.total_results}]`
       )}`
     );
