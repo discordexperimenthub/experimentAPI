@@ -5,7 +5,7 @@ import chalk from "chalk";
 import express from "express";
 import logger from "morgan";
 import dotenv from "dotenv";
-import { v3 } from "murmurhash";
+import murmurhash from "murmurhash";
 
 dotenv.config();
 
@@ -137,7 +137,7 @@ app.get("/experiments", (req, res) => {
   for (let [key, value] of Object.entries(experiments)) {
     tempExperiments.push({
       id: key,
-      hash: v3(key),
+      hash: murmurhash.v3(key),
       creationDate: findExperimentCreationDate(key),
       ...value,
     });
@@ -152,7 +152,7 @@ app.get("/experiments/:id", (req, res) => {
   for (let [key, value] of Object.entries(experiments)) {
     tempExperiments.push({
       id: key,
-      hash: v3(key),
+      hash: murmurhash.v3(key),
       creationDate: findExperimentCreationDate(key),
       ...value,
     });
