@@ -4,8 +4,13 @@ import gradient from "gradient-string";
 import chalk from "chalk";
 import express from "express";
 import logger from "morgan";
+import dotenv from "dotenv";
+import { v3 } from "murmurhash";
 
-import config from "./config.json";
+dotenv.config();
+
+const DISCORD_TOKEN = process.env.DISCORD_TOKEN || "";
+const PORT = process.env.PORT || 1337;
 
 var app = express();
 
@@ -97,7 +102,7 @@ await (async () => {
       `https://canary.discord.com/api/v9/guilds/603970300668805120/messages/search?content=Experiment%20Added&offset=${i}`,
       {
         headers: {
-          Authorization: config.DISCORD_TOKEN,
+          Authorization: DISCORD_TOKEN,
         },
       }
     );
@@ -132,6 +137,7 @@ app.get("/experiments", (req, res) => {
   for (let [key, value] of Object.entries(experiments)) {
     tempExperiments.push({
       id: key,
+      hash: v3(key),
       creationDate: findExperimentCreationDate(key),
       ...value,
     });
@@ -146,6 +152,7 @@ app.get("/experiments/:id", (req, res) => {
   for (let [key, value] of Object.entries(experiments)) {
     tempExperiments.push({
       id: key,
+      hash: v3(key),
       creationDate: findExperimentCreationDate(key),
       ...value,
     });
@@ -156,8 +163,8 @@ app.get("/experiments/:id", (req, res) => {
   );
 });
 
-app.listen(config.PORT, () => {
+app.listen(PORT, () => {
   console.log(
-    `[*] ${chalk.blueBright(`API listening on port ${config.PORT}.\n`)}`
+    `[*] ${chalk.blueBright(`API listening on port ${PORT}.\n`)}`
   );
 });
