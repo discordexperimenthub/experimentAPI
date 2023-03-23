@@ -1,4 +1,3 @@
-import puppeteer from "puppeteer";
 import axios from "axios";
 import gradient from "gradient-string";
 import chalk from "chalk";
@@ -6,6 +5,9 @@ import express from "express";
 import logger from "morgan";
 import dotenv from "dotenv";
 import murmurhash from "murmurhash";
+
+import puppeteer from "puppeteer-core";
+import chrome from "chrome-aws-lambda";
 
 dotenv.config();
 
@@ -54,12 +56,28 @@ const findExperimentCreationDate = (experimentName) => {
 };
 
 await (async () => {
-  const browser = await puppeteer.launch({
-    headless: true,
-  });
+  const options = process.env.AWS_REGION
+    ? {
+        args: chrome.args,
+        executablePath: await chrome.executablePath,
+        headless: true,
+      }
+    : {
+        args: [],
+        executablePath:
+          process.platform === "win32"
+            ? "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
+            : process.platform === "linux"
+            ? "/usr/bin/google-chrome"
+            : "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
+        headless: true,
+      };
+
+  const browser = await puppeteer.launch(options);
   const page = await browser.newPage();
 
   await page.goto("https://canary.discord.com/app");
+
   await page.setViewport({
     width: 1080,
     height: 1024,
@@ -164,7 +182,5 @@ app.get("/experiments/:id", (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(
-    `[*] ${chalk.blueBright(`API listening on port ${PORT}.\n`)}`
-  );
+  console.log(`[*] ${chalk.blueBright(`API listening on port ${PORT}.\n`)}`);
 });
