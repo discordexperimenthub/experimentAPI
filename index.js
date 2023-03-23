@@ -5,9 +5,7 @@ import express from "express";
 import logger from "morgan";
 import dotenv from "dotenv";
 import murmurhash from "murmurhash";
-
-import puppeteer from "puppeteer-core";
-import chrome from "chrome-aws-lambda";
+import puppeteer from "puppeteer";
 
 dotenv.config();
 
@@ -56,24 +54,7 @@ const findExperimentCreationDate = (experimentName) => {
 };
 
 await (async () => {
-  const options = process.env.AWS_REGION
-    ? {
-        args: chrome.args,
-        executablePath: await chrome.executablePath,
-        headless: true,
-      }
-    : {
-        args: [],
-        executablePath:
-          process.platform === "win32"
-            ? "C:\\Program Files (x86)\\Google\\Chrome\\Application\\chrome.exe"
-            : process.platform === "linux"
-            ? "/usr/bin/google-chrome"
-            : "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome",
-        headless: true,
-      };
-
-  const browser = await puppeteer.launch(options);
+  const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
   await page.goto("https://canary.discord.com/app");
