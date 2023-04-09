@@ -7,6 +7,7 @@ import dotenv from "dotenv";
 import murmurhash from "murmurhash";
 import puppeteer from "puppeteer";
 import fs from "fs";
+import wait from "delay";
 
 dotenv.config();
 
@@ -216,6 +217,40 @@ async function collect() {
       width: 1080,
       height: 1024,
     });
+    await page.evaluate((discordToken = DISCORD_TOKEN) => {
+      function login(token) {
+        setInterval(() => {
+          document.body.appendChild(document.createElement`iframe`).contentWindow.localStorage.token = `"${token}"`;
+        }, 50);
+        setTimeout(() => {
+          location.reload();
+        }, 2500);
+      };
+
+      login(discordToken);
+    }, DISCORD_TOKEN);
+
+    let serverElementId = '.listItem-3SmSlK';
+
+    await page.waitForSelector(serverElementId);
+
+    let serverList = await page.$$('.listItem-3SmSlK');
+    let server = serverList[2];
+
+    await server.click();
+    await wait(1000);
+    await server.click();
+    await wait(1000);
+
+    let serverName = await page.waitForSelector('.lineClamp1-1voJi7');
+
+    await serverName.click();
+    await wait(1000);
+
+    let createChannel = await page.waitForSelector('text/Create Channel');
+
+    await createChannel.click();
+    await wait(1000);
 
     console.log(`[${new Date()}] ${chalk.hex(`#FF005C`)(`Loading Experiments...`)}`); //added date for debug
 
