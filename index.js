@@ -8,6 +8,7 @@ import murmurhash from "murmurhash";
 import puppeteer from "puppeteer";
 import fs from "fs";
 import wait from "delay";
+import { exit } from "process";
 
 dotenv.config();
 
@@ -15,6 +16,7 @@ const DISCORD_TOKEN = process.env.DISCORD_TOKEN || "";
 const PORT = process.env.PORT || 1337;
 
 const ALWAYS_FETCH_NEW = false;
+const ONE_TIME_FETCH = process.env.ONE_TIME_FETCH || false;
 
 var app = express();
 
@@ -437,6 +439,10 @@ async function collect() {
     }
 
     console.log(`\n`);
+
+    page.goto('http://localhost:1337/experiments').then(() => {
+      if (ONE_TIME_FETCH) exit(0);
+    });
   })();
 
   fs.writeFileSync("messages.json", JSON.stringify(messages));
@@ -479,6 +485,7 @@ app.get("/experiments", (req, res) => {
   });
 
   res.json(experimentsWithRollouts);
+  fs.writeFileSync('./experiments.json', JSON.stringify(experimentsWithRollouts));
 });
 
 app.get("/experiments/:id", (req, res) => {
