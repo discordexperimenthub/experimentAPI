@@ -104,7 +104,7 @@ const getFilterType = (filter) => {
     case 195936478:
       return "user_flag";
     case 16435934:
-      return "experiment_enabled";
+      return "build_override";
   }
 };
 
@@ -130,8 +130,8 @@ const mapFilter = (filter, experiment) => {
     case "user_flag":
       obj["flags"] = filter[1][0][1];
       break;
-    case "experiment_enabled":
-      obj["id"] = experiment.id;
+    case "build_override":
+      obj["experiments"] = [experiment.id];
       break;
   }
 
@@ -394,12 +394,12 @@ async function collect() {
                       [
                         {
                           s: 0,
-                          e: 10000,
+                          e: 500,
                         },
                       ],
                     ],
                   ],
-                  [[195936478, [[murmurhash.v3(experimentId), [1 << 0]]]], [16435934]],
+                  [[16435934]],
                 ],
               ],
             ],
