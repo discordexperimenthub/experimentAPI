@@ -411,6 +411,6 @@ const experimentsWithRollouts = tempExperiments.map((experim) => {
 
 console.log(JSON.stringify(experimentsWithRollouts, null, 2))
 
-fs.writeFileSync("./experiments.json", JSON.stringify(experimentsWithRollouts));
+fs.writeFileSync("./experiments.json", JSON.stringify(experimentsWithRollouts, null, 2));
 
 process.exit(0);
