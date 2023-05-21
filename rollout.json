@@ -1,0 +1,2903 @@
+[
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Role Subscriptions",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to create Guild Role Subscriptions"
+      ],
+      "buckets": [0, 1],
+      "id": "2021-06_guild_role_subscriptions",
+      "hash": 1405831955
+    },
+    "rollout": [
+      1405831955,
+      "2021-06_guild_role_subscriptions",
+      0,
+      [
+        [
+          [
+            [-1, [{ "s": 7200, "e": 10000 }]],
+            [
+              1,
+              [
+                { "s": 0, "e": 4750 },
+                { "s": 4750, "e": 5200 },
+                { "s": 5200, "e": 5700 },
+                { "s": 5700, "e": 6200 },
+                { "s": 6200, "e": 7200 }
+              ]
+            ]
+          ],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 1405831955],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["GUILD_ROLE_SUBSCRIPTIONS"]]]]]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Exposure tracking for Watch Together (do not override)",
+      "description": ["Control"],
+      "buckets": [0],
+      "id": "2021-09_watch_together_rollout",
+      "hash": 3607703918
+    },
+    "rollout": [
+      3607703918,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Student hub study group",
+      "description": ["Control", "Treatment 1: Enables study group sidebar"],
+      "buckets": [0, 1],
+      "id": "2021-10_study_group",
+      "hash": 4030301365
+    },
+    "rollout": [
+      4030301365,
+      "2022-01_hubs_engagement_experiments",
+      1,
+      [
+        [
+          [
+            [
+              -1,
+              [
+                { "s": 6666, "e": 9999 },
+                { "s": 9999, "e": 10000 }
+              ]
+            ],
+            [1, [{ "s": 3333, "e": 6666 }]]
+          ],
+          []
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "882680660588904448",
+            "882703776794959873",
+            "859533785225494528",
+            "859533828754505741"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Member Verification Manual Approval",
+      "description": [
+        "Control",
+        "Treatment 1: Enable manual approval for membership verification"
+      ],
+      "buckets": [0, 1],
+      "id": "2021-11_member_verification_manual_approval",
+      "hash": 4089758233
+    },
+    "rollout": [
+      4089758233,
+      "2021-11_member_verification_manual_approval",
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                1604612045,
+                [[1183251248, ["MEMBER_VERIFICATION_MANUAL_APPROVAL"]]]
+              ]
+            ]
+          ],
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                3013771838,
+                [
+                  [
+                    3013771838,
+                    [
+                      "991365865532575844",
+                      "809846768074227723",
+                      "809844301353320558",
+                      "840296607785287763",
+                      "651597514407018516"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Hub Events",
+      "description": ["Control", "Treatment 1: Show Hub Events List"],
+      "buckets": [0, 1],
+      "id": "2021-11_hub_events",
+      "hash": 1107510295
+    },
+    "rollout": [
+      1107510295,
+      "2022-01_hubs_engagement_experiments",
+      0,
+      [
+        [
+          [
+            [
+              -1,
+              [
+                { "s": 0, "e": 3333 },
+                { "s": 3333, "e": 6666 },
+                { "s": 6666, "e": 9999 },
+                { "s": 9999, "e": 10000 }
+              ]
+            ]
+          ],
+          [[4148745523, [[4148745523, [2]]]]]
+        ]
+      ],
+      [{ "b": 1, "k": ["882680660588904448"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Role Subscription Multigroup",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to create multiple Guild Role Subscription groups"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-01_guild_role_subscription_multigroup",
+      "hash": 2201448248
+    },
+    "rollout": [
+      2201448248,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "908114392263049277",
+            "852602631297171507",
+            "966419039977111582",
+            "839303183536750622"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Role Subscription Trials",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to create Guild Role Subscription Trials"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-01_guild_role_subscription_trials",
+      "hash": 4200595067
+    },
+    "rollout": [
+      4200595067,
+      "2022-01_guild_role_subscription_trials",
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 770139301],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["GUILD_ROLE_SUBSCRIPTION_TRIALS"]]]]]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Home Tab Guild",
+      "description": [
+        "Control",
+        "Treatment 1: Check User as well",
+        "Treatment 2: Force on"
+      ],
+      "buckets": [0, 1, 2],
+      "id": "2022-01_home_tab_guild",
+      "hash": 3832113202
+    },
+    "rollout": [
+      3832113202,
+      null,
+      4,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        { "b": 0, "k": ["814669604840013874"] },
+        { "b": 2, "k": ["662267976984297473"] }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Audit Log - Guild Feature Flag",
+      "description": [
+        "Control",
+        "Treatment 1: Show Guild Audit Log 2.0 for guild"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-02_guild_audit_log_guild",
+      "hash": 1412337990
+    },
+    "rollout": [
+      1412337990,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [{ "b": 1, "k": ["799349358776549378", "763838479293349899"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Role Subscription Analytics",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to view analytics for role subscriptions"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-03_role_subscription_analytics_portal",
+      "hash": 3510816342
+    },
+    "rollout": [
+      3510816342,
+      null,
+      0,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "908114392263049277",
+            "786729496572985354",
+            "694472115428261888",
+            "488444879836413975",
+            "271486833223794694",
+            "262030232683413504",
+            "852602631297171507",
+            "346465284477026309",
+            "825852143478636554",
+            "736744916012630046",
+            "930534056200929290",
+            "976593171834351728"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Role Subscription Purchase Feedback Loop",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guilds to send purchsae feedback loop system messages"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-04_guild_role_subscription_purchase_feedback_loop",
+      "hash": 1990672009
+    },
+    "rollout": [
+      1990672009,
+      null,
+      0,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [{ "b": 1, "k": ["908114392263049277"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Role Subscription Mobile Web",
+      "description": [
+        "Control",
+        "Treatment 1: Enables role subscription mobile web purchase page"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-05_mobile_web_role_subscription_purchase_page",
+      "hash": 4190408036
+    },
+    "rollout": [
+      4190408036,
+      null,
+      0,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Show the button to join the admin server in community overview server settings page",
+      "description": [
+        "Control",
+        "Treatment 1: Show button if requirements met",
+        "Treatment 2: Bypass requirements"
+      ],
+      "buckets": [0, 1, 2],
+      "id": "2022-06_community_admin_server",
+      "hash": 3282315774
+    },
+    "rollout": [
+      3282315774,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [1604612045, [[1183251248, ["COMMUNITY"]]]],
+            [
+              2918402255,
+              [
+                [3399957344, 500],
+                [1238858341, null]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [{ "b": 2, "k": ["132251458665054209"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Free Sticker Slots Design Updates",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2022-06_free_sticker_slots_design_updates",
+      "hash": 258580919
+    },
+    "rollout": [
+      258580919,
+      null,
+      0,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [{ "b": 1, "k": ["651595875897835540"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Role Subscription Max Tiers",
+      "description": [
+        "Control",
+        "Treatment 4: Enables {n} maximum published tiers",
+        "Treatment 5: Enables {n} maximum published tiers",
+        "Treatment 6: Enables {n} maximum published tiers"
+      ],
+      "buckets": [0, 4, 5, 6],
+      "id": "2022-07_guild_role_subscriptions_variable_max_tiers",
+      "hash": 179711638
+    },
+    "rollout": [
+      179711638,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 6,
+          "k": [
+            "908114392263049277",
+            "443584877829554177",
+            "223070469148901376",
+            "224565836277481473",
+            "488444879836413975",
+            "756644176610721842"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Voice in Threads",
+      "description": ["Control", "Treatment 1: On"],
+      "buckets": [0, 1],
+      "id": "2022-07_voice_in_threads",
+      "hash": 944104242
+    },
+    "rollout": [
+      944104242,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["VOICE_IN_THREADS"]]]]]
+        ]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Report Raids",
+      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
+      "buckets": [0, 1],
+      "id": "2022-07_report_raids",
+      "hash": 1055563741
+    },
+    "rollout": [
+      1055563741,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 1055563741],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Report Raids",
+      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
+      "buckets": [0, 1],
+      "id": "2022-07_invites_disabled",
+      "hash": 3683063649
+    },
+    "rollout": [
+      3683063649,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["PARTNERED"]]]]]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "763838479293349899",
+            "651597514407018516",
+            "897162092652683314",
+            "270301680212508673",
+            "403312145938382849",
+            "816784679717044276",
+            "991365865532575844"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Creator Monetization Onboarding v2",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to create Guild Role Subscriptions quickly"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-09_creator_monetization_raven",
+      "hash": 3723449866
+    },
+    "rollout": [
+      3723449866,
+      null,
+      0,
+      [
+        [
+          [
+            [
+              1,
+              [
+                { "s": 0, "e": 1000 },
+                { "s": 1000, "e": 2000 },
+                { "s": 2000, "e": 3000 },
+                { "s": 3000, "e": 5000 },
+                { "s": 5000, "e": 10000 }
+              ]
+            ]
+          ],
+          []
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "651595875897835540",
+            "1045109153582022727",
+            "1047953830979047455",
+            "84764735832068096"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Creator Store Pages ",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to have store page"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-10_creator_store_pages",
+      "hash": 24149521
+    },
+    "rollout": [
+      24149521,
+      null,
+      0,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "979437427456364574",
+            "958135532590874704",
+            "893264120722370570",
+            "1042148168726487101",
+            "1042185536984592577",
+            "1042521715630166056",
+            "488444879836413975",
+            "424012709219008522",
+            "223070469148901376",
+            "359039577362530314",
+            "703067018416619522",
+            "736744916012630046",
+            "930534056200929290",
+            "349309639181074433",
+            "356833056562348042",
+            "378662079361449994",
+            "697694775561945109",
+            "742765599738036275",
+            "936663832070340678",
+            "816393875027394642"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
+      "description": [
+        "Control",
+        "Treatment 0: Holdout",
+        "Treatment 1: NMX Core",
+        "Treatment 2: NMX Core + Home",
+        "Treatment 3: NMX Core + Highlights",
+        "Treatment 4: Home"
+      ],
+      "buckets": [0, 0, 1, 2, 3, 4],
+      "id": "2022-10_communities_multi",
+      "hash": 2457903107
+    },
+    "rollout": [
+      2457903107,
+      null,
+      2,
+      [
+        [
+          [
+            [
+              -1,
+              [
+                { "s": 0, "e": 2000 },
+                { "s": 8000, "e": 10000 }
+              ]
+            ],
+            [1, [{ "s": 4000, "e": 6000 }]],
+            [2, [{ "s": 6000, "e": 8000 }]]
+          ],
+          [[1604612045, [[1183251248, ["COMMUNITY_EXP_LARGE_UNGATED"]]]]]
+        ],
+        [
+          [
+            [
+              -1,
+              [
+                { "s": 0, "e": 2000 },
+                { "s": 8000, "e": 10000 }
+              ]
+            ],
+            [1, [{ "s": 4000, "e": 6000 }]],
+            [2, [{ "s": 6000, "e": 8000 }]]
+          ],
+          [[1604612045, [[1183251248, ["COMMUNITY_EXP_LARGE_GATED"]]]]]
+        ]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Text-In-Stage",
+      "description": ["Control", "Treatment 1: Enable Text-In-Stage"],
+      "buckets": [0, 1],
+      "id": "2022-10_text_in_stage",
+      "hash": 848173753
+    },
+    "rollout": [
+      848173753,
+      "2022-10_text_in_stage",
+      2,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [1604612045, [[1183251248, ["COMMUNITY"]]]],
+            [
+              2294888943,
+              [
+                [2690752156, 848173753],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["INTERNAL_EMPLOYEE_ONLY"]]]]]
+          ],
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["TEXT_IN_STAGE_ENABLED"]]]]]
+          ],
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[3013771838, [[3013771838, ["885418158788345897"]]]]]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Raid Alerts",
+      "description": ["Control", "Treatment 1: Enable Reporting Of Raids"],
+      "buckets": [0, 1],
+      "id": "2022-10_guild_raid_messaging",
+      "hash": 3636231100
+    },
+    "rollout": [
+      3636231100,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "816784679717044276",
+            "763838479293349899",
+            "435572461912719360",
+            "1044378460296061008",
+            "876918412369088582",
+            "1044721355821678662",
+            "1034492236483792958",
+            "912834371034181642",
+            "809846768074227723",
+            "999116324842246224",
+            "987012965834297405",
+            "942897714956472401",
+            "169256939211980800",
+            "987122927000494131"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Creator Monetization Onboarding Waitlist",
+      "description": [
+        "Control",
+        "Treatment 1: Enables Guilds to (possibly) see the waitlist"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-11_creator_monetization_onboarding_waitlist",
+      "hash": 987884927
+    },
+    "rollout": [
+      987884927,
+      "2022-11_creator_monetization_onboarding_waitlist",
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 987884927],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["INTERNAL_EMPLOYEE_ONLY"]]]]]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Automod Non-Community Guilds Release",
+      "description": [
+        "Control",
+        "Treatment 1: Automod Non-Community Guilds Release"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-11_automod_non_community_guilds_release",
+      "hash": 2608013421
+    },
+    "rollout": [
+      2608013421,
+      "2022-11_automod_non_community_guilds_release",
+      0,
+      [
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2918402255,
+              [
+                [3399957344, null],
+                [1238858341, 300]
+              ]
+            ],
+            [
+              2294888943,
+              [
+                [2690752156, 2608013421],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2918402255,
+              [
+                [3399957344, null],
+                [1238858341, 300]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 2608013421],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                3013771838,
+                [
+                  [
+                    3013771838,
+                    [
+                      "907770923799674880",
+                      "1044297931039199233",
+                      "1044374869414002758",
+                      "854800679930822667",
+                      "763838479293349899",
+                      "1044727347846320179",
+                      "1044727370445234196",
+                      "1044727553618882581",
+                      "992093067530219550",
+                      "956065520656986172",
+                      "1044730151281369150"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Disable mass mentions for communities by default",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2022-11_default_disable_mass_mention",
+      "hash": 2462216785
+    },
+    "rollout": [
+      2462216785,
+      null,
+      0,
+      [
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [1604612045, [[1183251248, ["COMMUNITY"]]]],
+            [
+              2918402255,
+              [
+                [3399957344, 5000],
+                [1238858341, null]
+              ]
+            ]
+          ]
+        ],
+        [[[1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "651595875897835540",
+            "435572461912719360",
+            "1042197875423203391",
+            "1042198489783865384",
+            "1042199171073060864",
+            "1042202474200698990",
+            "1044297931039199233",
+            "999116324842246224",
+            "987012965834297405"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Mobile Guild Role Subscription Team Setup",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to allow payout team setup on mobile"
+      ],
+      "buckets": [0, 1],
+      "id": "2022-12_mobile_guild_role_subscription_team_setup",
+      "hash": 3313601281
+    },
+    "rollout": [
+      3313601281,
+      null,
+      0,
+      [
+        [
+          [
+            [-1, [{ "s": 1000, "e": 10000 }]],
+            [1, [{ "s": 0, "e": 1000 }]]
+          ],
+          []
+        ]
+      ],
+      [{ "b": 1, "k": ["651595875897835540", "1049812122701410314"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Automod Mention Raid Limit",
+      "description": ["Control", "Treatment 1: Automod Mention Raid Limit"],
+      "buckets": [0, 1],
+      "id": "2022-12_mention_raid_limit",
+      "hash": 1318029053
+    },
+    "rollout": [
+      1318029053,
+      null,
+      3,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["PARTNERED"]]]]]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "1034492236483792958",
+            "982376986070626344",
+            "1022242080233357352",
+            "1052692953279246487",
+            "763838479293349899",
+            "1044721355821678662",
+            "1052695012732850206",
+            "816784679717044276",
+            "1053018122531127448",
+            "1054503586761035906",
+            "876918412369088582",
+            "1054511748557840404",
+            "1054512414709788842",
+            "1054515966035365960",
+            "1054565950759899176",
+            "1039940765750665226"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Home New Header",
+      "description": ["Control", "Treatment 1: New Header"],
+      "buckets": [0, 1],
+      "id": "2022-12_home_header_redesign",
+      "hash": 3405402067
+    },
+    "rollout": [
+      3405402067,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "814669604840013874",
+            "132251458665054209",
+            "942897714956472401",
+            "786557653924708373",
+            "524552788932558848",
+            "432763481289261077",
+            "674657048209784872",
+            "142082511902605313",
+            "244230771232079873",
+            "697834746734051358",
+            "264363165855252480",
+            "489514135608885250",
+            "782831067534327828",
+            "238080556708003851",
+            "808241932919767050",
+            "817576132726620200",
+            "522477306787397642",
+            "256926147827335170",
+            "567099257367035926",
+            "884458417467559936",
+            "453709566409179137",
+            "642150179952132107",
+            "498851748690264082",
+            "393088095840370689",
+            "187450744427773963"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Increased activity view for Forums, per guild",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-01_forums_activity_2_guild",
+      "hash": 4081692393
+    },
+    "rollout": [
+      4081692393,
+      null,
+      1,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "651595875897835540",
+            "889924024367452241",
+            "1012394956247269376",
+            "936317138904440892",
+            "257310633211461633",
+            "525734532440260618",
+            "353315134678106113",
+            "274702265321783297",
+            "182121241111560192",
+            "929506677512867911",
+            "740310317954891846",
+            "86312116675448832",
+            "891286303574994974",
+            "246604458744610816"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Automod Mention Raid Notice",
+      "description": ["Control", "Treatment 1: Automod Mention Raid Notice"],
+      "buckets": [0, 1],
+      "id": "2023-01_mention_raid_notice",
+      "hash": 805661295
+    },
+    "rollout": [
+      805661295,
+      "2022-12_mention_raid_limit",
+      1,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["PARTNERED"]]]]]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "816784679717044276",
+            "876918412369088582",
+            "1039940765750665226"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Forum non-community",
+      "description": ["Control", "Treatment 1: On"],
+      "buckets": [0, 1],
+      "id": "2023-01_forums_non_community",
+      "hash": 1446479414
+    },
+    "rollout": [
+      1446479414,
+      null,
+      0,
+      [
+        [
+          [
+            [-1, [{ "s": 5000, "e": 10000 }]],
+            [1, [{ "s": 2500, "e": 5000 }]]
+          ],
+          []
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "651595875897835540",
+            "1046918739599315124",
+            "971683003606654976",
+            "1070109297268248639"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Shared Canvas",
+      "description": ["Control", "Treatment 1: Enable Shared Canvas"],
+      "buckets": [0, 1],
+      "id": "2023-01_shared_canvas",
+      "hash": 280866660
+    },
+    "rollout": [
+      280866660,
+      null,
+      0,
+      [
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["INTERNAL_EMPLOYEE_ONLY"]]]]]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              1604612045,
+              [[1183251248, ["SHARED_CANVAS_FRIENDS_AND_FAMILY_TEST"]]]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "1078807279979221032",
+            "942879381230063656",
+            "172056827335409665",
+            "993957185493160057",
+            "334452829731422209",
+            "225077695141117955",
+            "678742032415588412",
+            "460657173417164800",
+            "976581767068786728",
+            "426609467535392778",
+            "133838756447911936",
+            "175987125626339328",
+            "537070934553526272",
+            "862059423949127741",
+            "710677407257854033",
+            "132751006349000704",
+            "822219052402606132",
+            "1021074787025555567",
+            "900242963358179368",
+            "315263844207558671",
+            "862757171887603722",
+            "222852163368386560",
+            "696480667348893696",
+            "409190184744255490",
+            "764656846777745429"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Voice Messages",
+      "description": ["Control", "Treatment 1: Can send voice messages"],
+      "buckets": [0, 1],
+      "id": "2023-01_voice_messages",
+      "hash": 968663312
+    },
+    "rollout": [
+      968663312,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2918402255,
+              [
+                [3399957344, 0],
+                [1238858341, 200]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "997637077099364383",
+            "743213213142876203",
+            "943265993613008967",
+            "809943708283830302",
+            "281683040739262465",
+            "1083177865400553502",
+            "877393448309772319",
+            "855181690824425512",
+            "814196235741167637",
+            "409190184744255490",
+            "1096494224343584858",
+            "1070131921218174976",
+            "308304292006330369"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Server Subscriptions IAP",
+      "description": [
+        "Control",
+        "Treatment 1: Enables Server Subscriptions IAP"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-02_server_subscriptions_iap",
+      "hash": 295820329
+    },
+    "rollout": [
+      295820329,
+      null,
+      0,
+      [
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []],
+        [[[1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "[ADMIN] Home as a community onboarding surface",
+      "description": [
+        "Control",
+        "Treatment 1: Show the Onboarding Version of Home in Admin Settings"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-02_onboarding_home_admin",
+      "hash": 748249793
+    },
+    "rollout": [
+      748249793,
+      "2023-02_onboarding_home_admin",
+      0,
+      [
+        [
+          [[1, [{ "s": 5000, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 748249793],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                3013771838,
+                [
+                  [
+                    3013771838,
+                    [
+                      "321410260176732160",
+                      "884458417467559936",
+                      "384811165949231104",
+                      "464894153193684993",
+                      "524552788932558848",
+                      "148606162810568704",
+                      "603970300668805120",
+                      "310162323220201475",
+                      "522477306787397642",
+                      "187450744427773963",
+                      "422460360084291596",
+                      "808241932919767050",
+                      "786557653924708373",
+                      "1075932456198352918",
+                      "1079876496493121558",
+                      "1011482947343372319",
+                      "1080899969243943072",
+                      "679875946597056683",
+                      "692412843370348615",
+                      "1075056311651270736",
+                      "942897714956472401",
+                      "828370043867496531"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Burst Reactions",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled",
+        "Treatment 2: Tab UI",
+        "Treatment 4: Free Bursts"
+      ],
+      "buckets": [0, 1, 2, 4],
+      "id": "2023-02_burst_reaction_guild_experiment",
+      "hash": 2014775304
+    },
+    "rollout": [
+      2014775304,
+      null,
+      3,
+      [
+        [
+          [[4, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["INTERNAL_EMPLOYEE_ONLY"]]]]]
+        ],
+        [
+          [
+            [-1, [{ "s": 2000, "e": 10000 }]],
+            [
+              1,
+              [
+                { "s": 0, "e": 100 },
+                { "s": 200, "e": 600 }
+              ]
+            ],
+            [
+              4,
+              [
+                { "s": 100, "e": 200 },
+                { "s": 600, "e": 1000 },
+                { "s": 1000, "e": 1500 },
+                { "s": 1500, "e": 2000 }
+              ]
+            ]
+          ],
+          []
+        ]
+      ],
+      [
+        {
+          "b": 4,
+          "k": [
+            "886812261455368233",
+            "315263844207558671",
+            "268982240569065472",
+            "1007668375159320607",
+            "943265993613008967",
+            "992539246835535943",
+            "1008822885378433105",
+            "1001114660524806205",
+            "1037856262144135230",
+            "642500834516664331",
+            "900193715962912819",
+            "533420789547139077",
+            "928454829079138344",
+            "169256939211980800",
+            "348185509484298240",
+            "132251458665054209",
+            "942897714956472401",
+            "917594655414181898",
+            "775023113645064253",
+            "1009606240546066473",
+            "81384788765712384",
+            "1073747669937299567",
+            "401220874742661121"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Stage Boosting",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-02_stage_boosting",
+      "hash": 1816004721
+    },
+    "rollout": [
+      1816004721,
+      "2023-02_stage_boosting",
+      2,
+      [
+        [
+          [
+            [
+              1,
+              [
+                { "s": 0, "e": 500 },
+                { "s": 500, "e": 5000 },
+                { "s": 5000, "e": 9500 },
+                { "s": 9500, "e": 10000 }
+              ]
+            ]
+          ],
+          [
+            [1604612045, [[1183251248, ["COMMUNITY"]]]],
+            [
+              2294888943,
+              [
+                [2690752156, 1816004721],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[3013771838, [[3013771838, ["885418158788345897"]]]]]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Application Recommendation Server Checklist Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Show recommendation to add apps in new server checklist"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-02_app_recommendations_server_checklist",
+      "hash": 3320756132
+    },
+    "rollout": [
+      3320756132,
+      null,
+      2,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Channel Summaries Guild Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enable channel summaries",
+        "Treatment 2: Enable channel summaries GA"
+      ],
+      "buckets": [0, 1, 2],
+      "id": "2023-02_p13n_summarization",
+      "hash": 1504498621
+    },
+    "rollout": [
+      1504498621,
+      null,
+      2,
+      [
+        [
+          [[2, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["SUMMARIES_ENABLED_GA"]]]]]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["SUMMARIES_ENABLED"]]]]]
+        ]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Automod Custom Message",
+      "description": ["Control", "Treatment 1: Automod Custom Message"],
+      "buckets": [0, 1],
+      "id": "2023-02_automod_custom_message",
+      "hash": 511273769
+    },
+    "rollout": [
+      511273769,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["PARTNERED"]]]]]
+        ],
+        [[[1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "816784679717044276",
+            "876918412369088582",
+            "393088095840370689",
+            "424012709219008522",
+            "1029315212005888060",
+            "453709566409179137",
+            "224565836277481473",
+            "193120847844737025",
+            "120330239996854274",
+            "187450744427773963",
+            "801178173945151490",
+            "125440014904590336",
+            "140933721929940992",
+            "942646368453935204",
+            "222078108977594368",
+            "451446182515048448",
+            "364119753972776960"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Automod Server Policy",
+      "description": [
+        "Control",
+        "Treatment 1: Automod Server Policy",
+        "Treatment 10: Automod Server Policy Rules Summarization"
+      ],
+      "buckets": [0, 1, 10],
+      "id": "2023-02_free_form",
+      "hash": 2001176293
+    },
+    "rollout": [
+      2001176293,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "876918412369088582",
+            "860609921602682910",
+            "942897714956472401",
+            "771800742977077289",
+            "434445105982865408",
+            "169256939211980800",
+            "613425648685547541",
+            "1088225778442960917",
+            "662341325353385985",
+            "994171988425850901",
+            "943680870966001664",
+            "1009937213603188777",
+            "896730415317016596"
+          ]
+        },
+        { "b": 10, "k": ["816784679717044276"] }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Voice Channel Status Guild Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+        "Treatment 2: A/A test, identical to treatment 1"
+      ],
+      "buckets": [0, 1, 2],
+      "id": "2023-02_voice_channel_statuses",
+      "hash": 2809294122
+    },
+    "rollout": [
+      2809294122,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [{ "b": 1, "k": ["890883112500854804", "887867262839705651"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Enables dropdown selections from onboarding prompts",
+      "description": ["Control", "Treatment 1: On"],
+      "buckets": [0, 1],
+      "id": "2023-02_onboardingdropdowns",
+      "hash": 3884904940
+    },
+    "rollout": [
+      3884904940,
+      "2023-02_onboardingdropdowns",
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 3884904940],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                3013771838,
+                [[3013771838, ["874345844743213126", "962007075288915998"]]]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Enables setting up onboarding with advanced mode",
+      "description": ["Control", "Treatment 1: On"],
+      "buckets": [0, 1],
+      "id": "2023-02_onboarding_advanced_mode",
+      "hash": 2544556038
+    },
+    "rollout": [
+      2544556038,
+      "2023-02_onboarding_advanced_mode",
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [1604612045, [[1183251248, ["COMMUNITY_CANARY"]]]],
+            [
+              2294888943,
+              [
+                [2690752156, 2544556038],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY_CANARY"]]]]]
+        ],
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 2544556038],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                3013771838,
+                [[3013771838, ["161053416796323840", "548440972997033996"]]]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Split Permissions",
+      "description": [
+        "Control",
+        "Treatment 1: Split permissions into Add/Modify + Delete"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-03_split_permissions",
+      "hash": 2355118827
+    },
+    "rollout": [
+      2355118827,
+      null,
+      2,
+      [
+        [
+          [
+            [-1, [{ "s": 200, "e": 10000 }]],
+            [1, [{ "s": 0, "e": 100 }]]
+          ],
+          []
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "651595875897835540",
+            "1096485049760759972",
+            "1100151397808357498",
+            "827664081459740712",
+            "993957185493160057",
+            "705666251560583168",
+            "1095740864757776488",
+            "1103771563066658828",
+            "1021478553033920544",
+            "533420789547139077",
+            "996817886695927808"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Server Subscriptions Accept New Terms",
+      "description": [
+        "Control",
+        "Treatment 1: Enables Server Subscriptions Accept New Terms"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-03_cr_accept_new_terms",
+      "hash": 747043176
+    },
+    "rollout": [
+      747043176,
+      null,
+      0,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Server Subscriptions Tier Templates",
+      "description": [
+        "Control",
+        "Treatment 1: 299 basic tier + no link",
+        "Treatment 2: 399 basic tier + no link",
+        "Treatment 3: 399 basic tier + link"
+      ],
+      "buckets": [0, 1, 2, 3],
+      "id": "2023-03_server_subscriptions_tier_templates",
+      "hash": 808859253
+    },
+    "rollout": [
+      808859253,
+      null,
+      0,
+      [
+        [
+          [[3, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              1604612045,
+              [[1183251248, ["GUILD_ROLE_SUBSCRIPTION_TIER_TEMPLATE"]]]
+            ]
+          ]
+        ],
+        [
+          [
+            [-1, [{ "s": 2000, "e": 10000 }]],
+            [1, [{ "s": 500, "e": 1000 }]],
+            [2, [{ "s": 1000, "e": 1500 }]],
+            [3, [{ "s": 1500, "e": 2000 }]]
+          ],
+          [[1604612045, [[1183251248, ["ROLE_SUBSCRIPTIONS_ENABLED"]]]]]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "1042148168726487101",
+            "1042521715630166056",
+            "954473884273496124",
+            "893264120722370570",
+            "1098703291694710836",
+            "963913819418161182",
+            "954477686967922778",
+            "1063878083322585088",
+            "706356477765353563"
+          ]
+        },
+        {
+          "b": 3,
+          "k": [
+            "949396043743789116",
+            "1053361203738591262",
+            "1103781094203072632",
+            "494673764601036840",
+            "458369608655831050",
+            "217055651371679745",
+            "752560653939638334",
+            "577158348068093982",
+            "585190878151311373",
+            "986205117357363240",
+            "334891772696330241",
+            "719579184023863378",
+            "212435931766980609",
+            "725341600670023700"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Self Demonetization",
+      "description": ["Control", "Treatment 1: Enables Self Demonetization"],
+      "buckets": [0, 1],
+      "id": "2023-03_self_demonetization",
+      "hash": 3194028601
+    },
+    "rollout": [
+      3194028601,
+      null,
+      0,
+      [[[[1, [{ "s": 0, "e": 10000 }]]], []]],
+      [{ "b": 1, "k": ["1042521715630166056"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Home Deprecation",
+      "description": ["Control", "Treatment 1: Show notice"],
+      "buckets": [0, 1],
+      "id": "2023-03_home_deprecation",
+      "hash": 280214844
+    },
+    "rollout": [
+      280214844,
+      "2023-03_home_deprecation",
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 280214844],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "ClydeAI",
+      "description": [
+        "Control",
+        "Treatment 1: Enabled (Default Off)",
+        "Treatment 3: Enabled (Default On)",
+        "Treatment 4: Coming Soon"
+      ],
+      "buckets": [0, 1, 3, 4],
+      "id": "2023-03_clyde_ai",
+      "hash": 4083096281
+    },
+    "rollout": [
+      4083096281,
+      null,
+      2,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              1604612045,
+              [
+                [
+                  1183251248,
+                  ["CLYDE_EXPERIMENT_ENABLED", "INTERNAL_EMPLOYEE_ONLY"]
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ],
+        [
+          [
+            [-1, [{ "s": 2200, "e": 10000 }]],
+            [1, [{ "s": 0, "e": 100 }]],
+            [3, [{ "s": 200, "e": 1200 }]]
+          ],
+          [
+            [
+              2918402255,
+              [
+                [3399957344, 0],
+                [1238858341, 100]
+              ]
+            ]
+          ]
+        ],
+        [
+          [
+            [-1, [{ "s": 2000, "e": 10000 }]],
+            [3, [{ "s": 0, "e": 1000 }]]
+          ],
+          [
+            [
+              2918402255,
+              [
+                [3399957344, 101],
+                [1238858341, 200]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "860609921602682910",
+            "869772539071713340",
+            "993957185493160057",
+            "690040107322966037",
+            "954241501922213940",
+            "411964563278397440",
+            "363154169294618625",
+            "819703530423975956",
+            "132189483301863424",
+            "132751006349000704",
+            "133838756447911936",
+            "409190184744255490",
+            "246818967455268864",
+            "772904309264089089",
+            "358811058489524225",
+            "576105656881512450",
+            "612443491770957833",
+            "116294130149097479",
+            "309711518948392961",
+            "209707792314007552",
+            "883039603144155197",
+            "878697917374939256",
+            "771800742977077289"
+          ]
+        },
+        { "b": 3, "k": ["1097934938763968565"] },
+        { "b": 4, "k": ["938884225459957902"] }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Improved Message Markdown Guild Experiment",
+      "description": [
+        "Control",
+        "Treatment 1: Show improved message markdown",
+        "Treatment 2: Show improved message markdown WITHOUT masked links"
+      ],
+      "buckets": [0, 1, 2],
+      "id": "2023-03_improved_message_markdown_guild",
+      "hash": 1489979462
+    },
+    "rollout": [
+      1489979462,
+      "2023-03_improved_message_markdown_guild",
+      1,
+      [
+        [
+          [
+            [
+              2,
+              [
+                { "s": 5000, "e": 7500 },
+                { "s": 7500, "e": 9000 },
+                { "s": 9000, "e": 10000 }
+              ]
+            ]
+          ],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 1489979462],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[3013771838, [[3013771838, ["1103353437619503138"]]]]]
+          ]
+        ],
+        [
+          [
+            [[2, [{ "s": 0, "e": 10000 }]]],
+            [[3013771838, [[3013771838, ["804032421678153819"]]]]]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Safety check in guild settings",
+      "description": ["Control", "Treatment 1: Show safety check in settings"],
+      "buckets": [0, 1],
+      "id": "2023-03_guild_safety_settings",
+      "hash": 1640064366
+    },
+    "rollout": [
+      1640064366,
+      "2023-02_onboarding_home_admin",
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ]
+      ],
+      [{ "b": 1, "k": ["1080899969243943072", "763838479293349899"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "MJ Chat Bar enabled guilds",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2023-03_mj_chat_bar_guild",
+      "hash": 2182959876
+    },
+    "rollout": [
+      2182959876,
+      "2023-03_mj_chat_bar_guild",
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[3013771838, [[3013771838, ["662267976984297473"]]]]]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Media Channel",
+      "description": [
+        "Control",
+        "Treatment 1: Enables guild to create a media channel"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-03_guild_media_channel",
+      "hash": 3890564237
+    },
+    "rollout": [
+      3890564237,
+      null,
+      0,
+      [
+        [
+          [
+            [-1, [{ "s": 2500, "e": 10000 }]],
+            [1, [{ "s": 0, "e": 2500 }]]
+          ],
+          [[1604612045, [[1183251248, ["ROLE_SUBSCRIPTIONS_ENABLED"]]]]]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "651595875897835540",
+            "963913819418161182",
+            "1082392097254023199",
+            "1090311153802031315",
+            "1042148168726487101",
+            "816784679717044276",
+            "803095016154071093",
+            "612443491770957833",
+            "706356477765353563",
+            "443584877829554177",
+            "844508269840957460",
+            "756644176610721842",
+            "84789673121038336",
+            "805831366406438912",
+            "106650112222060544",
+            "804414667551670335",
+            "310723715447128064",
+            "585577383847788554",
+            "985363294221123594",
+            "530119670133555210",
+            "964645662866173972",
+            "915336728707989534"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Onboarding Upsell Lifecycle",
+      "description": ["Control", "Treatment 1: Show new lifecycle upsells"],
+      "buckets": [0, 1],
+      "id": "2023-03_onboarding_upsell_lifecycle",
+      "hash": 485475819
+    },
+    "rollout": [
+      485475819,
+      "2023-03_onboarding_upsell_lifecycle",
+      3,
+      [
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []],
+        [
+          [
+            [
+              -1,
+              [
+                { "s": 2000, "e": 4400 },
+                { "s": 6400, "e": 10000 }
+              ]
+            ],
+            [
+              1,
+              [
+                { "s": 0, "e": 400 },
+                { "s": 400, "e": 2000 }
+              ]
+            ]
+          ],
+          [
+            [
+              2918402255,
+              [
+                [3399957344, 5000],
+                [1238858341, null]
+              ]
+            ],
+            [
+              2294888943,
+              [
+                [2690752156, 485475819],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2918402255,
+              [
+                [3399957344, 5000],
+                [1238858341, null]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                2918402255,
+                [
+                  [3399957344, 5000],
+                  [1238858341, null]
+                ]
+              ]
+            ]
+          ],
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                3013771838,
+                [[3013771838, ["1096119963267375124", "1096120009211781182"]]]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Hide onboarding soft requirement for partnership",
+      "description": [
+        "Control",
+        "Treatment 1: Show onboarding soft requirement for partnership"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-03_onboarding_soft_requirement_for_partnership",
+      "hash": 3738976194
+    },
+    "rollout": [
+      3738976194,
+      "2023-03_onboarding_soft_requirement_for_partnership",
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 3738976194],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Fast New Channels",
+      "description": ["Control", "Treatment 1: On"],
+      "buckets": [0, 1],
+      "id": "2023-04_fast_new_channels",
+      "hash": 4063488887
+    },
+    "rollout": [
+      4063488887,
+      null,
+      0,
+      [
+        [
+          [[1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["COMMUNITY_CANARY"]]]]]
+        ],
+        [[[1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [
+        { "b": 1, "k": ["651595875897835540"] },
+        { "b": 42, "k": ["1080899969243943072"] }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Server Badging",
+      "description": ["Control", "Treatment 1: Enable Server Badging"],
+      "buckets": [0, 1],
+      "id": "2023-04_server_badging",
+      "hash": 41612842
+    },
+    "rollout": [
+      41612842,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "651595875897835540",
+            "876918412369088582",
+            "1105576287197724786",
+            "1105576346555523218",
+            "1105576413635039282",
+            "1105576433633472532",
+            "1105576549056528457",
+            "1105576609928445964",
+            "1105576653742166106",
+            "1039940765750665226",
+            "1105952274511057058",
+            "1105952651960668323",
+            "1105953713673228358",
+            "1105953777212739716",
+            "816784679717044276"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Alert Mode",
+      "description": ["Control", "Treatment 1: Show alert mode experimence"],
+      "buckets": [0, 1],
+      "id": "2023-04_guild_alert_mode",
+      "hash": 2710924848
+    },
+    "rollout": [
+      2710924848,
+      null,
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [
+        {
+          "b": 1,
+          "k": [
+            "816784679717044276",
+            "874345844743213126",
+            "1102668852392902708"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guild Member Safety Experiment",
+      "description": ["Control", "Treatment 1: Guild Member Safety Experiment"],
+      "buckets": [0, 1],
+      "id": "2023-05_guild_member_safety_experiment",
+      "hash": 603648674
+    },
+    "rollout": [
+      603648674,
+      "2023-05_guild_member_unusual_dm_activity",
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [{ "b": 1, "k": ["763838479293349899"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Automod on User Profile A/B",
+      "description": [
+        "Control",
+        "Treatment 1: Automod on User Profile enabled"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-05_automod_user_profile_ab",
+      "hash": 4261225962
+    },
+    "rollout": [
+      4261225962,
+      null,
+      0,
+      [
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [
+              3013771838,
+              [
+                [
+                  3013771838,
+                  [
+                    "322850917248663552",
+                    "662267976984297473",
+                    "586704051148816385",
+                    "517660115675906051",
+                    "926691694680870982",
+                    "1046979304547954728",
+                    "710745950380884009",
+                    "679875946597056683",
+                    "989166677390426132",
+                    "974519864045756446"
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ],
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [[1604612045, [[1183251248, ["AUTOMOD_TRIGGER_USER_PROFILE"]]]]]
+        ],
+        [
+          [
+            [-1, [{ "s": 6000, "e": 10000 }]],
+            [1, [{ "s": 3000, "e": 6000 }]]
+          ],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ]
+      ],
+      [{ "b": 1, "k": ["651595875897835540"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Community Endless Invites",
+      "description": [
+        "Control",
+        "Treatment 1: Causes invites to never expire (by default) in the Guild"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-04_community_endless_invites",
+      "hash": 3964855818
+    },
+    "rollout": [
+      3964855818,
+      null,
+      1,
+      [
+        [
+          [
+            [-1, [{ "s": 4000, "e": 10000 }]],
+            [1, [{ "s": 2000, "e": 4000 }]]
+          ],
+          [[1604612045, [[1183251248, ["COMMUNITY"]]]]]
+        ]
+      ],
+      [{ "b": 1, "k": ["651595875897835540"] }],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Guest Voice Invites",
+      "description": [
+        "Control",
+        "Treatment 1: Allow creation of guest voice invites"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-02_guest_voice_invites",
+      "hash": 1727857487
+    },
+    "rollout": [
+      1727857487,
+      null,
+      1,
+      [
+        [
+          [
+            [
+              1,
+              [
+                { "s": 100, "e": 200 },
+                { "s": 600, "e": 1000 },
+                { "s": 1500, "e": 2000 },
+                { "s": 3000, "e": 4000 },
+                { "s": 5000, "e": 6000 },
+                { "s": 7000, "e": 8000 },
+                { "s": 9000, "e": 10000 }
+              ]
+            ]
+          ],
+          [
+            [188952590, [[188952590, false]]],
+            [
+              2918402255,
+              [
+                [3399957344, 1],
+                [1238858341, 50]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [
+        {
+          "b": 1,
+          "k": [
+            "1103064168459927674",
+            "227251386738409483",
+            "313840371274874880",
+            "1104138316418400286",
+            "295820647660257283",
+            "1029604342589833286",
+            "426434256290578472",
+            "838840935404011560",
+            "651595875897835540",
+            "1074777828672929852"
+          ]
+        }
+      ],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Temporary Invite Discoverability",
+      "description": [
+        "Control",
+        "Treatment 1: Increased Visibility of Temporary Invite Toggle"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-02_temporary_invite_discoverability",
+      "hash": 3101260054
+    },
+    "rollout": [
+      3101260054,
+      null,
+      0,
+      [
+        [
+          [[-1, [{ "s": 0, "e": 10000 }]]],
+          [
+            [188952590, [[188952590, false]]],
+            [
+              2918402255,
+              [
+                [3399957344, 1],
+                [1238858341, 50]
+              ]
+            ]
+          ]
+        ]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Growing Friend Guild Community Upsell",
+      "description": [
+        "Control",
+        "Treatment 1: Enable Community Upsell to Growing Friend Guilds"
+      ],
+      "buckets": [0, 1],
+      "id": "2023-04_growing_friend_guild_community_upsell",
+      "hash": 3045613474
+    },
+    "rollout": [
+      3045613474,
+      "2023-04_growing_friend_guild_community_upsell",
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [
+              [
+                3013771838,
+                [
+                  [
+                    3013771838,
+                    [
+                      "786031121397317633",
+                      "1044374869414002758",
+                      "1075135858732175371",
+                      "1105587297132478476",
+                      "816784679717044276",
+                      "1105586877878247447",
+                      "992093067530219550",
+                      "1105586069497466943"
+                    ]
+                  ]
+                ]
+              ]
+            ]
+          ]
+        ]
+      ]
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Default To Server Vanity v2",
+      "description": ["Control", "Treatment 1: Enabled"],
+      "buckets": [0, 1],
+      "id": "2022-11_default_to_server_vanity_v2",
+      "hash": 2507971540
+    },
+    "rollout": [
+      2507971540,
+      "2022-11_default_to_server_vanity_v2",
+      2,
+      [
+        [
+          [
+            [
+              1,
+              [
+                { "s": 0, "e": 5000 },
+                { "s": 5000, "e": 9000 },
+                { "s": 9000, "e": 10000 }
+              ]
+            ]
+          ],
+          [
+            [
+              2294888943,
+              [
+                [2690752156, 2507971540],
+                [1982804121, 10000]
+              ]
+            ]
+          ]
+        ],
+        [[[-1, [{ "s": 0, "e": 10000 }]]], []]
+      ],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Remixing Guild Experiment",
+      "description": ["Control", "Treatment 1: Enable media remeixing"],
+      "buckets": [0, 1],
+      "id": "2023-04_mobile_remix_v2",
+      "hash": 3903965280
+    },
+    "rollout": [
+      3903965280,
+      "2023-04_mobile_remix_v2",
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      []
+    ]
+  },
+  {
+    "data": {
+      "type": "guild",
+      "title": "Activities Prerelease Overrides",
+      "description": [
+        "Control",
+        "Treatment 1: Internal Dev Group",
+        "Treatment 2: Employee Group",
+        "Treatment 3: Alpha Group"
+      ],
+      "buckets": [0, 1, 2, 3],
+      "id": "2022-08_activities_prerelease_overrides",
+      "hash": 2105552695
+    },
+    "rollout": [
+      2105552695,
+      "2022-08_activities_prerelease_overrides",
+      0,
+      [[[[-1, [{ "s": 0, "e": 10000 }]]], []]],
+      [],
+      [
+        [
+          [
+            [[1, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["ACTIVITIES_INTERNAL_DEV"]]]]]
+          ]
+        ],
+        [
+          [
+            [[2, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["ACTIVITIES_EMPLOYEE"]]]]]
+          ]
+        ],
+        [
+          [
+            [[3, [{ "s": 0, "e": 10000 }]]],
+            [[1604612045, [[1183251248, ["ACTIVITIES_ALPHA"]]]]]
+          ]
+        ]
+      ]
+    ]
+  }
+]

@@ -281,20 +281,8 @@ async function collect() {
     experiments = exps;
     experimentConfigs = configs;
 
-    const humanoid = new Humanoid();
-    const url = 'https://corsproxy.io/?' + encodeURIComponent('https://api.rollouts.advaith.io');
-
-    const humanResponse = await humanoid.get(url);
-
-    console.log(humanResponse.body);
-
-    let rsp;
-
-    try {
-      rsp = await axios.get(url);
-    } catch (error) {
-      // console.log(error.toString());
-      rsp = { data: {} };
+    const rsp = {
+      data: JSON.parse(fs.readFileSync("./rollout.json"))
     }
 
     /*
