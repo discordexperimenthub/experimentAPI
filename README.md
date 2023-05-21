@@ -1,6 +1,10 @@
-# experimentAPI
-:trollface:
+# !! WIP
+This is not stable currently. Please don't host it yourself.
 
-1. Join discord previews server, get the token of a random alt or whatever, rename `.env.example` to `.env`, paste it in there
-2. Put a server which yours to top of your server list (in the account of the token you got)
-3. Run `npm i && node .`
+## Credits:
+1. Tolgchu: API Development
+2. Surge: Assyst Tag Development
+3. Meqativ: Assyst Tag Development
+4. Advaith: Rollout Override Format
+
+made with ❤️ by Discord Experiment Hub and Wumpus Central. ✨
