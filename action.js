@@ -175,115 +175,114 @@ const mapRollout = (experiment) => {
 };
 
 async function collect() {
-  await (async () => {
-    const browser = await puppeteer.launch({ headless: true });
-    const page = await browser.newPage();
+  const browser = await puppeteer.launch({ headless: true });
+  const page = await browser.newPage();
 
-    await page.goto("https://canary.discord.com/app");
+  await page.goto("https://canary.discord.com/app");
 
-    await page.setViewport({
-      width: 1080,
-      height: 1024,
-    });
-    await page.evaluate((discordToken = DISCORD_TOKEN) => {
-      function login(token) {
-        setInterval(() => {
-          document.body.appendChild(
-            document.createElement`iframe`
-          ).contentWindow.localStorage.token = `"${token}"`;
-        }, 50);
-        setTimeout(() => {
-          location.reload();
-        }, 2500);
+  await page.setViewport({
+    width: 1080,
+    height: 1024,
+  });
+  await page.evaluate((discordToken = DISCORD_TOKEN) => {
+    function login(token) {
+      setInterval(() => {
+        document.body.appendChild(
+          document.createElement`iframe`
+        ).contentWindow.localStorage.token = `"${token}"`;
+      }, 50);
+      setTimeout(() => {
+        location.reload();
+      }, 2500);
+    }
+
+    login(discordToken);
+  }, DISCORD_TOKEN);
+
+  let serverElementId = ".listItem-3SmSlK";
+
+  await page.waitForSelector(serverElementId);
+
+  let serverList = await page.$$(".listItem-3SmSlK");
+  let server = serverList[2];
+
+  await server.click();
+  await wait(1000);
+  await server.click();
+  await wait(1000);
+
+  let serverName = await page.waitForSelector(".lineClamp1-1voJi7");
+
+  await serverName.click();
+  await wait(1000);
+
+  let createChannel = await page.waitForSelector("text/Create Channel");
+
+  await createChannel.click();
+  await wait(1000);
+
+  console.log(
+    `[${new Date()}] ${chalk.hex(`#FF005C`)(`Loading Experiments...`)}`
+  ); //added date for debug
+
+  const [exps, configs] = await page.evaluate(() => {
+    const _mods = webpackChunkdiscord_app.push([
+      [Symbol()],
+      {},
+      ({ c }) => Object.values(c),
+    ]);
+    webpackChunkdiscord_app.pop();
+
+    const findByProps = (...props) => {
+      for (let m of _mods) {
+        if (!m.exports || m.exports === window) continue;
+        if (props.every((x) => m.exports?.[x])) return m.exports;
+
+        for (let ex in m.exports) {
+          if (props.every((x) => m.exports?.[ex]?.[x])) return m.exports[ex];
+        }
       }
-
-      login(discordToken);
-    }, DISCORD_TOKEN);
-
-    let serverElementId = ".listItem-3SmSlK";
-
-    await page.waitForSelector(serverElementId);
-
-    let serverList = await page.$$(".listItem-3SmSlK");
-    let server = serverList[2];
-
-    await server.click();
-    await wait(1000);
-    await server.click();
-    await wait(1000);
-
-    let serverName = await page.waitForSelector(".lineClamp1-1voJi7");
-
-    await serverName.click();
-    await wait(1000);
-
-    let createChannel = await page.waitForSelector("text/Create Channel");
-
-    await createChannel.click();
-    await wait(1000);
-
-    console.log(
-      `[${new Date()}] ${chalk.hex(`#FF005C`)(`Loading Experiments...`)}`
-    ); //added date for debug
-
-    const [exps, configs] = await page.evaluate(() => {
-      const _mods = webpackChunkdiscord_app.push([
-        [Symbol()],
-        {},
-        ({ c }) => Object.values(c),
-      ]);
-      webpackChunkdiscord_app.pop();
-
-      const findByProps = (...props) => {
-        for (let m of _mods) {
-          if (!m.exports || m.exports === window) continue;
-          if (props.every((x) => m.exports?.[x])) return m.exports;
-
-          for (let ex in m.exports) {
-            if (props.every((x) => m.exports?.[ex]?.[x])) return m.exports[ex];
-          }
-        }
-      };
-
-      const findByPropsAll = (...props) => {
-        const found = [];
-        for (let m of _mods) {
-          if (
-            !m.exports ||
-            m.exports === window ||
-            m.exports.constructor.name === "DOMTokenList"
-          )
-            continue;
-          if (props.every((x) => m.exports?.[x])) found.push(m.exports);
-
-          for (let ex in m.exports) {
-            if (props.every((x) => m.exports?.[ex]?.[x]))
-              found.push(m.exports[ex]);
-          }
-        }
-        return found;
-      };
-
-      const stores = findByProps("getAll").getAll();
-      const configs = findByPropsAll("useExperiment").map(
-        (experiment) => experiment.definition
-      );
-
-      const ExperimentStore = stores.find(
-        (store) => store.constructor.displayName === "ExperimentStore"
-      );
-
-      return [ExperimentStore.getRegisteredExperiments(), configs];
-    });
-
-    experiments = exps;
-    experimentConfigs = configs;
-
-    const rsp = {
-      data: JSON.parse(fs.readFileSync("./rollout.json")),
     };
 
-    /*
+    const findByPropsAll = (...props) => {
+      const found = [];
+      for (let m of _mods) {
+        if (
+          !m.exports ||
+          m.exports === window ||
+          m.exports.constructor.name === "DOMTokenList"
+        )
+          continue;
+        if (props.every((x) => m.exports?.[x])) found.push(m.exports);
+
+        for (let ex in m.exports) {
+          if (props.every((x) => m.exports?.[ex]?.[x]))
+            found.push(m.exports[ex]);
+        }
+      }
+      return found;
+    };
+
+    const stores = findByProps("getAll").getAll();
+    const configs = findByPropsAll("useExperiment").map(
+      (experiment) => experiment.definition
+    );
+
+    const ExperimentStore = stores.find(
+      (store) => store.constructor.displayName === "ExperimentStore"
+    );
+
+    return [ExperimentStore.getRegisteredExperiments(), configs];
+  });
+
+  experiments = exps;
+  experimentConfigs = configs;
+
+  const rsp = {
+    data: JSON.parse(fs.readFileSync("./rollout.json")),
+  };
+
+  /*
     rollouts = rsp.data.map((obj) => {
       return {
         hash: obj.rollout[0],
@@ -329,88 +328,92 @@ async function collect() {
     });
     */
 
-    rollouts = {};
+  rollouts = {};
 
-    await Object.keys(exps).forEach((experimentId) => {
-      rollouts[experimentId] = (
-        rsp.data.find(
-          (rolloutObject) => experimentId === rolloutObject.data.id
-        ) || {
-          rollout: [
-            murmurhash.v3(experimentId),
-            null,
-            0,
+  await Object.keys(exps).forEach((experimentId) => {
+    rollouts[experimentId] = (
+      rsp.data.find(
+        (rolloutObject) => experimentId === rolloutObject.data.id
+      ) || {
+        rollout: [
+          murmurhash.v3(experimentId),
+          null,
+          0,
+          [
+            [
+              [
+                [
+                  -1,
+                  [
+                    {
+                      s: 0,
+                      e: 10000,
+                    },
+                  ],
+                ],
+              ],
+              [],
+            ],
+          ],
+          [],
+          [
             [
               [
                 [
                   [
-                    -1,
+                    1,
                     [
                       {
                         s: 0,
-                        e: 10000,
+                        e: 500,
                       },
                     ],
                   ],
                 ],
-                [],
-              ],
-            ],
-            [],
-            [
-              [
-                [
-                  [
-                    [
-                      1,
-                      [
-                        {
-                          s: 0,
-                          e: 500,
-                        },
-                      ],
-                    ],
-                  ],
-                  [[16435934]],
-                ],
+                [[16435934]],
               ],
             ],
           ],
-        }
-      ).rollout;
-    });
-
-    console.log(`[*] ${chalk.greenBright(`Done!\n`)}`);
-  });
-}
-
-await collect();
-
-let tempExperiments = [];
-
-for (let [key, value] of Object.entries(experiments)) {
-  tempExperiments.push({
-    id: key,
-    defaultConfig: (
-      experimentConfigs.find((cnfg) => key === cnfg.id) || {
-        defaultConfig: { enabled: false },
+        ],
       }
-    ).defaultConfig,
-    rollout: rollouts[key],
-    hash: murmurhash.v3(key),
-    creationDate: findExperimentCreationDate(key),
-    ...value,
+    ).rollout;
   });
+
+  console.log(`[*] ${chalk.greenBright(`Done!\n`)}`);
 }
 
-const experimentsWithRollouts = tempExperiments.map((experim) => {
-  let newExperiment = experim;
-  newExperiment.rollout = mapRollout(newExperiment);
-  return newExperiment;
-});
+(async () => {
+  await collect();
 
-console.log(JSON.stringify(experimentsWithRollouts, null, 2))
-
-fs.writeFileSync("./experiments.json", JSON.stringify(experimentsWithRollouts, null, 2));
-
-process.exit(0);
+  let tempExperiments = [];
+  
+  for (let [key, value] of Object.entries(experiments)) {
+    tempExperiments.push({
+      id: key,
+      defaultConfig: (
+        experimentConfigs.find((cnfg) => key === cnfg.id) || {
+          defaultConfig: { enabled: false },
+        }
+      ).defaultConfig,
+      rollout: rollouts[key],
+      hash: murmurhash.v3(key),
+      creationDate: findExperimentCreationDate(key),
+      ...value,
+    });
+  }
+  
+  const experimentsWithRollouts = tempExperiments.map((experim) => {
+    let newExperiment = experim;
+    newExperiment.rollout = mapRollout(newExperiment);
+    return newExperiment;
+  });
+  
+  console.log(JSON.stringify(experimentsWithRollouts, null, 2));
+  
+  fs.writeFileSync(
+    "./experiments.json",
+    JSON.stringify(experimentsWithRollouts, null, 2)
+  );
+  
+  process.exit(0);
+})
