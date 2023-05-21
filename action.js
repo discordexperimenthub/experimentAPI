@@ -1,27 +1,16 @@
 import axios from "axios";
 import gradient from "gradient-string";
 import chalk from "chalk";
-import express from "express";
-import logger from "morgan";
 import dotenv from "dotenv";
 import murmurhash from "murmurhash";
 import puppeteer from "puppeteer";
 import fs from "fs";
 import wait from "delay";
-import { exit } from "process";
 
 dotenv.config();
 
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN || "";
-const PORT = process.env.PORT || 1337;
-
 const FETCH_NEW_MESSAGES = process.env.ONE_TIME_FETCH || false;
-const ONE_TIME_FETCH = process.env.ONE_TIME_FETCH || false;
-
-var app = express();
-
-app.use(logger("dev"));
-app.use(express.json());
 
 let experiments = {};
 let experimentConfigs = [];
@@ -185,7 +174,7 @@ const mapRollout = (experiment) => {
               {
                 treatment:
                   experiment.description[
-                  experiment.buckets.indexOf(override[0][0][0])
+                    experiment.buckets.indexOf(override[0][0][0])
                   ] || "None",
                 bucket: override[0][0][0],
                 rollouts: override[0][0][1].map((rollout) => {
@@ -222,21 +211,23 @@ async function collect() {
     await page.evaluate((discordToken = DISCORD_TOKEN) => {
       function login(token) {
         setInterval(() => {
-          document.body.appendChild(document.createElement`iframe`).contentWindow.localStorage.token = `"${token}"`;
+          document.body.appendChild(
+            document.createElement`iframe`
+          ).contentWindow.localStorage.token = `"${token}"`;
         }, 50);
         setTimeout(() => {
           location.reload();
         }, 2500);
-      };
+      }
 
       login(discordToken);
     }, DISCORD_TOKEN);
 
-    let serverElementId = '.listItem-3SmSlK';
+    let serverElementId = ".listItem-3SmSlK";
 
     await page.waitForSelector(serverElementId);
 
-    let serverList = await page.$$('.listItem-3SmSlK');
+    let serverList = await page.$$(".listItem-3SmSlK");
     let server = serverList[2];
 
     await server.click();
@@ -244,17 +235,19 @@ async function collect() {
     await server.click();
     await wait(1000);
 
-    let serverName = await page.waitForSelector('.lineClamp1-1voJi7');
+    let serverName = await page.waitForSelector(".lineClamp1-1voJi7");
 
     await serverName.click();
     await wait(1000);
 
-    let createChannel = await page.waitForSelector('text/Create Channel');
+    let createChannel = await page.waitForSelector("text/Create Channel");
 
     await createChannel.click();
     await wait(1000);
 
-    console.log(`[${new Date()}] ${chalk.hex(`#FF005C`)(`Loading Experiments...`)}`); //added date for debug
+    console.log(
+      `[${new Date()}] ${chalk.hex(`#FF005C`)(`Loading Experiments...`)}`
+    ); //added date for debug
 
     const [exps, configs] = await page.evaluate(() => {
       const _mods = webpackChunkdiscord_app.push([
@@ -423,9 +416,10 @@ async function collect() {
 
         console.log(
           `[*] ${gradient.pastel(
-            `Downloading Experiment Metadata... [${i + 25 > response.data.total_results
-              ? response.data.total_results
-              : i + 25
+            `Downloading Experiment Metadata... [${
+              i + 25 > response.data.total_results
+                ? response.data.total_results
+                : i + 25
             }/${response.data.total_results}]`
           )}`
         );
@@ -439,96 +433,33 @@ async function collect() {
     }
 
     console.log(`\n`);
-
-    page.goto(`http://localhost:${PORT}/experiments`).then(() => {
-      if (ONE_TIME_FETCH) exit(0);
-    });
   })();
 
   fs.writeFileSync("messages.json", JSON.stringify(messages));
-};
+}
 
 await collect();
 
-setInterval(async () => {
-  await collect();
-}, 600000);
+let tempExperiments = [];
 
-app.get("/", (req, res) => {
-  res.send(
-    "Discord Experiment API - made by syndicated#6591. https://github.com/syndicated7/"
-  );
-});
-
-app.get("/experiments", (req, res) => {
-  let tempExperiments = [];
-
-  for (let [key, value] of Object.entries(experiments)) {
-    tempExperiments.push({
-      id: key,
-      defaultConfig: (
-        experimentConfigs.find((cnfg) => key === cnfg.id) || {
-          defaultConfig: { enabled: false },
-        }
-      ).defaultConfig,
-      rollout: rollouts[key],
-      hash: murmurhash.v3(key),
-      creationDate: findExperimentCreationDate(key),
-      ...value,
-    });
-  }
-
-  const experimentsWithRollouts = tempExperiments.map((experim) => {
-    let newExperiment = experim;
-    newExperiment.rollout = mapRollout(newExperiment);
-    return newExperiment;
+for (let [key, value] of Object.entries(experiments)) {
+  tempExperiments.push({
+    id: key,
+    defaultConfig: (
+      experimentConfigs.find((cnfg) => key === cnfg.id) || {
+        defaultConfig: { enabled: false },
+      }
+    ).defaultConfig,
+    rollout: rollouts[key],
+    hash: murmurhash.v3(key),
+    creationDate: findExperimentCreationDate(key),
+    ...value,
   });
+}
 
-  res.json(experimentsWithRollouts);
-  fs.writeFileSync('./experiments.json', JSON.stringify(experimentsWithRollouts));
+const experimentsWithRollouts = tempExperiments.map((experim) => {
+  let newExperiment = experim;
+  newExperiment.rollout = mapRollout(newExperiment);
+  return newExperiment;
 });
-
-app.get("/experiments/:id", (req, res) => {
-  let tempExperiments = [];
-
-  for (let [key, value] of Object.entries(experiments)) {
-    tempExperiments.push({
-      id: key,
-      defaultConfig: (
-        experimentConfigs.find((cnfg) => key === cnfg.id) || {
-          defaultConfig: { enabled: false },
-        }
-      ).defaultConfig,
-      rollout: rollouts[key],
-      hash: murmurhash.v3(key),
-      creationDate: findExperimentCreationDate(key),
-      ...value,
-    });
-  }
-
-  const experimentsWithRollouts = tempExperiments.map((experim) => {
-    let newExperiment = experim;
-    newExperiment.rollout = mapRollout(newExperiment);
-    return newExperiment;
-  });
-
-  res.json(
-    experimentsWithRollouts.find(
-      (experiment) => experiment.id === req.params.id
-    )
-  );
-});
-
-app.get("/experiments/check/:experiment/:id", (req, res) => {
-  res.json({
-    valid: isValidSubsetForExperiment(
-      req.params.experiment,
-      murmurhash.v3(`${req.params.experiment}:${req.params.id}`) % 1e4
-    ),
-    debug: murmurhash.v3(`${req.params.experiment}:${req.params.id}`) % 1e4,
-  });
-});
-
-app.listen(PORT, () => {
-  console.log(`[*] ${chalk.blueBright(`API listening on port ${PORT}.\n`)}`);
-});
+fs.writeFileSync("./experiments.json", JSON.stringify(experimentsWithRollouts));
