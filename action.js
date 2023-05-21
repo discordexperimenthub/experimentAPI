@@ -7,12 +7,10 @@ import puppeteer from "puppeteer";
 import fs from "fs";
 import wait from "delay";
 
-import Humanoid from "humanoid-js";
-
 dotenv.config();
 
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN || "";
-const FETCH_NEW_MESSAGES = process.env.ONE_TIME_FETCH || false;
+const FETCH_NEW_MESSAGES = false;
 
 let experiments = {};
 let experimentConfigs = [];
