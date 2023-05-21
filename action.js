@@ -416,4 +416,4 @@ async function collect() {
   );
   
   process.exit(0);
-})
+})()
