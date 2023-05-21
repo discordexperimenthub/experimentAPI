@@ -407,7 +407,7 @@ const experimentsWithRollouts = tempExperiments.map((experim) => {
   return newExperiment;
 });
 
-console.log("pray work")
+console.log(JSON.stringify(experimentsWithRollouts, null, 2))
 
 fs.writeFileSync("./experiments.json", JSON.stringify(experimentsWithRollouts));
 
