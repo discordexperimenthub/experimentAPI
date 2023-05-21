@@ -280,8 +280,8 @@ async function collect() {
     experimentConfigs = configs;
 
     const rsp = {
-      data: JSON.parse(fs.readFileSync("./rollout.json"))
-    }
+      data: JSON.parse(fs.readFileSync("./rollout.json")),
+    };
 
     /*
     rollouts = rsp.data.map((obj) => {
@@ -381,43 +381,8 @@ async function collect() {
     });
 
     console.log(`[*] ${chalk.greenBright(`Done!\n`)}`);
-
-    if (FETCH_NEW_MESSAGES || !fs.existsSync("messages.json")) {
-      for (let i = 0; i < 600; i += 25) {
-        let response = await axios.get(
-          `https://canary.discord.com/api/v9/guilds/603970300668805120/messages/search?content=Experiment%20Added&offset=${i}`,
-          {
-            headers: {
-              Authorization: DISCORD_TOKEN,
-            },
-          }
-        );
-
-        console.log(
-          `[*] ${gradient.pastel(
-            `Downloading Experiment Metadata... [${
-              i + 25 > response.data.total_results
-                ? response.data.total_results
-                : i + 25
-            }/${response.data.total_results}]`
-          )}`
-        );
-
-        messages.push(...response.data.messages.map((message) => message[0]));
-
-        await timer(5000);
-      }
-    } else {
-      messages.push(...JSON.parse(fs.readFileSync("messages.json")));
-    }
-
-    console.log(`\n`);
-  })();
-
-  fs.writeFileSync("messages.json", JSON.stringify(messages));
+  });
 }
-
-await collect();
 
 let tempExperiments = [];
 
@@ -441,4 +406,9 @@ const experimentsWithRollouts = tempExperiments.map((experim) => {
   newExperiment.rollout = mapRollout(newExperiment);
   return newExperiment;
 });
+
+console.log("pray work")
+
 fs.writeFileSync("./experiments.json", JSON.stringify(experimentsWithRollouts));
+
+exit(0);
