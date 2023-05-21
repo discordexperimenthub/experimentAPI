@@ -384,6 +384,8 @@ async function collect() {
   });
 }
 
+await collect();
+
 let tempExperiments = [];
 
 for (let [key, value] of Object.entries(experiments)) {
