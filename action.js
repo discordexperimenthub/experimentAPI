@@ -411,4 +411,4 @@ console.log("pray work")
 
 fs.writeFileSync("./experiments.json", JSON.stringify(experimentsWithRollouts));
 
-exit(0);
+process.exit(0);
