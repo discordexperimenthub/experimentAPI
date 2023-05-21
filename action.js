@@ -19,29 +19,6 @@ let messages = [];
 
 const timer = (ms) => new Promise((res) => setTimeout(res, ms));
 
-const isValidSubsetForExperiment = (experimentID, num) => {
-  const experiment = experiments.find((exp) => exp.id === experimentID);
-  let isEligible = false;
-
-  experiment.rollout.populations.forEach((population) => {
-    population.position
-      .filter((position) => position.bucket !== -1)
-      .forEach((pos) => {
-        pos.rollouts.forEach((rollout) => {
-          if (
-            rollout.start <= num &&
-            num <= rollout.end &&
-            population.filters.filter((filter) =>
-              filter.features?.includes("INTERNAL_EMPLOYEE_ONLY")
-            ).length === 0
-          )
-            isEligible = true;
-        });
-      });
-  });
-
-  return isEligible;
-};
 const findExperimentCreationDate = (experimentName) => {
   let timestamp = Math.floor(
     new Date(
