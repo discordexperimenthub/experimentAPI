@@ -7,8 +7,6 @@ import puppeteer from "puppeteer";
 import fs from "fs";
 import wait from "delay";
 
-import Humanoid from "humanoid-js";
-
 dotenv.config();
 
 const DISCORD_TOKEN = process.env.DISCORD_TOKEN || "";
@@ -281,12 +279,8 @@ async function collect() {
     experiments = exps;
     experimentConfigs = configs;
 
-    let hmClient = new Humanoid();
-    let { body: rawData } = await hmClient.get(`https://api.rollouts.advaith.io`);
-
-    let rsp = {
-      data: JSON.parse(rawData)
-    };
+    const url = 'https://corsproxy.io/?' + encodeURIComponent('https://api.rollouts.advaith.io');
+    let rsp = await axios.get(url);
 
     /*
     rollouts = rsp.data.map((obj) => {
