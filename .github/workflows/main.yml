@@ -8,6 +8,9 @@ on:
     branches: [ main ]
   schedule:
     - cron: "*/60 * * * *"
+    
+permissions:
+  contents: write
 
 jobs:
   build:
