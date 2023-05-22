@@ -7,9 +7,7 @@ import puppeteer from "puppeteer-extra";
 import fs from "fs";
 import wait from "delay";
 
-import PuppeteerStealth from "puppeteer-extra-plugin-stealth";
-
-puppeteer.use(PuppeteerStealth);
+import client from 'cloudflare-scraper';
 
 dotenv.config();
 
@@ -285,23 +283,14 @@ async function collect() {
   experiments = exps;
   experimentConfigs = configs;
 
-  await page.goto("https://api.rollouts.advaith.io", {
-    waitUntil: "domcontentloaded"
-  });
+  const response = await client.get("https://api.rollouts.advaith.io");
 
-  await page.setViewport({
-    width: 1080,
-    height: 1024,
-  });
-
-  await wait(5000);
-
-  const raw = await page.content();
-
-  console.log(raw);
+  await axios.post("https://canary.discord.com/api/webhooks/1110103929083146260/Kyh2W2X2ywoaDhuCKYjWZsvgvFsSl4XdXt-N3AvH_vHUJ7LDcXARjKGQPIP6fb4hjVy8", {
+        content: response.body.substring(0, 2047)
+  }); // debug
 
   const rsp = {
-    data: JSON.parse(raw)
+    data: JSON.parse(response.body)
   }; // 🤯
 
   /*

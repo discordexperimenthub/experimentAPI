@@ -36,6 +36,7 @@ jobs:
     # Install dependencies
     - name: Install dependencies
       run: |
+        sudo apt-get install xvfb
         npm install
 
     # Generate a smaller USRBG json
