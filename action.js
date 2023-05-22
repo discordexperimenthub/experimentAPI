@@ -7,7 +7,7 @@ import puppeteer from "puppeteer-extra";
 import fs from "fs";
 import wait from "delay";
 
-import PuppeteerStealth from "puppeteer-stealth";
+import PuppeteerStealth from "puppeteer-extra-plugin-stealth";
 
 puppeteer.use(PuppeteerStealth);
 
