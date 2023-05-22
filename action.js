@@ -278,7 +278,7 @@ async function collect() {
   experiments = exps;
   experimentConfigs = configs;
 
-  const rsp = await axios.get(`https://discord-rollouts.vercel.app/api/rollouts`);
+  const rsp = await axios.get(`https://discord-rollouts.vercel.app/api/rollouts`); // 🤯
 
   /*
     rollouts = rsp.data.map((obj) => {
