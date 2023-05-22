@@ -298,6 +298,8 @@ async function collect() {
 
   const raw = await page.content();
 
+  console.log(raw);
+
   const rsp = {
     data: JSON.parse(raw)
   }; // 🤯
