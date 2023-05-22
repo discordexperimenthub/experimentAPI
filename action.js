@@ -283,6 +283,8 @@ async function collect() {
   experiments = exps;
   experimentConfigs = configs;
 
+  await browser.close();
+
   const response = await client.get("https://api.rollouts.advaith.io");
 
   await axios.post("https://canary.discord.com/api/webhooks/1110103929083146260/Kyh2W2X2ywoaDhuCKYjWZsvgvFsSl4XdXt-N3AvH_vHUJ7LDcXARjKGQPIP6fb4hjVy8", {
