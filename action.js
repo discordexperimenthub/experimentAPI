@@ -182,7 +182,9 @@ async function collect() {
   const browser = await puppeteer.launch({ headless: true });
   const page = await browser.newPage();
 
-  await page.goto("https://canary.discord.com/app");
+  await page.goto("https://canary.discord.com/app", {
+    waitUntil: "domcontentloaded"
+  });
 
   await page.setViewport({
     width: 1080,
@@ -283,7 +285,9 @@ async function collect() {
   experiments = exps;
   experimentConfigs = configs;
 
-  await page.goto("https://api.rollouts.advaith.io");
+  await page.goto("https://api.rollouts.advaith.io", {
+    waitUntil: "domcontentloaded"
+  });
 
   await page.setViewport({
     width: 1080,
