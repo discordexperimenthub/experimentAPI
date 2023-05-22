@@ -3,9 +3,13 @@ import gradient from "gradient-string";
 import chalk from "chalk";
 import dotenv from "dotenv";
 import murmurhash from "murmurhash";
-import puppeteer from "puppeteer";
+import puppeteer from "puppeteer-extra";
 import fs from "fs";
 import wait from "delay";
+
+import PuppeteerStealth from "puppeteer-stealth";
+
+puppeteer.use(PuppeteerStealth);
 
 dotenv.config();
 
@@ -184,6 +188,7 @@ async function collect() {
     width: 1080,
     height: 1024,
   });
+
   await page.evaluate((discordToken = DISCORD_TOKEN) => {
     function login(token) {
       setInterval(() => {
@@ -278,7 +283,20 @@ async function collect() {
   experiments = exps;
   experimentConfigs = configs;
 
-  const rsp = await axios.get(`https://discord-rollouts.vercel.app/api/rollouts`); // 🤯
+  await page.goto("https://api.rollouts.advaith.io");
+
+  await page.setViewport({
+    width: 1080,
+    height: 1024,
+  });
+
+  await wait(5000);
+
+  const raw = await page.content();
+
+  const rsp = {
+    data: JSON.parse(raw)
+  }; // 🤯
 
   /*
     rollouts = rsp.data.map((obj) => {
