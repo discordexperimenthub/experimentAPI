@@ -3297,189 +3297,7 @@
     ]
   },
   {
-    "id": "2022-10_communities_multi",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 2000
-                },
-                {
-                  "start": 8000,
-                  "end": 10000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 1: NMX Core",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 4000,
-                  "end": 6000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 2: NMX Core + Home",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 6000,
-                  "end": 8000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY_EXP_LARGE_UNGATED"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 2000
-                },
-                {
-                  "start": 8000,
-                  "end": 10000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 1: NMX Core",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 4000,
-                  "end": 6000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 2: NMX Core + Home",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 6000,
-                  "end": 8000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY_EXP_LARGE_GATED"
-              ]
-            }
-          ]
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": []
-    },
-    "hash": 2457903107,
-    "creationDate": 1665175385,
-    "type": "guild",
-    "title": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
-    "description": [
-      "Control",
-      "Treatment 0: Holdout",
-      "Treatment 1: NMX Core",
-      "Treatment 2: NMX Core + Home",
-      "Treatment 3: NMX Core + Highlights",
-      "Treatment 4: Home"
-    ],
-    "buckets": [
-      0,
-      0,
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "2022-01_home_tab_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 4,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Control",
-          "bucket": 0,
-          "ids": [
-            "814669604840013874"
-          ]
-        },
-        {
-          "treatment": "Treatment 2: Force on",
-          "bucket": 2,
-          "ids": [
-            "662267976984297473"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 3832113202,
-    "creationDate": 1641588185,
-    "type": "guild",
-    "title": "Home Tab Guild",
-    "description": [
-      "Control",
-      "Treatment 1: Check User as well",
-      "Treatment 2: Force on"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2022-01_home_tab_user",
+    "id": "2021-04_network_action_logging",
     "defaultConfig": {
       "enabled": false
     },
@@ -3507,7 +3325,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show Home Tab",
+              "treatment": "Treatment 1: Log network actions",
               "bucket": 1,
               "rollouts": [
                 {
@@ -3521,87 +3339,20 @@
             {
               "type": "build_override",
               "experiments": [
-                "2022-01_home_tab_user"
+                "2021-04_network_action_logging"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 3656796460,
-    "creationDate": 1641588185,
+    "hash": 3643362751,
+    "creationDate": 1617828185,
     "type": "user",
-    "title": "Home Tab User",
+    "title": "Standard Analytics: Log Network Actions",
     "description": [
       "Control",
-      "Treatment 1: Show Home Tab",
-      "Treatment 2: Force on",
-      "Treatment 3: Overflow"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "2022-01_home_feed_toggle",
-    "defaultConfig": {
-      "showSelector": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Yes Selector",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-01_home_feed_toggle"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1124154177,
-    "creationDate": 1641588185,
-    "type": "user",
-    "title": "Show Guild Feed Sorting Selector",
-    "description": [
-      "Control",
-      "Treatment 1: Yes Selector"
+      "Treatment 1: Log network actions"
     ],
     "buckets": [
       0,
@@ -3609,9 +3360,10 @@
     ]
   },
   {
-    "id": "2022-06_home_refresh_button",
+    "id": "2023-05_dcf_improvements",
     "defaultConfig": {
-      "showRefreshButton": false
+      "cooldownPeriod": null,
+      "dismissOnNavigation": false
     },
     "rollout": {
       "revision": 0,
@@ -3637,7 +3389,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Yes button",
+              "treatment": "Treatment 1: Users will have a DC cooldown of 1 hour",
               "bucket": 1,
               "rollouts": [
                 {
@@ -3651,467 +3403,21 @@
             {
               "type": "build_override",
               "experiments": [
-                "2022-06_home_refresh_button"
+                "2023-05_dcf_improvements"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 853790804,
-    "creationDate": 1654634585,
+    "hash": 1171817240,
+    "creationDate": 1683492185,
     "type": "user",
-    "title": "Show refresh button",
+    "title": "DCF Improvements Experiment",
     "description": [
       "Control",
-      "Treatment 1: Yes button"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-08_home_badge",
-    "defaultConfig": {
-      "showBadge": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show badge",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-08_home_badge"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2294464289,
-    "creationDate": 1659904985,
-    "type": "user",
-    "title": "Show badge on home channel",
-    "description": [
-      "Control",
-      "Treatment 1: show badge"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-08_home_drawer_autoclose",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: normal animation",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-08_home_drawer_autoclose"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 75117039,
-    "creationDate": 1659904985,
-    "type": "user",
-    "title": "Auto close home drawer",
-    "description": [
-      "Control",
-      "Treatment 1: normal animation",
-      "Treatment 2: no animate",
-      "Treatment 3: 150 delayed animation",
-      "Treatment 4: 250 delayed animation",
-      "Treatment 5: 500 delayed animation"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "2022-09_welcome_header",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show welcome header",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-09_welcome_header"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 683339869,
-    "creationDate": 1662583385,
-    "type": "user",
-    "title": "Show welcome header for home",
-    "description": [
-      "Control",
-      "Treatment 1: show welcome header"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_home_feedback_ux",
-    "defaultConfig": {
-      "showFeedback": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_home_feedback_ux"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 655899426,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Show post feedback for home",
-    "description": [
-      "Control",
-      "Treatment 100: show feedback"
-    ],
-    "buckets": [
-      0,
-      100
-    ]
-  },
-  {
-    "id": "2023-03_home_deprecation",
-    "defaultConfig": {
-      "showDeprecationNotice": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show notice",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "range_by_hash",
-              "range": 10000
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": []
-    },
-    "hash": 280214844,
-    "creationDate": 1678221785,
-    "type": "guild",
-    "title": "Home Deprecation",
-    "description": [
-      "Control",
-      "Treatment 1: Show notice"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_free_discord_stickers",
-    "defaultConfig": {
-      "freeStickersEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_free_discord_stickers"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 887694445,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Free Default Stickers",
-    "description": [
-      "Control",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-10_context_menu_and_new_media_picker",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-10_context_menu_and_new_media_picker"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 478936943,
-    "creationDate": 1665175385,
-    "type": "user",
-    "title": "Context Menu and New Media Picker",
-    "description": [
-      "Control",
-      "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
-      "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
+      "Treatment 1: Users will have a DC cooldown of 1 hour",
+      "Treatment 2: DCs will be dismissed when a user navigates away from their surface"
     ],
     "buckets": [
       0,
@@ -4180,6 +3486,393 @@
     "buckets": [
       0,
       1
+    ]
+  },
+  {
+    "id": "2022-09_emoji_ecosystem_holdout",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: In the Emoji Ecosystem Holdout",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-09_emoji_ecosystem_holdout"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 667096268,
+    "creationDate": 1662583385,
+    "type": "user",
+    "title": "Emoji Ecosystem Holdout Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: In the Emoji Ecosystem Holdout"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-09_emoji_picker_discovery",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Bigger Picker",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-09_emoji_picker_discovery"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 346890398,
+    "creationDate": 1662583385,
+    "type": "user",
+    "title": "Emoji Picker Improved Discovery",
+    "description": [
+      "Control",
+      "Treatment 1: Bigger Picker",
+      "Treatment 2: Bigger Picker + Popular Server Emojis",
+      "Treatment 3: Bigger Picker + Newly Added Emojis"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2023-02_stage_boosting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 2,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                },
+                {
+                  "start": 500,
+                  "end": 5000
+                },
+                {
+                  "start": 5000,
+                  "end": 9500
+                },
+                {
+                  "start": 9500,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            },
+            {
+              "type": "range_by_hash",
+              "range": 10000
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "id",
+              "ids": [
+                "885418158788345897"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1816004721,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "Stage Boosting",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2021-09_ios_screenshare_resolution_profiles",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Permanent old resolution",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-09_ios_screenshare_resolution_profiles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3656427814,
+    "creationDate": 1631047385,
+    "type": "user",
+    "title": "iOS: Screenshare resolution profiles",
+    "description": [
+      "Control",
+      "Treatment 1: Permanent old resolution",
+      "Treatment 2: Old resolution for 10s",
+      "Treatment 3: Wait 3s after 1st frame capture",
+      "Treatment 4: Wait 3s to capture 1st frame"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "2022-10_context_menu_and_new_media_picker",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-10_context_menu_and_new_media_picker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 478936943,
+    "creationDate": 1665175385,
+    "type": "user",
+    "title": "Context Menu and New Media Picker",
+    "description": [
+      "Control",
+      "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
+      "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
     ]
   },
   {
@@ -5030,266 +4723,7 @@
     ]
   },
   {
-    "id": "2022-09_emoji_ecosystem_holdout",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: In the Emoji Ecosystem Holdout",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-09_emoji_ecosystem_holdout"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 667096268,
-    "creationDate": 1662583385,
-    "type": "user",
-    "title": "Emoji Ecosystem Holdout Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: In the Emoji Ecosystem Holdout"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-09_emoji_picker_discovery",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Bigger Picker",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-09_emoji_picker_discovery"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 346890398,
-    "creationDate": 1662583385,
-    "type": "user",
-    "title": "Emoji Picker Improved Discovery",
-    "description": [
-      "Control",
-      "Treatment 1: Bigger Picker",
-      "Treatment 2: Bigger Picker + Popular Server Emojis",
-      "Treatment 3: Bigger Picker + Newly Added Emojis"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "2021-04_network_action_logging",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Log network actions",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-04_network_action_logging"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3643362751,
-    "creationDate": 1617828185,
-    "type": "user",
-    "title": "Standard Analytics: Log Network Actions",
-    "description": [
-      "Control",
-      "Treatment 1: Log network actions"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_dcf_improvements",
-    "defaultConfig": {
-      "cooldownPeriod": null,
-      "dismissOnNavigation": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users will have a DC cooldown of 1 hour",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_dcf_improvements"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1171817240,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "DCF Improvements Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: Users will have a DC cooldown of 1 hour",
-      "Treatment 2: DCs will be dismissed when a user navigates away from their surface"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-02_stage_boosting",
+    "id": "2022-10_communities_multi",
     "defaultConfig": {
       "enabled": false
     },
@@ -5299,24 +4733,36 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 500
+                  "end": 2000
                 },
                 {
-                  "start": 500,
-                  "end": 5000
-                },
-                {
-                  "start": 5000,
-                  "end": 9500
-                },
-                {
-                  "start": 9500,
+                  "start": 8000,
                   "end": 10000
+                }
+              ]
+            },
+            {
+              "treatment": "Treatment 1: NMX Core",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 4000,
+                  "end": 6000
+                }
+              ]
+            },
+            {
+              "treatment": "Treatment 2: NMX Core + Home",
+              "bucket": 2,
+              "rollouts": [
+                {
+                  "start": 6000,
+                  "end": 8000
                 }
               ]
             }
@@ -5325,9 +4771,614 @@
             {
               "type": "feature",
               "features": [
-                "COMMUNITY"
+                "COMMUNITY_EXP_LARGE_UNGATED"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 2000
+                },
+                {
+                  "start": 8000,
+                  "end": 10000
+                }
               ]
             },
+            {
+              "treatment": "Treatment 1: NMX Core",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 4000,
+                  "end": 6000
+                }
+              ]
+            },
+            {
+              "treatment": "Treatment 2: NMX Core + Home",
+              "bucket": 2,
+              "rollouts": [
+                {
+                  "start": 6000,
+                  "end": 8000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY_EXP_LARGE_GATED"
+              ]
+            }
+          ]
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": []
+    },
+    "hash": 2457903107,
+    "creationDate": 1665175385,
+    "type": "guild",
+    "title": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
+    "description": [
+      "Control",
+      "Treatment 0: Holdout",
+      "Treatment 1: NMX Core",
+      "Treatment 2: NMX Core + Home",
+      "Treatment 3: NMX Core + Highlights",
+      "Treatment 4: Home"
+    ],
+    "buckets": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "2022-01_home_tab_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 4,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Control",
+          "bucket": 0,
+          "ids": [
+            "814669604840013874"
+          ]
+        },
+        {
+          "treatment": "Treatment 2: Force on",
+          "bucket": 2,
+          "ids": [
+            "662267976984297473"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 3832113202,
+    "creationDate": 1641588185,
+    "type": "guild",
+    "title": "Home Tab Guild",
+    "description": [
+      "Control",
+      "Treatment 1: Check User as well",
+      "Treatment 2: Force on"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2022-01_home_tab_user",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show Home Tab",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-01_home_tab_user"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3656796460,
+    "creationDate": 1641588185,
+    "type": "user",
+    "title": "Home Tab User",
+    "description": [
+      "Control",
+      "Treatment 1: Show Home Tab",
+      "Treatment 2: Force on",
+      "Treatment 3: Overflow"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2022-01_home_feed_toggle",
+    "defaultConfig": {
+      "showSelector": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Yes Selector",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-01_home_feed_toggle"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1124154177,
+    "creationDate": 1641588185,
+    "type": "user",
+    "title": "Show Guild Feed Sorting Selector",
+    "description": [
+      "Control",
+      "Treatment 1: Yes Selector"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-06_home_refresh_button",
+    "defaultConfig": {
+      "showRefreshButton": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Yes button",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-06_home_refresh_button"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 853790804,
+    "creationDate": 1654634585,
+    "type": "user",
+    "title": "Show refresh button",
+    "description": [
+      "Control",
+      "Treatment 1: Yes button"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-08_home_badge",
+    "defaultConfig": {
+      "showBadge": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show badge",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-08_home_badge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2294464289,
+    "creationDate": 1659904985,
+    "type": "user",
+    "title": "Show badge on home channel",
+    "description": [
+      "Control",
+      "Treatment 1: show badge"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-08_home_drawer_autoclose",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: normal animation",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-08_home_drawer_autoclose"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 75117039,
+    "creationDate": 1659904985,
+    "type": "user",
+    "title": "Auto close home drawer",
+    "description": [
+      "Control",
+      "Treatment 1: normal animation",
+      "Treatment 2: no animate",
+      "Treatment 3: 150 delayed animation",
+      "Treatment 4: 250 delayed animation",
+      "Treatment 5: 500 delayed animation"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "2022-09_welcome_header",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show welcome header",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-09_welcome_header"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 683339869,
+    "creationDate": 1662583385,
+    "type": "user",
+    "title": "Show welcome header for home",
+    "description": [
+      "Control",
+      "Treatment 1: show welcome header"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-12_home_feedback_ux",
+    "defaultConfig": {
+      "showFeedback": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_home_feedback_ux"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 655899426,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Show post feedback for home",
+    "description": [
+      "Control",
+      "Treatment 100: show feedback"
+    ],
+    "buckets": [
+      0,
+      100
+    ]
+  },
+  {
+    "id": "2023-03_home_deprecation",
+    "defaultConfig": {
+      "showDeprecationNotice": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show notice",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
             {
               "type": "range_by_hash",
               "range": 10000
@@ -5347,15 +5398,33 @@
               ]
             }
           ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": []
+    },
+    "hash": 280214844,
+    "creationDate": 1678221785,
+    "type": "guild",
+    "title": "Home Deprecation",
+    "description": [
+      "Control",
+      "Treatment 1: Show notice"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_free_discord_stickers",
+    "defaultConfig": {
+      "freeStickersEnabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
         {
           "position": [
             {
@@ -5382,69 +5451,6 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "id",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1816004721,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Stage Boosting",
-    "description": [
-      "Control",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2021-09_ios_screenshare_resolution_profiles",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Permanent old resolution",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
                   "end": 500
                 }
               ]
@@ -5454,30 +5460,24 @@
             {
               "type": "build_override",
               "experiments": [
-                "2021-09_ios_screenshare_resolution_profiles"
+                "2023-03_free_discord_stickers"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 3656427814,
-    "creationDate": 1631047385,
+    "hash": 887694445,
+    "creationDate": 1678221785,
     "type": "user",
-    "title": "iOS: Screenshare resolution profiles",
+    "title": "Free Default Stickers",
     "description": [
       "Control",
-      "Treatment 1: Permanent old resolution",
-      "Treatment 2: Old resolution for 10s",
-      "Treatment 3: Wait 3s after 1st frame capture",
-      "Treatment 4: Wait 3s to capture 1st frame"
+      "Treatment 1: Enabled"
     ],
     "buckets": [
       0,
-      1,
-      2,
-      3,
-      4
+      1
     ]
   },
   {
