@@ -3234,69 +3234,6 @@
     ]
   },
   {
-    "id": "2022-04_forced_colors_desktop",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow Forced Colors Mode",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-04_forced_colors_desktop"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3557480712,
-    "creationDate": 1649364185,
-    "type": "user",
-    "title": "Forced Colors Mode (Desktop)",
-    "description": [
-      "Control",
-      "Treatment 1: Allow Forced Colors Mode"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2021-04_network_action_logging",
     "defaultConfig": {
       "enabled": false
