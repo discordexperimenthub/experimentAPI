@@ -4212,7 +4212,9 @@
     "id": "2023-05_dcf_improvements",
     "defaultConfig": {
       "cooldownPeriod": null,
-      "dismissOnNavigation": false
+      "dismissOnNavigation": false,
+      "dailyCap": null,
+      "weeklyCap": null
     },
     "rollout": {
       "revision": 0,
@@ -4266,12 +4268,20 @@
     "description": [
       "Control",
       "Treatment 1: Users will have a DC cooldown of 1 hour",
-      "Treatment 2: DCs will be dismissed when a user navigates away from their surface"
+      "Treatment 2: DCs will be dismissed when a user navigates away from their surface",
+      "Treatment 3: Users will be limited to seeing 2 DC a day and 6 DC a week",
+      "Treatment 4: Users will be limited to seeing 2 DC a day",
+      "Treatment 5: Users will be limited to seeing 3 DC a day and 9 DC a week",
+      "Treatment 6: Users will be limited to seeing 3 DC a day"
     ],
     "buckets": [
       0,
       1,
-      2
+      2,
+      3,
+      4,
+      5,
+      6
     ]
   },
   {
@@ -14029,69 +14039,6 @@
     ]
   },
   {
-    "id": "2023-04_birthday_activities_color_together_tile",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Color Together tile",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_birthday_activities_color_together_tile"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2993886886,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Birthday Activities Whats New Color Together Tile",
-    "description": [
-      "Control",
-      "Treatment 1: Enable Color Together tile"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-04_birthday_activities_whats_new_gdm_tile",
     "defaultConfig": {
       "enabled": false
@@ -14211,6 +14158,69 @@
     "description": [
       "Control",
       "Treatment 1: Enable Jamspace tile"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_birthday_activities_poker",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Poker tile",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_birthday_activities_poker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3212616249,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Birthday Activities Poker Tile",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Poker tile"
     ],
     "buckets": [
       0,
@@ -14765,6 +14775,69 @@
     ],
     "buckets": [
       0
+    ]
+  },
+  {
+    "id": "2023-04_broadcasting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Allow user to Broadcast to friends & guilds",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_broadcasting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 139947315,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Go Live Broadcasting",
+    "description": [
+      "Control",
+      "Treatment 1: Allow user to Broadcast to friends & guilds"
+    ],
+    "buckets": [
+      0,
+      1
     ]
   },
   {
