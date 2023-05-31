@@ -3234,963 +3234,6 @@
     ]
   },
   {
-    "id": "2023-05_dcf_improvements",
-    "defaultConfig": {
-      "cooldownPeriod": null,
-      "dismissOnNavigation": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users will have a DC cooldown of 1 hour",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_dcf_improvements"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1171817240,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "DCF Improvements Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: Users will have a DC cooldown of 1 hour",
-      "Treatment 2: DCs will be dismissed when a user navigates away from their surface"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2021-04_network_action_logging",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Log network actions",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-04_network_action_logging"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3643362751,
-    "creationDate": 1617828185,
-    "type": "user",
-    "title": "Standard Analytics: Log Network Actions",
-    "description": [
-      "Control",
-      "Treatment 1: Log network actions"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_activities_release_tools",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable activities release tools",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_activities_release_tools"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3482834131,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Activities Release Tools",
-    "description": [
-      "Control",
-      "Treatment 1: enable activities release tools"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-09_emoji_ecosystem_holdout",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: In the Emoji Ecosystem Holdout",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-09_emoji_ecosystem_holdout"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 667096268,
-    "creationDate": 1662583385,
-    "type": "user",
-    "title": "Emoji Ecosystem Holdout Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: In the Emoji Ecosystem Holdout"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-09_emoji_picker_discovery",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Bigger Picker",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-09_emoji_picker_discovery"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 346890398,
-    "creationDate": 1662583385,
-    "type": "user",
-    "title": "Emoji Picker Improved Discovery",
-    "description": [
-      "Control",
-      "Treatment 1: Bigger Picker",
-      "Treatment 2: Bigger Picker + Popular Server Emojis",
-      "Treatment 3: Bigger Picker + Newly Added Emojis"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "2023-02_stage_boosting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                },
-                {
-                  "start": 500,
-                  "end": 5000
-                },
-                {
-                  "start": 5000,
-                  "end": 9500
-                },
-                {
-                  "start": 9500,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "range_by_hash",
-              "range": 10000
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "id",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1816004721,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Stage Boosting",
-    "description": [
-      "Control",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2021-09_ios_screenshare_resolution_profiles",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Permanent old resolution",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-09_ios_screenshare_resolution_profiles"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3656427814,
-    "creationDate": 1631047385,
-    "type": "user",
-    "title": "iOS: Screenshare resolution profiles",
-    "description": [
-      "Control",
-      "Treatment 1: Permanent old resolution",
-      "Treatment 2: Old resolution for 10s",
-      "Treatment 3: Wait 3s after 1st frame capture",
-      "Treatment 4: Wait 3s to capture 1st frame"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "2022-10_context_menu_and_new_media_picker",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-10_context_menu_and_new_media_picker"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 478936943,
-    "creationDate": 1665175385,
-    "type": "user",
-    "title": "Context Menu and New Media Picker",
-    "description": [
-      "Control",
-      "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
-      "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2022-08_guild_unreads",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow \"Highlights\" as an Unreads Option",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-08_guild_unreads"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4073302433,
-    "creationDate": 1659904985,
-    "type": "user",
-    "title": "Guild Unreads",
-    "description": [
-      "Control",
-      "Treatment 1: Allow \"Highlights\" as an Unreads Option"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-11_notification_redesign",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Notification Redesign Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-11_notification_redesign"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1792467213,
-    "creationDate": 1667853785,
-    "type": "user",
-    "title": "NotificationRedesign",
-    "description": [
-      "Control",
-      "Treatment 1: Notification Redesign Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_notification_redesign_v2",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Notification Redesign V2 Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_notification_redesign_v2"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1347697298,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "NotificationRedesignV2",
-    "description": [
-      "Control",
-      "Treatment 1: Notification Redesign V2 Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-11_desktop_notification_center",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Notification center desktop enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-11_desktop_notification_center"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1323079101,
-    "creationDate": 1667853785,
-    "type": "user",
-    "title": "Desktop notification center",
-    "description": [
-      "Control",
-      "Treatment 1: Notification center desktop enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-07_channel_highlights",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show Channel Highlights",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-07_channel_highlights"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4169687140,
-    "creationDate": 1657226585,
-    "type": "user",
-    "title": "Channel Highlights",
-    "description": [
-      "Control",
-      "Treatment 1: Show Channel Highlights"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_store_latest_message_data",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Use latest data from api/gateway",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_store_latest_message_data"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1617749743,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Store latest message data",
-    "description": [
-      "Control",
-      "Treatment 1: Use latest data from api/gateway"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-02_burst_reaction_guild_experiment",
     "defaultConfig": {
       "enabled": false,
@@ -4534,6 +3577,134 @@
     ]
   },
   {
+    "id": "2022-10_context_menu_and_new_media_picker",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-10_context_menu_and_new_media_picker"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 478936943,
+    "creationDate": 1665175385,
+    "type": "user",
+    "title": "Context Menu and New Media Picker",
+    "description": [
+      "Control",
+      "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
+      "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-03_store_latest_message_data",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Use latest data from api/gateway",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_store_latest_message_data"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1617749743,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Store latest message data",
+    "description": [
+      "Control",
+      "Treatment 1: Use latest data from api/gateway"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-12_media_mosaic_experiment",
     "defaultConfig": {
       "enabled": false
@@ -4657,6 +3828,835 @@
     "buckets": [
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-03_activities_release_tools",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable activities release tools",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_activities_release_tools"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3482834131,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Activities Release Tools",
+    "description": [
+      "Control",
+      "Treatment 1: enable activities release tools"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-08_guild_unreads",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Allow \"Highlights\" as an Unreads Option",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-08_guild_unreads"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4073302433,
+    "creationDate": 1659904985,
+    "type": "user",
+    "title": "Guild Unreads",
+    "description": [
+      "Control",
+      "Treatment 1: Allow \"Highlights\" as an Unreads Option"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-11_notification_redesign",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Notification Redesign Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-11_notification_redesign"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1792467213,
+    "creationDate": 1667853785,
+    "type": "user",
+    "title": "NotificationRedesign",
+    "description": [
+      "Control",
+      "Treatment 1: Notification Redesign Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_notification_redesign_v2",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Notification Redesign V2 Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_notification_redesign_v2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1347697298,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "NotificationRedesignV2",
+    "description": [
+      "Control",
+      "Treatment 1: Notification Redesign V2 Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-11_desktop_notification_center",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Notification center desktop enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-11_desktop_notification_center"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1323079101,
+    "creationDate": 1667853785,
+    "type": "user",
+    "title": "Desktop notification center",
+    "description": [
+      "Control",
+      "Treatment 1: Notification center desktop enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-07_channel_highlights",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show Channel Highlights",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-07_channel_highlights"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4169687140,
+    "creationDate": 1657226585,
+    "type": "user",
+    "title": "Channel Highlights",
+    "description": [
+      "Control",
+      "Treatment 1: Show Channel Highlights"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_dcf_improvements",
+    "defaultConfig": {
+      "cooldownPeriod": null,
+      "dismissOnNavigation": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users will have a DC cooldown of 1 hour",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_dcf_improvements"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1171817240,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "DCF Improvements Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Users will have a DC cooldown of 1 hour",
+      "Treatment 2: DCs will be dismissed when a user navigates away from their surface"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2021-04_network_action_logging",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Log network actions",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-04_network_action_logging"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3643362751,
+    "creationDate": 1617828185,
+    "type": "user",
+    "title": "Standard Analytics: Log Network Actions",
+    "description": [
+      "Control",
+      "Treatment 1: Log network actions"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-09_emoji_ecosystem_holdout",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: In the Emoji Ecosystem Holdout",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-09_emoji_ecosystem_holdout"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 667096268,
+    "creationDate": 1662583385,
+    "type": "user",
+    "title": "Emoji Ecosystem Holdout Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: In the Emoji Ecosystem Holdout"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-09_emoji_picker_discovery",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Bigger Picker",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-09_emoji_picker_discovery"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 346890398,
+    "creationDate": 1662583385,
+    "type": "user",
+    "title": "Emoji Picker Improved Discovery",
+    "description": [
+      "Control",
+      "Treatment 1: Bigger Picker",
+      "Treatment 2: Bigger Picker + Popular Server Emojis",
+      "Treatment 3: Bigger Picker + Newly Added Emojis"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2023-02_stage_boosting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 2,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                },
+                {
+                  "start": 500,
+                  "end": 5000
+                },
+                {
+                  "start": 5000,
+                  "end": 9500
+                },
+                {
+                  "start": 9500,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            },
+            {
+              "type": "range_by_hash",
+              "range": 10000
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "id",
+              "ids": [
+                "885418158788345897"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1816004721,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "Stage Boosting",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2021-09_ios_screenshare_resolution_profiles",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Permanent old resolution",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-09_ios_screenshare_resolution_profiles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3656427814,
+    "creationDate": 1631047385,
+    "type": "user",
+    "title": "iOS: Screenshare resolution profiles",
+    "description": [
+      "Control",
+      "Treatment 1: Permanent old resolution",
+      "Treatment 2: Old resolution for 10s",
+      "Treatment 3: Wait 3s after 1st frame capture",
+      "Treatment 4: Wait 3s to capture 1st frame"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      4
     ]
   },
   {
