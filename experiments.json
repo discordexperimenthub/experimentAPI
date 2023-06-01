@@ -13189,6 +13189,69 @@
     ]
   },
   {
+    "id": "2023-05_clear_pending_incoming_friend_requests",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_clear_pending_incoming_friend_requests"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3060384904,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Enable ability to clear incoming friend requests",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-01_shared_canvas",
     "defaultConfig": {
       "isSharedCanvasEnabled": false
