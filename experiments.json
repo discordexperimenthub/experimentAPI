@@ -546,8 +546,8 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables Server Subscriptions Accept New Terms",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
@@ -6718,7 +6718,7 @@
             "132751006349000704",
             "133838756447911936",
             "409190184744255490",
-            "246818967455268864",
+            "922748688403693578",
             "772904309264089089",
             "358811058489524225",
             "576105656881512450",
@@ -7393,6 +7393,22 @@
               "treatment": "Treatment 2: Show improved message markdown WITHOUT masked links",
               "bucket": 2,
               "rollouts": [
+                {
+                  "start": 0,
+                  "end": 1000
+                },
+                {
+                  "start": 1000,
+                  "end": 2000
+                },
+                {
+                  "start": 2000,
+                  "end": 3500
+                },
+                {
+                  "start": 3500,
+                  "end": 5000
+                },
                 {
                   "start": 5000,
                   "end": 7500
@@ -9736,31 +9752,18 @@
           "filters": []
         }
       ],
-      "overrides": [],
-      "overrides_formatted": [
+      "overrides": [
         {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show Notifications",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_ugc_notifications"
-              ]
-            }
+          "treatment": "Treatment 1: Show Notifications",
+          "bucket": 1,
+          "ids": [
+            "1096485049760759972",
+            "1096492110254964809",
+            "705666251560583168"
           ]
         }
-      ]
+      ],
+      "overrides_formatted": []
     },
     "hash": 631733804,
     "creationDate": 1683492185,
@@ -11278,7 +11281,7 @@
       "enabled": false
     },
     "rollout": {
-      "revision": 0,
+      "revision": 1,
       "populations": [
         {
           "position": [
@@ -11616,7 +11619,8 @@
           "ids": [
             "816784679717044276",
             "874345844743213126",
-            "1102668852392902708"
+            "840296607785287763",
+            "1113529666989469708"
           ]
         }
       ],
@@ -15513,15 +15517,7 @@
               ]
             }
           ],
-          "filters": [
-            {
-              "type": "member_count",
-              "range": {
-                "start": 0,
-                "end": 200
-              }
-            }
-          ]
+          "filters": []
         }
       ],
       "overrides": [
