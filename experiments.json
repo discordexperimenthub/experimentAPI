@@ -11873,69 +11873,6 @@
     ]
   },
   {
-    "id": "2023-05_premium_promo_removal",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users will not see the premium promo nagbar",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_premium_promo_removal"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3351255926,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Premium Promo Removal Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: Users will not see the premium promo nagbar"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-05_safety_user_sentiment",
     "defaultConfig": {
       "enabled": false
