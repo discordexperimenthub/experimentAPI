@@ -1827,6 +1827,69 @@
     ]
   },
   {
+    "id": "2023-05_optional_onboarding_home_admin",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Optional",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_optional_onboarding_home_admin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 695300504,
+    "creationDate": 1683492185,
+    "type": "guild",
+    "title": "[ADMIN] Make server guide optional",
+    "description": [
+      "Control",
+      "Treatment 1: Optional"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_onboarding_home",
     "defaultConfig": {
       "showOnboardingHome": false,
@@ -1897,12 +1960,7 @@
   {
     "id": "2023-06_mobile_redesign_curry_existing_users",
     "defaultConfig": {
-      "showRedesign": false,
-      "combineGuildsAndMessages": false,
-      "appNavbarAlwaysVisible": false,
-      "keepLastChannel": false,
-      "recentChannels": false,
-      "launchIntoLastChannel": false
+      "enabled": false
     },
     "rollout": {
       "revision": 0,
@@ -1975,12 +2033,7 @@
   {
     "id": "2023-06_mobile_redesign_curry_new_users",
     "defaultConfig": {
-      "showRedesign": false,
-      "combineGuildsAndMessages": false,
-      "appNavbarAlwaysVisible": false,
-      "keepLastChannel": false,
-      "recentChannels": false,
-      "launchIntoLastChannel": false
+      "enabled": false
     },
     "rollout": {
       "revision": 0,
