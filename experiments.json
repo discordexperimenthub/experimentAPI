@@ -15003,7 +15003,7 @@
   {
     "id": "2023-04_broadcasting",
     "defaultConfig": {
-      "enabled": false
+      "isBroadcastingEnabled": false
     },
     "rollout": {
       "revision": 0,
