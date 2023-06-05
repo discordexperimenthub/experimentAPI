@@ -7071,6 +7071,75 @@
     ]
   },
   {
+    "id": "2023-05_collectibles",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Nitro with collecting",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_collectibles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2455278797,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Collectibles",
+    "description": [
+      "Control",
+      "Treatment 1: Nitro with collecting",
+      "Treatment 2: Non-nitro with collecting upsells",
+      "Treatment 3: Non-nitro with temporary avatar decorations upsells",
+      "Treatment 100: collecting with uploading"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      100
+    ]
+  },
+  {
     "id": "2023-05_avatar_decorations",
     "defaultConfig": {
       "canUseAvatarDecorations": false,
@@ -8234,75 +8303,6 @@
     "buckets": [
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-05_collectibles",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Nitro with collecting",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_collectibles"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2455278797,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Collectibles",
-    "description": [
-      "Control",
-      "Treatment 1: Nitro with collecting",
-      "Treatment 2: Non-nitro with collecting upsells",
-      "Treatment 3: Non-nitro with temporary avatar decorations upsells",
-      "Treatment 100: collecting with uploading"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3,
-      100
     ]
   },
   {
