@@ -10714,7 +10714,7 @@
   {
     "id": "2022-08_message_todos_staff_only",
     "defaultConfig": {
-      "showTODOs": false
+      "showReminders": false
     },
     "rollout": {
       "revision": 0,
