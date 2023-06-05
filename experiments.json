@@ -14993,7 +14993,8 @@
   {
     "id": "2023-04_broadcasting",
     "defaultConfig": {
-      "isBroadcastingEnabled": false
+      "canBroadcast": false,
+      "canViewBroadcasts": false
     },
     "rollout": {
       "revision": 0,
@@ -15046,11 +15047,13 @@
     "title": "Go Live Broadcasting",
     "description": [
       "Control",
-      "Treatment 1: Allow user to Broadcast to friends & guilds"
+      "Treatment 1: Allow user to Broadcast to friends & guilds",
+      "Treatment 2: Cannot broadcast, cannot view broadcasts"
     ],
     "buckets": [
       0,
-      1
+      1,
+      2
     ]
   },
   {
