@@ -6044,69 +6044,6 @@
     ]
   },
   {
-    "id": "2023-01_mfa_v2",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-01_mfa_v2"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3622145244,
-    "creationDate": 1673124185,
-    "type": "user",
-    "title": "New MFA",
-    "description": [
-      "Control",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2021-11_member_verification_manual_approval",
     "defaultConfig": {
       "enabled": false
