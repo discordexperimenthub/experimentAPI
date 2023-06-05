@@ -15676,6 +15676,69 @@
     ]
   },
   {
+    "id": "2023-05_clyde_ai_guild_personality",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable personality setting",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_clyde_ai_guild_personality"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2701598838,
+    "creationDate": 1683492185,
+    "type": "guild",
+    "title": "Modify Clyde's Personality",
+    "description": [
+      "Control",
+      "Treatment 1: enable personality setting"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-06_community_admin_server",
     "defaultConfig": {
       "enabled": false
