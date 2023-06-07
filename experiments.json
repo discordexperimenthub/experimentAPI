@@ -7692,6 +7692,69 @@
     ]
   },
   {
+    "id": "2023-05_inventory_guild_packs",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_inventory_guild_packs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1473329304,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Invenotry Guild Packs Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_p13n_summarization",
     "defaultConfig": {
       "enabled": false
