@@ -3194,6 +3194,69 @@
     ]
   },
   {
+    "id": "2023-04_day_0_nux",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_day_0_nux"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3498213737,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Mobile Redesign Day 0 NUX",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-09_remote_audio_settings",
     "defaultConfig": {
       "enabled": false
