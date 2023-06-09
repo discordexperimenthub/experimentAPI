@@ -4623,6 +4623,69 @@
     ]
   },
   {
+    "id": "2023-06_no_dcs_in_overlay",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Remove DCs",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_no_dcs_in_overlay"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2016786830,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "No DCs in Overlay",
+    "description": [
+      "Control",
+      "Treatment 1: Remove DCs"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-04_network_action_logging",
     "defaultConfig": {
       "enabled": false
