@@ -9201,132 +9201,6 @@
     ]
   },
   {
-    "id": "2022-08_back_to_school",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Back to School experience enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-08_back_to_school"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2676348506,
-    "creationDate": 1659904985,
-    "type": "user",
-    "title": "Back to School Event",
-    "description": [
-      "Control",
-      "Treatment 1: Back to School experience enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_soundboard_nitro",
-    "defaultConfig": {
-      "isPremiumFeature": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Include Soundboard as a Nitro feature",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_soundboard_nitro"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 325693975,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Soundboard Nitro",
-    "description": [
-      "Control",
-      "Treatment 1: Include Soundboard as a Nitro feature"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-04_fast_new_channels",
     "defaultConfig": {
       "enabled": false
@@ -9522,6 +9396,132 @@
     "description": [
       "Control",
       "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-08_back_to_school",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Back to School experience enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-08_back_to_school"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2676348506,
+    "creationDate": 1659904985,
+    "type": "user",
+    "title": "Back to School Event",
+    "description": [
+      "Control",
+      "Treatment 1: Back to School experience enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_soundboard_nitro",
+    "defaultConfig": {
+      "isPremiumFeature": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Include Soundboard as a Nitro feature",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_soundboard_nitro"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 325693975,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Soundboard Nitro",
+    "description": [
+      "Control",
+      "Treatment 1: Include Soundboard as a Nitro feature"
     ],
     "buckets": [
       0,
