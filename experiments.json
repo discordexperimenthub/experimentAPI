@@ -2615,6 +2615,69 @@
     ]
   },
   {
+    "id": "2023-03_trial_redemption_default_to_monthly_plan",
+    "defaultConfig": {
+      "defaultToMonthlyPlan": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Set default plan to monthly plan",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_trial_redemption_default_to_monthly_plan"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1656308555,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Trial Redemption Default To Monthly Plan",
+    "description": [
+      "Control",
+      "Treatment 1: Set default plan to monthly plan"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-05_overlay_hook_crash_detection",
     "defaultConfig": {
       "enabled": false
