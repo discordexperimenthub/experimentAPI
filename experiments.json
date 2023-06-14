@@ -3852,6 +3852,69 @@
     ]
   },
   {
+    "id": "2023-06_burst_reaction_entry_point_ordering",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Regular Reaction Prioritized",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_burst_reaction_entry_point_ordering"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2413236121,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Burst Reaction Entry Point Ordering",
+    "description": [
+      "Control",
+      "Treatment 1: Regular Reaction Prioritized"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_mobile_burst_reactions",
     "defaultConfig": {
       "enabled": false
@@ -8071,6 +8134,69 @@
     "description": [
       "Control",
       "Treatment 1: Enable channel summaries"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-06_p13n_summarization_mobile_ux",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable mobile UX for channel summaries",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_p13n_summarization_mobile_ux"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3780014786,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Channel Summaries UX on Mobile Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enable mobile UX for channel summaries"
     ],
     "buckets": [
       0,
