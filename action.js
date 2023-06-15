@@ -484,6 +484,9 @@ async function collect() {
     const experimentRollout = rolloutRegistry.find(
       (rollout) => rollout.id === experimentIdentifier
     );
+
+    experimentRollout.populations = [];
+
     experimentRollout.buckets.forEach((bucket) => {
       const eligibilityAverage = selectedAverages.filter(
         (experiment) => experiment.bucket === bucket
@@ -495,7 +498,11 @@ async function collect() {
       const eligibilityPercentage =
         Math.round(eligibilityPercentageRaw / 5) * 5;
 
-      experimentRollout.rollout.populations.filter(p => p.position.find(po => po.bucket === bucket)).forEach(p => p.position.find(po => po.bucket === bucket).rollouts = eligibilityPercentage)
+      experimentRollout.populations.push({
+        treatment: experimentRollout.description[bucket],
+        bucket: bucket,
+        rollout: eligibilityPercentage
+      })
 
       console.log(
         `[*] experiment ${experimentIdentifier} - rollout percentage for bucket ${bucket} (${experimentRollout.description[bucket]}): ${eligibilityPercentage}%`
