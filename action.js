@@ -6,6 +6,7 @@ import murmurhash from "murmurhash";
 import puppeteer from "puppeteer-extra";
 import fs from "fs";
 import wait from "delay";
+import config from "./config.js";
 
 import client from 'cloudflare-scraper';
 
@@ -153,7 +154,7 @@ const mapRollout = (experiment) => {
               {
                 treatment:
                   experiment.description[
-                    experiment.buckets.indexOf(override[0][0][0])
+                  experiment.buckets.indexOf(override[0][0][0])
                   ] || "None",
                 bucket: override[0][0][0],
                 rollouts: override[0][0][1].map((rollout) => {
@@ -391,7 +392,7 @@ async function collect() {
   await collect();
 
   let tempExperiments = [];
-  
+
   for (let [key, value] of Object.entries(experiments)) {
     tempExperiments.push({
       id: key,
@@ -406,19 +407,108 @@ async function collect() {
       ...value,
     });
   }
-  
+
   const experimentsWithRollouts = tempExperiments.map((experim) => {
     let newExperiment = experim;
     newExperiment.rollout = mapRollout(newExperiment);
     return newExperiment;
   });
-  
-  console.log(JSON.stringify(experimentsWithRollouts, null, 2));
-  
+
+  //console.log(JSON.stringify(experimentsWithRollouts, null, 2));
+
+  console.log('user experiments')
+
+  const response = await axios.get(
+    config.EXPERIMENT_REGISTRY_URL
+  );
+
+  const rolloutRegistry = response.data;
+
+  const userExperimentAverages = [];
+
+  const rolloutRange = config.DEBUG ? config.DEBUG_EXPERIMENT_ROLLOUT_RANGE : config.EXPERIMENT_ROLLOUT_RANGE;
+
+  for (let i = 0; i < rolloutRange; i++) {
+    try {
+      await new Promise((r) => setTimeout(r, 500));
+
+      const response = await axios.get(
+        config.EXPERIMENT_ROLLOUT_URL
+      );
+
+      const rolloutList = response.data;
+
+      const userExperiments = rolloutList.assignments.map(
+        (assignment) => {
+          return {
+            id: rolloutRegistry.find((exp) => exp.hash === assignment[0])?.id,
+            hash: assignment[0],
+            revision: assignment[1],
+            bucket: assignment[2],
+            override: assignment[3],
+            population: assignment[4],
+            hash_result: assignment[5],
+          };
+        }
+      );
+
+      userExperimentAverages.push(userExperiments);
+
+      if (config.DEBUG) {
+        console.log(`[!] run ${i + 1}/${rolloutRange}`);
+      }
+    } catch (error) {
+      console.log(`[!] oh no!\n${error}\n`);
+    }
+  }
+
+  console.log(' ');
+
+  const uniqueExperimentIdentifiers = [
+    ...new Set(
+      userExperimentAverages
+        .flat()
+        .map((experiment) => experiment.id)
+        .filter((result) => result)
+    ),
+  ];
+
+  const userExperimentsReal = [];
+
+  for (const experimentIdentifier of uniqueExperimentIdentifiers) {
+    const selectedAverages = userExperimentAverages
+      .flat()
+      .filter(
+        (experiment) => experiment.id === experimentIdentifier
+      );
+    const experimentRollout = rolloutRegistry.find(
+      (rollout) => rollout.id === experimentIdentifier
+    );
+    experimentRollout.buckets.forEach((bucket) => {
+      const eligibilityAverage = selectedAverages.filter(
+        (experiment) => experiment.bucket === bucket
+      );
+
+      const eligibilityPercentageRaw =
+        (eligibilityAverage.length / rolloutRange) * 100;
+
+      const eligibilityPercentage =
+        Math.round(eligibilityPercentageRaw / 5) * 5;
+
+      console.log(
+        `[*] experiment ${experimentIdentifier} - rollout percentage for bucket ${bucket} (${experimentRollout.description[bucket]}): ${eligibilityPercentage}%`
+      );
+    });
+
+    userExperimentsReal.push(experimentRollout);
+
+    console.log(' ');
+  }
+
   fs.writeFileSync(
     "./experiments.json",
-    JSON.stringify(experimentsWithRollouts, null, 2)
+    JSON.stringify(experimentsWithRollouts.filter(e => e.type !== 'user').concat(userExperimentsReal), null, 2)
   );
-  
+
   process.exit(0);
 })()
