@@ -495,6 +495,8 @@ async function collect() {
       const eligibilityPercentage =
         Math.round(eligibilityPercentageRaw / 5) * 5;
 
+      experimentRollout.rollout.populations.filter(p => p.position.find(po => po.bucket === bucket)).forEach(p => p.position.find(po => po.bucket === bucket).rollouts = eligibilityPercentage)
+
       console.log(
         `[*] experiment ${experimentIdentifier} - rollout percentage for bucket ${bucket} (${experimentRollout.description[bucket]}): ${eligibilityPercentage}%`
       );
