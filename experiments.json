@@ -5645,76 +5645,6 @@
     ]
   },
   {
-    "id": "2021-03_expiration_notice_mobile_web",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "treatment": "Control",
-          "bucket": 0,
-          "rollout": 5
-        },
-        {
-          "treatment": "Treatment 1: Show expiration notice",
-          "bucket": 1,
-          "rollout": 5
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show expiration notice",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-03_expiration_notice_mobile_web"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3623906145,
-    "creationDate": 1615149785,
-    "type": "user",
-    "title": "Show expiration notice on mobile web invite",
-    "description": [
-      "Control",
-      "Treatment 1: Show expiration notice"
-    ],
-    "buckets": [
-      0,
-      1
-    ],
-    "populations": [
-      {
-        "treatment": "Control",
-        "bucket": 0,
-        "rollout": 5
-      },
-      {
-        "treatment": "Treatment 1: Show expiration notice",
-        "bucket": 1,
-        "rollout": 5
-      }
-    ]
-  },
-  {
     "id": "2021-04_impression_logging",
     "defaultConfig": {
       "enabled": false
@@ -6085,6 +6015,76 @@
         "treatment": "Treatment 3: Overflow",
         "bucket": 3,
         "rollout": 65
+      }
+    ]
+  },
+  {
+    "id": "2022-01_pronouns",
+    "defaultConfig": {
+      "showPronouns": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Show Pronouns",
+          "bucket": 1,
+          "rollout": 70
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show Pronouns",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-01_pronouns"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1176769702,
+    "creationDate": 1641588185,
+    "type": "user",
+    "title": "Pronouns in Profile",
+    "description": [
+      "Control",
+      "Treatment 1: Show Pronouns"
+    ],
+    "buckets": [
+      0,
+      1
+    ],
+    "populations": [
+      {
+        "treatment": "Control",
+        "bucket": 0,
+        "rollout": 0
+      },
+      {
+        "treatment": "Treatment 1: Show Pronouns",
+        "bucket": 1,
+        "rollout": 70
       }
     ]
   },
@@ -8611,9 +8611,9 @@
     ]
   },
   {
-    "id": "2022-01_pronouns",
+    "id": "2021-03_expiration_notice_mobile_web",
     "defaultConfig": {
-      "showPronouns": false
+      "enabled": false
     },
     "rollout": {
       "revision": 0,
@@ -8621,12 +8621,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 0
+          "rollout": 5
         },
         {
-          "treatment": "Treatment 1: Show Pronouns",
+          "treatment": "Treatment 1: Show expiration notice",
           "bucket": 1,
-          "rollout": 70
+          "rollout": 5
         }
       ],
       "overrides": [],
@@ -8634,7 +8634,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show Pronouns",
+              "treatment": "Treatment 1: Show expiration notice",
               "bucket": 1,
               "rollouts": [
                 {
@@ -8648,20 +8648,20 @@
             {
               "type": "build_override",
               "experiments": [
-                "2022-01_pronouns"
+                "2021-03_expiration_notice_mobile_web"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 1176769702,
-    "creationDate": 1641588185,
+    "hash": 3623906145,
+    "creationDate": 1615149785,
     "type": "user",
-    "title": "Pronouns in Profile",
+    "title": "Show expiration notice on mobile web invite",
     "description": [
       "Control",
-      "Treatment 1: Show Pronouns"
+      "Treatment 1: Show expiration notice"
     ],
     "buckets": [
       0,
@@ -8671,12 +8671,12 @@
       {
         "treatment": "Control",
         "bucket": 0,
-        "rollout": 0
+        "rollout": 5
       },
       {
-        "treatment": "Treatment 1: Show Pronouns",
+        "treatment": "Treatment 1: Show expiration notice",
         "bucket": 1,
-        "rollout": 70
+        "rollout": 5
       }
     ]
   },
