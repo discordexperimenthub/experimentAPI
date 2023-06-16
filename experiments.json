@@ -6034,7 +6034,7 @@
         {
           "treatment": "Treatment 1: Show Pronouns",
           "bucket": 1,
-          "rollout": 70
+          "rollout": 65
         }
       ],
       "overrides": [],
@@ -8533,7 +8533,7 @@
         {
           "treatment": "Treatment 1: Show expiration notice",
           "bucket": 1,
-          "rollout": 0
+          "rollout": 5
         }
       ],
       "overrides": [],
