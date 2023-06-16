@@ -4231,57 +4231,6 @@
     ]
   },
   {
-    "id": "2023-02_voice_channel_statuses",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-          "bucket": 1,
-          "ids": [
-            "890883112500854804",
-            "887867262839705651"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 2809294122,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Voice Channel Status Guild Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-      "Treatment 2: A/A test, identical to treatment 1"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
     "id": "2023-02_onboardingdropdowns",
     "defaultConfig": {
       "enabled": false
@@ -4640,6 +4589,57 @@
     "buckets": [
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-02_voice_channel_statuses",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+          "bucket": 1,
+          "ids": [
+            "890883112500854804",
+            "887867262839705651"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 2809294122,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "Voice Channel Status Guild Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+      "Treatment 2: A/A test, identical to treatment 1"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
     ]
   },
   {
