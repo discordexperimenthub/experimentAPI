@@ -5935,7 +5935,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 25
+          "rollout": 20
         },
         {
           "treatment": "Treatment 1: Show Home Tab",
@@ -6321,12 +6321,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 50
+          "rollout": 45
         },
         {
           "treatment": "Treatment 1: Yes button",
           "bucket": 1,
-          "rollout": 50
+          "rollout": 55
         }
       ],
       "overrides": [],
@@ -8584,76 +8584,6 @@
         "treatment": "Treatment 1: Show expiration notice",
         "bucket": 1,
         "rollout": 5
-      }
-    ]
-  },
-  {
-    "id": "2023-05_safety_user_sentiment",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "treatment": "Control",
-          "bucket": 0,
-          "rollout": 0
-        },
-        {
-          "treatment": "Treatment 1: Eligible",
-          "bucket": 1,
-          "rollout": 0
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Eligible",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_safety_user_sentiment"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1344378364,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Safety User Sentiment Feedback Eligible",
-    "description": [
-      "Control",
-      "Treatment 1: Eligible"
-    ],
-    "buckets": [
-      0,
-      1
-    ],
-    "populations": [
-      {
-        "treatment": "Control",
-        "bucket": 0,
-        "rollout": 0
-      },
-      {
-        "treatment": "Treatment 1: Eligible",
-        "bucket": 1,
-        "rollout": 0
       }
     ]
   }
