@@ -5935,7 +5935,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 15
+          "rollout": 20
         },
         {
           "treatment": "Treatment 1: Show Home Tab",
@@ -6015,76 +6015,6 @@
         "treatment": "Treatment 3: Overflow",
         "bucket": 3,
         "rollout": 65
-      }
-    ]
-  },
-  {
-    "id": "2022-01_pronouns",
-    "defaultConfig": {
-      "showPronouns": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "treatment": "Control",
-          "bucket": 0,
-          "rollout": 0
-        },
-        {
-          "treatment": "Treatment 1: Show Pronouns",
-          "bucket": 1,
-          "rollout": 65
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show Pronouns",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-01_pronouns"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1176769702,
-    "creationDate": 1641588185,
-    "type": "user",
-    "title": "Pronouns in Profile",
-    "description": [
-      "Control",
-      "Treatment 1: Show Pronouns"
-    ],
-    "buckets": [
-      0,
-      1
-    ],
-    "populations": [
-      {
-        "treatment": "Control",
-        "bucket": 0,
-        "rollout": 0
-      },
-      {
-        "treatment": "Treatment 1: Show Pronouns",
-        "bucket": 1,
-        "rollout": 70
       }
     ]
   },
@@ -6321,12 +6251,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 55
+          "rollout": 45
         },
         {
           "treatment": "Treatment 1: Yes button",
           "bucket": 1,
-          "rollout": 45
+          "rollout": 55
         }
       ],
       "overrides": [],
@@ -8528,7 +8458,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 0
+          "rollout": 5
         },
         {
           "treatment": "Treatment 1: Show expiration notice",
@@ -8584,6 +8514,76 @@
         "treatment": "Treatment 1: Show expiration notice",
         "bucket": 1,
         "rollout": 5
+      }
+    ]
+  },
+  {
+    "id": "2022-01_pronouns",
+    "defaultConfig": {
+      "showPronouns": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Show Pronouns",
+          "bucket": 1,
+          "rollout": 70
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show Pronouns",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-01_pronouns"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1176769702,
+    "creationDate": 1641588185,
+    "type": "user",
+    "title": "Pronouns in Profile",
+    "description": [
+      "Control",
+      "Treatment 1: Show Pronouns"
+    ],
+    "buckets": [
+      0,
+      1
+    ],
+    "populations": [
+      {
+        "treatment": "Control",
+        "bucket": 0,
+        "rollout": 0
+      },
+      {
+        "treatment": "Treatment 1: Show Pronouns",
+        "bucket": 1,
+        "rollout": 70
       }
     ]
   }
