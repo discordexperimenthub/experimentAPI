@@ -6034,7 +6034,7 @@
         {
           "treatment": "Treatment 1: Show Pronouns",
           "bucket": 1,
-          "rollout": 75
+          "rollout": 70
         }
       ],
       "overrides": [],
@@ -8178,12 +8178,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 45
+          "rollout": 50
         },
         {
           "treatment": "Treatment 1: On",
           "bucket": 1,
-          "rollout": 55
+          "rollout": 50
         }
       ],
       "overrides": [],
