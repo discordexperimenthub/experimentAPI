@@ -8178,12 +8178,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 50
+          "rollout": 55
         },
         {
           "treatment": "Treatment 1: On",
           "bucket": 1,
-          "rollout": 50
+          "rollout": 45
         }
       ],
       "overrides": [],
