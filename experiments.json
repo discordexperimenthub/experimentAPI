@@ -8528,7 +8528,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 0
+          "rollout": 5
         },
         {
           "treatment": "Treatment 1: Show expiration notice",
