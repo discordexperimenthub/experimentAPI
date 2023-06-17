@@ -8178,7 +8178,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 55
+          "rollout": 50
         },
         {
           "treatment": "Treatment 1: On",
