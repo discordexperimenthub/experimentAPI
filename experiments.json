@@ -5950,7 +5950,7 @@
         {
           "treatment": "Treatment 3: Overflow",
           "bucket": 3,
-          "rollout": 65
+          "rollout": 60
         }
       ],
       "overrides": [],
@@ -8528,7 +8528,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 5
+          "rollout": 0
         },
         {
           "treatment": "Treatment 1: Show expiration notice",
