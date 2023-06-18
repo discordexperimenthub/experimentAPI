@@ -63,43 +63,17 @@ jobs:
 
     - name: Calculate (1)
       run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (2)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (3)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (4)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (5)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (6)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (7)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (8)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (9)
-      run: |
-        node rollout-calculation.js
-      
-    - name: Calculate (10)
-      run: |
-        node rollout-calculation.js
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        node rollout-calculation.js &
+        wait
 
   update:
     needs: [experiments, user-experiment-rollouts]

@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from 'fs';
+import axios from 'axios';
 
 (async () => {
     console.log('Loading data...');
@@ -48,7 +49,7 @@ import { readFileSync, writeFileSync } from 'fs';
 
     console.log('Uploading data...');
 
-    const before = await fetch('https://raw.githubusercontent.com/discordexperimenthub/experimentAPI/master/experiments.json').then(res => res.json());
+    const before = await axios.get('https://raw.githubusercontent.com/discordexperimenthub/experimentAPI/master/experiments.json').then(res => res.data);
 
     for (let [id, buckets] of Object.entries(averageRollouts)) {
         const data = experiments.filter(experiment => experiment.id === id)[0];

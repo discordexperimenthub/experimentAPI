@@ -1,4 +1,5 @@
 import { readFileSync, writeFileSync } from 'node:fs';
+import axios from 'axios';
 
 (async () => {
     const numRequests = 10000;
@@ -9,8 +10,8 @@ import { readFileSync, writeFileSync } from 'node:fs';
         let ranges = {};
 
         for (let i = 0; i < numRequests; i++) {
-            const allExperimentsResponse = await fetch(apiUrl);
-            const allExperiments = (await allExperimentsResponse.json()).assignments;
+            const allExperimentsResponse = await axios.get(apiUrl).then(res => res.data);
+            const allExperiments = allExperimentsResponse.assignments;
 
             for (let assignment of allExperiments) {
                 let experiment = {
