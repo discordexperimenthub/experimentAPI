@@ -5935,7 +5935,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 25
+          "rollout": 20
         },
         {
           "treatment": "Treatment 1: Show Home Tab",
@@ -6321,12 +6321,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 50
+          "rollout": 55
         },
         {
           "treatment": "Treatment 1: Yes button",
           "bucket": 1,
-          "rollout": 50
+          "rollout": 45
         }
       ],
       "overrides": [],
@@ -8178,12 +8178,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 55
+          "rollout": 50
         },
         {
           "treatment": "Treatment 1: On",
           "bucket": 1,
-          "rollout": 45
+          "rollout": 50
         }
       ],
       "overrides": [],
