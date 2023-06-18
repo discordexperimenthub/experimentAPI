@@ -6321,12 +6321,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 50
+          "rollout": 45
         },
         {
           "treatment": "Treatment 1: Yes button",
           "bucket": 1,
-          "rollout": 50
+          "rollout": 55
         }
       ],
       "overrides": [],
@@ -8528,7 +8528,7 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 0
+          "rollout": 5
         },
         {
           "treatment": "Treatment 1: Show expiration notice",
