@@ -24,16 +24,13 @@ jobs:
         node-version: [16.x]
 
     steps:
-    # Check out repository under $GITHUB_WORKSPACE, so the job can access it
     - uses: actions/checkout@v3
 
-    # Set up node.js
     - name: Set up Node.JS
       uses: actions/setup-node@v2
       with:
         node-version: '16'
 
-    # Install dependencies
     - name: Install dependencies
       run: |
         sudo apt-get install xvfb
@@ -44,6 +41,7 @@ jobs:
         node action.js
 
   user-experiment-rollouts:
+    needs: experiments
     runs-on: ubuntu-latest
 
     strategy:
@@ -51,6 +49,18 @@ jobs:
         node-version: [16.x]
 
     steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Node.JS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get install xvfb
+        npm install
+
     - name: Calculate (1)
       run: |
         node rollout-calculation.js
@@ -92,6 +102,7 @@ jobs:
         node rollout-calculation.js
 
   update:
+    needs: [experiments, user-experiment-rollouts]
     runs-on: ubuntu-latest
 
     strategy:
@@ -99,11 +110,24 @@ jobs:
         node-version: [16.x]
 
     steps:
+    - uses: actions/checkout@v3
+
+    - name: Set up Node.JS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get install xvfb
+        npm install
+
     - name: Update user experiments
       run: |
         node average-rollouts.js
 
   deploy:
+    needs: [experiments, user-experiment-rollouts, update]
     runs-on: ubuntu-latest
 
     strategy:
@@ -111,7 +135,18 @@ jobs:
         node-version: [16.x]
 
     steps:
-    # Commit all changed files to the repository
+    - uses: actions/checkout@v3
+
+    - name: Set up Node.JS
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'
+
+    - name: Install dependencies
+      run: |
+        sudo apt-get install xvfb
+        npm install
+
     - name: Commit to the repo
       run: |
         git config --global user.name "github-actions[bot]"
