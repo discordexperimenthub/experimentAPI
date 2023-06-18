@@ -61,7 +61,7 @@ jobs:
         sudo apt-get install xvfb
         npm install
 
-    - name: Calculate (1)
+    - name: Calculate
       run: |
         node rollout-calculation.js &
         node rollout-calculation.js &
