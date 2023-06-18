@@ -5940,7 +5940,7 @@
         {
           "treatment": "Treatment 1: Show Home Tab",
           "bucket": 1,
-          "rollout": 20
+          "rollout": 25
         },
         {
           "treatment": "Treatment 2: Force on",
@@ -5950,7 +5950,7 @@
         {
           "treatment": "Treatment 3: Overflow",
           "bucket": 3,
-          "rollout": 60
+          "rollout": 55
         }
       ],
       "overrides": [],
@@ -8528,12 +8528,12 @@
         {
           "treatment": "Control",
           "bucket": 0,
-          "rollout": 0
+          "rollout": 5
         },
         {
           "treatment": "Treatment 1: Show expiration notice",
           "bucket": 1,
-          "rollout": 0
+          "rollout": 5
         }
       ],
       "overrides": [],
