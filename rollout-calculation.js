@@ -1,5 +1,6 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import axios from 'axios';
+import wait from "delay";
 
 (async () => {
     const numRequests = 10000;
@@ -36,6 +37,8 @@ import axios from 'axios';
             };
 
             console.log(`Collected ${i + 1} of ${numRequests} data`);
+
+            await wait(700);
         };
 
         console.log('Calculating ranges...');
