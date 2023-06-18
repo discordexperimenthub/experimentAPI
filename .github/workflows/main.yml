@@ -1,19 +1,19 @@
 # This workflow will do a clean installation of node dependencies, cache/restore them, build the source code and run tests across different versions of node
 # For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-nodejs
 
-name: Experiments
+name: Update Experiments
 
 on:
   push:
     branches: [ master ]
   schedule:
-    - cron: "*/60 * * * *"
+    - cron: "0 * * * *"
     
 permissions:
   contents: write
 
 jobs:
-  build:
+  experiments:
     runs-on: ubuntu-latest
     env:
       DISCORD_TOKEN: ${{ secrets.DISCORD_TOKEN }}
@@ -38,12 +38,79 @@ jobs:
       run: |
         sudo apt-get install xvfb
         npm install
-
-    # Generate a smaller USRBG json
-    - name: Fetch Experiments
+    
+    - name: Fetch experiments
       run: |
-        npm run build
+        node action.js
 
+  user-experiment-rollouts:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - name: Calculate (1)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (2)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (3)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (4)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (5)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (6)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (7)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (8)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (9)
+      run: |
+        node rollout-calculation.js
+      
+    - name: Calculate (10)
+      run: |
+        node rollout-calculation.js
+
+  update:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
+    - name: Update user experiments
+      run: |
+        node average-rollouts.js
+
+  deploy:
+    runs-on: ubuntu-latest
+
+    strategy:
+      matrix:
+        node-version: [16.x]
+
+    steps:
     # Commit all changed files to the repository
     - name: Commit to the repo
       run: |
