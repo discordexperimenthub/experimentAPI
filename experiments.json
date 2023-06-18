@@ -4231,57 +4231,6 @@
     ]
   },
   {
-    "id": "2023-02_voice_channel_statuses",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-          "bucket": 1,
-          "ids": [
-            "890883112500854804",
-            "887867262839705651"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 2809294122,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Voice Channel Status Guild Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-      "Treatment 2: A/A test, identical to treatment 1"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
     "id": "2023-02_onboardingdropdowns",
     "defaultConfig": {
       "enabled": false
@@ -4640,6 +4589,57 @@
     "buckets": [
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-02_voice_channel_statuses",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+          "bucket": 1,
+          "ids": [
+            "890883112500854804",
+            "887867262839705651"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 2809294122,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "Voice Channel Status Guild Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+      "Treatment 2: A/A test, identical to treatment 1"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
     ]
   },
   {
@@ -5500,19 +5500,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "An experiment that tests if in-app reporting is useful for Trust & Safety",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Control: No changes",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -5576,19 +5571,19 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: gotta go fast",
+          "bucket": 1,
+          "rollout": 100
+        },
+        {
+          "treatment": "Treatment 2: 2fast 2furious",
+          "bucket": 2,
+          "rollout": 0
         }
       ],
       "overrides": [],
@@ -5658,19 +5653,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Log impressions",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -5733,19 +5723,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Log network actions",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -5808,19 +5793,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -5883,19 +5863,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enabled",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -5958,19 +5933,24 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 20
+        },
+        {
+          "treatment": "Treatment 1: Show Home Tab",
+          "bucket": 1,
+          "rollout": 20
+        },
+        {
+          "treatment": "Treatment 2: Force on",
+          "bucket": 2,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 3: Overflow",
+          "bucket": 3,
+          "rollout": 60
         }
       ],
       "overrides": [],
@@ -6047,19 +6027,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Show Pronouns",
+          "bucket": 1,
+          "rollout": 70
         }
       ],
       "overrides": [],
@@ -6122,19 +6097,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Check Payment Source",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6197,19 +6167,19 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable Account Profile Popout",
+          "bucket": 1,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 2: Enable Account Profile Popout w/ DiscordTag button",
+          "bucket": 2,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6279,19 +6249,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enables users to view Creator Monetization entrypoints",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6354,19 +6319,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 50
+        },
+        {
+          "treatment": "Treatment 1: Yes button",
+          "bucket": 1,
+          "rollout": 50
         }
       ],
       "overrides": [],
@@ -6429,19 +6389,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable native role subscription management for mobile",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6504,19 +6459,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Back to School experience enabled",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6579,19 +6529,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable mobile web role subscription upsell",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6654,19 +6599,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions quickly",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6729,19 +6669,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Read/write remote audio settings",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6804,19 +6739,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable notifications for multiple accounts",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6879,19 +6809,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable VC Activities Mini Shelf",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -6954,19 +6879,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enabled",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7029,19 +6949,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enabled",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7104,19 +7019,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enables users to see nag bar to activate server subscriptions",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7179,19 +7089,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: enabled",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7254,19 +7159,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Allow sending @silent messages",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7329,19 +7229,19 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 10
+        },
+        {
+          "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
+          "bucket": 1,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 2: Enable any number of users VC Tile Activities Entry Point",
+          "bucket": 2,
+          "rollout": 90
         }
       ],
       "overrides": [],
@@ -7411,19 +7311,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enabled",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7486,19 +7381,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: enable activities release tools",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7562,19 +7452,19 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 5
+        },
+        {
+          "treatment": "Treatment 1: Enable Birthday Activities",
+          "bucket": 1,
+          "rollout": 95
+        },
+        {
+          "treatment": "Treatment 2: Geo test Enable Birthday Activities but no share",
+          "bucket": 2,
+          "rollout": 0
         }
       ],
       "overrides": [],
@@ -7644,19 +7534,19 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Show improved message markdown",
+          "bucket": 1,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 2: Show improved message markdown WITHOUT masked links",
+          "bucket": 2,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7726,19 +7616,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable channel summaries",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7801,19 +7686,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: enabled",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7876,19 +7756,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enables Server Subscriptions IAP For User",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -7951,19 +7826,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable the Activity Launcher Embed in chat",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8026,19 +7896,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable Jamspace tile",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8101,19 +7966,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable Putt Party tile",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8176,19 +8036,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable GDM tile",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8251,19 +8106,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enables for users Guild Media Post Preview Embeds",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8326,19 +8176,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 50
+        },
+        {
+          "treatment": "Treatment 1: On",
+          "bucket": 1,
+          "rollout": 50
         }
       ],
       "overrides": [],
@@ -8401,19 +8246,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable tier templates for user",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8468,95 +8308,6 @@
     ]
   },
   {
-    "id": "2023-05_avatar_decorations",
-    "defaultConfig": {
-      "canUseAvatarDecorations": false,
-      "canUploadAvatarDecorations": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow use of avatar decorations nitro",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_avatar_decorations"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3542432067,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Avatar Decorations Birthday 2023",
-    "description": [
-      "Control",
-      "Treatment 1: Allow use of avatar decorations nitro",
-      "Treatment 2: Allow use of avatar decorations non-nitro",
-      "Treatment 100: Debug"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      100
-    ],
-    "populations": [
-      {
-        "treatment": "Control",
-        "bucket": 0,
-        "rollout": 0
-      },
-      {
-        "treatment": "Treatment 1: Allow use of avatar decorations nitro",
-        "bucket": 1,
-        "rollout": 100
-      },
-      {
-        "treatment": "Treatment 2: Allow use of avatar decorations non-nitro",
-        "bucket": 2,
-        "rollout": 0
-      },
-      {
-        "bucket": 100,
-        "rollout": 0
-      }
-    ]
-  },
-  {
     "id": "2023-05_birthday_activities_poker",
     "defaultConfig": {
       "enabled": false
@@ -8565,19 +8316,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Enable Poker tile",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8640,19 +8386,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: enable dms to clyde",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8715,19 +8456,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 0
+        },
+        {
+          "treatment": "Treatment 1: Users will see the birthday moment referral trial UX",
+          "bucket": 1,
+          "rollout": 100
         }
       ],
       "overrides": [],
@@ -8790,19 +8526,14 @@
       "revision": 0,
       "populations": [
         {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
+          "treatment": "Control",
+          "bucket": 0,
+          "rollout": 5
+        },
+        {
+          "treatment": "Treatment 1: Show expiration notice",
+          "bucket": 1,
+          "rollout": 5
         }
       ],
       "overrides": [],
@@ -8853,81 +8584,6 @@
         "treatment": "Treatment 1: Show expiration notice",
         "bucket": 1,
         "rollout": 5
-      }
-    ]
-  },
-  {
-    "id": "2023-05_safety_user_sentiment",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Eligible",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_safety_user_sentiment"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1344378364,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Safety User Sentiment Feedback Eligible",
-    "description": [
-      "Control",
-      "Treatment 1: Eligible"
-    ],
-    "buckets": [
-      0,
-      1
-    ],
-    "populations": [
-      {
-        "treatment": "Control",
-        "bucket": 0,
-        "rollout": 0
-      },
-      {
-        "treatment": "Treatment 1: Eligible",
-        "bucket": 1,
-        "rollout": 0
       }
     ]
   }
