@@ -25,10 +25,6 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    - uses: actions/upload-artifact@v2
-      with:
-        name: experiments
-        path: experiments.json
 
     - name: Set up Node.JS
       uses: actions/setup-node@v2
@@ -43,6 +39,11 @@ jobs:
     - name: Fetch experiments
       run: |
         node action.js
+    
+    - uses: actions/upload-artifact@v2
+      with:
+        name: experiments
+        path: experiments.json
 
   user-experiment-rollouts:
     needs: experiments
@@ -54,14 +55,11 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - uses: actions/download-artifact@v2
       with:
         name: experiments
         path: experiments.json
-    - uses: actions/upload-artifact@v2
-      with:
-        name: user-experiments
-        path: user-experiments.json
 
     - name: Set up Node.JS
       uses: actions/setup-node@v2
@@ -87,6 +85,11 @@ jobs:
         node rollout-calculation.js &
         wait
 
+    - uses: actions/upload-artifact@v2
+      with:
+        name: user-experiments
+        path: user-experiments.json
+
   update:
     needs: [experiments, user-experiment-rollouts]
     runs-on: ubuntu-latest
@@ -97,18 +100,16 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+
     - uses: actions/download-artifact@v2
       with:
         name: experiments
         path: experiments.json
+
     - uses: actions/download-artifact@v2
       with:
         name: user-experiments
         path: user-experiments.json
-    - uses: actions/upload-artifact@v2
-      with:
-        name: experiments
-        path: experiments.json
 
     - name: Set up Node.JS
       uses: actions/setup-node@v2
@@ -124,6 +125,11 @@ jobs:
       run: |
         node average-rollouts.js
 
+    - uses: actions/upload-artifact@v2
+      with:
+        name: experiments
+        path: experiments.json
+
   deploy:
     needs: [experiments, user-experiment-rollouts, update]
     runs-on: ubuntu-latest
@@ -134,6 +140,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
+    
     - uses: actions/download-artifact@v2
       with:
         name: experiments
