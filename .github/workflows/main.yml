@@ -56,6 +56,8 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - run: rm experiments.json
+
     - uses: actions/download-artifact@v2
       with:
         name: experiments
@@ -101,10 +103,14 @@ jobs:
     steps:
     - uses: actions/checkout@v3
 
+    - run: rm experiments.json
+
     - uses: actions/download-artifact@v2
       with:
         name: experiments
         path: experiments.json
+
+    - run: rm user-experiments.json
 
     - uses: actions/download-artifact@v2
       with:
@@ -140,7 +146,9 @@ jobs:
 
     steps:
     - uses: actions/checkout@v3
-    
+
+    - run: rm experiments.json
+
     - uses: actions/download-artifact@v2
       with:
         name: experiments
