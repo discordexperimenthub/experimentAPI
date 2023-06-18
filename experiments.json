@@ -8533,7 +8533,7 @@
         {
           "treatment": "Treatment 1: Show expiration notice",
           "bucket": 1,
-          "rollout": 0
+          "rollout": 5
         }
       ],
       "overrides": [],
