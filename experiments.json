@@ -8971,8 +8971,8 @@
               "bucket": 0,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 9587,
+                  "end": 9587
                 }
               ],
               "confirmed": false
@@ -12595,37 +12595,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Eligible",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 10000
                 }
-              ],
-              "confirmed": false
-            },
-            {
-              "treatment": "[No data found]",
-              "bucket": 0,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ],
-              "confirmed": false
-            },
-            {
-              "treatment": "Treatment 1: Eligible",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ],
-              "confirmed": false
+              ]
             }
           ],
           "filters": []
@@ -12640,11 +12617,10 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 500
                 }
-              ],
-              "confirmed": false
+              ]
             }
           ],
           "filters": [
@@ -16774,6 +16750,69 @@
     ]
   },
   {
+    "id": "2022-12_localized_pricing_promo_manager",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Localized Pricing Promo Manager",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_localized_pricing_promo_manager"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4215507151,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Localized Pricing Promo Manager",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Localized Pricing Promo Manager"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_guest_voice_invites",
     "defaultConfig": {
       "enabled": false
@@ -16860,69 +16899,6 @@
     "description": [
       "Control",
       "Treatment 1: Allow creation of guest voice invites"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_localized_pricing_promo_manager",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Localized Pricing Promo Manager",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_localized_pricing_promo_manager"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4215507151,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Localized Pricing Promo Manager",
-    "description": [
-      "Control",
-      "Treatment 1: Enable Localized Pricing Promo Manager"
     ],
     "buckets": [
       0,
