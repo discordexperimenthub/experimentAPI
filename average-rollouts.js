@@ -55,7 +55,14 @@ import axios from 'axios';
         const data = experiments.filter(experiment => experiment.id === id)[0];
 
         for (let [bucket, range] of Object.entries(buckets)) {
-            data.rollout.populations[0].position = data.rollout.populations[0].position.filter(position => !position.position && position.bucket !== -1).concat(data.rollout.overrides_formatted[0]?.position);
+            data.rollout.populations[0].position = data.rollout.populations[0].position.filter(position => !position.position && position.bucket !== -1).concat(data.rollout.overrides_formatted[0]?.position.map(p => {
+                p.rollouts[0] = {
+                    start: null,
+                    end: null
+                };
+
+                return p;
+            }));
 
             try {
                 data.rollout.populations[0].position.filter(position => position.bucket === parseInt(bucket))[0].rollouts[0] = range;
