@@ -43,7 +43,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: experiments
-        path: experiments.json
+        path: ./
 
   user-experiment-rollouts:
     needs: experiments
@@ -61,7 +61,6 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: experiments
-        path: experiments.json
 
     - name: Set up Node.JS
       uses: actions/setup-node@v2
@@ -90,7 +89,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: user-experiments
-        path: user-experiments.json
+        path: ./
 
   update:
     needs: [experiments, user-experiment-rollouts]
@@ -108,14 +107,12 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: experiments
-        path: experiments.json
 
     - run: rm user-experiments.json
 
     - uses: actions/download-artifact@v2
       with:
         name: user-experiments
-        path: user-experiments.json
 
     - name: Set up Node.JS
       uses: actions/setup-node@v2
@@ -134,7 +131,7 @@ jobs:
     - uses: actions/upload-artifact@v2
       with:
         name: experiments
-        path: experiments.json
+        path: ./
 
   deploy:
     needs: [experiments, user-experiment-rollouts, update]
@@ -152,7 +149,6 @@ jobs:
     - uses: actions/download-artifact@v2
       with:
         name: experiments
-        path: experiments.json
 
     - name: Set up Node.JS
       uses: actions/setup-node@v2
