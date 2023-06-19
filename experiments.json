@@ -1628,6 +1628,71 @@
     ]
   },
   {
+    "id": "2023-04_server_subscriptions_tier_templates_user",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable tier templates for user",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": null,
+                  "end": null
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable tier templates for user",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": null,
+                  "end": null
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_server_subscriptions_tier_templates_user"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4265918989,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Server Subscriptions Tier Templates",
+    "description": [
+      "Control",
+      "Treatment 1: Enable tier templates for user"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_self_demonetization",
     "defaultConfig": {
       "enabled": false
@@ -8971,8 +9036,8 @@
               "bucket": 0,
               "rollouts": [
                 {
-                  "start": 9587,
-                  "end": 9587
+                  "start": null,
+                  "end": null
                 }
               ],
               "confirmed": false
@@ -12578,69 +12643,6 @@
     "description": [
       "Control",
       "Treatment 1: enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_safety_user_sentiment",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Eligible",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_safety_user_sentiment"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1344378364,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Safety User Sentiment Feedback Eligible",
-    "description": [
-      "Control",
-      "Treatment 1: Eligible"
     ],
     "buckets": [
       0,
@@ -16750,69 +16752,6 @@
     ]
   },
   {
-    "id": "2022-12_localized_pricing_promo_manager",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Localized Pricing Promo Manager",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_localized_pricing_promo_manager"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4215507151,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Localized Pricing Promo Manager",
-    "description": [
-      "Control",
-      "Treatment 1: Enable Localized Pricing Promo Manager"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-02_guest_voice_invites",
     "defaultConfig": {
       "enabled": false
@@ -16906,7 +16845,7 @@
     ]
   },
   {
-    "id": "2023-04_server_subscriptions_tier_templates_user",
+    "id": "2022-12_localized_pricing_promo_manager",
     "defaultConfig": {
       "enabled": false
     },
@@ -16916,12 +16855,85 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable tier templates for user",
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Localized Pricing Promo Manager",
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_localized_pricing_promo_manager"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4215507151,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Localized Pricing Promo Manager",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Localized Pricing Promo Manager"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_safety_user_sentiment",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Eligible",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            },
+            {
+              "treatment": "[No data found]",
+              "bucket": 0,
+              "rollouts": [
+                {
+                  "start": 683,
+                  "end": 683
                 }
               ],
               "confirmed": false
@@ -16935,35 +16947,34 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable tier templates for user",
+              "treatment": "Treatment 1: Eligible",
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 500
                 }
-              ],
-              "confirmed": false
+              ]
             }
           ],
           "filters": [
             {
               "type": "build_override",
               "experiments": [
-                "2023-04_server_subscriptions_tier_templates_user"
+                "2023-05_safety_user_sentiment"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 4265918989,
-    "creationDate": 1680900185,
+    "hash": 1344378364,
+    "creationDate": 1683492185,
     "type": "user",
-    "title": "Server Subscriptions Tier Templates",
+    "title": "Safety User Sentiment Feedback Eligible",
     "description": [
       "Control",
-      "Treatment 1: Enable tier templates for user"
+      "Treatment 1: Eligible"
     ],
     "buckets": [
       0,
