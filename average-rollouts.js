@@ -39,7 +39,8 @@ import axios from 'axios';
         for (let [bucket, ranges] of Object.entries(buckets)) {
             let start = Math.min(ranges.map(range => range.start));
             let end = Math.max(ranges.map(range => range.end));
-console.log(ranges)
+console.log(ranges.map(range => range.start))
+console.log(Math.min(ranges.map(range => range.start)))
             averageRollouts[id][bucket] = {
                 start,
                 end
