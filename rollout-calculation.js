@@ -3,7 +3,7 @@ import axios from 'axios';
 import wait from "delay";
 
 (async () => {
-    const numRequests = 10;
+    const numRequests = 10000;
     const apiUrl = 'https://canary.discord.com/api/v10/experiments';
     const experiments = [];
 
