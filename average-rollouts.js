@@ -76,27 +76,9 @@ import axios from 'axios';
             };
 
             let confirmed = false;
+            let oldRange = before.filter(experiment => experiment.id === id)[0]?.rollout?.populations?.[0]?.position?.filter(position => position.bucket === parseInt(bucket))?.[0]?.rollouts?.[0];
 
-            console.log('before', before);
-            console.log('id', id);
-            console.log('bucket', bucket);
-            console.log('range', range);
-
-            const experiment = before.filter(experiment => experiment.id === id)[0];
-            console.log('experiment', experiment);
-
-            const population = experiment?.rollout?.populations?.[0];
-            console.log('population', population);
-
-            const position = population?.position?.filter(position => position.bucket === parseInt(bucket))?.[0];
-            console.log('position', position);
-
-            const rollouts = position?.rollouts?.[0];
-            console.log('rollouts', rollouts);
-
-            if (rollouts === range) confirmed = true;
-
-            console.log('confirmed', confirmed);
+            if (oldRange.start === range.start && oldRange.end === range.end) confirmed = true;
 
             data.rollout.populations[0].position.filter(position => position.bucket === parseInt(bucket))[0].confirmed = confirmed;
         };
