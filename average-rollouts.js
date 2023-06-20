@@ -77,7 +77,26 @@ import axios from 'axios';
 
             let confirmed = false;
 
-            if (before.filter(experiment => experiment.id === id)[0]?.rollout?.populations?.[0]?.position?.filter(position => position.bucket === parseInt(bucket))?.[0]?.rollouts?.[0] === range) confirmed = true;
+            console.log('before', before);
+            console.log('id', id);
+            console.log('bucket', bucket);
+            console.log('range', range);
+
+            const experiment = before.filter(experiment => experiment.id === id)[0];
+            console.log('experiment', experiment);
+
+            const population = experiment?.rollout?.populations?.[0];
+            console.log('population', population);
+
+            const position = population?.position?.filter(position => position.bucket === parseInt(bucket))?.[0];
+            console.log('position', position);
+
+            const rollouts = position?.rollouts?.[0];
+            console.log('rollouts', rollouts);
+
+            if (rollouts === range) confirmed = true;
+
+            console.log('confirmed', confirmed);
 
             data.rollout.populations[0].position.filter(position => position.bucket === parseInt(bucket))[0].confirmed = confirmed;
         };
