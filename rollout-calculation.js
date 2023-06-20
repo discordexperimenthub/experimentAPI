@@ -54,8 +54,8 @@ import wait from "delay";
                 if (!experimentRanges[experimentId][bucket]) experimentRanges[experimentId][bucket] = [];
 
                 experimentRanges[experimentId][bucket] = {
-                    start: min,
-                    end: max
+                    start: Math.round(min / 500) * 500,
+                    end: Math.round(max / 500) * 500
                 };
             };
         };
