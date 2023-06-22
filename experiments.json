@@ -34,10 +34,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -233,10 +232,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -365,10 +363,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -513,10 +510,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -727,10 +723,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -1073,10 +1068,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -1196,10 +1190,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -1442,10 +1435,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -1944,10 +1936,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -2541,10 +2532,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -3051,10 +3041,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -3313,10 +3302,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -3975,10 +3963,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -4294,10 +4281,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -4813,10 +4799,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -5358,17 +5343,6 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show Home Tab",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ],
-              "confirmed": false
-            },
-            {
               "treatment": "Control",
               "bucket": 0,
               "rollouts": [
@@ -5384,25 +5358,14 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 2000,
+                  "end": 4000
                 }
               ],
               "confirmed": false
             },
             {
-              "treatment": "Treatment 1: Show Home Tab",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ],
-              "confirmed": false
-            },
-            {
-              "treatment": "[No data found]",
+              "treatment": "Treatment 3: Overflow",
               "bucket": 3,
               "rollouts": [
                 {
@@ -5425,11 +5388,10 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 500
                 }
-              ],
-              "confirmed": false
+              ]
             }
           ],
           "filters": [
@@ -5534,17 +5496,6 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Yes button",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 5000,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            },
-            {
               "treatment": "Control",
               "bucket": 0,
               "rollouts": [
@@ -5579,11 +5530,10 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 5000,
-                  "end": 10000
+                  "start": 0,
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -6248,10 +6198,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -6450,10 +6399,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -6707,10 +6655,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -7542,10 +7489,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -7607,10 +7553,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 7000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -7806,10 +7751,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -8233,10 +8177,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -8612,10 +8555,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -8653,17 +8595,6 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show expiration notice",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 9500,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            },
-            {
               "treatment": "Control",
               "bucket": 0,
               "rollouts": [
@@ -8698,11 +8629,10 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 9500,
-                  "end": 10000
+                  "start": 0,
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -9018,10 +8948,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -9226,10 +9155,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -9354,10 +9282,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -9584,17 +9511,6 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 5000,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            },
-            {
               "treatment": "Control",
               "bucket": 0,
               "rollouts": [
@@ -9629,11 +9545,10 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 5000,
-                  "end": 10000
+                  "start": 0,
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -10449,10 +10364,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -10514,10 +10428,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -10721,17 +10634,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show improved message markdown",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ]
-            },
-            {
-              "treatment": "[No data found]",
+              "treatment": "Treatment 2: Show improved message markdown WITHOUT masked links",
               "bucket": 2,
               "rollouts": [
                 {
@@ -10754,8 +10657,8 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 500
                 }
               ]
             }
@@ -10985,17 +10888,6 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Birthday Activities",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 500,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            },
-            {
               "treatment": "Control",
               "bucket": 0,
               "rollouts": [
@@ -11030,11 +10922,10 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 500,
-                  "end": 10000
+                  "start": 0,
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -11199,10 +11090,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -11327,10 +11217,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -12532,17 +12421,6 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Eligible",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 2000
-                }
-              ],
-              "confirmed": true
-            },
-            {
               "treatment": "Control",
               "bucket": 0,
               "rollouts": [
@@ -12578,10 +12456,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 2000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -14075,10 +13952,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -14329,10 +14205,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -14433,16 +14308,6 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ]
-            },
-            {
               "treatment": "Control",
               "bucket": 0,
               "rollouts": [
@@ -14454,17 +14319,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ]
-            },
-            {
-              "treatment": "[No data found]",
+              "treatment": "Treatment 2: Enable any number of users VC Tile Activities Entry Point",
               "bucket": 2,
               "rollouts": [
                 {
@@ -14487,8 +14342,8 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 500
                 }
               ]
             }
@@ -15068,10 +14923,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -15133,10 +14987,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -15198,10 +15051,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -15263,10 +15115,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
@@ -15560,17 +15411,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Account Profile Popout",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": null,
-                  "end": null
-                }
-              ]
-            },
-            {
-              "treatment": "[No data found]",
+              "treatment": "Treatment 2: Enable Account Profile Popout w/ DiscordTag button",
               "bucket": 2,
               "rollouts": [
                 {
@@ -15593,8 +15434,8 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": null,
-                  "end": null
+                  "start": 0,
+                  "end": 500
                 }
               ]
             }
@@ -16964,10 +16805,9 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": [
