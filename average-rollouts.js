@@ -68,7 +68,7 @@ import axios from 'axios';
                 data.rollout.populations[0].position.filter(position => position.bucket === parseInt(bucket))[0].rollouts[0] = range;
             } catch (error) {
                 data.rollout.populations[0].position.push({
-                    treatment: parseInt(bucket) === 0 ? 'Control' : '[No data found]',
+                    treatment: parseInt(bucket) === 0 ? 'Control' : data.description[parseInt(bucket)] ?? '[No data found]',
                     bucket: parseInt(bucket),
                     rollouts: [range],
                     confirmed: false
