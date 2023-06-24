@@ -18,7 +18,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -216,7 +216,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -347,7 +347,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -494,7 +494,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -707,7 +707,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1052,7 +1052,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1174,7 +1174,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1419,7 +1419,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1920,7 +1920,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -2516,7 +2516,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3025,7 +3025,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3286,7 +3286,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3947,7 +3947,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -4265,7 +4265,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -4783,7 +4783,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5351,7 +5351,7 @@
                   "end": 2000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Show Home Tab",
@@ -5362,7 +5362,7 @@
                   "end": 4000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 3: Overflow",
@@ -5373,7 +5373,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5504,7 +5504,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Yes button",
@@ -5515,7 +5515,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6182,7 +6182,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6383,7 +6383,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6639,7 +6639,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7084,7 +7084,7 @@
                   "end": 2500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7537,7 +7537,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7601,7 +7601,7 @@
                   "end": 7000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7799,7 +7799,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8225,7 +8225,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8603,7 +8603,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8667,7 +8667,7 @@
                   "end": 9500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Show expiration notice",
@@ -8678,7 +8678,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8996,7 +8996,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9203,7 +9203,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9330,7 +9330,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9583,7 +9583,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: On",
@@ -9594,7 +9594,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10412,7 +10412,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10476,7 +10476,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10771,7 +10771,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11125,7 +11125,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11252,7 +11252,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -12480,7 +12480,7 @@
                   "end": 1000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Eligible",
@@ -12491,7 +12491,7 @@
                   "end": 2000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -13987,7 +13987,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14305,7 +14305,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14432,7 +14432,7 @@
                   "end": 1000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 2: Enable any number of users VC Tile Activities Entry Point",
@@ -14443,7 +14443,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15023,7 +15023,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15087,7 +15087,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15151,7 +15151,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15215,7 +15215,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15535,7 +15535,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16749,7 +16749,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
