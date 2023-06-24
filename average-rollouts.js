@@ -71,7 +71,7 @@ import axios from 'axios';
             let confirmed = false;
             let oldRange = before.filter(experiment => experiment.id === id)[0]?.rollout?.populations?.[0]?.position?.filter(position => position.bucket === parseInt(bucket))?.[0]?.rollouts?.[0];
 
-            if (oldRange.start === range.start && oldRange.end === range.end) confirmed = true;
+            if ((oldRange?.start ?? 0) === range.start && (oldRange?.end ?? 0) === range.end) confirmed = true;
 
             data.rollout.populations[0].position.filter(position => position.bucket === parseInt(bucket))[0].confirmed = confirmed;
         };
