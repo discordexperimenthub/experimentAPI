@@ -209,6 +209,7 @@ async function collect() {
 
   await page.waitForSelector(serverElementId);
 
+  /*
   let serverList = await page.$$(".listItem-3SmSlK");
   let server = serverList[2];
 
@@ -226,6 +227,7 @@ async function collect() {
 
   await createChannel.click();
   await wait(1000);
+  */
 
   console.log(
     `[${new Date()}] ${chalk.hex(`#FF005C`)(`Loading Experiments...`)}`
