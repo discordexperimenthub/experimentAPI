@@ -9109,82 +9109,6 @@
     ]
   },
   {
-    "id": "2023-04_fast_new_channels",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY_CANARY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: On",
-          "bucket": 1,
-          "ids": [
-            "651595875897835540"
-          ]
-        },
-        {
-          "bucket": 42,
-          "ids": [
-            "1080899969243943072"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 4063488887,
-    "creationDate": 1680900185,
-    "type": "guild",
-    "title": "Fast New Channels",
-    "description": [
-      "Control",
-      "Treatment 1: On"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-12_get_my_guilds_application_ids_endpoint",
     "defaultConfig": {
       "enabled": false
@@ -9305,6 +9229,145 @@
     "description": [
       "Control",
       "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-06_app_directory_on_web",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Logged-Out Access to App Directory",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_app_directory_on_web"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2950854840,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "App Directory on Web",
+    "description": [
+      "Control",
+      "Treatment 1: Logged-Out Access to App Directory"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_fast_new_channels",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY_CANARY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: On",
+          "bucket": 1,
+          "ids": [
+            "651595875897835540"
+          ]
+        },
+        {
+          "bucket": 42,
+          "ids": [
+            "1080899969243943072"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 4063488887,
+    "creationDate": 1680900185,
+    "type": "guild",
+    "title": "Fast New Channels",
+    "description": [
+      "Control",
+      "Treatment 1: On"
     ],
     "buckets": [
       0,
@@ -12477,10 +12540,10 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 1000
+                  "end": 500
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Treatment 1: Eligible",
