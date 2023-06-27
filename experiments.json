@@ -6009,161 +6009,6 @@
     ]
   },
   {
-    "id": "2022-10_text_in_stage",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "range_by_hash",
-              "range": 10000
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "TEXT_IN_STAGE_ENABLED"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "id",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 848173753,
-    "creationDate": 1665175385,
-    "type": "guild",
-    "title": "Text-In-Stage",
-    "description": [
-      "Control",
-      "Treatment 1: Enable Text-In-Stage"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-03_pomelo_compatible_ux",
     "defaultConfig": {
       "enabled": false
@@ -7382,9 +7227,138 @@
     ]
   },
   {
-    "id": "2023-05_collectibles",
+    "id": "2022-03_block_russian_purchases",
+    "defaultConfig": {
+      "paymentsBlocked": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Payments Blocked",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-03_block_russian_purchases"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3011681066,
+    "creationDate": 1646685785,
+    "type": "user",
+    "title": "Block purchases based on country",
+    "description": [
+      "Control",
+      "Treatment 1: Payments Blocked"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-03_block_russian_purchases_desktop",
     "defaultConfig": {
       "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Check Payment Source",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Check Payment Source",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-03_block_russian_purchases_desktop"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1814483290,
+    "creationDate": 1646685785,
+    "type": "user",
+    "title": "Block purchases based on country (desktop specific flags)",
+    "description": [
+      "Control",
+      "Treatment 1: Check Payment Source"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_collectibles",
+    "defaultConfig": {
+      "canUseCollectibles": false,
+      "canUseAvatarDecorations": false,
+      "canUploadAvatarDecorations": false
     },
     "rollout": {
       "revision": 0,
@@ -7447,74 +7421,6 @@
       1,
       2,
       3,
-      100
-    ]
-  },
-  {
-    "id": "2023-05_avatar_decorations",
-    "defaultConfig": {
-      "canUseAvatarDecorations": false,
-      "canUploadAvatarDecorations": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow use of avatar decorations nitro",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_avatar_decorations"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3542432067,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Avatar Decorations Birthday 2023",
-    "description": [
-      "Control",
-      "Treatment 1: Allow use of avatar decorations nitro",
-      "Treatment 2: Allow use of avatar decorations non-nitro",
-      "Treatment 100: Debug"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
       100
     ]
   },
@@ -8137,133 +8043,6 @@
     "description": [
       "Control",
       "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-03_block_russian_purchases",
-    "defaultConfig": {
-      "paymentsBlocked": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Payments Blocked",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-03_block_russian_purchases"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3011681066,
-    "creationDate": 1646685785,
-    "type": "user",
-    "title": "Block purchases based on country",
-    "description": [
-      "Control",
-      "Treatment 1: Payments Blocked"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-03_block_russian_purchases_desktop",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Check Payment Source",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Check Payment Source",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-03_block_russian_purchases_desktop"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1814483290,
-    "creationDate": 1646685785,
-    "type": "user",
-    "title": "Block purchases based on country (desktop specific flags)",
-    "description": [
-      "Control",
-      "Treatment 1: Check Payment Source"
     ],
     "buckets": [
       0,
@@ -12540,7 +12319,7 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 500
+                  "end": 1000
                 }
               ],
               "confirmed": false
@@ -12550,11 +12329,11 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 1000,
                   "end": 2000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
