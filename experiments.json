@@ -12322,14 +12322,14 @@
                   "end": 1000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Eligible",
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 1000,
+                  "start": 0,
                   "end": 2000
                 }
               ],
