@@ -4245,70 +4245,6 @@
     ]
   },
   {
-    "id": "2023-03_activities_release_tools",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable activities release tools",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable activities release tools",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_activities_release_tools"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3482834131,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Activities Release Tools",
-    "description": [
-      "Control",
-      "Treatment 1: enable activities release tools"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-08_guild_unreads",
     "defaultConfig": {
       "enabled": false
@@ -12316,22 +12252,22 @@
               "bucket": 0,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 500,
                   "end": 1000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Treatment 1: Eligible",
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 1000,
                   "end": 2000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
