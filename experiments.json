@@ -14396,6 +14396,69 @@
     ]
   },
   {
+    "id": "2023-06_hide_thread_count",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Hide thread count",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_hide_thread_count"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1130195016,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Hide thread count",
+    "description": [
+      "Control",
+      "Treatment 1: Hide thread count"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-06_guild_subscriptions_payment_flow_test_page",
     "defaultConfig": {
       "enabled": false
