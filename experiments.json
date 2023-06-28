@@ -1970,6 +1970,69 @@
     ]
   },
   {
+    "id": "2023-07_day_0_nux",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Day 0 Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_day_0_nux"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1174587839,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Mobile Redesign Day 0 NUX",
+    "description": [
+      "Control",
+      "Treatment 1: Day 0 Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-06_mobile_redesign_curry_existing_users",
     "defaultConfig": {
       "enabled": false
@@ -1998,7 +2061,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Combine Messages and Guilds",
+              "treatment": "None",
               "bucket": 1,
               "rollouts": [
                 {
@@ -2025,7 +2088,6 @@
     "title": "Tabs V2 - Curry Existing Users",
     "description": [
       "Control",
-      "Treatment 1: Combine Messages and Guilds",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -2034,7 +2096,6 @@
     ],
     "buckets": [
       0,
-      1,
       2,
       3,
       4,
@@ -2071,7 +2132,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Combine Messages and Guilds",
+              "treatment": "None",
               "bucket": 1,
               "rollouts": [
                 {
@@ -2098,7 +2159,6 @@
     "title": "Tabs V2 - Curry New Users",
     "description": [
       "Control",
-      "Treatment 1: Combine Messages and Guilds",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -2107,7 +2167,6 @@
     ],
     "buckets": [
       0,
-      1,
       2,
       3,
       4,
@@ -2459,7 +2518,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Minimum Jitter Buffer Level = 40ms",
+              "treatment": "Treatment 1: Minimum Jitter Buffer Level = 80ms",
               "bucket": 1,
               "rollouts": [
                 {
@@ -2486,15 +2545,17 @@
     "title": "Minimum Jitter Buffer Level",
     "description": [
       "Control",
-      "Treatment 1: Minimum Jitter Buffer Level = 40ms",
-      "Treatment 2: Minimum Jitter Buffer Level = 60ms",
-      "Treatment 3: Minimum Jitter Buffer Level = 80ms"
+      "Treatment 1: Minimum Jitter Buffer Level = 80ms",
+      "Treatment 2: Minimum Jitter Buffer Level = 120ms",
+      "Treatment 3: Minimum Jitter Buffer Level = 160ms",
+      "Treatment 4: Minimum Jitter Buffer Level = 200ms"
     ],
     "buckets": [
       0,
       1,
       2,
-      3
+      3,
+      4
     ]
   },
   {
@@ -3202,69 +3263,6 @@
       2,
       3,
       4
-    ]
-  },
-  {
-    "id": "2023-04_day_0_nux",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_day_0_nux"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3498213737,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Mobile Redesign Day 0 NUX",
-    "description": [
-      "Control",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      0,
-      1
     ]
   },
   {
