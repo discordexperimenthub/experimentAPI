@@ -2025,9 +2025,11 @@
     "title": "Mobile Redesign Day 0 NUX",
     "description": [
       "Control",
+      "Treatment 0: Control",
       "Treatment 1: Day 0 Enabled"
     ],
     "buckets": [
+      0,
       0,
       1
     ]
@@ -2867,6 +2869,69 @@
     "creationDate": 1675802585,
     "type": "user",
     "title": "Test how h265 works on android for DM calls",
+    "description": [
+      "Control",
+      "Treatment 1: Calling with H.265"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-06_h265_macos",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Calling with H.265",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_h265_macos"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4148889709,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Test how h265 works on macos",
     "description": [
       "Control",
       "Treatment 1: Calling with H.265"
@@ -12256,7 +12321,7 @@
                   "end": 1000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Eligible",
@@ -12267,7 +12332,7 @@
                   "end": 2000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
