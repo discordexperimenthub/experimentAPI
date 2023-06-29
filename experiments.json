@@ -10,15 +10,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -208,15 +207,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to view Creator Monetization entrypoints",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -339,15 +337,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions quickly",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -486,15 +483,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to see nag bar to activate server subscriptions",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -699,15 +695,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -1044,15 +1039,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable native role subscription management for mobile",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -1166,15 +1160,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable mobile web role subscription upsell",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -1411,15 +1404,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables Server Subscriptions IAP For User",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -1617,6 +1609,69 @@
       1,
       2,
       3
+    ]
+  },
+  {
+    "id": "2023-04_server_subscriptions_tier_templates_user",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable tier templates for user",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_server_subscriptions_tier_templates_user"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4265918989,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Server Subscriptions Tier Templates",
+    "description": [
+      "Control",
+      "Treatment 1: Enable tier templates for user"
+    ],
+    "buckets": [
+      0,
+      1
     ]
   },
   {
@@ -1912,15 +1967,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show the Onboarding Version of Home",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -2571,15 +2625,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -3143,15 +3196,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: gotta go fast",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -3341,15 +3393,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Read/write remote audio settings",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -4002,15 +4053,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable the Activity Launcher Embed in chat",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -4774,15 +4824,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Log network actions",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -5342,37 +5391,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 2000
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 1: Show Home Tab",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 2000,
-                  "end": 4000
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 3: Overflow",
-              "bucket": 3,
-              "rollouts": [
-                {
-                  "start": 4000,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -5495,26 +5521,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 5000
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 1: Yes button",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 5000,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -6018,15 +6032,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -6219,15 +6232,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Log impressions",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -6475,15 +6487,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Allow sending @silent messages",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -6920,15 +6931,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enable clyde in gdms",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 2500
+                  "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -7299,15 +7309,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Check Payment Source",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -7434,15 +7443,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enable dms to clyde",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -7632,15 +7640,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable channel summaries",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -8309,15 +8316,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -8373,26 +8379,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
-                  "start": 9500,
-                  "end": 9500
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 1: Show expiration notice",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 9500,
+                  "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -8702,15 +8696,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable notifications for multiple accounts",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -8833,15 +8826,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -9099,15 +9091,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Back to School experience enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -9352,26 +9343,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 5000
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 5000,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -10181,15 +10160,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -10245,15 +10223,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Users will see the birthday moment referral trial UX",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -10540,15 +10517,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 2: Show improved message markdown WITHOUT masked links",
-              "bucket": 2,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -10894,15 +10870,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables for users Guild Media Post Preview Embeds",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -11021,15 +10996,14 @@
         {
           "position": [
             {
-              "treatment": "Control: No changes",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -12249,26 +12223,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 1000
+                  "end": 10000
                 }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 1: Eligible",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 2000
-                }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -13756,15 +13718,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable VC Activities Mini Shelf",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -14074,15 +14035,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Activities Free Forever",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -14201,26 +14161,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 1000
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 2: Enable any number of users VC Tile Activities Entry Point",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 1000,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -14855,15 +14803,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable GDM tile",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -14919,15 +14866,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Jamspace tile",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -14983,15 +14929,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Poker tile",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -15047,15 +14992,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Putt Party tile",
-              "bucket": 1,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -15367,15 +15311,14 @@
         {
           "position": [
             {
-              "treatment": "Treatment 2: Enable Account Profile Popout w/ DiscordTag button",
-              "bucket": 2,
+              "treatment": "None",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -16564,70 +16507,6 @@
     "description": [
       "Control",
       "Treatment 1: enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_server_subscriptions_tier_templates_user",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable tier templates for user",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable tier templates for user",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_server_subscriptions_tier_templates_user"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4265918989,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Server Subscriptions Tier Templates",
-    "description": [
-      "Control",
-      "Treatment 1: Enable tier templates for user"
     ],
     "buckets": [
       0,
