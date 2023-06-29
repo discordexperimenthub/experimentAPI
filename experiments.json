@@ -16635,6 +16635,206 @@
     ]
   },
   {
+    "id": "2023-04_pomelo_attempt",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_pomelo_attempt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3522378716,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Pomelo Attempt",
+    "description": [
+      "Control",
+      "Treatment 1: enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_pomelo_suggestions",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_pomelo_suggestions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2091202574,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Pomelo Suggestions",
+    "description": [
+      "Control",
+      "Treatment 1: enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_pomelo_debounce_delay",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 3: 800ms",
+              "bucket": 3,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: 600ms",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_pomelo_debounce_delay"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 373531156,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Pomelo Debounce Delay",
+    "description": [
+      "Control",
+      "Treatment 1: 600ms",
+      "Treatment 2: 700ms",
+      "Treatment 3: 800ms",
+      "Treatment 4: 900ms",
+      "Treatment 5: 1000ms"
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
     "id": "2023-04_server_subscriptions_tier_templates_user",
     "defaultConfig": {
       "enabled": false
