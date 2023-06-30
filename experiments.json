@@ -8306,6 +8306,264 @@
     ]
   },
   {
+    "id": "2023-06_premium_unify_trial_upsell",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Unified trial upsell experience",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_premium_unify_trial_upsell"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1495876933,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Premium Unify Trial Upsell",
+    "description": [
+      "Control",
+      "Treatment 1: Unified trial upsell experience"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-02_nitro_most_popular_tag",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show most popular tag on nitro plan",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-02_nitro_most_popular_tag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2459440542,
+    "creationDate": 1675802585,
+    "type": "user",
+    "title": "Most popular tag in nitro plan selection",
+    "description": [
+      "Control",
+      "Treatment 1: show most popular tag on nitro plan"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_premium_marketing_page_trial_tier_card",
+    "defaultConfig": {
+      "pillLocation": 0
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Free trial pill on top of the card",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_premium_marketing_page_trial_tier_card"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2553858368,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Premium marketing page trial tier card",
+    "description": [
+      "Control",
+      "Treatment 1: Free trial pill on top of the card",
+      "Treatment 2: Free trial pill inline with the card"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-04_tier_0_trial_cta_copy",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_tier_0_trial_cta_copy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3084409284,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Tier 0 Trial CTA Copy",
+    "description": [
+      "Control",
+      "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+      "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
+      "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
     "id": "2023-02_mfa_remove_phone",
     "defaultConfig": {
       "enabled": false
@@ -9263,6 +9521,69 @@
     "description": [
       "Control",
       "Treatment 1: Show scores in QS results"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-06_new_activity_one_time_purchase_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_new_activity_one_time_purchase_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 261136978,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "New Activity One Time Purchase Modal",
+    "description": [
+      "Control",
+      "Treatment 1: enabled"
     ],
     "buckets": [
       0,
@@ -14469,201 +14790,6 @@
       0,
       1,
       2
-    ]
-  },
-  {
-    "id": "2023-05_premium_marketing_page_trial_tier_card",
-    "defaultConfig": {
-      "pillLocation": 0
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Free trial pill on top of the card",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_premium_marketing_page_trial_tier_card"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2553858368,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Premium marketing page trial tier card",
-    "description": [
-      "Control",
-      "Treatment 1: Free trial pill on top of the card",
-      "Treatment 2: Free trial pill inline with the card"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-04_tier_0_trial_cta_copy",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_tier_0_trial_cta_copy"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3084409284,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Tier 0 Trial CTA Copy",
-    "description": [
-      "Control",
-      "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
-      "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
-      "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "2023-02_nitro_most_popular_tag",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show most popular tag on nitro plan",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_nitro_most_popular_tag"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2459440542,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "Most popular tag in nitro plan selection",
-    "description": [
-      "Control",
-      "Treatment 1: show most popular tag on nitro plan"
-    ],
-    "buckets": [
-      0,
-      1
     ]
   },
   {
