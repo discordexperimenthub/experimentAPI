@@ -38,7 +38,7 @@ import wait from "delay";
 
             console.log(`Collected ${i + 1} of ${numRequests} data`);
 
-            await wait(500);
+            await wait(600);
         };
 
         console.log('Calculating ranges...');
