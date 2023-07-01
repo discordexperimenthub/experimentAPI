@@ -76,7 +76,8 @@ import axios from 'axios';
             data.rollout.populations[0].position.filter(position => position.bucket === parseInt(bucket))[0].confirmed = confirmed;
         };
 
-        if (experiments.filter(experiment => experiment.id === id)) experiments[experiments.findIndex(experiment => experiment.id === id)] = data;
+        const index = experiments.findIndex(experiment => experiment.id === id);
+        if (index !== -1) experiments[index] = data;
         else experiments.push(data);
 
         writeFileSync('./experiments.json', JSON.stringify(experiments, null, 2));
