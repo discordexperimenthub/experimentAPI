@@ -1620,6 +1620,70 @@
     ]
   },
   {
+    "id": "2023-04_server_subscriptions_tier_templates_user",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable tier templates for user",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable tier templates for user",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_server_subscriptions_tier_templates_user"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4265918989,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Server Subscriptions Tier Templates",
+    "description": [
+      "Control",
+      "Treatment 1: Enable tier templates for user"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_self_demonetization",
     "defaultConfig": {
       "enabled": false
@@ -16562,70 +16626,6 @@
     "description": [
       "Control",
       "Treatment 1: enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_server_subscriptions_tier_templates_user",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable tier templates for user",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable tier templates for user",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_server_subscriptions_tier_templates_user"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4265918989,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Server Subscriptions Tier Templates",
-    "description": [
-      "Control",
-      "Treatment 1: Enable tier templates for user"
     ],
     "buckets": [
       0,
