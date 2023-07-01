@@ -10,14 +10,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -207,14 +208,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enables users to view Creator Monetization entrypoints",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -337,14 +339,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions quickly",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -483,14 +486,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enables users to see nag bar to activate server subscriptions",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -695,14 +699,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1039,14 +1044,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable native role subscription management for mobile",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1160,14 +1166,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable mobile web role subscription upsell",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1404,14 +1411,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enables Server Subscriptions IAP For User",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -1609,69 +1617,6 @@
       1,
       2,
       3
-    ]
-  },
-  {
-    "id": "2023-04_server_subscriptions_tier_templates_user",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable tier templates for user",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_server_subscriptions_tier_templates_user"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4265918989,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Server Subscriptions Tier Templates",
-    "description": [
-      "Control",
-      "Treatment 1: Enable tier templates for user"
-    ],
-    "buckets": [
-      0,
-      1
     ]
   },
   {
@@ -1967,14 +1912,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Show the Onboarding Version of Home",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -2024,6 +1970,71 @@
     ]
   },
   {
+    "id": "2023-07_day_0_nux",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Day 0 Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_day_0_nux"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1174587839,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Mobile Redesign Day 0 NUX",
+    "description": [
+      "Control",
+      "Treatment 0: Control",
+      "Treatment 1: Day 0 Enabled"
+    ],
+    "buckets": [
+      0,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-06_mobile_redesign_curry_existing_users",
     "defaultConfig": {
       "enabled": false
@@ -2052,7 +2063,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Combine Messages and Guilds",
+              "treatment": "None",
               "bucket": 1,
               "rollouts": [
                 {
@@ -2079,7 +2090,6 @@
     "title": "Tabs V2 - Curry Existing Users",
     "description": [
       "Control",
-      "Treatment 1: Combine Messages and Guilds",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -2088,7 +2098,6 @@
     ],
     "buckets": [
       0,
-      1,
       2,
       3,
       4,
@@ -2125,7 +2134,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Combine Messages and Guilds",
+              "treatment": "None",
               "bucket": 1,
               "rollouts": [
                 {
@@ -2152,7 +2161,6 @@
     "title": "Tabs V2 - Curry New Users",
     "description": [
       "Control",
-      "Treatment 1: Combine Messages and Guilds",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -2161,7 +2169,6 @@
     ],
     "buckets": [
       0,
-      1,
       2,
       3,
       4,
@@ -2513,7 +2520,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Minimum Jitter Buffer Level = 40ms",
+              "treatment": "Treatment 1: Minimum Jitter Buffer Level = 80ms",
               "bucket": 1,
               "rollouts": [
                 {
@@ -2540,15 +2547,17 @@
     "title": "Minimum Jitter Buffer Level",
     "description": [
       "Control",
-      "Treatment 1: Minimum Jitter Buffer Level = 40ms",
-      "Treatment 2: Minimum Jitter Buffer Level = 60ms",
-      "Treatment 3: Minimum Jitter Buffer Level = 80ms"
+      "Treatment 1: Minimum Jitter Buffer Level = 80ms",
+      "Treatment 2: Minimum Jitter Buffer Level = 120ms",
+      "Treatment 3: Minimum Jitter Buffer Level = 160ms",
+      "Treatment 4: Minimum Jitter Buffer Level = 200ms"
     ],
     "buckets": [
       0,
       1,
       2,
-      3
+      3,
+      4
     ]
   },
   {
@@ -2562,14 +2571,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -2869,6 +2879,69 @@
     ]
   },
   {
+    "id": "2023-06_h265_macos",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Calling with H.265",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_h265_macos"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4148889709,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Test how h265 works on macos",
+    "description": [
+      "Control",
+      "Treatment 1: Calling with H.265"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-10_h265_dm_call",
     "defaultConfig": {
       "enabled": false
@@ -3070,14 +3143,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: gotta go fast",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3257,69 +3331,6 @@
     ]
   },
   {
-    "id": "2023-04_day_0_nux",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_day_0_nux"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3498213737,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Mobile Redesign Day 0 NUX",
-    "description": [
-      "Control",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-09_remote_audio_settings",
     "defaultConfig": {
       "enabled": false
@@ -3330,14 +3341,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Read/write remote audio settings",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3990,14 +4002,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable the Activity Launcher Embed in chat",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -4290,69 +4303,6 @@
     "description": [
       "Control",
       "Treatment 1: Inline sending preview is enabled on mobile (both iOS and Android)"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_activities_release_tools",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable activities release tools",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_activities_release_tools"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3482834131,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Activities Release Tools",
-    "description": [
-      "Control",
-      "Treatment 1: enable activities release tools"
     ],
     "buckets": [
       0,
@@ -4824,14 +4774,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Log network actions",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5391,14 +5342,37 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 2000
+                }
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Treatment 1: Show Home Tab",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 2000,
+                  "end": 4000
+                }
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Treatment 3: Overflow",
+              "bucket": 3,
+              "rollouts": [
+                {
+                  "start": 4000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5521,14 +5495,26 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 5000
+                }
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Treatment 1: Yes button",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 5000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6022,161 +6008,6 @@
     ]
   },
   {
-    "id": "2022-10_text_in_stage",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "range_by_hash",
-              "range": 10000
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "TEXT_IN_STAGE_ENABLED"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Text-In-Stage",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "id",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 848173753,
-    "creationDate": 1665175385,
-    "type": "guild",
-    "title": "Text-In-Stage",
-    "description": [
-      "Control",
-      "Treatment 1: Enable Text-In-Stage"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-03_pomelo_compatible_ux",
     "defaultConfig": {
       "enabled": false
@@ -6187,14 +6018,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6387,14 +6219,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Log impressions",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6642,14 +6475,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Allow sending @silent messages",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7076,6 +6910,70 @@
     ]
   },
   {
+    "id": "2023-06_clyde_ai_gdm",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable clyde in gdms",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 2500
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable clyde in gdms",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_clyde_ai_gdm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1195502096,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Clyde in DMs/GDMs",
+    "description": [
+      "Control",
+      "Treatment 1: enable clyde in gdms"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_nitroduction_experience",
     "defaultConfig": {
       "enabled": false
@@ -7328,9 +7226,138 @@
     ]
   },
   {
-    "id": "2023-05_collectibles",
+    "id": "2022-03_block_russian_purchases",
+    "defaultConfig": {
+      "paymentsBlocked": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Payments Blocked",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-03_block_russian_purchases"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3011681066,
+    "creationDate": 1646685785,
+    "type": "user",
+    "title": "Block purchases based on country",
+    "description": [
+      "Control",
+      "Treatment 1: Payments Blocked"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-03_block_russian_purchases_desktop",
     "defaultConfig": {
       "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Check Payment Source",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Check Payment Source",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-03_block_russian_purchases_desktop"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1814483290,
+    "creationDate": 1646685785,
+    "type": "user",
+    "title": "Block purchases based on country (desktop specific flags)",
+    "description": [
+      "Control",
+      "Treatment 1: Check Payment Source"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_collectibles",
+    "defaultConfig": {
+      "canUseCollectibles": false,
+      "canUseAvatarDecorations": false,
+      "canUploadAvatarDecorations": false
     },
     "rollout": {
       "revision": 0,
@@ -7397,74 +7424,6 @@
     ]
   },
   {
-    "id": "2023-05_avatar_decorations",
-    "defaultConfig": {
-      "canUseAvatarDecorations": false,
-      "canUploadAvatarDecorations": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow use of avatar decorations nitro",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_avatar_decorations"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3542432067,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Avatar Decorations Birthday 2023",
-    "description": [
-      "Control",
-      "Treatment 1: Allow use of avatar decorations nitro",
-      "Treatment 2: Allow use of avatar decorations non-nitro",
-      "Treatment 100: Debug"
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      100
-    ]
-  },
-  {
     "id": "2023-05_clyde_ai_dm",
     "defaultConfig": {
       "enabled": false
@@ -7475,14 +7434,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: enable dms to clyde",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7521,69 +7481,6 @@
     "description": [
       "Control",
       "Treatment 1: enable dms to clyde"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-01_pronouns",
-    "defaultConfig": {
-      "showPronouns": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show Pronouns",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-01_pronouns"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1176769702,
-    "creationDate": 1641588185,
-    "type": "user",
-    "title": "Pronouns in Profile",
-    "description": [
-      "Control",
-      "Treatment 1: Show Pronouns"
     ],
     "buckets": [
       0,
@@ -7735,14 +7632,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable channel summaries",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8087,132 +7985,6 @@
     ]
   },
   {
-    "id": "2022-03_block_russian_purchases",
-    "defaultConfig": {
-      "paymentsBlocked": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Payments Blocked",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-03_block_russian_purchases"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3011681066,
-    "creationDate": 1646685785,
-    "type": "user",
-    "title": "Block purchases based on country",
-    "description": [
-      "Control",
-      "Treatment 1: Payments Blocked"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-03_block_russian_purchases_desktop",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Check Payment Source",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-03_block_russian_purchases_desktop"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1814483290,
-    "creationDate": 1646685785,
-    "type": "user",
-    "title": "Block purchases based on country (desktop specific flags)",
-    "description": [
-      "Control",
-      "Treatment 1: Check Payment Source"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-07_report_raids",
     "defaultConfig": {
       "enableRaidReporting": false
@@ -8527,7 +8299,7 @@
     ]
   },
   {
-    "id": "2023-02_mfa_remove_phone",
+    "id": "2023-06_premium_unify_trial_upsell",
     "defaultConfig": {
       "enabled": false
     },
@@ -8545,6 +8317,265 @@
                   "end": 10000
                 }
               ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Unified trial upsell experience",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_premium_unify_trial_upsell"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1495876933,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Premium Unify Trial Upsell",
+    "description": [
+      "Control",
+      "Treatment 1: Unified trial upsell experience"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-02_nitro_most_popular_tag",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show most popular tag on nitro plan",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-02_nitro_most_popular_tag"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2459440542,
+    "creationDate": 1675802585,
+    "type": "user",
+    "title": "Most popular tag in nitro plan selection",
+    "description": [
+      "Control",
+      "Treatment 1: show most popular tag on nitro plan"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_premium_marketing_page_trial_tier_card",
+    "defaultConfig": {
+      "pillLocation": 0
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Free trial pill on top of the card",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_premium_marketing_page_trial_tier_card"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2553858368,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Premium marketing page trial tier card",
+    "description": [
+      "Control",
+      "Treatment 1: Free trial pill on top of the card",
+      "Treatment 2: Free trial pill inline with the card"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-04_tier_0_trial_cta_copy",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_tier_0_trial_cta_copy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3084409284,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Tier 0 Trial CTA Copy",
+    "description": [
+      "Control",
+      "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+      "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
+      "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
+    ],
+    "buckets": [
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2023-02_mfa_remove_phone",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8600,14 +8631,26 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 9500,
+                  "end": 9500
+                }
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Treatment 1: Show expiration notice",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 9500,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8917,14 +8960,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable notifications for multiple accounts",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9037,82 +9081,6 @@
     ]
   },
   {
-    "id": "2023-04_fast_new_channels",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY_CANARY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: On",
-          "bucket": 1,
-          "ids": [
-            "651595875897835540"
-          ]
-        },
-        {
-          "bucket": 42,
-          "ids": [
-            "1080899969243943072"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 4063488887,
-    "creationDate": 1680900185,
-    "type": "guild",
-    "title": "Fast New Channels",
-    "description": [
-      "Control",
-      "Treatment 1: On"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-12_get_my_guilds_application_ids_endpoint",
     "defaultConfig": {
       "enabled": false
@@ -9123,14 +9091,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9239,7 +9208,7 @@
     ]
   },
   {
-    "id": "2022-08_back_to_school",
+    "id": "2023-06_app_directory_on_web",
     "defaultConfig": {
       "enabled": false
     },
@@ -9257,6 +9226,146 @@
                   "end": 10000
                 }
               ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Logged-Out Access to App Directory",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_app_directory_on_web"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2950854840,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "App Directory on Web",
+    "description": [
+      "Control",
+      "Treatment 1: Logged-Out Access to App Directory"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_fast_new_channels",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY_CANARY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: On",
+          "bucket": 1,
+          "ids": [
+            "651595875897835540"
+          ]
+        },
+        {
+          "bucket": 42,
+          "ids": [
+            "1080899969243943072"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 4063488887,
+    "creationDate": 1680900185,
+    "type": "guild",
+    "title": "Fast New Channels",
+    "description": [
+      "Control",
+      "Treatment 1: On"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-08_back_to_school",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Back to School experience enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9428,6 +9537,69 @@
     ]
   },
   {
+    "id": "2023-06_new_activity_one_time_purchase_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_new_activity_one_time_purchase_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 261136978,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "New Activity One Time Purchase Modal",
+    "description": [
+      "Control",
+      "Treatment 1: enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-05_activities_joinleave_sounds",
     "defaultConfig": {
       "enabled": false
@@ -9501,14 +9673,26 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 5000
+                }
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 5000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10318,14 +10502,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10381,14 +10566,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Users will see the birthday moment referral trial UX",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10675,14 +10861,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 2: Show improved message markdown WITHOUT masked links",
+              "bucket": 2,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10917,72 +11104,6 @@
     ]
   },
   {
-    "id": "2023-03_birthday_activities",
-    "defaultConfig": {
-      "enabled": false,
-      "shareEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Birthday Activities",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_birthday_activities"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1389690772,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Birthday Activities",
-    "description": [
-      "Control",
-      "Treatment 1: Enable Birthday Activities",
-      "Treatment 2: Geo test Enable Birthday Activities but no share"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
     "id": "2023-03_guild_media_channel",
     "defaultConfig": {
       "enabled": false
@@ -11094,14 +11215,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enables for users Guild Media Post Preview Embeds",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11220,14 +11342,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control: No changes",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -12447,14 +12570,26 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 1000
                 }
-              ]
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Treatment 1: Eligible",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 2000
+                }
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -13501,69 +13636,6 @@
     ]
   },
   {
-    "id": "2023-06_guild_media_icon_indicator",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show indicators",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_guild_media_icon_indicator"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3582700400,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Guild Media Icon Indicator",
-    "description": [
-      "Control",
-      "Treatment 1: Show indicators"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-01_clear_all_message_requests",
     "defaultConfig": {
       "enabled": false
@@ -13942,14 +14014,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable VC Activities Mini Shelf",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14184,7 +14257,7 @@
     ]
   },
   {
-    "id": "2023-06_birthday_goodbye",
+    "id": "2023-03_birthday_activities",
     "defaultConfig": {
       "enabled": false
     },
@@ -14202,6 +14275,72 @@
                   "end": 10000
                 }
               ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Birthday Activities",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_birthday_activities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1389690772,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Birthday Activities",
+    "description": [
+      "Control",
+      "Treatment 1: Enable Birthday Activities",
+      "Treatment 2: Geo test Enable Birthday Activities but no share"
+    ],
+    "buckets": [
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-06_birthday_goodbye",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Activities Free Forever",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14320,14 +14459,26 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 1000
+                }
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Treatment 2: Enable any number of users VC Tile Activities Entry Point",
+              "bucket": 2,
+              "rollouts": [
+                {
+                  "start": 1000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14375,7 +14526,7 @@
     ]
   },
   {
-    "id": "2022-10_profile_panel",
+    "id": "2023-06_hide_thread_count",
     "defaultConfig": {
       "enabled": false
     },
@@ -14403,7 +14554,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: View Profiles In DMs With Theme Colors",
+              "treatment": "Treatment 1: Hide thread count",
               "bucket": 1,
               "rollouts": [
                 {
@@ -14417,26 +14568,24 @@
             {
               "type": "build_override",
               "experiments": [
-                "2022-10_profile_panel"
+                "2023-06_hide_thread_count"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 71699970,
-    "creationDate": 1665175385,
+    "hash": 1130195016,
+    "creationDate": 1686170585,
     "type": "user",
-    "title": "Profiles In DMs",
+    "title": "Hide thread count",
     "description": [
       "Control",
-      "Treatment 1: View Profiles In DMs With Theme Colors",
-      "Treatment 2: View Profiles In DMs Without Theme Colors"
+      "Treatment 1: Hide thread count"
     ],
     "buckets": [
       0,
-      1,
-      2
+      1
     ]
   },
   {
@@ -14568,72 +14717,7 @@
     ]
   },
   {
-    "id": "2023-05_premium_marketing_page_trial_tier_card",
-    "defaultConfig": {
-      "pillLocation": 0
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Free trial pill on top of the card",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_premium_marketing_page_trial_tier_card"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2553858368,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Premium marketing page trial tier card",
-    "description": [
-      "Control",
-      "Treatment 1: Free trial pill on top of the card",
-      "Treatment 2: Free trial pill inline with the card"
-    ],
-    "buckets": [
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-04_tier_0_trial_cta_copy",
+    "id": "2023-06_bogo_promotion_gate",
     "defaultConfig": {
       "enabled": false
     },
@@ -14661,7 +14745,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+              "treatment": "Treatment 1: Enable BOGO Promotion Manager",
               "bucket": 1,
               "rollouts": [
                 {
@@ -14675,150 +14759,20 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-04_tier_0_trial_cta_copy"
+                "2023-06_bogo_promotion_gate"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 3084409284,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Tier 0 Trial CTA Copy",
-    "description": [
-      "Control",
-      "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
-      "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
-      "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
-    ],
-    "buckets": [
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "2023-02_nitro_most_popular_tag",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show most popular tag on nitro plan",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_nitro_most_popular_tag"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2459440542,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "Most popular tag in nitro plan selection",
-    "description": [
-      "Control",
-      "Treatment 1: show most popular tag on nitro plan"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-06_remove_spotify_dc_nagbar",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Remove Nagbar",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_remove_spotify_dc_nagbar"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1682576930,
+    "hash": 680908968,
     "creationDate": 1686170585,
     "type": "user",
-    "title": "Remove Spotify DC Nagbar",
+    "title": "BOGO Promotion Manager",
     "description": [
       "Control",
-      "Treatment 1: Remove Nagbar"
+      "Treatment 1: Enable BOGO Promotion Manager"
     ],
     "buckets": [
       0,
@@ -14899,14 +14853,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable GDM tile",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14962,14 +14917,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable Jamspace tile",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15025,14 +14981,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable Poker tile",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15088,14 +15045,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable Putt Party tile",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15407,14 +15365,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 2: Enable Account Profile Popout w/ DiscordTag button",
+              "bucket": 2,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16610,100 +16569,7 @@
     ]
   },
   {
-    "id": "2023-02_guest_voice_invites",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 1,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow creation of guest voice invites",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 600,
-                  "end": 1000
-                },
-                {
-                  "start": 1500,
-                  "end": 2000
-                },
-                {
-                  "start": 3000,
-                  "end": 4000
-                },
-                {
-                  "start": 5000,
-                  "end": 6000
-                },
-                {
-                  "start": 7000,
-                  "end": 8000
-                },
-                {
-                  "start": 9000,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "vanity_url"
-            },
-            {
-              "type": "member_count",
-              "range": {
-                "start": 1,
-                "end": 50
-              }
-            }
-          ]
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Allow creation of guest voice invites",
-          "bucket": 1,
-          "ids": [
-            "1103064168459927674",
-            "227251386738409483",
-            "313840371274874880",
-            "1104138316418400286",
-            "295820647660257283",
-            "1029604342589833286",
-            "426434256290578472",
-            "838840935404011560",
-            "651595875897835540",
-            "1074777828672929852",
-            "922748688403693578"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 1727857487,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Guest Voice Invites",
-    "description": [
-      "Control",
-      "Treatment 1: Allow creation of guest voice invites"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_localized_pricing_promo_manager",
+    "id": "2023-04_server_subscriptions_tier_templates_user",
     "defaultConfig": {
       "enabled": false
     },
@@ -16713,14 +16579,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable tier templates for user",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16731,7 +16598,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Localized Pricing Promo Manager",
+              "treatment": "Treatment 1: Enable tier templates for user",
               "bucket": 1,
               "rollouts": [
                 {
@@ -16745,20 +16612,20 @@
             {
               "type": "build_override",
               "experiments": [
-                "2022-12_localized_pricing_promo_manager"
+                "2023-04_server_subscriptions_tier_templates_user"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 4215507151,
-    "creationDate": 1670445785,
+    "hash": 4265918989,
+    "creationDate": 1680900185,
     "type": "user",
-    "title": "Localized Pricing Promo Manager",
+    "title": "Server Subscriptions Tier Templates",
     "description": [
       "Control",
-      "Treatment 1: Enable Localized Pricing Promo Manager"
+      "Treatment 1: Enable tier templates for user"
     ],
     "buckets": [
       0,
