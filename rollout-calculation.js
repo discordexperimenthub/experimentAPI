@@ -11,7 +11,12 @@ import wait from "delay";
         let ranges = {};
 
         for (let i = 0; i < numRequests; i++) {
-            const allExperimentsResponse = await axios.get(apiUrl).then(res => res.data);
+            const allExperimentsResponse = await axios.get(apiUrl)
+                .catch(async () => await axios.get(apiUrl).catch(() => ({ data: undefined })))
+                .then(res => res.data);
+
+            if (!allExperimentsResponse) continue;
+
             const allExperiments = allExperimentsResponse.assignments;
 
             for (let assignment of allExperiments) {
