@@ -75,6 +75,7 @@ jobs:
     - name: Calculate
       run: |
         node run.js
+        wait
 
     - uses: actions/upload-artifact@v2
       with:
