@@ -14,14 +14,14 @@ import { customize } from '@tolga1452/logchu';
     async function getRanges() {
         let ranges = {};
 
+        process.send(customize(`Started`, randomColor));
+
         for (let i = 1; i < numRequests + 1; i++) {
             const allExperimentsResponse = await axios.get(apiUrl).then(res => res.data).catch(error => process.send(customize(`Errored: ${error}`)));
 
             if (!allExperimentsResponse) continue;
 
             const allExperiments = allExperimentsResponse.assignments;
-
-            process.send(customize(`Started`, randomColor));
 
             for (let assignment of allExperiments) {
                 let experiment = {
