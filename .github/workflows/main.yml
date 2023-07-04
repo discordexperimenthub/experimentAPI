@@ -74,17 +74,7 @@ jobs:
 
     - name: Calculate
       run: |
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        node rollout-calculation.js &
-        wait
+        node run.js
 
     - uses: actions/upload-artifact@v2
       with:

@@ -1,8 +1,12 @@
 import { readFileSync, writeFileSync } from 'node:fs';
 import axios from 'axios';
 import wait from "delay";
+import { randomNumber } from '@tolga1452/toolbox.js';
+import { customize } from '@tolga1452/logchu';
 
 (async () => {
+    let randomColor = [randomNumber(0, 255), randomNumber(0, 255), randomNumber(0, 255)];
+
     const numRequests = 10000;
     const apiUrl = 'https://canary.discord.com/api/v10/experiments';
     const experiments = [];
@@ -10,14 +14,14 @@ import wait from "delay";
     async function getRanges() {
         let ranges = {};
 
-        for (let i = 0; i < numRequests; i++) {
-            const allExperimentsResponse = await axios.get(apiUrl)
-                .catch(async () => await axios.get(apiUrl).catch(() => ({ data: undefined })))
-                .then(res => res.data);
+        for (let i = 1; i < numRequests + 1; i++) {
+            const allExperimentsResponse = await axios.get(apiUrl).then(res => res.data).catch(error => process.send(customize(`Errored: ${error}`)));
 
             if (!allExperimentsResponse) continue;
 
             const allExperiments = allExperimentsResponse.assignments;
+
+            process.send(customize(`Started`, randomColor));
 
             for (let assignment of allExperiments) {
                 let experiment = {
@@ -41,7 +45,7 @@ import wait from "delay";
                 ranges[experiment.hash.toString()][experiment.bucket].push(experiment.hash_result);
             };
 
-            console.log(`Collected ${i + 1} of ${numRequests} data`);
+            if (!(i / 1000).toString().includes('.')) process.send(customize(`Collected ${i} of ${numRequests} data`, randomColor));
 
             await wait(600);
         };
@@ -69,6 +73,11 @@ import wait from "delay";
     };
 
     const experimentRanges = await getRanges();
+
+    process.send(customize(`Writing to file...`, randomColor));
+
+    await wait(randomNumber(1000, 5000));
+
     const existing = JSON.parse(readFileSync('./user-experiments.json', 'utf-8'));
 
     writeFileSync('./user-experiments.json', JSON.stringify(existing.concat(experimentRanges), null, 2));
