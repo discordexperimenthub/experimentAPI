@@ -9411,6 +9411,195 @@
     ]
   },
   {
+    "id": "2023-06_bogo_announcement_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users will see the BOGO announcement modal",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_bogo_announcement_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2338915282,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "BOGO Announcement Modal",
+    "description": [
+      "Control",
+      "Treatment 1: Users will see the BOGO announcement modal"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-06_bogo_promotion_gate",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable BOGO Promotion Manager",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_bogo_promotion_gate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 680908968,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "BOGO Promotion Manager",
+    "description": [
+      "Control",
+      "Treatment 1: Enable BOGO Promotion Manager"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2021-06_preview_promotions",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Preview Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-06_preview_promotions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3704699110,
+    "creationDate": 1623098585,
+    "type": "user",
+    "title": "Promotions Preview",
+    "description": [
+      "Control",
+      "Treatment 1: Preview Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_referral_trials",
     "defaultConfig": {
       "enabled": false
@@ -14780,132 +14969,6 @@
     ]
   },
   {
-    "id": "2023-06_bogo_promotion_gate",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable BOGO Promotion Manager",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_bogo_promotion_gate"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 680908968,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "BOGO Promotion Manager",
-    "description": [
-      "Control",
-      "Treatment 1: Enable BOGO Promotion Manager"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2021-06_preview_promotions",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Preview Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-06_preview_promotions"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3704699110,
-    "creationDate": 1623098585,
-    "type": "user",
-    "title": "Promotions Preview",
-    "description": [
-      "Control",
-      "Treatment 1: Preview Enabled"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-04_birthday_activities_whats_new_gdm_tile",
     "defaultConfig": {
       "enabled": false
@@ -16650,7 +16713,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16714,7 +16777,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16778,7 +16841,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
