@@ -209,23 +209,30 @@ async function collect() {
 
   await page.waitForSelector(serverElementId);
 
-  let serverList = await page.$$(".listItem-3SmSlK");
-  let server = serverList[2];
+  let serverList = await page.$$(".listItem-3SmSlK").catch(() => undefined);
 
-  await server.click();
-  await wait(1000);
-  await server.click();
-  await wait(1000);
+  if (serverList) {
+    let server = serverList[2];
 
-  let serverName = await page.waitForSelector(".lineClamp1-1voJi7");
+    await server.click();
+    await wait(1000);
+    await server.click();
+    await wait(1000);
 
-  await serverName.click();
-  await wait(1000);
+    let serverName = await page.waitForSelector(".lineClamp1-1voJi7").catch(() => undefined);
 
-  let createChannel = await page.waitForSelector("text/Create Channel");
+    if (serverName) {
+      await serverName.click();
+      await wait(1000);
 
-  await createChannel.click();
-  await wait(1000);
+      let createChannel = await page.waitForSelector("text/Create Channel").catch(() => undefined);
+
+      if (createChannel) {
+        await createChannel.click();
+        await wait(1000);
+      };
+    };
+  };
 
   console.log(
     `[${new Date()}] ${chalk.hex(`#FF005C`)(`Loading Experiments...`)}`
