@@ -7551,6 +7551,132 @@
     ]
   },
   {
+    "id": "2023-06_inventory_reaction_tooltip",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_inventory_reaction_tooltip"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3470792155,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Inventory Reaction Tooltip Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-06_inventory_guild_setting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_inventory_guild_setting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3883768363,
+    "creationDate": 1686170585,
+    "type": "guild",
+    "title": "Inventory Guild Settings Experiment",
+    "description": [
+      "Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_p13n_summarization",
     "defaultConfig": {
       "enabled": false
@@ -9218,14 +9344,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Logged-Out Access to App Directory",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -11451,69 +11578,6 @@
     "description": [
       "Control",
       "Treatment 1: Enables for users Guild Media Post Preview Embeds"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-06_inventory_reaction_tooltip",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_inventory_reaction_tooltip"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3470792155,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Inventory Reaction Tooltip Experiment",
-    "description": [
-      "Control",
-      "Treatment 1: Enabled"
     ],
     "buckets": [
       0,
@@ -14521,14 +14585,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable Activity Shelf Banner Color Together",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -14635,6 +14700,138 @@
     "buckets": [
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-06_activity_shelf_to_detail_page",
+    "defaultConfig": {
+      "enableBigShelf": false,
+      "enableShelfToDetailPage": false,
+      "enableSocialProofActivityDetails": false,
+      "enableMinimalActivityDetails": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control",
+              "bucket": 0,
+              "rollouts": [
+                {
+                  "start": 7000,
+                  "end": 7500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 0: Control",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 7500,
+                  "end": 8000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 1: Enable Big Shelf",
+              "bucket": 2,
+              "rollouts": [
+                {
+                  "start": 8000,
+                  "end": 8500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 2: Enable Activity Shelf to Detail Page",
+              "bucket": 3,
+              "rollouts": [
+                {
+                  "start": 8500,
+                  "end": 9000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 3: Enable social-proof shelf details",
+              "bucket": 4,
+              "rollouts": [
+                {
+                  "start": 9000,
+                  "end": 9500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 4: Enable minimal shelf details",
+              "bucket": 5,
+              "rollouts": [
+                {
+                  "start": 9500,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Big Shelf",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_activity_shelf_to_detail_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2451628514,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Activity Shelf to Detail Page",
+    "description": [
+      "Control",
+      "Treatment 0: Control",
+      "Treatment 1: Enable Big Shelf",
+      "Treatment 2: Enable Activity Shelf to Detail Page",
+      "Treatment 3: Enable social-proof shelf details",
+      "Treatment 4: Enable minimal shelf details",
+      "Treatment 5: Enable minimal shelf details and route to detail page"
+    ],
+    "buckets": [
+      0,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
     ]
   },
   {
