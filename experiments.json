@@ -9396,6 +9396,69 @@
     ]
   },
   {
+    "id": "2023-06_unique_username_registration",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Unique Username Registration enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_unique_username_registration"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2476969328,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Unique Username Registration",
+    "description": [
+      "Control",
+      "Treatment 1: Unique Username Registration enabled"
+    ],
+    "buckets": [
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-12_get_my_guilds_application_ids_endpoint",
     "defaultConfig": {
       "enabled": false
