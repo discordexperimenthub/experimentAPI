@@ -47,7 +47,7 @@ import { customize } from '@tolga1452/logchu';
 
             if (!(i / 1000).toString().includes('.')) process.send(customize(`Collected ${i} of ${numRequests} data`, randomColor));
 
-            await wait(600);
+            await wait(700);
         };
 
         console.log('Calculating ranges...');
