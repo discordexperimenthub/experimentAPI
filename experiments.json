@@ -11058,11 +11058,13 @@
     "title": "Remixing User Experiment",
     "description": [
       "Control",
-      "Treatment 1: Enables media remixing"
+      "Treatment 1: Enables media remixing",
+      "Treatment 2: Enables media remixing for desktop"
     ],
     "buckets": [
       0,
-      1
+      1,
+      2
     ]
   },
   {
@@ -12840,7 +12842,7 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 1000,
+                  "start": 0,
                   "end": 2000
                 }
               ],
