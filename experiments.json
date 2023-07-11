@@ -10,7 +10,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -55,10 +55,12 @@
     "type": "user",
     "title": "Global Display Name",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -74,7 +76,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -123,10 +125,12 @@
     "type": "guild",
     "title": "Split Permissions",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Split permissions into Add/Modify + Delete"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -143,7 +147,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -187,11 +191,13 @@
     "type": "user",
     "title": "Enable fancy super-alpha favorites server.",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: It is on.",
       "Treatment 2: It is forced off"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -208,7 +214,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to view Creator Monetization entrypoints",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -253,10 +259,12 @@
     "type": "user",
     "title": "Creator Monetization Available in Country",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables users to view Creator Monetization entrypoints"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -320,10 +328,12 @@
     "type": "guild",
     "title": "Creator Monetization Onboarding v2",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to create Guild Role Subscriptions quickly"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -339,7 +349,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions quickly",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -384,10 +394,12 @@
     "type": "user",
     "title": "Creator Monetization Onboarding v2 Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables users to create Guild Role Subscriptions quickly"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -423,7 +435,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -467,10 +479,12 @@
     "type": "guild",
     "title": "Creator Monetization Onboarding Waitlist",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Guilds to (possibly) see the waitlist"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -486,7 +500,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to see nag bar to activate server subscriptions",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -531,10 +545,12 @@
     "type": "user",
     "title": "Creator Monetization Nag Activate Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables users to see nag bar to activate server subscriptions"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -550,7 +566,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -571,10 +587,12 @@
     "type": "guild",
     "title": "Server Subscriptions Accept New Terms",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Server Subscriptions Accept New Terms"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -590,7 +608,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -636,7 +654,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -680,10 +698,12 @@
     "type": "guild",
     "title": "Guild Role Subscriptions",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to create Guild Role Subscriptions"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -699,7 +719,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables users to create Guild Role Subscriptions",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -744,10 +764,12 @@
     "type": "user",
     "title": "Guild Role Subscription Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables users to create Guild Role Subscriptions"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -763,7 +785,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -795,10 +817,12 @@
     "type": "guild",
     "title": "Guild Role Subscription Multigroup",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to create multiple Guild Role Subscription groups"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -834,7 +858,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -878,10 +902,12 @@
     "type": "guild",
     "title": "Guild Role Subscription Trials",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to create Guild Role Subscription Trials"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -937,10 +963,12 @@
     "type": "guild",
     "title": "Guild Role Subscription Analytics",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to view analytics for role subscriptions"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -985,10 +1013,12 @@
     "type": "guild",
     "title": "Guild Role Subscription Purchase Feedback Loop",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guilds to send purchsae feedback loop system messages"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1025,10 +1055,12 @@
     "type": "guild",
     "title": "Guild Role Subscription Mobile Web",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables role subscription mobile web purchase page"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1044,7 +1076,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable native role subscription management for mobile",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -1089,10 +1121,12 @@
     "type": "user",
     "title": "Mobile Guild Role Subscription Management",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable native role subscription management for mobile"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1109,7 +1143,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1143,12 +1177,14 @@
     "type": "guild",
     "title": "Guild Role Subscription Max Tiers",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 4: Enables {n} maximum published tiers",
       "Treatment 5: Enables {n} maximum published tiers",
       "Treatment 6: Enables {n} maximum published tiers"
     ],
     "buckets": [
+      -1,
       0,
       4,
       5,
@@ -1166,7 +1202,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable mobile web role subscription upsell",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -1211,10 +1247,12 @@
     "type": "user",
     "title": "Mobile Web Guild Role Subscription Upsell",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable mobile web role subscription upsell"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1278,10 +1316,12 @@
     "type": "guild",
     "title": "Creator Store Pages ",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to have store page"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1297,7 +1337,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1337,10 +1377,12 @@
     "type": "guild",
     "title": "Mobile Guild Role Subscription Team Setup",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to allow payout team setup on mobile"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1356,7 +1398,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1392,10 +1434,12 @@
     "type": "guild",
     "title": "Server Subscriptions IAP",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Server Subscriptions IAP"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1411,7 +1455,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables Server Subscriptions IAP For User",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -1456,10 +1500,12 @@
     "type": "user",
     "title": "Server Subscriptions IAP User",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Server Subscriptions IAP For User"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1498,7 +1544,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1550,7 +1596,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1607,12 +1653,14 @@
     "type": "guild",
     "title": "Server Subscriptions Tier Templates",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: 299 basic tier + no link",
       "Treatment 2: 399 basic tier + no link",
       "Treatment 3: 399 basic tier + link"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -1659,10 +1707,12 @@
     "type": "guild",
     "title": "Self Demonetization",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Self Demonetization"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1679,7 +1729,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1723,11 +1773,13 @@
     "type": "user",
     "title": "Go Live Broadcasting",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Allow user to Broadcast to friends & guilds",
       "Treatment 2: Cannot broadcast, cannot view broadcasts"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -1764,7 +1816,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1829,10 +1881,12 @@
     "type": "guild",
     "title": "[ADMIN] Home as a community onboarding surface",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show the Onboarding Version of Home in Admin Settings"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1848,7 +1902,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -1892,10 +1946,12 @@
     "type": "guild",
     "title": "[ADMIN] Make server guide optional",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Optional"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -1912,7 +1968,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show the Onboarding Version of Home",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -1957,12 +2013,14 @@
     "type": "user",
     "title": "Home as a community onboarding surface",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show the Onboarding Version of Home",
       "Treatment 2: Onboarding Home DEV",
       "Treatment 3: Show the Onboarding Version of Home"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -1980,7 +2038,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2024,12 +2082,12 @@
     "type": "user",
     "title": "Mobile Redesign Day 0 NUX",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Day 0 Enabled"
     ],
     "buckets": [
-      0,
+      -1,
       0,
       1
     ]
@@ -2045,7 +2103,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2089,7 +2147,8 @@
     "type": "user",
     "title": "Tabs V2 - Curry Existing Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -2097,6 +2156,7 @@
       "Treatment 6: Plain Redesign"
     ],
     "buckets": [
+      -1,
       0,
       2,
       3,
@@ -2116,7 +2176,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2160,7 +2220,8 @@
     "type": "user",
     "title": "Tabs V2 - Curry New Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 2: App Navbar Always Visible",
       "Treatment 3: App Navbar Always Visible + Keep Channel",
       "Treatment 4: Recent channels",
@@ -2168,6 +2229,7 @@
       "Treatment 6: Plain Redesign"
     ],
     "buckets": [
+      -1,
       0,
       2,
       3,
@@ -2187,7 +2249,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2231,10 +2293,12 @@
     "type": "user",
     "title": "Tabs V2 - GDM Bucketing",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Tabs V2"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2250,7 +2314,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2294,10 +2358,12 @@
     "type": "user",
     "title": "Tabs V2 - Existing Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Tabs V2"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2313,7 +2379,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2357,10 +2423,12 @@
     "type": "user",
     "title": "Tabs V2 - New Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Tabs V2"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2376,7 +2444,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2420,10 +2488,12 @@
     "type": "user",
     "title": "Tabs V2 - New Users Phase 0c",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Tabs V2"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2439,7 +2509,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2483,10 +2553,12 @@
     "type": "user",
     "title": "Tabs V2 - New Users Phase 0d",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Tabs V2"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2502,7 +2574,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2546,18 +2618,85 @@
     "type": "user",
     "title": "Minimum Jitter Buffer Level",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Minimum Jitter Buffer Level = 80ms",
       "Treatment 2: Minimum Jitter Buffer Level = 120ms",
       "Treatment 3: Minimum Jitter Buffer Level = 160ms",
       "Treatment 4: Minimum Jitter Buffer Level = 200ms"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
       3,
       4
+    ]
+  },
+  {
+    "id": "2023-07_domain_connection",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_domain_connection"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3495789820,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Domain Connection",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
@@ -2571,7 +2710,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -2616,10 +2755,12 @@
     "type": "user",
     "title": "Price determination experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2635,7 +2776,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2679,10 +2820,12 @@
     "type": "user",
     "title": "Trial Redemption Default To Monthly Plan",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Set default plan to monthly plan"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2698,7 +2841,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2742,11 +2885,13 @@
     "type": "user",
     "title": "Detect and report crashes in the overlay hook",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: EnableCrashReporting",
       "Treatment 2: EnableCrashTrigger"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -2763,7 +2908,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2807,10 +2952,12 @@
     "type": "user",
     "title": "Test how AV1 works on windows with RTX40xx GPUs for screenshare",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Screenshare with AV1"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2826,7 +2973,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2870,10 +3017,12 @@
     "type": "user",
     "title": "Test how h265 works on android for DM calls",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Calling with H.265"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2889,7 +3038,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2933,10 +3082,12 @@
     "type": "user",
     "title": "Test how h265 works on macos",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Calling with H.265"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -2952,7 +3103,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -2996,10 +3147,12 @@
     "type": "user",
     "title": "Test how h265 works on ios/macos for DM calls",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Calling with H.265"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3015,7 +3168,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3059,11 +3212,13 @@
     "type": "user",
     "title": "HDR Screen Capture",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Always",
       "Treatment 2: Permitted Devices Only"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -3080,7 +3235,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3124,10 +3279,12 @@
     "type": "user",
     "title": "Overrides the default max sync delay for AV streams in WebRTC",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Use 3 seconds as max sync delay"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3143,7 +3300,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: gotta go fast",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -3188,11 +3345,13 @@
     "type": "user",
     "title": "Quartz Video Source",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: gotta go fast",
       "Treatment 2: 2fast 2furious"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -3209,7 +3368,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3253,10 +3412,12 @@
     "type": "user",
     "title": "VideoToolbox Rate Control Optimizations",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3272,7 +3433,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3316,13 +3477,15 @@
     "type": "user",
     "title": "Mobile performance: VideoHealthManager",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
       "Treatment 2: 5 second window, 100% allowed poor fps ratio, 5 fps threshold, 10 second backoff",
       "Treatment 3: 10 second window, 70% allowed poor fps ratio, 5 fps threshold, 15 second backoff",
       "Treatment 4: 10 second window, 90% allowed poor fps ratio, 5 fps threshold, 15 second backoff"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -3341,7 +3504,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Read/write remote audio settings",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -3386,10 +3549,12 @@
     "type": "user",
     "title": "Remote Audio Settings",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Read/write remote audio settings"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3405,7 +3570,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3449,10 +3614,12 @@
     "type": "user",
     "title": "Read State Staff",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Refresh after enabling"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3468,7 +3635,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3512,10 +3679,12 @@
     "type": "user",
     "title": "Client Themes New Themes",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: New themes enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3531,7 +3700,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3575,10 +3744,12 @@
     "type": "user",
     "title": "File Upload Limit Increase",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3594,7 +3765,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3638,10 +3809,12 @@
     "type": "user",
     "title": "Free File Upload Limit Increase",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3682,7 +3855,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3769,12 +3942,14 @@
     "type": "guild",
     "title": "Burst Reactions",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled",
       "Treatment 2: Tab UI",
       "Treatment 4: Free Bursts"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -3795,7 +3970,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3839,7 +4014,8 @@
     "type": "user",
     "title": "Burst Reactions User Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: User two entry points",
       "Treatment 2: User Tab UI",
       "Treatment 4: User Free Bursts",
@@ -3851,6 +4027,7 @@
       "Treatment 10: The exact same as bucket six, just with a different label"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -3874,7 +4051,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3918,10 +4095,12 @@
     "type": "user",
     "title": "Burst Reaction Entry Point Ordering",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Regular Reaction Prioritized"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -3937,7 +4116,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -3981,11 +4160,13 @@
     "type": "user",
     "title": "Mobile Burst Reactions User Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled",
       "Treatment 2: Enabled v2"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -4002,7 +4183,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable the Activity Launcher Embed in chat",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -4047,10 +4228,12 @@
     "type": "user",
     "title": "Activity Launcher Embed",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable the Activity Launcher Embed in chat"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4066,7 +4249,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4110,11 +4293,13 @@
     "type": "user",
     "title": "Context Menu and New Media Picker",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: New media picker is enabled. Gift button is visible alongside Create Chread",
       "Treatment 2: New media picker is enabled. Gift button is NOT visible alongside Create Chread"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -4131,7 +4316,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4175,10 +4360,12 @@
     "type": "user",
     "title": "Store latest message data",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Use latest data from api/gateway"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4194,7 +4381,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4238,10 +4425,12 @@
     "type": "user",
     "title": "Media Mosaic",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Media mosaic is enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4257,7 +4446,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4301,10 +4490,12 @@
     "type": "user",
     "title": "Inline Sending Preview Mobile",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Inline sending preview is enabled on mobile (both iOS and Android)"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4320,7 +4511,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4364,10 +4555,12 @@
     "type": "user",
     "title": "Guild Unreads",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Allow \"Highlights\" as an Unreads Option"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4383,7 +4576,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4427,10 +4620,12 @@
     "type": "user",
     "title": "NotificationRedesign",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Notification Redesign Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4446,7 +4641,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4490,10 +4685,12 @@
     "type": "user",
     "title": "NotificationRedesignV2",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Notification Redesign V2 Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4509,7 +4706,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4553,10 +4750,12 @@
     "type": "user",
     "title": "Desktop notification center",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Notification center desktop enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4572,7 +4771,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4616,10 +4815,12 @@
     "type": "user",
     "title": "Channel Highlights",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Channel Highlights"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4638,7 +4839,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4682,7 +4883,8 @@
     "type": "user",
     "title": "DCF Improvements Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Users will have a DC cooldown of 1 hour",
       "Treatment 2: DCs will be dismissed when a user navigates away from their surface",
       "Treatment 3: Users will be limited to seeing 2 DC a day and 6 DC a week",
@@ -4691,6 +4893,7 @@
       "Treatment 6: Users will be limited to seeing 3 DC a day"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -4711,7 +4914,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Log network actions",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -4756,10 +4959,12 @@
     "type": "user",
     "title": "Standard Analytics: Log Network Actions",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Log network actions"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4775,7 +4980,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4819,10 +5024,12 @@
     "type": "user",
     "title": "Emoji Ecosystem Holdout Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: In the Emoji Ecosystem Holdout"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -4838,7 +5045,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4882,12 +5089,14 @@
     "type": "user",
     "title": "Emoji Picker Improved Discovery",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Bigger Picker",
       "Treatment 2: Bigger Picker + Popular Server Emojis",
       "Treatment 3: Bigger Picker + Newly Added Emojis"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -4943,7 +5152,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -4965,7 +5174,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5009,10 +5218,12 @@
     "type": "guild",
     "title": "Stage Boosting",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -5028,7 +5239,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5072,13 +5283,15 @@
     "type": "user",
     "title": "iOS: Screenshare resolution profiles",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Permanent old resolution",
       "Treatment 2: Old resolution for 10s",
       "Treatment 3: Wait 3s after 1st frame capture",
       "Treatment 4: Wait 3s to capture 1st frame"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -5097,7 +5310,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5143,7 +5356,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5195,7 +5408,7 @@
     "type": "guild",
     "title": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Holdout",
       "Treatment 1: NMX Core",
       "Treatment 2: NMX Core + Home",
@@ -5203,7 +5416,7 @@
       "Treatment 4: Home"
     ],
     "buckets": [
-      0,
+      -1,
       0,
       1,
       2,
@@ -5222,7 +5435,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5237,7 +5450,7 @@
       ],
       "overrides": [
         {
-          "treatment": "Control",
+          "treatment": "Control Bucket",
           "bucket": 0,
           "ids": [
             "814669604840013874"
@@ -5258,11 +5471,13 @@
     "type": "guild",
     "title": "Home Tab Guild",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Check User as well",
       "Treatment 2: Force on"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -5290,7 +5505,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 1: Show Home Tab",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -5301,7 +5516,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 3: Overflow",
+              "treatment": "Treatment 2: Force on",
               "bucket": 3,
               "rollouts": [
                 {
@@ -5346,12 +5561,14 @@
     "type": "user",
     "title": "Home Tab User",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Home Tab",
       "Treatment 2: Force on",
       "Treatment 3: Overflow"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -5369,7 +5586,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5413,10 +5630,12 @@
     "type": "user",
     "title": "Show Guild Feed Sorting Selector",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Yes Selector"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -5443,7 +5662,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 1: Yes button",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -5488,10 +5707,12 @@
     "type": "user",
     "title": "Show refresh button",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Yes button"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -5507,7 +5728,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5551,10 +5772,12 @@
     "type": "user",
     "title": "Show badge on home channel",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: show badge"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -5570,7 +5793,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5614,7 +5837,8 @@
     "type": "user",
     "title": "Auto close home drawer",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: normal animation",
       "Treatment 2: no animate",
       "Treatment 3: 150 delayed animation",
@@ -5622,6 +5846,7 @@
       "Treatment 5: 500 delayed animation"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -5641,7 +5866,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5685,10 +5910,12 @@
     "type": "user",
     "title": "Show welcome header for home",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: show welcome header"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -5704,7 +5931,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5748,10 +5975,12 @@
     "type": "user",
     "title": "Show post feedback for home",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 100: show feedback"
     ],
     "buckets": [
+      -1,
       0,
       100
     ]
@@ -5787,7 +6016,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5808,10 +6037,12 @@
     "type": "guild",
     "title": "Home Deprecation",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show notice"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -5827,7 +6058,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -5871,10 +6102,12 @@
     "type": "user",
     "title": "Free Default Stickers",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -5901,7 +6134,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 1: Users land on server guide when joining a guild via invite",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -5946,11 +6179,13 @@
     "type": "user",
     "title": "Land users on server guide",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Users land on server guide when joining a guild via invite",
       "Treatment 42: [untracked] Users land on server guide when joining a guild via invite"
     ],
     "buckets": [
+      -1,
       0,
       1,
       42
@@ -5967,7 +6202,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -6012,10 +6247,12 @@
     "type": "user",
     "title": "Pomelo Compatibility",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6031,7 +6268,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6101,10 +6338,12 @@
     "type": "guild",
     "title": "Member Verification Manual Approval",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable manual approval for membership verification"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6120,7 +6359,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6149,10 +6388,12 @@
     "type": "guild",
     "title": "Guild Member Safety Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Guild Member Safety Experiment"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6168,7 +6409,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Log impressions",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -6213,10 +6454,12 @@
     "type": "user",
     "title": "Standard Analytics: Log Impressions",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Log impressions"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6232,7 +6475,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Allow sending @silent messages",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -6277,10 +6520,12 @@
     "type": "user",
     "title": "Silent Messages",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Allow sending @silent messages"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6296,7 +6541,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6340,10 +6585,12 @@
     "type": "user",
     "title": "Increased activity view for Forums, per user",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6359,7 +6606,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6401,10 +6648,12 @@
     "type": "guild",
     "title": "Increased activity view for Forums, per guild",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6420,7 +6669,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6464,10 +6713,12 @@
     "type": "user",
     "title": "Premium Unify Trial Upsell",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Unified trial upsell experience"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6483,7 +6734,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6527,10 +6778,12 @@
     "type": "user",
     "title": "Emoji Hotrail Backfill",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Backfills Hotrail With Emojis"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6546,7 +6799,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6590,10 +6843,12 @@
     "type": "user",
     "title": "Most popular tag in nitro plan selection",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: show most popular tag on nitro plan"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6609,7 +6864,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6653,11 +6908,13 @@
     "type": "user",
     "title": "Premium marketing page trial tier card",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Free trial pill on top of the card",
       "Treatment 2: Free trial pill inline with the card"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -6674,7 +6931,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6718,12 +6975,14 @@
     "type": "user",
     "title": "Tier 0 Trial CTA Copy",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
       "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
       "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -6741,7 +7000,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6785,10 +7044,12 @@
     "type": "user",
     "title": "Block purchases based on country",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Payments Blocked"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6804,7 +7065,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Check Payment Source",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -6849,10 +7110,12 @@
     "type": "user",
     "title": "Block purchases based on country (desktop specific flags)",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Check Payment Source"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6868,7 +7131,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6912,10 +7175,12 @@
     "type": "user",
     "title": "BOGO Announcement Modal",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Users will see the BOGO announcement modal"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6931,7 +7196,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -6975,10 +7240,12 @@
     "type": "user",
     "title": "BOGO Promotion Manager",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable BOGO Promotion Manager"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -6994,7 +7261,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7038,10 +7305,12 @@
     "type": "user",
     "title": "Promotions Preview",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Preview Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7057,7 +7326,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7101,10 +7370,12 @@
     "type": "user",
     "title": "Enabled AMOLED Mode on Web",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled AMOLED Theme Option"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7121,7 +7392,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7165,11 +7436,13 @@
     "type": "user",
     "title": "Clips Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Clips without upsells",
       "Treatment 2: Clips with upsells"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -7186,7 +7459,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7230,10 +7503,12 @@
     "type": "user",
     "title": "Activities in GDM",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable Activities in GDMs"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7272,7 +7547,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7294,7 +7569,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7337,7 +7612,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7420,12 +7695,14 @@
     "type": "guild",
     "title": "ClydeAI",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled (Default Off)",
       "Treatment 3: Enabled (Default On)",
       "Treatment 4: Coming Soon"
     ],
     "buckets": [
+      -1,
       0,
       1,
       3,
@@ -7443,7 +7720,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enable clyde in gdms",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -7488,10 +7765,12 @@
     "type": "user",
     "title": "Clyde in DMs/GDMs",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable clyde in gdms"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7507,7 +7786,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7551,10 +7830,12 @@
     "type": "user",
     "title": "Nitroduction Experience",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: One month trial users recieve the Nitroduction experience"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7570,7 +7851,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7614,10 +7895,12 @@
     "type": "user",
     "title": "2023 Nitro April Drop Announcement Modal",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled Nitro April Drop announcement modal"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7633,7 +7916,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7677,10 +7960,12 @@
     "type": "user",
     "title": "2023 Nitro April Drop Experience",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled Nitro April Drop Experience (apart from the announcement modal)"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7696,7 +7981,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7740,10 +8025,12 @@
     "type": "user",
     "title": "April Fools 2023",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: April Fools 2023"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7761,7 +8048,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7805,13 +8092,15 @@
     "type": "user",
     "title": "Collectibles",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Nitro with collecting",
       "Treatment 2: Non-nitro with collecting upsells",
       "Treatment 3: Non-nitro with temporary avatar decorations upsells",
       "Treatment 100: collecting with uploading"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -7830,7 +8119,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enable dms to clyde",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -7875,10 +8164,12 @@
     "type": "user",
     "title": "DMs to Clyde",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable dms to clyde"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7894,7 +8185,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -7938,10 +8229,12 @@
     "type": "user",
     "title": "Inventory Guild Packs Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -7957,7 +8250,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8001,10 +8294,12 @@
     "type": "user",
     "title": "Inventory Reaction Tooltip Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8020,7 +8315,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8064,11 +8359,13 @@
     "type": "guild",
     "title": "Inventory Guild Settings Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show setting toggle without respecting it",
       "Treatment 2: Show setting toggle and respect it"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -8135,11 +8432,13 @@
     "type": "guild",
     "title": "Channel Summaries Guild Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable channel summaries",
       "Treatment 2: Enable channel summaries GA"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -8156,7 +8455,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable channel summaries",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -8201,10 +8500,12 @@
     "type": "user",
     "title": "Channel Summaries User Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable channel summaries"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8220,7 +8521,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8264,10 +8565,12 @@
     "type": "user",
     "title": "Channel Summaries UX on Mobile Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable mobile UX for channel summaries"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8283,7 +8586,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8327,10 +8630,12 @@
     "type": "user",
     "title": "Guild Dock Summaries on Mobile Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable guild dock summaries mobile UX"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8346,7 +8651,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8390,10 +8695,12 @@
     "type": "user",
     "title": "Apps in GDMs",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show apps in gdm"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8437,10 +8744,12 @@
     "type": "guild",
     "title": "Voice in Threads",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8456,7 +8765,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8500,10 +8809,12 @@
     "type": "user",
     "title": "Command Query Pagination",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8519,7 +8830,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8563,10 +8874,12 @@
     "type": "user",
     "title": "Checkout Lock Icon",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8602,7 +8915,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8623,10 +8936,12 @@
     "type": "guild",
     "title": "Report Raids",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Reporting Of Raids"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8691,10 +9006,12 @@
     "type": "guild",
     "title": "Raid Alerts",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Reporting Of Raids"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8747,10 +9064,12 @@
     "type": "guild",
     "title": "Safety check in guild settings",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show safety check in settings"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8766,7 +9085,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8810,11 +9129,13 @@
     "type": "user",
     "title": "Premium Targeted Upsells",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Use highest expected value to determine Nitro upsells",
       "Treatment 2: Use highest likelihood to determine Nitro upsells"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -8831,7 +9152,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -8875,11 +9196,13 @@
     "type": "user",
     "title": "Premium tier 0 (Global)",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Variant 1",
       "Treatment 2: Variant 2"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -8896,7 +9219,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -8941,10 +9264,12 @@
     "type": "user",
     "title": "Safety Experience MFA Remove Phone",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -8971,7 +9296,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 1: Show expiration notice",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -9016,10 +9341,12 @@
     "type": "user",
     "title": "Show expiration notice on mobile web invite",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show expiration notice"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9035,7 +9362,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9079,10 +9406,12 @@
     "type": "user",
     "title": "Show expiration notice on ios invite",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show expiration notice"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9098,7 +9427,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9142,10 +9471,12 @@
     "type": "user",
     "title": "Show expiration notice on ios invite embed",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show expiration notice"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9161,7 +9492,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9205,10 +9536,12 @@
     "type": "user",
     "title": "Role Popout",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Popout"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9224,7 +9557,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9268,11 +9601,13 @@
     "type": "user",
     "title": "Mobile Account Switcher",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Account Switcher on Mobile",
       "Treatment 2: Unenroll Account Switcher on Mobile and Clear Local Flag"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -9289,7 +9624,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable notifications for multiple accounts",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -9334,10 +9669,12 @@
     "type": "user",
     "title": "Mobile Account Switcher: Notifications",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable notifications for multiple accounts"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9353,7 +9690,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9397,12 +9734,14 @@
     "type": "user",
     "title": "Registration Copy Updates",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Continue / Copy Above Button / High Prominence Copy",
       "Treatment 2: Continue / Copy Below Button / High Prominence Copy",
       "Treatment 3: Continue / Copy Above Button / Normal Prominence Copy"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -9420,7 +9759,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9464,10 +9803,12 @@
     "type": "user",
     "title": "Unique Username Registration",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Unique Username Registration enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9540,10 +9881,12 @@
     "type": "guild",
     "title": "Fast New Channels",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9559,7 +9902,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -9604,10 +9947,12 @@
     "type": "user",
     "title": "Get My Guilds' Application IDs Endpoint Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9623,7 +9968,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9667,10 +10012,12 @@
     "type": "user",
     "title": "App Directory Upsell For All Modal",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9686,7 +10033,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Back to School experience enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -9731,10 +10078,12 @@
     "type": "user",
     "title": "Back to School Event",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Back to School experience enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9751,7 +10100,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9795,10 +10144,12 @@
     "type": "user",
     "title": "Custom Call Sounds",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9814,7 +10165,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9858,10 +10209,12 @@
     "type": "user",
     "title": "Referral Trials",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Nitro users can send a Nitro trial offer to another user."
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9877,7 +10230,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9921,10 +10274,12 @@
     "type": "user",
     "title": "Display QS scores in results. Not a real experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show scores in QS results"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -9940,7 +10295,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -9984,10 +10339,12 @@
     "type": "user",
     "title": "New Activity One Time Purchase Modal",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10003,7 +10360,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10047,10 +10404,12 @@
     "type": "user",
     "title": "Activities Sounds Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Activities Join/Leave Sounds"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10077,7 +10436,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 1: On",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -10122,10 +10481,12 @@
     "type": "user",
     "title": "Null Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10141,7 +10502,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10185,10 +10546,12 @@
     "type": "user",
     "title": "Safety Integrity Platform Inboxes V2",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10204,7 +10567,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10248,10 +10611,12 @@
     "type": "user",
     "title": "Popout Autocomplete experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: New autocomplete style"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10267,7 +10632,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10311,13 +10676,15 @@
     "type": "user",
     "title": "Only show emoji in autocomplete",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Hide Stickers, only show 10 Emojis",
       "Treatment 2: Hide Stickers, show more Emojis without scrollbar",
       "Treatment 3: Hide Stickers, show more Emojis with scrollbar",
       "Treatment 4: Show Autocomplete Stickers Toggle on mobile"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -10336,7 +10703,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10367,10 +10734,12 @@
     "type": "guild",
     "title": "Notifications for UGC changes",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Notifications"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10386,7 +10755,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10430,10 +10799,12 @@
     "type": "user",
     "title": "Emoji Autocomplete Upsell",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show emoji autocomplete upsell"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10449,7 +10820,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10493,10 +10864,12 @@
     "type": "user",
     "title": "Emoji Autocomplete Upsell iOS",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show emoji autocomplete upsell"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10512,7 +10885,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10555,10 +10928,12 @@
     "type": "guild",
     "title": "Server Badging",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Server Badging"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10574,7 +10949,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10606,10 +10981,12 @@
     "type": "guild",
     "title": "Guild Alert Mode",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show alert mode experimence"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10689,10 +11066,12 @@
     "type": "guild",
     "title": "Report Raids",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Reporting Of Raids"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10708,7 +11087,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10752,10 +11131,12 @@
     "type": "user",
     "title": "Timestamp Tooltip",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10771,7 +11152,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10815,10 +11196,12 @@
     "type": "user",
     "title": "MJ Chat Bar user experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10834,7 +11217,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -10878,10 +11261,12 @@
     "type": "guild",
     "title": "MJ Chat Bar enabled guilds",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10897,7 +11282,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -10942,10 +11327,12 @@
     "type": "user",
     "title": "Seasonal Gifting",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -10961,7 +11348,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Users will see the birthday moment referral trial UX",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -11006,10 +11393,12 @@
     "type": "user",
     "title": "Referral Trials Birthday Moment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Users will see the birthday moment referral trial UX"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -11025,7 +11414,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11069,11 +11458,13 @@
     "type": "user",
     "title": "Non Nitro User Remix Upsell Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: treatment 1",
       "Treatment 2: treatment 2"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -11090,7 +11481,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11134,11 +11525,13 @@
     "type": "user",
     "title": "Remixing User Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables media remixing",
       "Treatment 2: Enables media remixing for desktop"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -11155,7 +11548,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11199,10 +11592,12 @@
     "type": "user",
     "title": "Inferno Spam Redaction",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Allow guild channel messages from spammers to be collapsed"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -11239,10 +11634,12 @@
     "type": "guild",
     "title": "Application Recommendation Server Checklist Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show recommendation to add apps in new server checklist"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -11258,7 +11655,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 2: Show improved message markdown WITHOUT masked links",
+              "treatment": "Treatment 1: Show improved message markdown",
               "bucket": 2,
               "rollouts": [
                 {
@@ -11303,11 +11700,13 @@
     "type": "user",
     "title": "Improved Message Markdown ",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show improved message markdown",
       "Treatment 2: Show improved message markdown WITHOUT masked links"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -11368,7 +11767,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11383,7 +11782,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11427,11 +11826,13 @@
     "type": "guild",
     "title": "Improved Message Markdown Guild Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show improved message markdown",
       "Treatment 2: Show improved message markdown WITHOUT masked links"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -11448,7 +11849,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11492,10 +11893,12 @@
     "type": "user",
     "title": "Popular Slash Commands Mobile",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Popular Commands section"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -11511,7 +11914,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11543,7 +11946,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11593,10 +11996,12 @@
     "type": "guild",
     "title": "Media Channel",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables guild to create a media channel"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -11612,7 +12017,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables for users Guild Media Post Preview Embeds",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -11657,10 +12062,12 @@
     "type": "user",
     "title": "Guild Role Subscription Users",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables for users Guild Media Post Preview Embeds"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -11741,7 +12148,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11785,10 +12192,12 @@
     "type": "user",
     "title": "Message TODO list",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show message TODOs CTA"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -11804,7 +12213,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11853,7 +12262,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11896,7 +12305,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -11950,10 +12359,12 @@
     "type": "guild",
     "title": "Automod Non-Community Guilds Release",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod Non-Community Guilds Release"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12042,10 +12453,12 @@
     "type": "guild",
     "title": "Automod Mention Raid Limit",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod Mention Raid Limit"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12121,10 +12534,12 @@
     "type": "guild",
     "title": "Automod Mention Raid Notice",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod Mention Raid Notice"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12207,10 +12622,12 @@
     "type": "guild",
     "title": "Automod Custom Message",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod Custom Message"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12226,7 +12643,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12274,11 +12691,13 @@
     "type": "guild",
     "title": "Automod Server Policy",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod Server Policy",
       "Treatment 10: Automod Server Policy Rules Summarization"
     ],
     "buckets": [
+      -1,
       0,
       1,
       10
@@ -12295,7 +12714,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12326,7 +12745,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12348,7 +12767,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12394,10 +12813,12 @@
     "type": "guild",
     "title": "Automod on User Profile A/B",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Automod on User Profile enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12413,7 +12834,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12457,10 +12878,12 @@
     "type": "guild",
     "title": "Remove Reactions by Type",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12476,7 +12899,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12520,11 +12943,13 @@
     "type": "user",
     "title": "System DM Safety Onboarding",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled, v1 copy",
       "Treatment 2: Enabled, v2 copy"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -12541,7 +12966,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12583,10 +13008,12 @@
     "type": "guild",
     "title": "Forum non-community",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12606,7 +13033,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12650,11 +13077,13 @@
     "type": "user",
     "title": "Fortnite: Go Live Quest",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: 15 min stream req + auto enrollment",
       "Treatment 99: 2 minute stream req + auto enrollment"
     ],
     "buckets": [
+      -1,
       0,
       1,
       99
@@ -12671,7 +13100,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12686,7 +13115,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12731,7 +13160,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12754,7 +13183,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12822,10 +13251,12 @@
     "type": "guild",
     "title": "Onboarding Upsell Lifecycle",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show new lifecycle upsells"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12841,7 +13272,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12885,10 +13316,12 @@
     "type": "user",
     "title": "Pomelo",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12915,7 +13348,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 1: Eligible",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -12960,10 +13393,12 @@
     "type": "user",
     "title": "Safety User Sentiment Feedback Eligible",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Eligible"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -12979,7 +13414,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13032,10 +13467,12 @@
     "type": "guild",
     "title": "Home New Header",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: New Header"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13052,7 +13489,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13096,11 +13533,13 @@
     "type": "user",
     "title": "Channel Emojis",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable channel name emojis",
       "Treatment 2: Emojis to left of channel icon"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -13117,7 +13556,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13161,12 +13600,14 @@
     "type": "user",
     "title": "Fast Onboarding Landing",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: 2x Speed",
       "Treatment 2: Instant",
       "Treatment 42: Instant Untracked"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -13204,7 +13645,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13249,10 +13690,12 @@
     "type": "guild",
     "title": "Enables dropdown selections from onboarding prompts",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13268,7 +13711,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13312,10 +13755,12 @@
     "type": "user",
     "title": "Guild Onboarding includes rules experience",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Last page of onboarding is rules"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13331,7 +13776,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13375,10 +13820,12 @@
     "type": "user",
     "title": "Activities Game Night Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Activities Game Night"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13394,7 +13841,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13438,10 +13885,12 @@
     "type": "user",
     "title": "Activity Coach Mark Gartic Phone",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Activity Coach Mark Gartic Phone"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13457,7 +13906,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13501,12 +13950,12 @@
     "type": "user",
     "title": "Bash Out Coach Mark",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Enable Bash Out Coach Mark"
     ],
     "buckets": [
-      0,
+      -1,
       0,
       1
     ]
@@ -13522,7 +13971,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13568,10 +14017,12 @@
     "type": "guild",
     "title": "Student hub study group",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables study group sidebar"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13587,7 +14038,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13631,10 +14082,12 @@
     "type": "guild",
     "title": "Lower Server Discovery member count requirements",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Allow a server to become discoverable with lower member count requirements"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13650,7 +14103,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13716,10 +14169,12 @@
     "type": "guild",
     "title": "Disable mass mentions for communities by default",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13735,7 +14190,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13780,10 +14235,12 @@
     "type": "guild",
     "title": "Hub Events",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Hub Events List"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13799,7 +14256,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13829,11 +14286,13 @@
     "type": "guild",
     "title": "Voice Channel Status Guild Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable viewing and setting voice channel statuses for guild",
       "Treatment 2: A/A test, identical to treatment 1"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -13850,7 +14309,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13894,12 +14353,14 @@
     "type": "user",
     "title": "Channel Notice Redesign",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Redesigned Channel Notices",
       "Treatment 2: Show Redesigned Stage/Event Notices",
       "Treatment 3: Show Redesigned Channel Notices & Stage/Event Notices"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -13917,7 +14378,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -13961,10 +14422,12 @@
     "type": "user",
     "title": "Rollout experiment for server recommendations.",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show server recommendations"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -13980,7 +14443,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14024,10 +14487,12 @@
     "type": "user",
     "title": "Safety Experience Reject All Message Requests",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14043,7 +14508,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14087,10 +14552,12 @@
     "type": "user",
     "title": "Safety - Family Center Launch",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14106,7 +14573,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14150,10 +14617,12 @@
     "type": "user",
     "title": "Longer Group DM Invites",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Makes group DM invites expire after 1 week."
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14169,7 +14638,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14213,10 +14682,12 @@
     "type": "user",
     "title": "Enable ability to clear incoming friend requests",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14232,7 +14703,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14276,7 +14747,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14329,10 +14800,12 @@
     "type": "guild",
     "title": "Shared Canvas",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Shared Canvas"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14348,7 +14821,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable VC Activities Mini Shelf",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -14393,10 +14866,12 @@
     "type": "user",
     "title": "Activities Auto Suggest",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable VC Activities Mini Shelf"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14412,7 +14887,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14456,10 +14931,12 @@
     "type": "user",
     "title": "Activities Watch Together Promo",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable Watch Together promo"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14475,7 +14952,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14519,10 +14996,12 @@
     "type": "user",
     "title": "Activities Watch Together Promo Week 1 Sparkles",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable Watch Together promo week 1 sparkles"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14538,7 +15017,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14582,10 +15061,12 @@
     "type": "user",
     "title": "Activities Watch Together Promo Week 2 Sparkles",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable Watch Together promo week 2 sparkles"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14601,7 +15082,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14645,11 +15126,13 @@
     "type": "user",
     "title": "Birthday Activities",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Birthday Activities",
       "Treatment 2: Geo test Enable Birthday Activities but no share"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -14666,7 +15149,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Activity Shelf Banner Color Together",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -14711,10 +15194,12 @@
     "type": "user",
     "title": "Activity Shelf Banner Color Together",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Activity Shelf Banner Color Together"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14730,7 +15215,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14774,10 +15259,12 @@
     "type": "user",
     "title": "Activities Free Forever",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Activities Free Forever"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14796,7 +15283,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14840,7 +15327,7 @@
     "type": "user",
     "title": "Activity Shelf to Detail Page",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Control",
       "Treatment 1: Enable Big Shelf",
       "Treatment 2: Enable Activity Shelf to Detail Page",
@@ -14849,7 +15336,7 @@
       "Treatment 5: Enable minimal shelf details and route to detail page"
     ],
     "buckets": [
-      0,
+      -1,
       0,
       1,
       2,
@@ -14869,7 +15356,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -14913,10 +15400,12 @@
     "type": "user",
     "title": "PAX VC Tile Activities",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable PAX VC Tile Activities"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -14943,7 +15432,7 @@
               "confirmed": true
             },
             {
-              "treatment": "Treatment 2: Enable any number of users VC Tile Activities Entry Point",
+              "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
               "bucket": 2,
               "rollouts": [
                 {
@@ -14988,11 +15477,13 @@
     "type": "user",
     "title": "VC Tile Activities Entry Point",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
       "Treatment 2: Enable any number of users VC Tile Activities Entry Point"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -15009,7 +15500,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15053,10 +15544,12 @@
     "type": "user",
     "title": "Hide thread count",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Hide thread count"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15072,7 +15565,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15116,10 +15609,12 @@
     "type": "user",
     "title": "Test page for guild subscription payment flows",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Test page for guild subscription payment flows"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15135,7 +15630,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15179,11 +15674,13 @@
     "type": "user",
     "title": "Nitro Promo for Black Friday",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled without promo materials (basic + classic)",
       "Treatment 2: Enabled with promo materials (Rest of world)"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -15200,7 +15697,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable GDM tile",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -15245,10 +15742,12 @@
     "type": "user",
     "title": "Birthday Activities Whats New GDM Tile",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable GDM tile"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15264,7 +15763,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Jamspace tile",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -15309,10 +15808,12 @@
     "type": "user",
     "title": "Birthday Activities Whats New Jamspace Tile",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Jamspace tile"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15328,7 +15829,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Poker tile",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -15373,10 +15874,12 @@
     "type": "user",
     "title": "Birthday Activities Poker Tile",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Poker tile"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15392,7 +15895,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Putt Party tile",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -15437,10 +15940,12 @@
     "type": "user",
     "title": "Birthday Activities Whats New Putt Party Tile",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Putt Party tile"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15456,7 +15961,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15500,11 +16005,13 @@
     "type": "user",
     "title": "Discovery Tags",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show keyword tags on home and search result pages",
       "Treatment 2: Show keyword tags on home and search result pages and under the search bar"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -15521,7 +16028,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15565,10 +16072,12 @@
     "type": "user",
     "title": "Ability to report servers in Server Discovery",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show IAR buttons in Server Discovery"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15584,7 +16093,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15628,11 +16137,13 @@
     "type": "user",
     "title": "Safety Consumer Education Launch - Block/Mute",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Mute",
       "Treatment 2: Block"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -15649,7 +16160,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15693,10 +16204,12 @@
     "type": "user",
     "title": "Safety DM Spam Filter Coachmark rollout",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15712,7 +16225,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 2: Enable Account Profile Popout w/ DiscordTag button",
+              "treatment": "Treatment 1: Enable Account Profile Popout",
               "bucket": 2,
               "rollouts": [
                 {
@@ -15757,11 +16270,13 @@
     "type": "user",
     "title": "Account Profile Popout",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Account Profile Popout",
       "Treatment 2: Enable Account Profile Popout w/ DiscordTag button"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -15778,7 +16293,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15822,11 +16337,13 @@
     "type": "user",
     "title": "Safety Consumer Education Block/Mute - A/A",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Mute",
       "Treatment 2: Block"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -15843,7 +16360,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15887,10 +16404,12 @@
     "type": "user",
     "title": "Consumer Education Launch - Reporting",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Reporting"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -15906,7 +16425,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15927,9 +16446,11 @@
     "type": "guild",
     "title": "Exposure tracking for Watch Together (do not override)",
     "description": [
-      "Control"
+      "Not Eligible",
+      "Control Bucket"
     ],
     "buckets": [
+      -1,
       0
     ]
   },
@@ -15944,7 +16465,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -15988,10 +16509,12 @@
     "type": "user",
     "title": "Guild Audit Log - User Feature Flag",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Guild Audit Log 2.0 for user"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16007,7 +16530,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16037,10 +16560,12 @@
     "type": "guild",
     "title": "Guild Audit Log - Guild Feature Flag",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show Guild Audit Log 2.0 for guild"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16056,7 +16581,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16100,10 +16625,12 @@
     "type": "user",
     "title": "Safety Integrity Platform Coms Update",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16119,7 +16646,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16163,10 +16690,12 @@
     "type": "guild",
     "title": "Server Products",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16182,7 +16711,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16226,10 +16755,12 @@
     "type": "guild",
     "title": "Guild Access Rate Insight Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show guild access rate in insights"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16245,7 +16776,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16289,10 +16820,12 @@
     "type": "user",
     "title": "Guild Delete Feedback experiment",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show guild delete feedback"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16334,7 +16867,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16376,7 +16909,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16421,10 +16954,12 @@
     "type": "guild",
     "title": "Enables setting up onboarding with advanced mode",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: On"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16440,7 +16975,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16484,10 +17019,12 @@
     "type": "guild",
     "title": "Modify Clyde's Personality",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enable personality setting"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16546,11 +17083,13 @@
     "type": "guild",
     "title": "Show the button to join the admin server in community overview server settings page",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show button if requirements met",
       "Treatment 2: Bypass requirements"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2
@@ -16587,7 +17126,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16608,10 +17147,12 @@
     "type": "guild",
     "title": "Hide onboarding soft requirement for partnership",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Show onboarding soft requirement for partnership"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16627,7 +17168,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16671,12 +17212,12 @@
     "type": "user",
     "title": "Pause Partner Applications Experiment",
     "description": [
-      "Control",
+      "Not Eligible",
       "Treatment 0: Off",
       "Treatment 1: On no override"
     ],
     "buckets": [
-      0,
+      -1,
       0,
       1
     ]
@@ -16721,10 +17262,12 @@
     "type": "guild",
     "title": "Free Sticker Slots Design Updates",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16740,7 +17283,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -16784,10 +17327,12 @@
     "type": "user",
     "title": "Pomelo Announcement",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16803,7 +17348,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -16848,10 +17393,12 @@
     "type": "user",
     "title": "Pomelo Attempt",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16867,7 +17414,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: enabled",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -16912,10 +17459,12 @@
     "type": "user",
     "title": "Pomelo Suggestions",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: enabled"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -16931,7 +17480,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 3: 800ms",
+              "treatment": "Treatment 2: 700ms",
               "bucket": 3,
               "rollouts": [
                 {
@@ -16976,7 +17525,8 @@
     "type": "user",
     "title": "Pomelo Debounce Delay",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: 600ms",
       "Treatment 2: 700ms",
       "Treatment 3: 800ms",
@@ -16984,6 +17534,7 @@
       "Treatment 5: 1000ms"
     ],
     "buckets": [
+      -1,
       0,
       1,
       2,
@@ -17003,7 +17554,7 @@
         {
           "position": [
             {
-              "treatment": "None",
+              "treatment": "Not Eligible",
               "bucket": -1,
               "rollouts": [
                 {
@@ -17047,10 +17598,12 @@
     "type": "user",
     "title": "Localized Pricing Promo Manager",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
@@ -17066,7 +17619,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable tier templates for user",
+              "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
@@ -17111,10 +17664,12 @@
     "type": "user",
     "title": "Server Subscriptions Tier Templates",
     "description": [
-      "Control",
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enable tier templates for user"
     ],
     "buckets": [
+      -1,
       0,
       1
     ]
