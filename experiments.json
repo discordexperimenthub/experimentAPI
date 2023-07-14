@@ -4827,6 +4827,131 @@
     ]
   },
   {
+    "id": "2023-02_stage_boosting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 2,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                },
+                {
+                  "start": 500,
+                  "end": 5000
+                },
+                {
+                  "start": 5000,
+                  "end": 9500
+                },
+                {
+                  "start": 9500,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            },
+            {
+              "type": "range_by_hash",
+              "range": 10000
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "id",
+              "ids": [
+                "885418158788345897"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1816004721,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "Stage Boosting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-09_emoji_ecosystem_holdout",
     "defaultConfig": {
       "enabled": false
@@ -4958,131 +5083,6 @@
       1,
       2,
       3
-    ]
-  },
-  {
-    "id": "2023-02_stage_boosting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                },
-                {
-                  "start": 500,
-                  "end": 5000
-                },
-                {
-                  "start": 5000,
-                  "end": 9500
-                },
-                {
-                  "start": 9500,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "range_by_hash",
-              "range": 10000
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "id",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1816004721,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Stage Boosting",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
     ]
   },
   {
@@ -7035,6 +7035,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Users will see the BOGO announcement modal"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_bogo_marketing_materials_experiment",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable BOGO marketing materials",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_bogo_marketing_materials_experiment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1350945791,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "BOGO Marketing Materials",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable BOGO marketing materials"
     ],
     "buckets": [
       -1,
