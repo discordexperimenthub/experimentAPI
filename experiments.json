@@ -9687,7 +9687,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Unique Username Registration enabled",
+              "treatment": "Treatment 1: Unique Username Registration enabled -livecheck -suggestions",
               "bucket": 1,
               "rollouts": [
                 {
@@ -9715,12 +9715,18 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Unique Username Registration enabled"
+      "Treatment 1: Unique Username Registration enabled -livecheck -suggestions",
+      "Treatment 2: Unique Username Registration enabled -livecheck +suggestions",
+      "Treatment 3: Unique Username Registration enabled +livecheck -suggestions",
+      "Treatment 4: Unique Username Registration enabled +livecheck +suggestions"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3,
+      4
     ]
   },
   {
@@ -10793,7 +10799,7 @@
     ]
   },
   {
-    "id": "2021-03_nitro_emoji_autocomplete_upsell",
+    "id": "2023-07_autocomplete_emojis_nitro_upsell",
     "defaultConfig": {
       "enabled": false
     },
@@ -10835,82 +10841,17 @@
             {
               "type": "build_override",
               "experiments": [
-                "2021-03_nitro_emoji_autocomplete_upsell"
+                "2023-07_autocomplete_emojis_nitro_upsell"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 259025033,
-    "creationDate": 1615149785,
+    "hash": 1322503781,
+    "creationDate": 1688762585,
     "type": "user",
-    "title": "Emoji Autocomplete Upsell",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show emoji autocomplete upsell"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2021-04_nitro_emoji_autocomplete_upsell_ios",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show emoji autocomplete upsell",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-04_nitro_emoji_autocomplete_upsell_ios"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 371152535,
-    "creationDate": 1617828185,
-    "type": "user",
-    "title": "Emoji Autocomplete Upsell iOS",
+    "title": "Autocomplete Emojis Nitro Upsell",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -13395,7 +13336,7 @@
                   "end": 6000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -13406,7 +13347,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
