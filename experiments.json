@@ -5980,26 +5980,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "Not Eligible",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 0
+                  "end": 10000
                 }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 0
-                }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -9814,6 +9802,71 @@
     ]
   },
   {
+    "id": "2023-07_server_guide_post_onboarding_new_member_action",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show the Onboarding Version of Home",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_server_guide_post_onboarding_new_member_action"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4076788897,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Add onboarding new member action to server guide",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show the Onboarding Version of Home"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-12_get_my_guilds_application_ids_endpoint",
     "defaultConfig": {
       "enabled": false
@@ -10936,7 +10989,7 @@
   {
     "id": "2023-04_guild_alert_mode",
     "defaultConfig": {
-      "showAlertMode": false
+      "enabled": false
     },
     "rollout": {
       "revision": 0,
@@ -10959,7 +11012,7 @@
       ],
       "overrides": [
         {
-          "treatment": "Treatment 1: Show alert mode experimence",
+          "treatment": "Treatment 1: Show alert mode experience",
           "bucket": 1,
           "ids": [
             "816784679717044276",
@@ -10978,12 +11031,14 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show alert mode experimence"
+      "Treatment 1: Show alert mode experience",
+      "Treatment 2: Show alert mode experience with member safety"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ]
   },
   {
@@ -13337,10 +13392,10 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 1000
+                  "end": 6000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Control Bucket",
@@ -13348,10 +13403,10 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 2000
+                  "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
@@ -16959,7 +17014,7 @@
     ]
   },
   {
-    "id": "2023-06_clyde_ai_channel_based_personalities",
+    "id": "2023-06_clyde_ai_channel_based_personality",
     "defaultConfig": {
       "enabled": false
     },
@@ -17001,14 +17056,14 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-06_clyde_ai_channel_based_personalities"
+                "2023-06_clyde_ai_channel_based_personality"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 2245536809,
+    "hash": 3143066071,
     "creationDate": 1686170585,
     "type": "guild",
     "title": "Channel based Clyde personalities",
