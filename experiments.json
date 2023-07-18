@@ -9659,6 +9659,138 @@
     ]
   },
   {
+    "id": "2023-04_pomelo_attempt",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_pomelo_attempt"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3522378716,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Pomelo Attempt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_pomelo_suggestions",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_pomelo_suggestions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2091202574,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Pomelo Suggestions",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-06_unique_username_registration",
     "defaultConfig": {
       "enabled": false
@@ -9727,6 +9859,133 @@
       2,
       3,
       4
+    ]
+  },
+  {
+    "id": "2023-03_pomelo_debounce_delay",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 2: 700ms",
+              "bucket": 3,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: 600ms",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_pomelo_debounce_delay"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 373531156,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Pomelo Debounce Delay",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: 600ms",
+      "Treatment 2: 700ms",
+      "Treatment 3: 800ms",
+      "Treatment 4: 900ms",
+      "Treatment 5: 1000ms"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "2023-02_voice_channel_statuses",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+          "bucket": 1,
+          "ids": [
+            "890883112500854804",
+            "887867262839705651"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 2809294122,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "Voice Channel Status Guild Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable viewing and setting voice channel statuses for guild",
+      "Treatment 2: A/A test, identical to treatment 1"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   },
   {
@@ -14237,59 +14496,6 @@
     ]
   },
   {
-    "id": "2023-02_voice_channel_statuses",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-          "bucket": 1,
-          "ids": [
-            "890883112500854804",
-            "887867262839705651"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 2809294122,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Voice Channel Status Guild Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable viewing and setting voice channel statuses for guild",
-      "Treatment 2: A/A test, identical to treatment 1"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
     "id": "2022-12_channel_notice_redesign",
     "defaultConfig": {
       "enabled": false
@@ -17458,212 +17664,6 @@
     ]
   },
   {
-    "id": "2023-04_pomelo_attempt",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_pomelo_attempt"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3522378716,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Pomelo Attempt",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_pomelo_suggestions",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_pomelo_suggestions"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2091202574,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Pomelo Suggestions",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_pomelo_debounce_delay",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 2: 700ms",
-              "bucket": 3,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: 600ms",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_pomelo_debounce_delay"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 373531156,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Pomelo Debounce Delay",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: 600ms",
-      "Treatment 2: 700ms",
-      "Treatment 3: 800ms",
-      "Treatment 4: 900ms",
-      "Treatment 5: 1000ms"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
     "id": "2022-12_localized_pricing_promo_manager",
     "defaultConfig": {
       "enabled": false
@@ -17721,101 +17721,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-02_guest_voice_invites",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 1,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow creation of guest voice invites",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 100,
-                  "end": 200
-                },
-                {
-                  "start": 600,
-                  "end": 1000
-                },
-                {
-                  "start": 1500,
-                  "end": 2000
-                },
-                {
-                  "start": 3000,
-                  "end": 4000
-                },
-                {
-                  "start": 5000,
-                  "end": 6000
-                },
-                {
-                  "start": 7000,
-                  "end": 8000
-                },
-                {
-                  "start": 9000,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "vanity_url"
-            },
-            {
-              "type": "member_count",
-              "range": {
-                "start": 1,
-                "end": 50
-              }
-            }
-          ]
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Allow creation of guest voice invites",
-          "bucket": 1,
-          "ids": [
-            "1103064168459927674",
-            "227251386738409483",
-            "313840371274874880",
-            "1104138316418400286",
-            "295820647660257283",
-            "1029604342589833286",
-            "426434256290578472",
-            "838840935404011560",
-            "651595875897835540",
-            "1074777828672929852",
-            "922748688403693578"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 1727857487,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Guest Voice Invites",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Allow creation of guest voice invites"
     ],
     "buckets": [
       -1,
