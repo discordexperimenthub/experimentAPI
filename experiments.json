@@ -1786,248 +1786,6 @@
     ]
   },
   {
-    "id": "2023-02_onboarding_home_admin",
-    "defaultConfig": {
-      "homeSettingsEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show the Onboarding Version of Home in Admin Settings",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 5000,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "range_by_hash",
-              "range": 10000
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show the Onboarding Version of Home in Admin Settings",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "id",
-              "ids": [
-                "321410260176732160",
-                "884458417467559936",
-                "384811165949231104",
-                "464894153193684993",
-                "524552788932558848",
-                "148606162810568704",
-                "603970300668805120",
-                "310162323220201475",
-                "522477306787397642",
-                "187450744427773963",
-                "422460360084291596",
-                "808241932919767050",
-                "786557653924708373",
-                "1075932456198352918",
-                "1079876496493121558",
-                "1011482947343372319",
-                "1080899969243943072",
-                "679875946597056683",
-                "692412843370348615",
-                "1075056311651270736",
-                "942897714956472401",
-                "828370043867496531"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 748249793,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "[ADMIN] Home as a community onboarding surface",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show the Onboarding Version of Home in Admin Settings"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_optional_onboarding_home_admin",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Optional",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_optional_onboarding_home_admin"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 695300504,
-    "creationDate": 1683492185,
-    "type": "guild",
-    "title": "[ADMIN] Make server guide optional",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Optional"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-02_onboarding_home",
-    "defaultConfig": {
-      "showOnboardingHome": false,
-      "enableDevItems": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show the Onboarding Version of Home",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_onboarding_home"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 454680912,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "Home as a community onboarding surface",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show the Onboarding Version of Home",
-      "Treatment 2: Onboarding Home DEV",
-      "Treatment 3: Show the Onboarding Version of Home"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
     "id": "2023-06_mobile_redesign_curry_existing_users",
     "defaultConfig": {
       "enabled": false
@@ -2496,6 +2254,248 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-02_onboarding_home_admin",
+    "defaultConfig": {
+      "homeSettingsEnabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show the Onboarding Version of Home in Admin Settings",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 5000,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "range_by_hash",
+              "range": 10000
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show the Onboarding Version of Home in Admin Settings",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "id",
+              "ids": [
+                "321410260176732160",
+                "884458417467559936",
+                "384811165949231104",
+                "464894153193684993",
+                "524552788932558848",
+                "148606162810568704",
+                "603970300668805120",
+                "310162323220201475",
+                "522477306787397642",
+                "187450744427773963",
+                "422460360084291596",
+                "808241932919767050",
+                "786557653924708373",
+                "1075932456198352918",
+                "1079876496493121558",
+                "1011482947343372319",
+                "1080899969243943072",
+                "679875946597056683",
+                "692412843370348615",
+                "1075056311651270736",
+                "942897714956472401",
+                "828370043867496531"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 748249793,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "[ADMIN] Home as a community onboarding surface",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show the Onboarding Version of Home in Admin Settings"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_optional_onboarding_home_admin",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Optional",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_optional_onboarding_home_admin"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 695300504,
+    "creationDate": 1683492185,
+    "type": "guild",
+    "title": "[ADMIN] Make server guide optional",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Optional"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-02_onboarding_home",
+    "defaultConfig": {
+      "showOnboardingHome": false,
+      "enableDevItems": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show the Onboarding Version of Home",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-02_onboarding_home"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 454680912,
+    "creationDate": 1675802585,
+    "type": "user",
+    "title": "Home as a community onboarding surface",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show the Onboarding Version of Home",
+      "Treatment 2: Onboarding Home DEV",
+      "Treatment 3: Show the Onboarding Version of Home"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
     ]
   },
   {
