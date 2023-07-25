@@ -6324,6 +6324,62 @@
     ]
   },
   {
+    "id": "2023-04_guild_alert_mode",
+    "defaultConfig": {
+      "showAlertMode": false,
+      "alsoShowMemberSafety": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Show alert mode experience",
+          "bucket": 1,
+          "ids": [
+            "816784679717044276",
+            "874345844743213126",
+            "840296607785287763",
+            "1113529666989469708"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 2710924848,
+    "creationDate": 1680900185,
+    "type": "guild",
+    "title": "Guild Alert Mode",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show alert mode experience",
+      "Treatment 2: Show alert mode experience with member safety"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2023-05_guild_member_safety_experiment",
     "defaultConfig": {
       "enabled": false
@@ -11313,61 +11369,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-04_guild_alert_mode",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Show alert mode experience",
-          "bucket": 1,
-          "ids": [
-            "816784679717044276",
-            "874345844743213126",
-            "840296607785287763",
-            "1113529666989469708"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 2710924848,
-    "creationDate": 1680900185,
-    "type": "guild",
-    "title": "Guild Alert Mode",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show alert mode experience",
-      "Treatment 2: Show alert mode experience with member safety"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   },
   {
