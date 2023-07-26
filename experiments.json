@@ -8668,12 +8668,14 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable channel summaries"
+      "Treatment 1: Enable channel summaries",
+      "Treatment 2: Enable channel summaries (force)"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ]
   },
   {
