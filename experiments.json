@@ -66,6 +66,71 @@
     ]
   },
   {
+    "id": "2023-07_dm_call_bitrate",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: DM/GDM call bitrate = 32000bps",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_dm_call_bitrate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4248455588,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "DM/GDM Call Bitrate Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: DM/GDM call bitrate = 32000bps"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_split_permissions",
     "defaultConfig": {
       "isUsingV2Permission": false
@@ -12363,14 +12428,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 0
                 }
-              ]
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
