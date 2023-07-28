@@ -12428,15 +12428,14 @@
         {
           "position": [
             {
-              "treatment": "Control Bucket",
-              "bucket": 1,
+              "treatment": "Not Eligible",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 1500
+                  "end": 10000
                 }
-              ],
-              "confirmed": false
+              ]
             }
           ],
           "filters": []
