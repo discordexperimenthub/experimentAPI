@@ -12433,10 +12433,10 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 500
+                  "end": 1500
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
