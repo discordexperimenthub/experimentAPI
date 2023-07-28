@@ -3690,6 +3690,73 @@
     ]
   },
   {
+    "id": "2023-07_guild_list_order",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: put new guilds to the bottom",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_guild_list_order"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3517643571,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Put new guilds to the bottom of guild list",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: put new guilds to the bottom",
+      "Treatment 2: forced put new guilds to the bottom"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2023-03_client_themes_16thru21",
     "defaultConfig": {
       "enabled": false
@@ -12410,6 +12477,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Show Popular Commands section"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_allow_welcome_message_replies",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_allow_welcome_message_replies"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1487316075,
+    "creationDate": 1688762585,
+    "type": "guild",
+    "title": "Allow replies to welcome messages",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
