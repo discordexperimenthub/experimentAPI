@@ -9642,6 +9642,71 @@
     ]
   },
   {
+    "id": "2023-07_friend_finder_auto_redirect_invite",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable auto redirect when reaching an invite page for friends",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_friend_finder_auto_redirect_invite"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 197619742,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Friend Finder Auto Redirect Invite Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable auto redirect when reaching an invite page for friends"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-03_expiration_notice_mobile_web",
     "defaultConfig": {
       "enabled": false
@@ -11985,6 +12050,71 @@
     ]
   },
   {
+    "id": "2023-07_iframe_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable iFrameModal",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_iframe_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 135503004,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "iFrame Modal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable iFrameModal"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-06_non_nitro_user_remix_upsell",
     "defaultConfig": {
       "enabled": false
@@ -12238,17 +12368,6 @@
             {
               "treatment": "Control Bucket",
               "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": false
-            },
-            {
-              "treatment": "Treatment 1: Show improved message markdown",
-              "bucket": 2,
               "rollouts": [
                 {
                   "start": 0,
