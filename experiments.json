@@ -12236,6 +12236,17 @@
         {
           "position": [
             {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            },
+            {
               "treatment": "Treatment 1: Show improved message markdown",
               "bucket": 2,
               "rollouts": [
