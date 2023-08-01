@@ -8204,136 +8204,6 @@
     ]
   },
   {
-    "id": "2023-04_nitro_drop_announcement_modal",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled Nitro April Drop announcement modal",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_nitro_drop_announcement_modal"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4190502511,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "2023 Nitro April Drop Announcement Modal",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled Nitro April Drop announcement modal"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_nitro_drop_experience",
-    "defaultConfig": {
-      "isEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled Nitro April Drop Experience (apart from the announcement modal)",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_nitro_drop_experience"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2753834830,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "2023 Nitro April Drop Experience",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled Nitro April Drop Experience (apart from the announcement modal)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-03_april_fools",
     "defaultConfig": {
       "allowAprilFoolsSoundpack": false
@@ -10916,6 +10786,71 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-04_nitro_drop_announcement_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled Nitro April Drop announcement modal",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_nitro_drop_announcement_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4190502511,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "2023 Nitro April Drop Announcement Modal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled Nitro April Drop announcement modal"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
