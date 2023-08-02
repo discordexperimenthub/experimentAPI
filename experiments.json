@@ -8354,6 +8354,71 @@
     ]
   },
   {
+    "id": "2023-08_premium_tutorial_for_all",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: All net new users (exclude trial) receive premium tutorial experience",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_premium_tutorial_for_all"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1899757821,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Premium Tutorial Experience For All",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_april_fools",
     "defaultConfig": {
       "allowAprilFoolsSoundpack": false
