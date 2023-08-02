@@ -9160,6 +9160,136 @@
     ]
   },
   {
+    "id": "2023-07_p13n_summarization_model_swap",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable SOURCE_1",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_p13n_summarization_model_swap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3819099123,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "User channel summarization model swapping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable SOURCE_1"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_p13n_summarization_model_swap_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Override guild summaries to use SOURCE_1",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_p13n_summarization_model_swap_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2803184680,
+    "creationDate": 1688762585,
+    "type": "guild",
+    "title": "Guild channel summarization model swapping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Override guild summaries to use SOURCE_1"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_apps_in_gdms",
     "defaultConfig": {
       "enabled": false
