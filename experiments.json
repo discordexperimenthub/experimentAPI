@@ -5581,14 +5581,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Treatment 4: Enable sending periodic voice stats for 10% of calls",
+              "bucket": 5,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -8946,71 +8947,6 @@
     "creationDate": 1683492185,
     "type": "user",
     "title": "Inventory Guild Packs Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-06_inventory_reaction_tooltip",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_inventory_reaction_tooltip"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3470792155,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Inventory Reaction Tooltip Experiment",
     "description": [
       "Not Eligible",
       "Control Bucket",
