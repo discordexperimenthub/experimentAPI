@@ -5599,7 +5599,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable sending periodic voice stats",
+              "treatment": "Treatment 1: Enable sending periodic voice stats for 100% of calls",
               "bucket": 1,
               "rollouts": [
                 {
@@ -5627,12 +5627,20 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable sending periodic voice stats"
+      "Treatment 1: Enable sending periodic voice stats for 100% of calls",
+      "Treatment 2: Enable sending periodic voice stats for 50% of calls",
+      "Treatment 3: Enable sending periodic voice stats for 20% of calls",
+      "Treatment 4: Enable sending periodic voice stats for 10% of calls",
+      "Treatment 5: Enable sending periodic voice stats for 5% of calls"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3,
+      4,
+      5
     ]
   },
   {
@@ -6968,6 +6976,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Guild Member Safety Experiment"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_member_safety_non_community",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Members Safety Page for Non Community Guilds",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_member_safety_non_community"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 581929451,
+    "creationDate": 1688762585,
+    "type": "guild",
+    "title": "Members Safety Non Community Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Members Safety Page for Non Community Guilds"
     ],
     "buckets": [
       -1,
@@ -8486,71 +8559,6 @@
     ]
   },
   {
-    "id": "2023-02_nitroduction_experience",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: One month trial users recieve the Nitroduction experience",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_nitroduction_experience"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2956169075,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "Nitroduction Experience",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: One month trial users recieve the Nitroduction experience"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-08_premium_tutorial_for_all",
     "defaultConfig": {
       "enabled": false
@@ -8608,6 +8616,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-02_nitroduction_experience",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: One month trial users recieve the Nitroduction experience",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-02_nitroduction_experience"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2956169075,
+    "creationDate": 1675802585,
+    "type": "user",
+    "title": "Nitroduction Experience",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: One month trial users recieve the Nitroduction experience"
     ],
     "buckets": [
       -1,
@@ -16890,6 +16963,71 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-08_marketing_page_floating_cta",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_marketing_page_floating_cta"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1486934563,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Marketing Page Floating CTA",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
