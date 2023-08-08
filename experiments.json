@@ -728,59 +728,6 @@
     ]
   },
   {
-    "id": "2022-01_guild_role_subscription_multigroup",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enables guild to create multiple Guild Role Subscription groups",
-          "bucket": 1,
-          "ids": [
-            "908114392263049277",
-            "852602631297171507",
-            "966419039977111582",
-            "839303183536750622"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 2201448248,
-    "creationDate": 1641588185,
-    "type": "guild",
-    "title": "Guild Role Subscription Multigroup",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables guild to create multiple Guild Role Subscription groups"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-01_guild_role_subscription_trials",
     "defaultConfig": {
       "enableRoleSubscriptionTrialsForGuild": false
@@ -858,67 +805,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enables guild to create Guild Role Subscription Trials"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-03_role_subscription_analytics_portal",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables guild to view analytics for role subscriptions",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enables guild to view analytics for role subscriptions",
-          "bucket": 1,
-          "ids": [
-            "908114392263049277",
-            "786729496572985354",
-            "694472115428261888",
-            "488444879836413975",
-            "271486833223794694",
-            "262030232683413504",
-            "852602631297171507",
-            "346465284477026309",
-            "825852143478636554",
-            "736744916012630046",
-            "930534056200929290",
-            "976593171834351728"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 3510816342,
-    "creationDate": 1646685785,
-    "type": "guild",
-    "title": "Guild Role Subscription Analytics",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables guild to view analytics for role subscriptions"
     ],
     "buckets": [
       -1,
@@ -11960,6 +11846,71 @@
     ]
   },
   {
+    "id": "2023-08_iframe_modal_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable iFrame Modal Guild",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_iframe_modal_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3482606388,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "iFrame Modal guild experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable iFrame Modal Guild"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-07_announcement_views",
     "defaultConfig": {
       "enabled": false
@@ -18587,71 +18538,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_pomelo_announcement",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_pomelo_announcement"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2804111708,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Pomelo Announcement",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enabled"
     ],
     "buckets": [
       -1,
