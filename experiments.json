@@ -551,48 +551,6 @@
     ]
   },
   {
-    "id": "2023-03_cr_accept_new_terms",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": []
-    },
-    "hash": 747043176,
-    "creationDate": 1678221785,
-    "type": "guild",
-    "title": "Server Subscriptions Accept New Terms",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables Server Subscriptions Accept New Terms"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2021-06_guild_role_subscriptions",
     "defaultConfig": {
       "enableRoleSubscriptionsForGuild": false
@@ -6520,72 +6478,6 @@
     ]
   },
   {
-    "id": "2023-03_pomelo_compatible_ux",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_pomelo_compatible_ux"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 671665651,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Pomelo Compatibility",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-08_server_shop_storefront",
     "defaultConfig": {
       "enabled": false
@@ -7389,7 +7281,7 @@
                   "end": 5500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -7400,7 +7292,7 @@
                   "end": 7500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: confirmation-backdrop-disabled",
@@ -7411,7 +7303,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
