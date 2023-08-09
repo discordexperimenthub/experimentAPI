@@ -12211,58 +12211,6 @@
     ]
   },
   {
-    "id": "2023-05_ugc_notifications",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Show Notifications",
-          "bucket": 1,
-          "ids": [
-            "1096485049760759972",
-            "1096492110254964809",
-            "705666251560583168"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 631733804,
-    "creationDate": 1683492185,
-    "type": "guild",
-    "title": "Notifications for UGC changes",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show Notifications"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-06_non_nitro_user_remix_upsell",
     "defaultConfig": {
       "enabled": false
