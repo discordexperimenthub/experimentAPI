@@ -13371,7 +13371,7 @@
               "bucket": 0,
               "rollouts": [
                 {
-                  "start": 500,
+                  "start": 0,
                   "end": 6000
                 }
               ],
@@ -13382,7 +13382,7 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 1500,
+                  "start": 0,
                   "end": 10000
                 }
               ],
