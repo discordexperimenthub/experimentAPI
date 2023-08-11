@@ -1318,56 +1318,6 @@
     ]
   },
   {
-    "id": "2023-03_self_demonetization",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables Self Demonetization",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enables Self Demonetization",
-          "bucket": 1,
-          "ids": [
-            "1042521715630166056"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 3194028601,
-    "creationDate": 1678221785,
-    "type": "guild",
-    "title": "Self Demonetization",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables Self Demonetization"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-04_broadcasting",
     "defaultConfig": {
       "canBroadcast": false,
@@ -15322,71 +15272,6 @@
     "creationDate": 1673124185,
     "type": "user",
     "title": "Safety Experience Reject All Message Requests",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-02_parent_tools_launch",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_parent_tools_launch"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1869634267,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "Safety - Family Center Launch",
     "description": [
       "Not Eligible",
       "Control Bucket",
