@@ -747,48 +747,6 @@
     ]
   },
   {
-    "id": "2022-05_mobile_web_role_subscription_purchase_page",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables role subscription mobile web purchase page",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": []
-    },
-    "hash": 4190408036,
-    "creationDate": 1651956185,
-    "type": "guild",
-    "title": "Guild Role Subscription Mobile Web",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables role subscription mobile web purchase page"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-06_native_mobile_role_subscription_management",
     "defaultConfig": {
       "enabled": false
@@ -912,72 +870,6 @@
       4,
       5,
       6
-    ]
-  },
-  {
-    "id": "2022-08_mobile_web_role_subscription_upsell",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable mobile web role subscription upsell",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-08_mobile_web_role_subscription_upsell"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2514746297,
-    "creationDate": 1659904985,
-    "type": "user",
-    "title": "Mobile Web Guild Role Subscription Upsell",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable mobile web role subscription upsell"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
     ]
   },
   {
@@ -11124,14 +11016,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 6000,
+                  "end": 9000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 7000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
