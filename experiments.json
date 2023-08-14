@@ -9377,6 +9377,71 @@
     ]
   },
   {
+    "id": "2023-08_improved_bans_page",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Guild Settings Improved Bans Page",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_improved_bans_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3768642622,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "Guild Settings Improved Bans Page",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Guild Settings Improved Bans Page"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_profile_effects",
     "defaultConfig": {
       "enabled": false
@@ -17495,71 +17560,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Show Guild Audit Log 2.0 for guild"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-05_safety_coms_update",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-05_safety_coms_update"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 542042630,
-    "creationDate": 1651956185,
-    "type": "user",
-    "title": "Safety Integrity Platform Coms Update",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
