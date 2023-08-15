@@ -11024,7 +11024,7 @@
                   "end": 9000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -11035,7 +11035,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
