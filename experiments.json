@@ -6232,6 +6232,71 @@
     ]
   },
   {
+    "id": "2023-08_guild_member_bulk_ban_experiment",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Bulk Banning Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_guild_member_bulk_ban_experiment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2119968730,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "Bulk Banning Guild Members Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Bulk Banning Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-04_impression_logging",
     "defaultConfig": {
       "enabled": false
@@ -16066,71 +16131,6 @@
       0,
       1,
       2
-    ]
-  },
-  {
-    "id": "2023-06_hide_thread_count",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Hide thread count",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_hide_thread_count"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1130195016,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Hide thread count",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Hide thread count"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
     ]
   },
   {
