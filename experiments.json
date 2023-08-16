@@ -5018,131 +5018,6 @@
     ]
   },
   {
-    "id": "2022-10_communities_multi",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 2000
-                },
-                {
-                  "start": 8000,
-                  "end": 10000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 1: NMX Core",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 4000,
-                  "end": 6000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 2: NMX Core + Home",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 6000,
-                  "end": 8000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY_EXP_LARGE_UNGATED"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 2000
-                },
-                {
-                  "start": 8000,
-                  "end": 10000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 1: NMX Core",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 4000,
-                  "end": 6000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 2: NMX Core + Home",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 6000,
-                  "end": 8000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY_EXP_LARGE_GATED"
-              ]
-            }
-          ]
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": []
-    },
-    "hash": 2457903107,
-    "creationDate": 1665175385,
-    "type": "guild",
-    "title": "A multi-arm guild experiment that segments all eligible guilds to test different combinations of the Communities 2.0 experience",
-    "description": [
-      "Not Eligible",
-      "Treatment 0: Holdout",
-      "Treatment 1: NMX Core",
-      "Treatment 2: NMX Core + Home",
-      "Treatment 3: NMX Core + Highlights",
-      "Treatment 4: Home"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
     "id": "2022-01_home_tab_guild",
     "defaultConfig": {
       "enabled": false
@@ -8291,7 +8166,8 @@
   {
     "id": "2023-05_inventory_guild_packs",
     "defaultConfig": {
-      "enabled": false
+      "enabled": false,
+      "mobileEnabled": false
     },
     "rollout": {
       "revision": 0,
@@ -8345,12 +8221,14 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ]
   },
   {
@@ -9065,6 +8943,72 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2022-08_churro_experiment",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "None",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-08_churro_experiment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4136574802,
+    "creationDate": 1659904985,
+    "type": "user",
+    "title": "PS5 Voice Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 3: PS Experiment + upsells + Staging"
+    ],
+    "buckets": [
+      -1,
+      0,
+      3
     ]
   },
   {
