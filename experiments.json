@@ -10960,22 +10960,22 @@
               "bucket": 0,
               "rollouts": [
                 {
-                  "start": 6000,
+                  "start": 0,
                   "end": 9000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 7000,
+                  "start": 3000,
                   "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
