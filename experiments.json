@@ -143,14 +143,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -277,14 +278,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -427,14 +429,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -603,14 +606,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -753,14 +757,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -1083,71 +1088,6 @@
       1,
       2,
       3
-    ]
-  },
-  {
-    "id": "2023-04_server_subscriptions_tier_templates_user",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable tier templates for user",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_server_subscriptions_tier_templates_user"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4265918989,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Server Subscriptions Tier Templates",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable tier templates for user"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
     ]
   },
   {
@@ -2087,14 +2027,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -2292,14 +2233,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -2946,14 +2888,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -3149,14 +3092,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -3961,14 +3905,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -4613,14 +4558,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -5008,14 +4954,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Treatment 4: Enable sending periodic voice stats for 10% of calls",
+              "bucket": 5,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -5146,14 +5093,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 5000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 5000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -6197,14 +6156,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -6262,14 +6222,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -6586,14 +6547,37 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 5500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 7500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 1: confirmation-backdrop-disabled",
+              "bucket": 2,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -6919,14 +6903,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -7638,14 +7623,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 5000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -8036,14 +8022,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -8093,8 +8080,7 @@
   {
     "id": "2023-05_inventory_guild_packs",
     "defaultConfig": {
-      "enabled": false,
-      "mobileEnabled": false
+      "enabled": false
     },
     "rollout": {
       "revision": 0,
@@ -8311,14 +8297,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -8882,14 +8869,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -9343,14 +9331,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -9473,14 +9462,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 9500,
+                  "end": 9500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 9500,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -9800,14 +9801,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -9934,14 +9936,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -9999,14 +10002,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -10135,14 +10139,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Treatment 2: 700ms",
+              "bucket": 3,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -10339,14 +10344,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -10469,14 +10475,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -10797,14 +10804,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 9000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 3000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -10927,14 +10946,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 5000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 5000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -11099,14 +11130,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -11655,14 +11687,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -11720,14 +11753,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -12997,14 +13031,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 6000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -13651,14 +13697,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -13781,14 +13828,15 @@
         {
           "position": [
             {
-              "treatment": "None",
-              "bucket": -1,
+              "treatment": "Control: No changes",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -15266,14 +15314,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -15864,14 +15913,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 1000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
+              "bucket": 2,
+              "rollouts": [
+                {
+                  "start": 1000,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -16250,7 +16311,7 @@
     ]
   },
   {
-    "id": "2023-04_birthday_activities_whats_new_gdm_tile",
+    "id": "2023-08_premium_new_settings_page",
     "defaultConfig": {
       "enabled": false
     },
@@ -16268,6 +16329,72 @@
                   "end": 10000
                 }
               ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable new settings page for Nitro",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_premium_new_settings_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2083225274,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "New settings page for Nitro",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable new settings page for Nitro"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_birthday_activities_whats_new_gdm_tile",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -16325,14 +16452,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -16390,14 +16518,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -16455,14 +16584,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -16784,14 +16914,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Treatment 1: Enable Account Profile Popout",
+              "bucket": 2,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
@@ -17953,6 +18084,72 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_server_subscriptions_tier_templates_user",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable tier templates for user",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_server_subscriptions_tier_templates_user"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4265918989,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Server Subscriptions Tier Templates",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable tier templates for user"
     ],
     "buckets": [
       -1,
