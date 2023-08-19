@@ -4873,6 +4873,71 @@
     ]
   },
   {
+    "id": "2023-08_video_quality_measurement_v1",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Measure PSNR",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_video_quality_measurement_v1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2496837643,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Video Quality Measurement",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Measure PSNR"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-09_ios_screenshare_resolution_profiles",
     "defaultConfig": {
       "enabled": false
@@ -6692,207 +6757,6 @@
     ]
   },
   {
-    "id": "2023-02_nitro_most_popular_tag",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show most popular tag on nitro plan",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_nitro_most_popular_tag"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2459440542,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "Most popular tag in nitro plan selection",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: show most popular tag on nitro plan"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_premium_marketing_page_trial_tier_card",
-    "defaultConfig": {
-      "pillLocation": 0
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Free trial pill on top of the card",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_premium_marketing_page_trial_tier_card"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2553858368,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Premium marketing page trial tier card",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Free trial pill on top of the card",
-      "Treatment 2: Free trial pill inline with the card"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-04_tier_0_trial_cta_copy",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_tier_0_trial_cta_copy"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3084409284,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "Tier 0 Trial CTA Copy",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
-      "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
-      "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
     "id": "2022-03_block_russian_purchases",
     "defaultConfig": {
       "paymentsBlocked": false
@@ -7351,8 +7215,7 @@
   {
     "id": "2022-11_clips_experiment",
     "defaultConfig": {
-      "enableClips": false,
-      "enableUpsells": false
+      "enabled": false
     },
     "rollout": {
       "revision": 0,
@@ -7414,6 +7277,71 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-08_clips_public_test",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Clips",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_clips_public_test"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3779532009,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "Clips (Public Test)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Clips"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
@@ -16163,6 +16091,75 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-04_tier_0_trial_cta_copy",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_tier_0_trial_cta_copy"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3084409284,
+    "creationDate": 1680900185,
+    "type": "user",
+    "title": "Tier 0 Trial CTA Copy",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users with a tier 0 trial offer will see \"Get Free Trial\"",
+      "Treatment 2: Users with a tier 0 trial offer will see \"Try 1 Month Free\"",
+      "Treatment 3: Users with a tier 0 trial offer will see \"Start Free Trial\""
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
     ]
   },
   {
