@@ -10514,71 +10514,6 @@
     ]
   },
   {
-    "id": "2023-04_nitro_drop_announcement_modal",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled Nitro April Drop announcement modal",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_nitro_drop_announcement_modal"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4190502511,
-    "creationDate": 1680900185,
-    "type": "user",
-    "title": "2023 Nitro April Drop Announcement Modal",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled Nitro April Drop announcement modal"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-02_referral_trials",
     "defaultConfig": {
       "enabled": false
@@ -16953,6 +16888,77 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-08_dcf_ml_model",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: threshold 1",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_dcf_ml_model"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1694039129,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "DCF ML Perks Relevance Model",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: threshold 0",
+      "Treatment 1: threshold 1",
+      "Treatment 2: threshold 2",
+      "Treatment 3: threshold 3",
+      "Treatment 4: threshold 4"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
     ]
   },
   {
