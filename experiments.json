@@ -13603,6 +13603,71 @@
     ]
   },
   {
+    "id": "2023-08_iar_fraud_impersonation",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_iar_fraud_impersonation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 868088545,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "In App Reports Fruad & Impersonation",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-07_allow_welcome_message_replies",
     "defaultConfig": {
       "enabled": false
