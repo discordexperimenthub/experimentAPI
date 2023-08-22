@@ -3148,6 +3148,222 @@
     ]
   },
   {
+    "id": "2023-08_video_quality_measurement_v1",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_video_quality_measurement_v1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2496837643,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Video Quality Measurement",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
+      "Treatment 2: Measure PSNR Only",
+      "Treatment 3: Measure VMAF Only",
+      "Treatment 4: Measure PSNR and VMAF"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "2021-09_ios_screenshare_resolution_profiles",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Permanent old resolution",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-09_ios_screenshare_resolution_profiles"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3656427814,
+    "creationDate": 1631047385,
+    "type": "user",
+    "title": "iOS: Screenshare resolution profiles",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Permanent old resolution",
+      "Treatment 2: Old resolution for 10s",
+      "Treatment 3: Wait 3s after 1st frame capture",
+      "Treatment 4: Wait 3s to capture 1st frame"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "2023-08_periodic_voice_stats",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 4: Enable sending periodic voice stats for 10% of calls",
+              "bucket": 5,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable sending periodic voice stats for 100% of calls",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_periodic_voice_stats"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1794801891,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Periodic Voice Stats",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable sending periodic voice stats for 100% of calls",
+      "Treatment 2: Enable sending periodic voice stats for 50% of calls",
+      "Treatment 3: Enable sending periodic voice stats for 20% of calls",
+      "Treatment 4: Enable sending periodic voice stats for 10% of calls",
+      "Treatment 5: Enable sending periodic voice stats for 5% of calls"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
     "id": "2022-1_read_state_staff",
     "defaultConfig": {
       "enabled": false
@@ -3210,73 +3426,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-07_guild_list_order",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: put new guilds to the bottom",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_guild_list_order"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3517643571,
-    "creationDate": 1688762585,
-    "type": "user",
-    "title": "Put new guilds to the bottom of guild list",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: put new guilds to the bottom",
-      "Treatment 2: forced put new guilds to the bottom"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   },
   {
@@ -4548,6 +4697,71 @@
     ]
   },
   {
+    "id": "2023-08_decay_old_unreads",
+    "defaultConfig": {
+      "clearOldUnreads": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_decay_old_unreads"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3052834880,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Decay Unreads",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: On"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-04_network_action_logging",
     "defaultConfig": {
       "enabled": false
@@ -4870,216 +5084,6 @@
       1,
       2,
       3
-    ]
-  },
-  {
-    "id": "2023-08_video_quality_measurement_v1",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Measure PSNR",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_video_quality_measurement_v1"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2496837643,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Video Quality Measurement",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Measure PSNR"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2021-09_ios_screenshare_resolution_profiles",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Permanent old resolution",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-09_ios_screenshare_resolution_profiles"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3656427814,
-    "creationDate": 1631047385,
-    "type": "user",
-    "title": "iOS: Screenshare resolution profiles",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Permanent old resolution",
-      "Treatment 2: Old resolution for 10s",
-      "Treatment 3: Wait 3s after 1st frame capture",
-      "Treatment 4: Wait 3s to capture 1st frame"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "2023-08_periodic_voice_stats",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 4: Enable sending periodic voice stats for 10% of calls",
-              "bucket": 5,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable sending periodic voice stats for 100% of calls",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_periodic_voice_stats"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1794801891,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Periodic Voice Stats",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable sending periodic voice stats for 100% of calls",
-      "Treatment 2: Enable sending periodic voice stats for 50% of calls",
-      "Treatment 3: Enable sending periodic voice stats for 20% of calls",
-      "Treatment 4: Enable sending periodic voice stats for 10% of calls",
-      "Treatment 5: Enable sending periodic voice stats for 5% of calls"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
     ]
   },
   {
@@ -15972,14 +15976,26 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 0
                 }
-              ]
+              ],
+              "confirmed": true
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 0
+                }
+              ],
+              "confirmed": true
             }
           ],
           "filters": []
