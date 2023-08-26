@@ -12909,11 +12909,11 @@
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 1000,
                   "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
