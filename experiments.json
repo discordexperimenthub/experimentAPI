@@ -9126,71 +9126,6 @@
     ]
   },
   {
-    "id": "2023-08_collectiblesnitroavatardecoiap",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Collectibles IAP",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_collectiblesnitroavatardecoiap"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2588597280,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Collectible Nitro Avatar Decorations IAP",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Collectibles IAP"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-08_profile_effects",
     "defaultConfig": {
       "enabled": false
@@ -11734,73 +11669,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-06_non_nitro_user_remix_upsell",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: treatment 1",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_non_nitro_user_remix_upsell"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3195474227,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Non Nitro User Remix Upsell Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: treatment 1",
-      "Treatment 2: treatment 2"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   },
   {
@@ -16170,6 +16038,136 @@
     ]
   },
   {
+    "id": "2023-04_server_products",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_server_products"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2236798974,
+    "creationDate": 1680900185,
+    "type": "guild",
+    "title": "Server Products",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_server_shop_upsell",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Server Products Upsell",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_server_shop_upsell"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3738060959,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Server Products Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Server Products Upsell"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-06_guild_subscriptions_payment_flow_test_page",
     "defaultConfig": {
       "enabled": false
@@ -16436,6 +16434,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_collectiblesnitroavatardecoiap",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Collectibles IAP",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_collectiblesnitroavatardecoiap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2588597280,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Collectible Nitro Avatar Decorations IAP",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Collectibles IAP"
     ],
     "buckets": [
       -1,
@@ -17657,71 +17720,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Show Guild Audit Log 2.0 for guild"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_server_products",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_server_products"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2236798974,
-    "creationDate": 1680900185,
-    "type": "guild",
-    "title": "Server Products",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
     ],
     "buckets": [
       -1,
