@@ -1094,6 +1094,83 @@
     ]
   },
   {
+    "id": "2023-08_mobile_redesign_0g_mini",
+    "defaultConfig": {
+      "showRedesign": false,
+      "showMinimalChannelList": false,
+      "showFullWidthPanel": false,
+      "showRecentChannels": false,
+      "showNotificationTimer": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Minimal Channel List",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_mobile_redesign_0g_mini"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2911413063,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Tabs V2 - 0g Mini",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Minimal Channel List",
+      "Treatment 2: Full Width Panel",
+      "Treatment 3: Recent Channels",
+      "Treatment 4: Notification Timer",
+      "Treatment 5: Base redesign"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
     "id": "2023-06_mobile_redesign_curry_existing_users",
     "defaultConfig": {
       "enabled": false
@@ -1567,7 +1644,13 @@
   {
     "id": "2023-09_mobile_redesign_hfu",
     "defaultConfig": {
-      "enabled": false
+      "showRedesign": false,
+      "showMessagesTab": false,
+      "showLaunchpadPullTab": false,
+      "showMinimalChannelList": false,
+      "showQuickswitcherTab": false,
+      "showLaunchpadTab": false,
+      "showFullWidthPanel": false
     },
     "rollout": {
       "revision": 0,
@@ -2822,6 +2905,72 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-08_full_band_krisp_android_",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Load full band krisp model",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_full_band_krisp_android_"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2791827263,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Let us control if full band is enabled on Android",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Load full band krisp model"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
