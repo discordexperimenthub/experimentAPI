@@ -9562,7 +9562,7 @@
                   "end": 3500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -9573,7 +9573,7 @@
                   "end": 6500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Enable auto redirect when reaching an invite page for friends",
@@ -9584,7 +9584,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9971,6 +9971,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Popout"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_login_mfav2",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_login_mfav2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2746546843,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Login MFAv2",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
@@ -14256,75 +14321,6 @@
     ]
   },
   {
-    "id": "2023-05_fast_onboarding_landing",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: 2x Speed",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_fast_onboarding_landing"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1461620747,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Fast Onboarding Landing",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: 2x Speed",
-      "Treatment 2: Instant",
-      "Treatment 42: Instant Untracked"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      42
-    ]
-  },
-  {
     "id": "2023-02_onboardingdropdowns",
     "defaultConfig": {
       "enabled": false
@@ -16680,6 +16676,71 @@
     "creationDate": 1691440985,
     "type": "user",
     "title": "Perks Discoverability",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_whats_new",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_whats_new"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1745832462,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "What's New",
     "description": [
       "Not Eligible",
       "Control Bucket",
