@@ -8098,71 +8098,6 @@
     ]
   },
   {
-    "id": "2023-08_collectiblesnitroavatardecoiap",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Collectibles IAP",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_collectiblesnitroavatardecoiap"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2588597280,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Collectible Nitro Avatar Decorations IAP",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Collectibles IAP"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-05_clyde_ai_dm",
     "defaultConfig": {
       "enabled": false
@@ -9838,79 +9773,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-05_collectibles",
-    "defaultConfig": {
-      "canUseCollectibles": false,
-      "canUseAvatarDecorations": false,
-      "canUploadAvatarDecorations": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Nitro with collecting",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_collectibles"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2455278797,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Collectibles",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Nitro with collecting",
-      "Treatment 2: Non-nitro with collecting upsells",
-      "Treatment 3: Non-nitro with temporary avatar decorations upsells",
-      "Treatment 100: collecting with uploading"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      100
     ]
   },
   {
@@ -11975,7 +11837,7 @@
     ]
   },
   {
-    "id": "2023-03_mobile_remix",
+    "id": "2023-08_remix_ga",
     "defaultConfig": {
       "enabled": false
     },
@@ -12003,7 +11865,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables media remixing",
+              "treatment": "Treatment 1: Remix for Nitro Subscribers",
               "bucket": 1,
               "rollouts": [
                 {
@@ -12017,28 +11879,30 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-03_mobile_remix"
+                "2023-08_remix_ga"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 961769771,
-    "creationDate": 1678221785,
+    "hash": 3382036696,
+    "creationDate": 1691440985,
     "type": "user",
-    "title": "Remixing User Experiment",
+    "title": "Remix General Available",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enables media remixing",
-      "Treatment 2: Enables media remixing for desktop"
+      "Treatment 1: Remix for Nitro Subscribers",
+      "Treatment 3: Upsell Remix for Non-Nitro Users",
+      "Treatment 5: Remix GA for everyone"
     ],
     "buckets": [
       -1,
       0,
       1,
-      2
+      3,
+      5
     ]
   },
   {
@@ -12098,6 +11962,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Server Badging"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_collectiblesnitroavatardecoiap",
+    "defaultConfig": {
+      "canUseCollectiblesIAP": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Collectibles IAP",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_collectiblesnitroavatardecoiap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2588597280,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Collectible Nitro Avatar Decorations IAP",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Collectibles IAP"
     ],
     "buckets": [
       -1,
