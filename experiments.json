@@ -6575,6 +6575,71 @@
     ]
   },
   {
+    "id": "2023-07_clyde_ai_proactive_guilds",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable proactive clyde",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_clyde_ai_proactive_guilds"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3041932109,
+    "creationDate": 1688762585,
+    "type": "guild",
+    "title": "Proactive Clyde",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable proactive clyde"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_local_message_background_sending",
     "defaultConfig": {
       "enabled": false
@@ -15926,14 +15991,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
