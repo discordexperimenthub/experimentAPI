@@ -4966,6 +4966,71 @@
     ]
   },
   {
+    "id": "2023-08_secure_frames_encryption",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Can support secure frames for voice/video",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_secure_frames_encryption"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3013881204,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Allowing testing secure frames for voice/video",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Can support secure frames for voice/video"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_video_quality_measurement_v1",
     "defaultConfig": {
       "enabled": false
