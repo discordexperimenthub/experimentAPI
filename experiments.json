@@ -7967,6 +7967,71 @@
     ]
   },
   {
+    "id": "2023-09_client_theme_coachmark_reintro",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable the coachmark",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_client_theme_coachmark_reintro"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1017818703,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Experiment to reintroduce the client themes experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable the coachmark"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_premium_tutorial_for_all",
     "defaultConfig": {
       "enabled": false
