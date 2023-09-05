@@ -1650,7 +1650,8 @@
       "showMinimalChannelList": false,
       "showQuickswitcherTab": false,
       "showLaunchpadTab": false,
-      "showFullWidthPanel": false
+      "showFullWidthPanel": false,
+      "showFullWidthPanelNoSwipingOrSelected": false
     },
     "rollout": {
       "revision": 0,
@@ -1710,7 +1711,8 @@
       "Treatment 4: Quickswitcher Tab",
       "Treatment 5: Launchpad Tab",
       "Treatment 6: Base redesign",
-      "Treatment 7: Full width panel"
+      "Treatment 7: Full width panel",
+      "Treatment 8: Full width panel (disabled swiping & selected channel highlight)"
     ],
     "buckets": [
       -1,
@@ -1721,7 +1723,8 @@
       4,
       5,
       6,
-      7
+      7,
+      8
     ]
   },
   {
@@ -16406,14 +16409,15 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control Bucket",
+              "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
