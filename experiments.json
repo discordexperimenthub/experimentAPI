@@ -2321,6 +2321,71 @@
     ]
   },
   {
+    "id": "2023-08_overlay3_out_of_process_enablement",
+    "defaultConfig": {
+      "useGlobalOverlay": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_overlay3_out_of_process_enablement"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2544068076,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Overlay3 - Out of Process Enablement",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_trial_redemption_default_to_monthly_plan",
     "defaultConfig": {
       "defaultToMonthlyPlan": false
@@ -2855,15 +2920,26 @@
         {
           "position": [
             {
+              "treatment": "Control",
+              "bucket": 0,
+              "rollouts": [
+                {
+                  "start": 5000,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            },
+            {
               "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 5000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
@@ -7897,71 +7973,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: enable clyde in gdms"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_overlay3_out_of_process_enablement",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_overlay3_out_of_process_enablement"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2544068076,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Overlay3 - Out of Process Enablement",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
@@ -16417,7 +16428,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
