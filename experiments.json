@@ -9094,6 +9094,71 @@
     ]
   },
   {
+    "id": "2023-08_custom_gift",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show gift purchaser custom gift flow",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_custom_gift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1100309809,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Custom Gift Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show gift purchaser custom gift flow"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-08_churro_experiment",
     "defaultConfig": {
       "enabled": false
@@ -16550,17 +16615,6 @@
       "populations": [
         {
           "position": [
-            {
-              "treatment": "Control",
-              "bucket": 0,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 5000
-                }
-              ],
-              "confirmed": true
-            },
             {
               "treatment": "Control Bucket",
               "bucket": 1,
