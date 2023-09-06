@@ -9697,37 +9697,14 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
+              "treatment": "Not Eligible",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 3500
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 3500,
-                  "end": 6500
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 1: Enable auto redirect when reaching an invite page for friends",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 6500,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -16606,72 +16583,6 @@
     ]
   },
   {
-    "id": "2023-08_nitro_subs_variant",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_nitro_subs_variant"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3370747435,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Nitro Subs Variant",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-08_perks_discoverability",
     "defaultConfig": {
       "enabled": false
@@ -16935,71 +16846,6 @@
       0,
       1,
       2
-    ]
-  },
-  {
-    "id": "2023-08_premium_new_settings_page",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable new settings page for Nitro",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_premium_new_settings_page"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2083225274,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "New settings page for Nitro",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable new settings page for Nitro"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
     ]
   },
   {
