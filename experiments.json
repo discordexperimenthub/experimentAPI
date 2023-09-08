@@ -8783,6 +8783,71 @@
     ]
   },
   {
+    "id": "2023-09_soundmoji",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_soundmoji"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2773988864,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Soundmoji",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_apps_in_gdms",
     "defaultConfig": {
       "enabled": false
@@ -16096,6 +16161,73 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-09_activity_shelf_order",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Activity Shelf Order: Most Recently Used",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_activity_shelf_order"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 677690720,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Activity Shelf Order",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Activity Shelf Order: Most Recently Used",
+      "Treatment 2: Activity Shelf Order: Most Used"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   },
   {
