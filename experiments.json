@@ -2583,6 +2583,71 @@
     ]
   },
   {
+    "id": "2023-09_decoupled_game_clipping",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Decoupled Game Clipping",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_decoupled_game_clipping"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1366927696,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Test decoupled game clipping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Decoupled Game Clipping"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_h265_android",
     "defaultConfig": {
       "enabled": false
