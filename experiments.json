@@ -2583,71 +2583,6 @@
     ]
   },
   {
-    "id": "2023-09_decoupled_game_clipping",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Decoupled Game Clipping",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_decoupled_game_clipping"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1366927696,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Test decoupled game clipping",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Decoupled Game Clipping"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-02_h265_android",
     "defaultConfig": {
       "enabled": false
@@ -4785,6 +4720,72 @@
     ]
   },
   {
+    "id": "2021-04_network_action_logging",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Log network actions",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-04_network_action_logging"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3643362751,
+    "creationDate": 1617828185,
+    "type": "user",
+    "title": "Standard Analytics: Log Network Actions",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Log network actions"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_stage_boosting",
     "defaultConfig": {
       "enabled": false
@@ -6192,71 +6193,6 @@
     ]
   },
   {
-    "id": "2023-09_show_server_sub_in_server_shop",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables showing server sub in server shop",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_show_server_sub_in_server_shop"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1680860120,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Show server sub in server shop",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables showing server sub in server shop"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2021-11_member_verification_manual_approval",
     "defaultConfig": {
       "enabled": false
@@ -6643,6 +6579,72 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Bulk Banning Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2021-04_impression_logging",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Log impressions",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-04_impression_logging"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3354177721,
+    "creationDate": 1617828185,
+    "type": "user",
+    "title": "Standard Analytics: Log Impressions",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Log impressions"
     ],
     "buckets": [
       -1,
@@ -8840,136 +8842,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Override guild summaries to use SOURCE_1"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_explicit_media_redaction",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable explicit media redaction",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_explicit_media_redaction"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3220737601,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Explicit Media Redaction",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable explicit media redaction"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_soundmoji",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_soundmoji"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2773988864,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Soundmoji",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
@@ -16291,73 +16163,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-09_activity_shelf_order",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Activity Shelf Order: Most Recently Used",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_activity_shelf_order"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 677690720,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Activity Shelf Order",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Activity Shelf Order: Most Recently Used",
-      "Treatment 2: Activity Shelf Order: Most Used"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   },
   {
