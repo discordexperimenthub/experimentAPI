@@ -6192,6 +6192,71 @@
     ]
   },
   {
+    "id": "2023-09_show_server_sub_in_server_shop",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables showing server sub in server shop",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_show_server_sub_in_server_shop"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1680860120,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Show server sub in server shop",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables showing server sub in server shop"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-11_member_verification_manual_approval",
     "defaultConfig": {
       "enabled": false
@@ -8775,6 +8840,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Override guild summaries to use SOURCE_1"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_explicit_media_redaction",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable explicit media redaction",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_explicit_media_redaction"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3220737601,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Explicit Media Redaction",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable explicit media redaction"
     ],
     "buckets": [
       -1,
