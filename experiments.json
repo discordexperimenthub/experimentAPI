@@ -13441,22 +13441,22 @@
               "bucket": 0,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 500,
                   "end": 6000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 0,
+                  "start": 1000,
                   "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
