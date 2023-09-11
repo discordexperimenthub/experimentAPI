@@ -13697,6 +13697,139 @@
     ]
   },
   {
+    "id": "2023-08_new_app_command_serving",
+    "defaultConfig": {
+      "enabled": false,
+      "newSearchLogic": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_new_app_command_serving"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3246190672,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "New Application Command Serving",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled + New Logic"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-08_user_apps",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Allow user app commands",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_user_apps"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 825618208,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Allow user app commands",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow user app commands"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-07_popout_autocomplete",
     "defaultConfig": {
       "enabled": false
@@ -18692,6 +18825,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt"
     ],
     "buckets": [
       -1,
