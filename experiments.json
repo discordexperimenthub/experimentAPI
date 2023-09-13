@@ -11761,6 +11761,72 @@
     ]
   },
   {
+    "id": "2022-12_seasonal_gifting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_seasonal_gifting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 184775741,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Seasonal Gifting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_guild_media_channel",
     "defaultConfig": {
       "enabled": false
@@ -14129,72 +14195,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: enable Activities in text channels"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_seasonal_gifting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_seasonal_gifting"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 184775741,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Seasonal Gifting",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
