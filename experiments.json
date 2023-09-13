@@ -4200,6 +4200,71 @@
     ]
   },
   {
+    "id": "2023-08_custom_gift",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show gift purchaser custom gift flow",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_custom_gift"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1100309809,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Custom Gift Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show gift purchaser custom gift flow"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_store_latest_message_data",
     "defaultConfig": {
       "enabled": false
@@ -9060,136 +9125,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: On"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_lock_icon",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_lock_icon"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 853908483,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Checkout Lock Icon",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_custom_gift",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show gift purchaser custom gift flow",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_custom_gift"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1100309809,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Custom Gift Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show gift purchaser custom gift flow"
     ],
     "buckets": [
       -1,
@@ -17214,6 +17149,136 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-09_whats_new_drop_1_flip",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Flipped",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_whats_new_drop_1_flip"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1584455515,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "What's New Drop 1",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Flipped"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_whats_new_drop_2_flip",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Flipped",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_whats_new_drop_2_flip"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2396169737,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "What's New Drop 2",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Flipped"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
