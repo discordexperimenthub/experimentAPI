@@ -18940,6 +18940,71 @@
     ]
   },
   {
+    "id": "2023-09_gaming_stats_setup",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: trigger gaming stats data",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_setup"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3080965400,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats exposure setup",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: trigger gaming stats data"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_deadchat_simple_prompt_guild",
     "defaultConfig": {
       "triggerDeadchat": false
