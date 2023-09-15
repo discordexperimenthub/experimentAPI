@@ -9726,6 +9726,71 @@
     ]
   },
   {
+    "id": "2023-08_collectiblesnitroavatardecoiap",
+    "defaultConfig": {
+      "canUseCollectiblesIAP": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Collectibles IAP",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_collectiblesnitroavatardecoiap"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2588597280,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Collectible Nitro Avatar Decorations IAP",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Collectibles IAP"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_mfa_remove_phone",
     "defaultConfig": {
       "enabled": false
@@ -12318,71 +12383,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Server Badging"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_collectiblesnitroavatardecoiap",
-    "defaultConfig": {
-      "canUseCollectiblesIAP": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Collectibles IAP",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_collectiblesnitroavatardecoiap"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2588597280,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Collectible Nitro Avatar Decorations IAP",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Collectibles IAP"
     ],
     "buckets": [
       -1,
