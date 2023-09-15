@@ -6332,15 +6332,14 @@
         {
           "position": [
             {
-              "treatment": "Control Bucket",
-              "bucket": 1,
+              "treatment": "Not Eligible",
+              "bucket": -1,
               "rollouts": [
                 {
                   "start": 0,
                   "end": 10000
                 }
-              ],
-              "confirmed": true
+              ]
             }
           ],
           "filters": []
@@ -10793,137 +10792,6 @@
     ]
   },
   {
-    "id": "2022-12_get_my_guilds_application_ids_endpoint",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_get_my_guilds_application_ids_endpoint"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3772658100,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Get My Guilds' Application IDs Endpoint Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-02_app_directory_for_all_modal",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_app_directory_for_all_modal"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 968202795,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "App Directory Upsell For All Modal",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-08_back_to_school",
     "defaultConfig": {
       "enabled": false
@@ -11694,71 +11562,6 @@
       0,
       1,
       2
-    ]
-  },
-  {
-    "id": "2023-05_popular_slash_commands_mobile",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show Popular Commands section",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_popular_slash_commands_mobile"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1146223059,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Popular Slash Commands Mobile",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show Popular Commands section"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
     ]
   },
   {
@@ -14670,6 +14473,71 @@
     ]
   },
   {
+    "id": "2023-08_guild_member_mod_view",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Guild Member Mod View",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_guild_member_mod_view"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2342285461,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "Guild Member Mod View",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Guild Member Mod View"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_channel_name_emojis",
     "defaultConfig": {
       "enabled": false,
@@ -15084,6 +14952,71 @@
     ]
   },
   {
+    "id": "2023-02_app_directory_for_all_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-02_app_directory_for_all_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 968202795,
+    "creationDate": 1675802585,
+    "type": "user",
+    "title": "App Directory Upsell For All Modal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-10_study_group",
     "defaultConfig": {
       "enabled": false
@@ -15366,6 +15299,79 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-09_guild_events_improvements",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: User can see all improvements",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_guild_events_improvements"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2181787089,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Experiments with various improvements to our events system",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: User can see all improvements",
+      "Treatment 2: User can see top level events entrypoint in friend guilds",
+      "Treatment 3: User can see channel list changes and top level events entrypoint in friend guilds",
+      "Treatment 4: User can see autostart toggle and top level events entrypoint in friend guilds",
+      "Treatment 5: User can see recurring events and top level events entrypoint in friend guilds"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
     ]
   },
   {
@@ -17139,6 +17145,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Test page for guild subscription payment flows"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_collectibles_marketing_page",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_collectibles_marketing_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1645732717,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Collectibles Marketing Page",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
