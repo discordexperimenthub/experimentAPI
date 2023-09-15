@@ -6322,6 +6322,72 @@
     ]
   },
   {
+    "id": "2023-09_server_shop_phantom_preview",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": false
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Server shop phantom preview",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_server_shop_phantom_preview"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 759064140,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Server Shop Phantom Preview",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Server shop phantom preview"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-11_member_verification_manual_approval",
     "defaultConfig": {
       "enabled": false
@@ -6773,6 +6839,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Bulk Banning Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_guild_members_search_in_elasticsearch",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Members Search V2",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_guild_members_search_in_elasticsearch"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 386483746,
+    "creationDate": 1688762585,
+    "type": "guild",
+    "title": "Members Search V2 Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Members Search V2"
     ],
     "buckets": [
       -1,
@@ -8374,7 +8505,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enabled",
+              "treatment": "Treatment 1: Desktop view/use/collect",
               "bucket": 1,
               "rollouts": [
                 {
@@ -8402,11 +8533,11 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled",
-      "Treatment 2: Mobile Enabled",
+      "Treatment 1: Desktop view/use/collect",
+      "Treatment 2: Desktop view/use/collect and mobile view/use",
       "Treatment 3: Read-only pack emoji for logged out users",
-      "Treatment 4: Freemium Enabled with Add Pack Modal",
-      "Treatment 5: Nitro Enabled with Add Pack Modal"
+      "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
+      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)"
     ],
     "buckets": [
       -1,
@@ -18931,6 +19062,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt"
     ],
     "buckets": [
       -1,
