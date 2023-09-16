@@ -16605,9 +16605,10 @@
     ]
   },
   {
-    "id": "2023-08_jamspace_mini_shelf_banner",
+    "id": "2023-09_activity_bobble_bash_upsell",
     "defaultConfig": {
-      "enabled": false
+      "enableBobbleBashMiniShelfBanner": false,
+      "enableBobbleBashDoubleWideShelf": false
     },
     "rollout": {
       "revision": 0,
@@ -16633,7 +16634,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Jamspace Mini Shelf Banner",
+              "treatment": "Treatment 1: Enable mini-shelf banner + double-wide shelf",
               "bucket": 1,
               "rollouts": [
                 {
@@ -16647,26 +16648,30 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-08_jamspace_mini_shelf_banner"
+                "2023-09_activity_bobble_bash_upsell"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 2622935727,
-    "creationDate": 1691440985,
+    "hash": 3892100904,
+    "creationDate": 1694119385,
     "type": "user",
-    "title": "Jamspace Mini Shelf Banner",
+    "title": "Activity Bobble Bash Upsell",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable Jamspace Mini Shelf Banner"
+      "Treatment 1: Enable mini-shelf banner + double-wide shelf",
+      "Treatment 2: Enable mini-shelf banner",
+      "Treatment 3: Enable double-wide shelf"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2,
+      3
     ]
   },
   {
