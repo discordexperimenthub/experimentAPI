@@ -19016,7 +19016,7 @@
     ]
   },
   {
-    "id": "2023-09_gaming_stats_setup",
+    "id": "2023-09_gaming_stats_prompt_guild",
     "defaultConfig": {
       "enabled": false
     },
@@ -19044,7 +19044,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: trigger gaming stats data",
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
               "bucket": 1,
               "rollouts": [
                 {
@@ -19058,21 +19058,21 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-09_gaming_stats_setup"
+                "2023-09_gaming_stats_prompt_guild"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 3080965400,
+    "hash": 2478854553,
     "creationDate": 1694119385,
     "type": "guild",
-    "title": "Gaming stats exposure setup",
+    "title": "Gaming stats prompt",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: trigger gaming stats data"
+      "Treatment 1: ability to trigger gaming stats prompt"
     ],
     "buckets": [
       -1,
@@ -19146,6 +19146,71 @@
     ]
   },
   {
+    "id": "2023-09_gaming_stats_setup",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: trigger gaming stats data",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_setup"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3080965400,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats exposure setup",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: trigger gaming stats data"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-12_localized_pricing_promo_manager",
     "defaultConfig": {
       "enabled": false
@@ -19203,71 +19268,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_gaming_stats_prompt_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_gaming_stats_prompt_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2478854553,
-    "creationDate": 1694119385,
-    "type": "guild",
-    "title": "Gaming stats prompt",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt"
     ],
     "buckets": [
       -1,
