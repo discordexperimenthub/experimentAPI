@@ -19016,7 +19016,7 @@
     ]
   },
   {
-    "id": "2023-09_gaming_stats_prompt_guild",
+    "id": "2023-09_gaming_stats_setup",
     "defaultConfig": {
       "enabled": false
     },
@@ -19044,7 +19044,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "treatment": "Treatment 1: trigger gaming stats data",
               "bucket": 1,
               "rollouts": [
                 {
@@ -19058,21 +19058,21 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-09_gaming_stats_prompt_guild"
+                "2023-09_gaming_stats_setup"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 2478854553,
+    "hash": 3080965400,
     "creationDate": 1694119385,
     "type": "guild",
-    "title": "Gaming stats prompt",
+    "title": "Gaming stats exposure setup",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt"
+      "Treatment 1: trigger gaming stats data"
     ],
     "buckets": [
       -1,
@@ -19138,71 +19138,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: trigger deadchat upon connection open"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_gaming_stats_setup",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: trigger gaming stats data",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_gaming_stats_setup"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3080965400,
-    "creationDate": 1694119385,
-    "type": "guild",
-    "title": "Gaming stats exposure setup",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: trigger gaming stats data"
     ],
     "buckets": [
       -1,
