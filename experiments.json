@@ -86,7 +86,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -221,7 +221,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -372,7 +372,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -549,7 +549,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -700,7 +700,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -2133,7 +2133,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -2993,7 +2993,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -3004,7 +3004,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3135,7 +3135,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3339,7 +3339,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -4085,7 +4085,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5334,7 +5334,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5605,7 +5605,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -5616,7 +5616,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6209,7 +6209,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7059,7 +7059,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7300,6 +7300,148 @@
     ]
   },
   {
+    "id": "2023-05_inventory_guild_packs",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Desktop view/use/collect",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_inventory_guild_packs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1473329304,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Inventory Guild Packs Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Desktop view/use/collect",
+      "Treatment 2: Desktop view/use/collect and mobile view/use",
+      "Treatment 3: Read-only pack emoji for logged out users",
+      "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
+      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "2023-06_inventory_guild_setting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show settings toggle, but collection is not allowed.",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_inventory_guild_setting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3883768363,
+    "creationDate": 1686170585,
+    "type": "guild",
+    "title": "Inventory Guild Settings Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show settings toggle, but collection is not allowed.",
+      "Treatment 2: Show settings toggle, and collection is allowed sometime in August.",
+      "Treatment 3: Show settings toggle, and collection is allowed in late August."
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
     "id": "2023-01_emoji_discovery_backfill",
     "defaultConfig": {
       "enabled": false
@@ -7448,7 +7590,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8167,7 +8309,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8493,7 +8635,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8538,148 +8680,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-05_inventory_guild_packs",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Desktop view/use/collect",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_inventory_guild_packs"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1473329304,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Inventory Guild Packs Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Desktop view/use/collect",
-      "Treatment 2: Desktop view/use/collect and mobile view/use",
-      "Treatment 3: Read-only pack emoji for logged out users",
-      "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
-      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "2023-06_inventory_guild_setting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show settings toggle, but collection is not allowed.",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_inventory_guild_setting"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3883768363,
-    "creationDate": 1686170585,
-    "type": "guild",
-    "title": "Inventory Guild Settings Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show settings toggle, but collection is not allowed.",
-      "Treatment 2: Show settings toggle, and collection is allowed sometime in August.",
-      "Treatment 3: Show settings toggle, and collection is allowed in late August."
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3
     ]
   },
   {
@@ -8774,7 +8774,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9346,7 +9346,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9873,7 +9873,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9939,7 +9939,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -9950,7 +9950,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Enable auto redirect when reaching an invite page for friends",
@@ -9961,7 +9961,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10029,7 +10029,7 @@
                   "end": 9500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -10040,7 +10040,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10433,7 +10433,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10568,7 +10568,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10634,7 +10634,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10771,7 +10771,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10898,7 +10898,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11162,7 +11162,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11293,7 +11293,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -11304,7 +11304,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11435,7 +11435,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11824,7 +11824,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11993,7 +11993,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -12059,7 +12059,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -13337,7 +13337,7 @@
                   "end": 6000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -13348,7 +13348,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14136,7 +14136,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -15951,7 +15951,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16689,7 +16689,7 @@
                   "end": 1000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
@@ -16700,7 +16700,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16833,7 +16833,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17295,7 +17295,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17361,7 +17361,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17427,7 +17427,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17493,7 +17493,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17823,7 +17823,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -18953,7 +18953,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
