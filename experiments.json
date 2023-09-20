@@ -11016,6 +11016,71 @@
     ]
   },
   {
+    "id": "2023-09_premium_likelihood_discount_offers",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Premium likelihood discount enabled for user.",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_premium_likelihood_discount_offers"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2539775500,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Premium Likelihood Discount Offers",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Premium likelihood discount enabled for user."
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_referral_trials",
     "defaultConfig": {
       "enabled": false
