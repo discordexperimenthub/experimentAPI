@@ -9619,7 +9619,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enables profile effects",
+              "treatment": "Treatment 1: Enables profile effects without entitlements and shop",
               "bucket": 1,
               "rollouts": [
                 {
@@ -9647,12 +9647,14 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enables profile effects"
+      "Treatment 1: Enables profile effects without entitlements and shop",
+      "Treatment 2: Enables profile effects with entitlements and shop"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ]
   },
   {
@@ -16946,7 +16948,7 @@
     ]
   },
   {
-    "id": "2023-09_collectibles_marketing_page",
+    "id": "2023-09_subscriber_nitro_home",
     "defaultConfig": {
       "enabled": false
     },
@@ -16988,17 +16990,17 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-09_collectibles_marketing_page"
+                "2023-09_subscriber_nitro_home"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 1645732717,
+    "hash": 1154210951,
     "creationDate": 1694119385,
     "type": "user",
-    "title": "Collectibles Marketing Page",
+    "title": "Subscriber Nitro Home",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -17129,6 +17131,71 @@
     "creationDate": 1691440985,
     "type": "user",
     "title": "What's New",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_collectibles_marketing_page",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_collectibles_marketing_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1645732717,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Collectibles Marketing Page",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -18927,71 +18994,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enable Localized Pricing Promo Manager"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_gaming_stats_prompt_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_gaming_stats_prompt_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2478854553,
-    "creationDate": 1694119385,
-    "type": "guild",
-    "title": "Gaming stats prompt",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt"
     ],
     "buckets": [
       -1,
