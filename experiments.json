@@ -16412,7 +16412,7 @@
                   "end": 2500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -16423,7 +16423,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Enable mini-shelf banner + double-wide shelf",
@@ -16434,7 +16434,7 @@
                   "end": 7500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 2: Enable mini-shelf banner",
@@ -16445,7 +16445,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
