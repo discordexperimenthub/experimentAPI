@@ -16404,14 +16404,48 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
-              "bucket": -1,
+              "treatment": "Control",
+              "bucket": 0,
               "rollouts": [
                 {
                   "start": 0,
+                  "end": 2500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 2500,
+                  "end": 5000
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 1: Enable mini-shelf banner + double-wide shelf",
+              "bucket": 2,
+              "rollouts": [
+                {
+                  "start": 5000,
+                  "end": 7500
+                }
+              ],
+              "confirmed": false
+            },
+            {
+              "treatment": "Treatment 2: Enable mini-shelf banner",
+              "bucket": 3,
+              "rollouts": [
+                {
+                  "start": 7500,
                   "end": 10000
                 }
-              ]
+              ],
+              "confirmed": false
             }
           ],
           "filters": []
