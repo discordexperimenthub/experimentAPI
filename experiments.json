@@ -15155,7 +15155,7 @@
     ]
   },
   {
-    "id": "2023-09_guild_events_improvements",
+    "id": "2023-09_guild_events_entrypoint",
     "defaultConfig": {
       "enabled": false
     },
@@ -15183,7 +15183,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: User can see all improvements",
+              "treatment": "Treatment 1: User can see top level events entrypoint in friend guilds",
               "bucket": 1,
               "rollouts": [
                 {
@@ -15197,34 +15197,26 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-09_guild_events_improvements"
+                "2023-09_guild_events_entrypoint"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 2181787089,
+    "hash": 1943118067,
     "creationDate": 1694119385,
     "type": "guild",
-    "title": "Experiments with various improvements to our events system",
+    "title": "Experiments with showing Events entrypoint in the channel list in friends guilds",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: User can see all improvements",
-      "Treatment 2: User can see top level events entrypoint in friend guilds",
-      "Treatment 3: User can see channel list changes and top level events entrypoint in friend guilds",
-      "Treatment 4: User can see autostart toggle and top level events entrypoint in friend guilds",
-      "Treatment 5: User can see recurring events and top level events entrypoint in friend guilds"
+      "Treatment 1: User can see top level events entrypoint in friend guilds"
     ],
     "buckets": [
       -1,
       0,
-      1,
-      2,
-      3,
-      4,
-      5
+      1
     ]
   },
   {
@@ -19098,73 +19090,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-09_gaming_stats_prompt_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_gaming_stats_prompt_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2478854553,
-    "creationDate": 1694119385,
-    "type": "guild",
-    "title": "Gaming stats prompt",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt",
-      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   },
   {
