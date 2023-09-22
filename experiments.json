@@ -5233,7 +5233,16 @@
       "Treatment 1: Measure PSNR [DEPRECATED DO NOT USE]",
       "Treatment 2: Measure PSNR Only",
       "Treatment 3: Measure VMAF Only",
-      "Treatment 4: Measure PSNR and VMAF"
+      "Treatment 4: Measure PSNR and VMAF",
+      "Treatment 5: Measure PSNR Only, 5000ms",
+      "Treatment 6: Measure VMAF Only, 5000ms",
+      "Treatment 7: Measure PSNR and VMAF, 5000ms",
+      "Treatment 8: Measure PSNR Only, 10000ms",
+      "Treatment 9: Measure VMAF Only, 10000ms",
+      "Treatment 10: Measure PSNR and VMAF, 10000ms",
+      "Treatment 11: Measure PSNR Only, 30000ms",
+      "Treatment 12: Measure VMAF Only, 30000ms",
+      "Treatment 13: Measure PSNR and VMAF, 30000ms"
     ],
     "buckets": [
       -1,
@@ -5241,7 +5250,16 @@
       1,
       2,
       3,
-      4
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13
     ]
   },
   {
@@ -13404,7 +13422,7 @@
                   "end": 6000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -13415,7 +13433,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -19090,6 +19108,73 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt",
+      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   },
   {
