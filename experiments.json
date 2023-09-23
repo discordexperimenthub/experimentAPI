@@ -1728,6 +1728,77 @@
     ]
   },
   {
+    "id": "2023-09_mobile_redesign_panels",
+    "defaultConfig": {
+      "showRedesign": false,
+      "showNewPanels": false,
+      "isSplitMessagesTab": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Merged Server + DM tab",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_mobile_redesign_panels"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 985588111,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Tabs V2 - Panels",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Merged Server + DM tab",
+      "Treatment 2: Split DM Tab",
+      "Treatment 3: Base redesign"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
     "id": "2023-08_mobile_redesign_phase_one_existing_users",
     "defaultConfig": {
       "enabled": false
@@ -2585,7 +2656,7 @@
   {
     "id": "2023-09_decoupled_game_clipping",
     "defaultConfig": {
-      "enabled": false
+      "enableDecoupledGameClipping": false
     },
     "rollout": {
       "revision": 0,
