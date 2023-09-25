@@ -86,7 +86,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -221,7 +221,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -372,7 +372,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -549,7 +549,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -700,7 +700,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -2204,7 +2204,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3064,7 +3064,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -3075,7 +3075,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3206,7 +3206,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -3410,7 +3410,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -4156,7 +4156,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5488,7 +5488,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -5759,7 +5759,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -5770,7 +5770,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -6363,7 +6363,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7213,7 +7213,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -7744,7 +7744,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8463,7 +8463,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8789,7 +8789,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -8928,7 +8928,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -9500,7 +9500,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10029,7 +10029,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10095,7 +10095,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -10106,7 +10106,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Enable auto redirect when reaching an invite page for friends",
@@ -10117,7 +10117,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10185,7 +10185,7 @@
                   "end": 9500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -10196,7 +10196,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10589,7 +10589,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10724,7 +10724,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10790,7 +10790,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -10927,7 +10927,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11054,7 +11054,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11383,7 +11383,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11514,7 +11514,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -11525,7 +11525,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -11656,7 +11656,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -12045,7 +12045,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -12214,7 +12214,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -12280,7 +12280,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -13558,7 +13558,7 @@
                   "end": 6000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -13569,7 +13569,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -14357,7 +14357,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16164,7 +16164,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16623,7 +16623,7 @@
                   "end": 2500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -16634,7 +16634,7 @@
                   "end": 5000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Enable mini-shelf banner + double-wide shelf",
@@ -16645,7 +16645,7 @@
                   "end": 7500
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 2: Enable mini-shelf banner",
@@ -16656,7 +16656,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -16936,7 +16936,7 @@
                   "end": 1000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
@@ -16947,7 +16947,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17080,7 +17080,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17607,7 +17607,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17673,7 +17673,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17739,7 +17739,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -17805,7 +17805,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -18135,7 +18135,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
@@ -19247,6 +19247,73 @@
     ]
   },
   {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt",
+      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2023-04_server_subscriptions_tier_templates_user",
     "defaultConfig": {
       "enabled": false
@@ -19265,7 +19332,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
