@@ -17468,10 +17468,10 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 0
+                  "end": 5000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Control Bucket",
@@ -17479,10 +17479,10 @@
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 0
+                  "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
