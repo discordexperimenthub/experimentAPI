@@ -1728,7 +1728,7 @@
     ]
   },
   {
-    "id": "2023-09_mobile_redesign_panels",
+    "id": "2023-09_mobile_redesign_panels_existing_users",
     "defaultConfig": {
       "showRedesign": false,
       "showNewPanels": false,
@@ -1772,17 +1772,17 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-09_mobile_redesign_panels"
+                "2023-09_mobile_redesign_panels_existing_users"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 985588111,
+    "hash": 2137061112,
     "creationDate": 1694119385,
     "type": "user",
-    "title": "Tabs V2 - Panels",
+    "title": "Tabs V2 - Panels - New Users",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -2445,6 +2445,71 @@
     "creationDate": 1691440985,
     "type": "user",
     "title": "Overlay3 - Out of Process Enablement",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_better_localized_trial_cta_rollout",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_better_localized_trial_cta_rollout"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2867419964,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Better Localized Trial CTA",
     "description": [
       "Not Eligible",
       "Control Bucket",
