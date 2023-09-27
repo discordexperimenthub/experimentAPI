@@ -3121,17 +3121,6 @@
         {
           "position": [
             {
-              "treatment": "Control",
-              "bucket": 0,
-              "rollouts": [
-                {
-                  "start": 5000,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            },
-            {
               "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
@@ -3140,7 +3129,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
