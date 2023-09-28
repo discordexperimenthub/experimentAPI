@@ -3968,7 +3968,8 @@
       "Treatment 7: Combined entry point and tabs + double weekly refills",
       "Treatment 8: All additional polish",
       "Treatment 9: All additional polish except notifications",
-      "Treatment 10: The exact same as bucket six, just with a different label"
+      "Treatment 10: The exact same as bucket six, just with a different label",
+      "Treatment 11: New send experience"
     ],
     "buckets": [
       -1,
@@ -3981,7 +3982,8 @@
       7,
       8,
       9,
-      10
+      10,
+      11
     ]
   },
   {
@@ -6512,6 +6514,137 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enables Server shop phantom preview"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-04_server_products",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_server_products"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2236798974,
+    "creationDate": 1680900185,
+    "type": "guild",
+    "title": "Server Products",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_server_shop_upsell",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Control Bucket",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ],
+              "confirmed": true
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Server Products Upsell",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_server_shop_upsell"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3738060959,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Server Products Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Server Products Upsell"
     ],
     "buckets": [
       -1,
@@ -15422,6 +15555,71 @@
     ]
   },
   {
+    "id": "2023-09_upcoming_guild_events_notice",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Guild members can see upcoming events notices",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_upcoming_guild_events_notice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2766349394,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Shows additional notices in the channel list for upcoming events",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Guild members can see upcoming events notices"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-01_server_recommendations_rollout",
     "defaultConfig": {
       "enabled": false
@@ -15543,202 +15741,6 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_whats_new_drop_1_flip",
-    "defaultConfig": {
-      "flipped": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 5000
-                }
-              ],
-              "confirmed": false
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Flipped",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_whats_new_drop_1_flip"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1584455515,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "What's New Drop 1",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Flipped"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_whats_new_drop_2_flip",
-    "defaultConfig": {
-      "flipped": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Flipped",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_whats_new_drop_2_flip"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2396169737,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "What's New Drop 2",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Flipped"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_whats_new_phase_2",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_whats_new_phase_2"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2757471822,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "What's New Phase 2",
-    "description": [
-      "Not Eligible",
-      "Treatment 0: Control",
       "Treatment 1: Enabled"
     ],
     "buckets": [
@@ -17000,137 +17002,6 @@
     ]
   },
   {
-    "id": "2023-04_server_products",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_server_products"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2236798974,
-    "creationDate": 1680900185,
-    "type": "guild",
-    "title": "Server Products",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_server_shop_upsell",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables Server Products Upsell",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_server_shop_upsell"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3738060959,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Server Products Upsell",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables Server Products Upsell"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2021-06_guild_subscriptions_payment_flow_test_page",
     "defaultConfig": {
       "enabled": false
@@ -17391,6 +17262,136 @@
     ]
   },
   {
+    "id": "2023-09_whats_new_drop_1_flip",
+    "defaultConfig": {
+      "flipped": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Flipped",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_whats_new_drop_1_flip"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1584455515,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "What's New Drop 1",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Flipped"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_whats_new_drop_2_flip",
+    "defaultConfig": {
+      "flipped": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Flipped",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_whats_new_drop_2_flip"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2396169737,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "What's New Drop 2",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Flipped"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-09_collectibles_marketing_page",
     "defaultConfig": {
       "enabled": false
@@ -17459,6 +17460,71 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_whats_new_phase_2",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_whats_new_phase_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2757471822,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "What's New Phase 2",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
       "Treatment 1: Enabled"
     ],
     "buckets": [
@@ -19259,6 +19325,73 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt",
+      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   },
   {
