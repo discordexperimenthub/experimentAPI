@@ -10129,6 +10129,71 @@
     ]
   },
   {
+    "id": "2023-09_trigger_debugging_aa",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_trigger_debugging_aa"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1454135605,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "trigger debugging aa mobile",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: On"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_collectiblesnitroavatardecoiap",
     "defaultConfig": {
       "canUseCollectiblesIAP": false
@@ -14457,6 +14522,71 @@
     ]
   },
   {
+    "id": "2023-09_unified_chat_input_expression_icon",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable unified chat input expression icon",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_unified_chat_input_expression_icon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3165668470,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Unified chat input expression icon",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable unified chat input expression icon"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_iar_fraud_impersonation",
     "defaultConfig": {
       "enabled": false
@@ -16840,33 +16970,33 @@
               "bucket": 0,
               "rollouts": [
                 {
-                  "start": 9500,
+                  "start": 8500,
                   "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Control Bucket",
               "bucket": 1,
               "rollouts": [
                 {
-                  "start": 10000,
+                  "start": 9000,
                   "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             },
             {
               "treatment": "Treatment 2: Activity Shelf Order: Most Used",
               "bucket": 3,
               "rollouts": [
                 {
-                  "start": 10000,
+                  "start": 9500,
                   "end": 10000
                 }
               ],
-              "confirmed": true
+              "confirmed": false
             }
           ],
           "filters": []
@@ -17546,7 +17676,7 @@
                   "end": 1000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
