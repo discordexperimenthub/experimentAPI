@@ -7574,71 +7574,6 @@
     ]
   },
   {
-    "id": "2023-06_premium_unify_trial_upsell",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Unified trial upsell experience",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_premium_unify_trial_upsell"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1495876933,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Premium Unify Trial Upsell",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Unified trial upsell experience"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-05_inventory_guild_packs",
     "defaultConfig": {
       "enabled": false
@@ -8883,6 +8818,201 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: One month trial users recieve the Nitroduction experience"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_limited_time_custom_app_icons",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show custom app icons setting",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_limited_time_custom_app_icons"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4133484951,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Limited-time icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show custom app icons setting"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_deskop_in_app_icon",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show custom app icons setting",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_deskop_in_app_icon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1066761149,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Desktop In-App Icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show custom app icons setting"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_custom_app_icons",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show custom app icons setting",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_custom_app_icons"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2089092680,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Custom App Icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show custom app icons setting"
     ],
     "buckets": [
       -1,
@@ -16722,71 +16852,6 @@
     ]
   },
   {
-    "id": "2023-06_activity_shelf_banner_color_together",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Activity Shelf Banner Color Together",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_activity_shelf_banner_color_together"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1426851414,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Activity Shelf Banner Color Together",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Activity Shelf Banner Color Together"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-06_birthday_goodbye",
     "defaultConfig": {
       "enabled": false
@@ -16852,110 +16917,6 @@
     ]
   },
   {
-    "id": "2023-09_activity_bobble_bash_upsell",
-    "defaultConfig": {
-      "enableBobbleBashMiniShelfBanner": false,
-      "enableBobbleBashDoubleWideShelf": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Control",
-              "bucket": 0,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 2500
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Control Bucket",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 2500,
-                  "end": 5000
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 1: Enable mini-shelf banner + double-wide shelf",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 5000,
-                  "end": 7500
-                }
-              ],
-              "confirmed": true
-            },
-            {
-              "treatment": "Treatment 2: Enable mini-shelf banner",
-              "bucket": 3,
-              "rollouts": [
-                {
-                  "start": 7500,
-                  "end": 10000
-                }
-              ],
-              "confirmed": true
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable mini-shelf banner + double-wide shelf",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_activity_bobble_bash_upsell"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3892100904,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Activity Bobble Bash Upsell",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable mini-shelf banner + double-wide shelf",
-      "Treatment 2: Enable mini-shelf banner",
-      "Treatment 3: Enable double-wide shelf"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
     "id": "2023-09_activity_shelf_order",
     "defaultConfig": {
       "enabled": false
@@ -16974,7 +16935,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Control Bucket",
@@ -16985,7 +16946,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             },
             {
               "treatment": "Treatment 2: Activity Shelf Order: Most Used",
@@ -16996,7 +16957,7 @@
                   "end": 10000
                 }
               ],
-              "confirmed": false
+              "confirmed": true
             }
           ],
           "filters": []
