@@ -1296,6 +1296,142 @@
     ]
   },
   {
+    "id": "2023-10_mobile_redesign_one_percent_existing_users",
+    "defaultConfig": {
+      "showRedesign": false,
+      "showPanels": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Redesign",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_mobile_redesign_one_percent_existing_users"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1541876684,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Tabs V2 - One Percent - Existing Users",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Redesign",
+      "Treatment 2: Panels"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-10_mobile_redesign_one_percent_new_users",
+    "defaultConfig": {
+      "showRedesign": false,
+      "showPanels": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Redesign",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_mobile_redesign_one_percent_new_users"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3475360205,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Tabs V2 - One Percent - New Users",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Redesign",
+      "Treatment 2: Panels"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2023-06_mobile_redesign_curry_existing_users",
     "defaultConfig": {
       "enabled": false
@@ -4244,73 +4380,6 @@
     ]
   },
   {
-    "id": "2023-03_mobile_burst_reactions",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_mobile_burst_reactions"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 412458642,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Mobile Burst Reactions User Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled",
-      "Treatment 2: Enabled v2"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
     "id": "2023-04_activity_launcher_embed",
     "defaultConfig": {
       "enabled": false
@@ -5020,71 +5089,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Show Channel Highlights"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_decay_old_unreads",
-    "defaultConfig": {
-      "clearOldUnreads": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_decay_old_unreads"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3052834880,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Decay Unreads",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: On"
     ],
     "buckets": [
       -1,
@@ -9253,6 +9257,71 @@
     ]
   },
   {
+    "id": "2023-08_explicit_media_redaction",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable explicit media redaction",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_explicit_media_redaction"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3220737601,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Explicit Media Redaction",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable explicit media redaction"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_p13n_summarization",
     "defaultConfig": {
       "enabled": false
@@ -9645,71 +9714,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Override guild summaries to use SOURCE_1"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_explicit_media_redaction",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable explicit media redaction",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_explicit_media_redaction"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3220737601,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Explicit Media Redaction",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable explicit media redaction"
     ],
     "buckets": [
       -1,
@@ -14707,7 +14711,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable unified chat input expression icon",
+              "treatment": "Treatment 1: Enable unified chat input expression icon opening last viewed tab",
               "bucket": 1,
               "rollouts": [
                 {
@@ -14735,12 +14739,14 @@
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable unified chat input expression icon"
+      "Treatment 1: Enable unified chat input expression icon opening last viewed tab",
+      "Treatment 2: Enable unified chat input expression icon opening emoji tab"
     ],
     "buckets": [
       -1,
       0,
-      1
+      1,
+      2
     ]
   },
   {
@@ -19391,73 +19397,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-09_gaming_stats_prompt_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_gaming_stats_prompt_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2478854553,
-    "creationDate": 1694119385,
-    "type": "guild",
-    "title": "Gaming stats prompt",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt",
-      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   }
 ]
