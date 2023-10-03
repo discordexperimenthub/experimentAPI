@@ -3700,6 +3700,73 @@
     ]
   },
   {
+    "id": "2023-10_viewer_clipping",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Viewer Clipping with side encoder",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_viewer_clipping"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3351049965,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Test viewer side clipping",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Viewer Clipping with side encoder",
+      "Treatment 2: Viewer Clipping with enc encoder"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2022-09_remote_audio_settings",
     "defaultConfig": {
       "enabled": false
