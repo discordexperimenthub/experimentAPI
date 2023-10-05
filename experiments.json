@@ -5789,6 +5789,73 @@
     ]
   },
   {
+    "id": "2023-09_clips_nitro_early_access",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Clips Nitro EA Upsells Visible",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_clips_nitro_early_access"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 67524618,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Clips (Nitro EA)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Clips Nitro EA Upsells Visible",
+      "Treatment 2: Clips Enabled (Nitro)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2022-01_home_feed_toggle",
     "defaultConfig": {
       "showSelector": false
@@ -11286,6 +11353,71 @@
     ]
   },
   {
+    "id": "2023-09_dm_list_shop_entry_point",
+    "defaultConfig": {
+      "canViewShopButton": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Shop entry point button",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_dm_list_shop_entry_point"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1019122443,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "DM List Shop Entry Point Button",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Shop entry point button"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-08_back_to_school",
     "defaultConfig": {
       "enabled": false
@@ -13764,6 +13896,71 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-10_premium_tier_2_trial_offer_expiring_notice",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_premium_tier_2_trial_offer_expiring_notice"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3950847537,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Premium Tier 2 Trial Offer Expiring Notice",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
@@ -17426,71 +17623,6 @@
     ]
   },
   {
-    "id": "2023-09_collectibles_marketing_page",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_collectibles_marketing_page"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1645732717,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Collectibles Marketing Page",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-09_whats_new_phase_2",
     "defaultConfig": {
       "enabled": false
@@ -17547,6 +17679,71 @@
     "description": [
       "Not Eligible",
       "Treatment 0: Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_collectibles_marketing_page",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_collectibles_marketing_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1645732717,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Collectibles Marketing Page",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
       "Treatment 1: Enabled"
     ],
     "buckets": [
