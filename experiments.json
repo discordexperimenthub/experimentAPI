@@ -10106,73 +10106,6 @@
     ]
   },
   {
-    "id": "2023-07_friend_finder_auto_redirect_invite",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable auto redirect when reaching an invite page for friends",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_friend_finder_auto_redirect_invite"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 197619742,
-    "creationDate": 1688762585,
-    "type": "user",
-    "title": "Friend Finder Auto Redirect Invite Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable auto redirect when reaching an invite page for friends",
-      "Treatment 2: Enable redirect after 2.5 seconds when reaching an invite page for friends"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
     "id": "2021-03_expiration_notice_mobile_web",
     "defaultConfig": {
       "enabled": false
@@ -18327,6 +18260,71 @@
     ]
   },
   {
+    "id": "2023-10_halloween_2023",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Halloween assets enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_halloween_2023"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3705895930,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Halloween assets 2023",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Halloween assets enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-02_guild_audit_log_user",
     "defaultConfig": {
       "enabled": false
@@ -18829,7 +18827,7 @@
     "title": "Simple deadchat prompt",
     "description": [
       "Not Eligible",
-      "Control Bucket",
+      "Treatment 0: Control",
       "Treatment 1: trigger deadchat upon connection open"
     ],
     "buckets": [
@@ -19016,73 +19014,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-09_gaming_stats_prompt_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_gaming_stats_prompt_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2478854553,
-    "creationDate": 1694119385,
-    "type": "guild",
-    "title": "Gaming stats prompt",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt",
-      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   }
 ]
