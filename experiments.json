@@ -2348,71 +2348,6 @@
     ]
   },
   {
-    "id": "2023-07_server_guide_post_onboarding_new_member_action",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show the Onboarding Version of Home",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_server_guide_post_onboarding_new_member_action"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4076788897,
-    "creationDate": 1688762585,
-    "type": "user",
-    "title": "Add onboarding new member action to server guide",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show the Onboarding Version of Home"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-02_onboarding_home_admin",
     "defaultConfig": {
       "homeSettingsEnabled": false
@@ -2772,71 +2707,6 @@
     "creationDate": 1691440985,
     "type": "user",
     "title": "Overlay3 - Out of Process Enablement",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_better_localized_trial_cta_rollout",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_better_localized_trial_cta_rollout"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2867419964,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Better Localized Trial CTA",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -6378,138 +6248,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-07_server_guide_trigger",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: useless treatment",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_server_guide_trigger"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2104400771,
-    "creationDate": 1688762585,
-    "type": "guild",
-    "title": "server guide guild experiment for triggering purposes",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: useless treatment"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_land_on_server_guide",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users land on server guide when joining a guild via invite",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_land_on_server_guide"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3172321247,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Land users on server guide",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Users land on server guide when joining a guild via invite",
-      "Treatment 42: [untracked] Users land on server guide when joining a guild via invite"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      42
     ]
   },
   {
@@ -10295,71 +10033,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: On"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_collectiblesnitroavatardecoiap",
-    "defaultConfig": {
-      "canUseCollectiblesIAP": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Collectibles IAP",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_collectiblesnitroavatardecoiap"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2588597280,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Collectible Nitro Avatar Decorations IAP",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Collectibles IAP"
     ],
     "buckets": [
       -1,
@@ -19343,6 +19016,73 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt",
+      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   }
 ]
