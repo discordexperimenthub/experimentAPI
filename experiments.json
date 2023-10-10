@@ -17294,6 +17294,73 @@
     ]
   },
   {
+    "id": "2023-10_collectibles_falloween",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Collectibles Falloween Avatar Decorations",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_collectibles_falloween"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1138748479,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Collectibles Shop Falloween Content Drop",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Collectibles Falloween Avatar Decorations",
+      "Treatment 2: Collectibles Falloween Avatar Decorations & Profile Effects"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2023-09_collectibles_marketing_page",
     "defaultConfig": {
       "enabled": false
