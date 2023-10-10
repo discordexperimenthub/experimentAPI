@@ -6251,6 +6251,71 @@
     ]
   },
   {
+    "id": "2023-04_server_products",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-04_server_products"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2236798974,
+    "creationDate": 1680900185,
+    "type": "guild",
+    "title": "Server Products",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_server_shop_storefront",
     "defaultConfig": {
       "enabled": false
@@ -6438,71 +6503,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enables Server shop phantom preview"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-04_server_products",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-04_server_products"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2236798974,
-    "creationDate": 1680900185,
-    "type": "guild",
-    "title": "Server Products",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enables Server Products (AKA one time purchases for creator guilds)"
     ],
     "buckets": [
       -1,
