@@ -3767,6 +3767,71 @@
     ]
   },
   {
+    "id": "2023-10_dcf_holdout",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users will only see DCs that bypass the holdout",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_dcf_holdout"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2009146437,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "DCF Holdout",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users will only see DCs that bypass the holdout"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_client_themes_16thru21",
     "defaultConfig": {
       "enabled": false
@@ -4897,131 +4962,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Show Channel Highlights"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-02_stage_boosting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                },
-                {
-                  "start": 500,
-                  "end": 5000
-                },
-                {
-                  "start": 5000,
-                  "end": 9500
-                },
-                {
-                  "start": 9500,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            },
-            {
-              "type": "range_by_hash",
-              "range": 10000
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "id",
-              "ids": [
-                "885418158788345897"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1816004721,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Stage Boosting",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
@@ -14687,6 +14627,71 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-08_self_mod_stranger_danger_teens",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable stranger danger for teens",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_self_mod_stranger_danger_teens"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1533516732,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Stranger Danger Teens",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable stranger danger for teens"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
