@@ -3505,6 +3505,71 @@
     ]
   },
   {
+    "id": "2023-08_secure_frames_encryption",
+    "defaultConfig": {
+      "canSupportSecureFrames": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Can support secure frames for voice/video",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_secure_frames_encryption"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3013881204,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Allowing testing secure frames for voice/video",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Can support secure frames for voice/video"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-03_videotoolbox_rate_optimization",
     "defaultConfig": {
       "enabled": false
@@ -4237,7 +4302,8 @@
       "hasTabUI": false,
       "hasTwoButtonEntryPoint": false,
       "hasFreeBursts": false,
-      "hasUnlimited": false
+      "hasUnlimited": false,
+      "hasBurstToggle": false
     },
     "rollout": {
       "revision": 0,
@@ -5161,71 +5227,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: AMD relaxed rate control"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_secure_frames_encryption",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Can support secure frames for voice/video",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_secure_frames_encryption"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3013881204,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Allowing testing secure frames for voice/video",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Can support secure frames for voice/video"
     ],
     "buckets": [
       -1,
@@ -9978,6 +9979,73 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-10_collectibles_falloween",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Collectibles Falloween Avatar Decorations",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_collectibles_falloween"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1138748479,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Collectibles Shop Falloween Content Drop",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Collectibles Falloween Avatar Decorations",
+      "Treatment 2: Collectibles Falloween Avatar Decorations & Profile Effects"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   },
   {
@@ -16974,6 +17042,71 @@
     ]
   },
   {
+    "id": "2023-09_collectibles_marketing_page",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_collectibles_marketing_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1645732717,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Collectibles Marketing Page",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-08_perks_discoverability",
     "defaultConfig": {
       "enabled": false
@@ -17104,6 +17237,138 @@
     ]
   },
   {
+    "id": "2023-09_whats_new_phase_2",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_whats_new_phase_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2757471822,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "What's New Phase 2",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-11_premium_bogo_month_promotion",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled without promo materials (basic + classic)",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-11_premium_bogo_month_promotion"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 28781292,
+    "creationDate": 1667853785,
+    "type": "user",
+    "title": "Nitro Promo for Black Friday",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled without promo materials (basic + classic)",
+      "Treatment 2: Enabled with promo materials (Rest of world)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2023-09_whats_new_drop_1_flip",
     "defaultConfig": {
       "flipped": false
@@ -17231,270 +17496,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-09_whats_new_phase_2",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_whats_new_phase_2"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2757471822,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "What's New Phase 2",
-    "description": [
-      "Not Eligible",
-      "Treatment 0: Control",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-10_collectibles_falloween",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Collectibles Falloween Avatar Decorations",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-10_collectibles_falloween"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1138748479,
-    "creationDate": 1696711385,
-    "type": "user",
-    "title": "Collectibles Shop Falloween Content Drop",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Collectibles Falloween Avatar Decorations",
-      "Treatment 2: Collectibles Falloween Avatar Decorations & Profile Effects"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-09_collectibles_marketing_page",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_collectibles_marketing_page"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1645732717,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Collectibles Marketing Page",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-11_premium_bogo_month_promotion",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled without promo materials (basic + classic)",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-11_premium_bogo_month_promotion"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 28781292,
-    "creationDate": 1667853785,
-    "type": "user",
-    "title": "Nitro Promo for Black Friday",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled without promo materials (basic + classic)",
-      "Treatment 2: Enabled with promo materials (Rest of world)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   },
   {
