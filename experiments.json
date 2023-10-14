@@ -3702,7 +3702,8 @@
   {
     "id": "2023-10_viewer_clipping",
     "defaultConfig": {
-      "enabled": false
+      "enableSideEncoderViewerClipping": false,
+      "enableEndEncoderViewerClipping": false
     },
     "rollout": {
       "revision": 0,
