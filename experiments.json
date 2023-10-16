@@ -11691,9 +11691,10 @@
     ]
   },
   {
-    "id": "2022-08_message_todos_staff_only",
+    "id": "2023-03_channel_name_emojis",
     "defaultConfig": {
-      "showReminders": false
+      "enabled": false,
+      "left": false
     },
     "rollout": {
       "revision": 0,
@@ -11719,7 +11720,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Show message TODOs CTA",
+              "treatment": "Treatment 1: Enable channel name emojis",
               "bucket": 1,
               "rollouts": [
                 {
@@ -11733,21 +11734,1949 @@
             {
               "type": "build_override",
               "experiments": [
-                "2022-08_message_todos_staff_only"
+                "2023-03_channel_name_emojis"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 4170652702,
-    "creationDate": 1659904985,
+    "hash": 3524854832,
+    "creationDate": 1678221785,
     "type": "user",
-    "title": "Message TODO list",
+    "title": "Channel Emojis",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Show message TODOs CTA"
+      "Treatment 1: Enable channel name emojis",
+      "Treatment 2: Emojis to left of channel icon"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-01_shared_canvas",
+    "defaultConfig": {
+      "isSharedCanvasEnabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Shared Canvas",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "SHARED_CANVAS_FRIENDS_AND_FAMILY_TEST"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enable Shared Canvas",
+          "bucket": 1,
+          "ids": [
+            "1078807279979221032",
+            "942879381230063656",
+            "172056827335409665",
+            "993957185493160057",
+            "334452829731422209",
+            "225077695141117955",
+            "678742032415588412",
+            "460657173417164800",
+            "976581767068786728",
+            "426609467535392778",
+            "133838756447911936",
+            "175987125626339328",
+            "537070934553526272",
+            "862059423949127741",
+            "710677407257854033",
+            "132751006349000704",
+            "822219052402606132",
+            "1021074787025555567",
+            "900242963358179368",
+            "315263844207558671",
+            "862757171887603722",
+            "222852163368386560",
+            "696480667348893696",
+            "409190184744255490",
+            "764656846777745429"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 280866660,
+    "creationDate": 1673124185,
+    "type": "guild",
+    "title": "Shared Canvas",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Shared Canvas"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-12_activities_auto_suggest",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable VC Activities Mini Shelf",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_activities_auto_suggest"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2732395257,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Activities Auto Suggest",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable VC Activities Mini Shelf"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_activities_game_night_coach_mark",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Activities Game Night",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_activities_game_night_coach_mark"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2171590360,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Activities Game Night Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Activities Game Night"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_activitieswatchtogetherpromo",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable Watch Together promo",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_activitieswatchtogetherpromo"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3238880497,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Activities Watch Together Promo",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable Watch Together promo"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_activities_watch_together_promo_sparkles_week_1",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable Watch Together promo week 1 sparkles",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_activities_watch_together_promo_sparkles_week_1"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1312040082,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Activities Watch Together Promo Week 1 Sparkles",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable Watch Together promo week 1 sparkles"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_activities_watch_together_promo_sparkles_week_2",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable Watch Together promo week 2 sparkles",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_activities_watch_together_promo_sparkles_week_2"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1736363471,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Activities Watch Together Promo Week 2 Sparkles",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable Watch Together promo week 2 sparkles"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_birthday_activities",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Birthday Activities",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_birthday_activities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1389690772,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Birthday Activities",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Birthday Activities",
+      "Treatment 2: Geo test Enable Birthday Activities but no share"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-06_birthday_goodbye",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Activities Free Forever",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_birthday_goodbye"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2205929113,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Activities Free Forever",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Activities Free Forever"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_activity_shelf_order",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Activity Shelf Order: Most Recently Used",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_activity_shelf_order"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 677690720,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Activity Shelf Order",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Activity Shelf Order: Most Recently Used",
+      "Treatment 2: Activity Shelf Order: Most Used",
+      "Treatment 3: Activity Shelf Order: Weighted Most Used"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2023-06_activity_shelf_to_detail_page",
+    "defaultConfig": {
+      "enableBigShelf": false,
+      "enableShelfToDetailPage": false,
+      "enableSocialProofActivityDetails": false,
+      "enableMinimalActivityDetails": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Big Shelf",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_activity_shelf_to_detail_page"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2451628514,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Activity Shelf to Detail Page",
+    "description": [
+      "Not Eligible",
+      "Treatment 0: Control",
+      "Treatment 1: Enable Big Shelf",
+      "Treatment 2: Enable Activity Shelf to Detail Page",
+      "Treatment 3: Enable social-proof shelf details",
+      "Treatment 4: Enable minimal shelf details",
+      "Treatment 5: Enable minimal shelf details and route to detail page"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "2023-04_server_badging",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enable Server Badging",
+          "bucket": 1,
+          "ids": [
+            "651595875897835540",
+            "876918412369088582",
+            "1105576287197724786",
+            "1105576346555523218",
+            "1105576413635039282",
+            "1105576433633472532",
+            "1105576549056528457",
+            "1105576609928445964",
+            "1105576653742166106",
+            "1039940765750665226",
+            "1105952274511057058",
+            "1105952651960668323",
+            "1105953713673228358",
+            "1105953777212739716",
+            "816784679717044276"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 41612842,
+    "creationDate": 1680900185,
+    "type": "guild",
+    "title": "Server Badging",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Server Badging"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-07_invites_disabled",
+    "defaultConfig": {
+      "enableInvitesDisabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Reporting Of Raids",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "PARTNERED"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Reporting Of Raids",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enable Reporting Of Raids",
+          "bucket": 1,
+          "ids": [
+            "763838479293349899",
+            "651597514407018516",
+            "897162092652683314",
+            "270301680212508673",
+            "403312145938382849",
+            "816784679717044276",
+            "991365865532575844"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 3683063649,
+    "creationDate": 1657226585,
+    "type": "guild",
+    "title": "Report Raids",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Reporting Of Raids"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_pax_vc_tile_activities",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable PAX VC Tile Activities",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_pax_vc_tile_activities"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3149823763,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "PAX VC Tile Activities",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable PAX VC Tile Activities"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-01_vc_tile_activities_entry_point",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-01_vc_tile_activities_entry_point"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1289034223,
+    "creationDate": 1673124185,
+    "type": "user",
+    "title": "VC Tile Activities Entry Point",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
+      "Treatment 2: Enable any number of users VC Tile Activities Entry Point"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-08_remix_ga",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Remix for Nitro Subscribers",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_remix_ga"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3382036696,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Remix General Available",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Remix for Nitro Subscribers",
+      "Treatment 3: Upsell Remix for Non-Nitro Users",
+      "Treatment 5: Remix GA for everyone"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "id": "2022-09_inboxes_v2_frontend",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-09_inboxes_v2_frontend"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 472975400,
+    "creationDate": 1662583385,
+    "type": "user",
+    "title": "Safety Integrity Platform Inboxes V2",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_new_app_command_serving",
+    "defaultConfig": {
+      "enabled": false,
+      "newScoreLogic": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_new_app_command_serving"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3246190672,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "New Application Command Serving",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled",
+      "Treatment 2: Enabled + New Logic"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2021-07_popout_autocomplete",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: New autocomplete style",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-07_popout_autocomplete"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1900424093,
+    "creationDate": 1625690585,
+    "type": "user",
+    "title": "Popout Autocomplete experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: New autocomplete style"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_fullyemojiautocomplete",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Hide Stickers, only show 10 Emojis",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_fullyemojiautocomplete"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3138896883,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Only show emoji in autocomplete",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Hide Stickers, only show 10 Emojis",
+      "Treatment 2: Hide Stickers, show more Emojis without scrollbar",
+      "Treatment 3: Hide Stickers, show more Emojis with scrollbar",
+      "Treatment 4: Show Autocomplete Stickers Toggle on mobile"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4
+    ]
+  },
+  {
+    "id": "2023-07_autocomplete_emojis_nitro_upsell",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show emoji autocomplete upsell",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_autocomplete_emojis_nitro_upsell"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1322503781,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Autocomplete Emojis Nitro Upsell",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show emoji autocomplete upsell"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-12_timestamp_tooltip",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_timestamp_tooltip"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1978665225,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Timestamp Tooltip",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-12_seasonal_gifting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_seasonal_gifting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 184775741,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Seasonal Gifting",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_unified_chat_input_expression_icon",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable unified chat input expression icon opening last viewed tab",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_unified_chat_input_expression_icon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3165668470,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Unified chat input expression icon",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable unified chat input expression icon opening last viewed tab",
+      "Treatment 2: Enable unified chat input expression icon opening emoji tab"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-05_referral_trials_birthday_moment",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users will see the birthday moment referral trial UX",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_referral_trials_birthday_moment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3364594544,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Referral Trials Birthday Moment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users will see the birthday moment referral trial UX"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_iar_fraud_impersonation",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_iar_fraud_impersonation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 868088545,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "In App Reports Fruad & Impersonation",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_iframe_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable iFrameModal",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_iframe_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 135503004,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "iFrame Modal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable iFrameModal"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_iframe_modal_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable iFrame Modal Guild",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_iframe_modal_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3482606388,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "iFrame Modal guild experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable iFrame Modal Guild"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2021-12_inferno_spam_redaction",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Allow guild channel messages from spammers to be collapsed",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-12_inferno_spam_redaction"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4179344527,
+    "creationDate": 1638909785,
+    "type": "user",
+    "title": "Inferno Spam Redaction",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow guild channel messages from spammers to be collapsed"
     ],
     "buckets": [
       -1,
@@ -11949,7 +13878,7 @@
     ]
   },
   {
-    "id": "2023-07_iframe_modal",
+    "id": "2023-07_allow_welcome_message_replies",
     "defaultConfig": {
       "enabled": false
     },
@@ -11977,7 +13906,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable iFrameModal",
+              "treatment": "Treatment 1: Enabled",
               "bucket": 1,
               "rollouts": [
                 {
@@ -11991,86 +13920,21 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-07_iframe_modal"
+                "2023-07_allow_welcome_message_replies"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 135503004,
+    "hash": 1487316075,
     "creationDate": 1688762585,
-    "type": "user",
-    "title": "iFrame Modal",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable iFrameModal"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_iframe_modal_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable iFrame Modal Guild",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_iframe_modal_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3482606388,
-    "creationDate": 1691440985,
     "type": "guild",
-    "title": "iFrame Modal guild experiment",
+    "title": "Allow replies to welcome messages",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Enable iFrame Modal Guild"
+      "Treatment 1: Enabled"
     ],
     "buckets": [
       -1,
@@ -12132,71 +13996,6 @@
     "creationDate": 1688762585,
     "type": "user",
     "title": "Announcement Views",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_seasonal_gifting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_seasonal_gifting"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 184775741,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Seasonal Gifting",
     "description": [
       "Not Eligible",
       "Control Bucket",
@@ -12377,140 +14176,6 @@
     ]
   },
   {
-    "id": "2023-05_referral_trials_birthday_moment",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users will see the birthday moment referral trial UX",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_referral_trials_birthday_moment"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3364594544,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Referral Trials Birthday Moment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Users will see the birthday moment referral trial UX"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_remix_ga",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Remix for Nitro Subscribers",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_remix_ga"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3382036696,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Remix General Available",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Remix for Nitro Subscribers",
-      "Treatment 3: Upsell Remix for Non-Nitro Users",
-      "Treatment 5: Remix GA for everyone"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      3,
-      5
-    ]
-  },
-  {
     "id": "2023-10_thumbhash_messages",
     "defaultConfig": {
       "enabled": false
@@ -12576,7 +14241,7 @@
     ]
   },
   {
-    "id": "2023-04_server_badging",
+    "id": "2020-01_in_app_reporting",
     "defaultConfig": {
       "enabled": false
     },
@@ -12586,7 +14251,7 @@
         {
           "position": [
             {
-              "treatment": "Not Eligible",
+              "treatment": "None",
               "bucket": -1,
               "rollouts": [
                 {
@@ -12599,139 +14264,50 @@
           "filters": []
         }
       ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enable Server Badging",
-          "bucket": 1,
-          "ids": [
-            "651595875897835540",
-            "876918412369088582",
-            "1105576287197724786",
-            "1105576346555523218",
-            "1105576413635039282",
-            "1105576433633472532",
-            "1105576549056528457",
-            "1105576609928445964",
-            "1105576653742166106",
-            "1039940765750665226",
-            "1105952274511057058",
-            "1105952651960668323",
-            "1105953713673228358",
-            "1105953777212739716",
-            "816784679717044276"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 41612842,
-    "creationDate": 1680900185,
-    "type": "guild",
-    "title": "Server Badging",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Server Badging"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-07_invites_disabled",
-    "defaultConfig": {
-      "enableInvitesDisabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
+      "overrides": [],
+      "overrides_formatted": [
         {
           "position": [
             {
-              "treatment": "Treatment 1: Enable Reporting Of Raids",
+              "treatment": "Control: No changes",
               "bucket": 1,
               "rollouts": [
                 {
                   "start": 0,
-                  "end": 10000
+                  "end": 500
                 }
               ]
             }
           ],
           "filters": [
             {
-              "type": "feature",
-              "features": [
-                "PARTNERED"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Reporting Of Raids",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
+              "type": "build_override",
+              "experiments": [
+                "2020-01_in_app_reporting"
               ]
             }
           ]
         }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enable Reporting Of Raids",
-          "bucket": 1,
-          "ids": [
-            "763838479293349899",
-            "651597514407018516",
-            "897162092652683314",
-            "270301680212508673",
-            "403312145938382849",
-            "816784679717044276",
-            "991365865532575844"
-          ]
-        }
-      ],
-      "overrides_formatted": []
+      ]
     },
-    "hash": 3683063649,
-    "creationDate": 1657226585,
-    "type": "guild",
-    "title": "Report Raids",
+    "hash": 4181417939,
+    "creationDate": 1578429785,
+    "type": "user",
+    "title": "2020-29 Exp: Report TOS violating messages in-app via new modal",
     "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Reporting Of Raids"
+      "An experiment that tests if in-app reporting is useful for Trust & Safety",
+      "Control: No changes",
+      "Treatment 1: Add menu options to report message"
     ],
     "buckets": [
-      -1,
       0,
       1
     ]
   },
   {
-    "id": "2023-05_go_live_quest_fortnite",
+    "id": "2022-08_message_todos_staff_only",
     "defaultConfig": {
-      "dropsEnabled": false,
-      "streamLengthRequirement": 0,
-      "viewerCountRequirement": 0,
-      "autoEnrollment": false,
-      "showUnenroll": false
+      "showReminders": false
     },
     "rollout": {
       "revision": 0,
@@ -12757,7 +14333,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: 15 min stream req + auto enrollment",
+              "treatment": "Treatment 1: Show message TODOs CTA",
               "bucket": 1,
               "rollouts": [
                 {
@@ -12771,88 +14347,21 @@
             {
               "type": "build_override",
               "experiments": [
-                "2023-05_go_live_quest_fortnite"
+                "2022-08_message_todos_staff_only"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 2709361021,
-    "creationDate": 1683492185,
+    "hash": 4170652702,
+    "creationDate": 1659904985,
     "type": "user",
-    "title": "Fortnite: Go Live Quest",
+    "title": "Message TODO list",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: 15 min stream req + auto enrollment",
-      "Treatment 99: 2 minute stream req + auto enrollment"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      99
-    ]
-  },
-  {
-    "id": "2023-08_guild_usage_survey",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show survey nag bar",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_guild_usage_survey"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1468919041,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Guild Usage Survey",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: show survey nag bar"
+      "Treatment 1: Show message TODOs CTA"
     ],
     "buckets": [
       -1,
@@ -13482,6 +14991,337 @@
     ]
   },
   {
+    "id": "2022-07_system_dm_safety_onboarding",
+    "defaultConfig": {
+      "systemDMRedesignEnabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled, v1 copy",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-07_system_dm_safety_onboarding"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 488500683,
+    "creationDate": 1657226585,
+    "type": "user",
+    "title": "System DM Safety Onboarding",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled, v1 copy",
+      "Treatment 2: Enabled, v2 copy"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-01_forums_non_community",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 5000,
+                  "end": 10000
+                }
+              ]
+            },
+            {
+              "treatment": "Treatment 1: On",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 2500,
+                  "end": 5000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: On",
+          "bucket": 1,
+          "ids": [
+            "651595875897835540",
+            "1046918739599315124",
+            "971683003606654976",
+            "1070109297268248639"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 1446479414,
+    "creationDate": 1673124185,
+    "type": "guild",
+    "title": "Forum non-community",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: On"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_self_mod_stranger_danger_teens",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable stranger danger for teens",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_self_mod_stranger_danger_teens"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1533516732,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Stranger Danger Teens",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable stranger danger for teens"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_go_live_quest_fortnite",
+    "defaultConfig": {
+      "dropsEnabled": false,
+      "streamLengthRequirement": 0,
+      "viewerCountRequirement": 0,
+      "autoEnrollment": false,
+      "showUnenroll": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: 15 min stream req + auto enrollment",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_go_live_quest_fortnite"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2709361021,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Fortnite: Go Live Quest",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: 15 min stream req + auto enrollment",
+      "Treatment 99: 2 minute stream req + auto enrollment"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      99
+    ]
+  },
+  {
+    "id": "2023-08_guild_usage_survey",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show survey nag bar",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_guild_usage_survey"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1468919041,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Guild Usage Survey",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show survey nag bar"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-03_onboarding_upsell_lifecycle",
     "defaultConfig": {
       "enabled": false
@@ -13979,9 +15819,9 @@
     ]
   },
   {
-    "id": "2023-01_forums_non_community",
+    "id": "2021-11_hub_events",
     "defaultConfig": {
-      "enabled": false
+      "showHubEventsList": false
     },
     "rollout": {
       "revision": 0,
@@ -13993,47 +15833,50 @@
               "bucket": -1,
               "rollouts": [
                 {
-                  "start": 5000,
-                  "end": 10000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 1: On",
-              "bucket": 1,
-              "rollouts": [
+                  "start": 0,
+                  "end": 3333
+                },
                 {
-                  "start": 2500,
-                  "end": 5000
+                  "start": 3333,
+                  "end": 6666
+                },
+                {
+                  "start": 6666,
+                  "end": 9999
+                },
+                {
+                  "start": 9999,
+                  "end": 10000
                 }
               ]
             }
           ],
-          "filters": []
+          "filters": [
+            {
+              "type": "hub_type"
+            }
+          ]
         }
       ],
       "overrides": [
         {
-          "treatment": "Treatment 1: On",
+          "treatment": "Treatment 1: Show Hub Events List",
           "bucket": 1,
           "ids": [
-            "651595875897835540",
-            "1046918739599315124",
-            "971683003606654976",
-            "1070109297268248639"
+            "882680660588904448"
           ]
         }
       ],
       "overrides_formatted": []
     },
-    "hash": 1446479414,
-    "creationDate": 1673124185,
+    "hash": 1107510295,
+    "creationDate": 1636317785,
     "type": "guild",
-    "title": "Forum non-community",
+    "title": "Hub Events",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: On"
+      "Treatment 1: Show Hub Events List"
     ],
     "buckets": [
       -1,
@@ -14042,7 +15885,7 @@
     ]
   },
   {
-    "id": "2021-12_inferno_spam_redaction",
+    "id": "2023-08_guild_member_mod_view",
     "defaultConfig": {
       "enabled": false
     },
@@ -14070,7 +15913,7 @@
         {
           "position": [
             {
-              "treatment": "Treatment 1: Allow guild channel messages from spammers to be collapsed",
+              "treatment": "Treatment 1: Guild Member Mod View",
               "bucket": 1,
               "rollouts": [
                 {
@@ -14084,21 +15927,86 @@
             {
               "type": "build_override",
               "experiments": [
-                "2021-12_inferno_spam_redaction"
+                "2023-08_guild_member_mod_view"
               ]
             }
           ]
         }
       ]
     },
-    "hash": 4179344527,
-    "creationDate": 1638909785,
-    "type": "user",
-    "title": "Inferno Spam Redaction",
+    "hash": 2342285461,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "Guild Member Mod View",
     "description": [
       "Not Eligible",
       "Control Bucket",
-      "Treatment 1: Allow guild channel messages from spammers to be collapsed"
+      "Treatment 1: Guild Member Mod View"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2021-04_longer_group_dm_invites",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Makes group DM invites expire after 1 week.",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-04_longer_group_dm_invites"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1693164202,
+    "creationDate": 1617828185,
+    "type": "user",
+    "title": "Longer Group DM Invites",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Makes group DM invites expire after 1 week."
     ],
     "buckets": [
       -1,
@@ -14239,866 +16147,6 @@
     ]
   },
   {
-    "id": "2023-08_iar_fraud_impersonation",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_iar_fraud_impersonation"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 868088545,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "In App Reports Fruad & Impersonation",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-09_inboxes_v2_frontend",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-09_inboxes_v2_frontend"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 472975400,
-    "creationDate": 1662583385,
-    "type": "user",
-    "title": "Safety Integrity Platform Inboxes V2",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_new_app_command_serving",
-    "defaultConfig": {
-      "enabled": false,
-      "newScoreLogic": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_new_app_command_serving"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3246190672,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "New Application Command Serving",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled",
-      "Treatment 2: Enabled + New Logic"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2021-07_popout_autocomplete",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: New autocomplete style",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-07_popout_autocomplete"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1900424093,
-    "creationDate": 1625690585,
-    "type": "user",
-    "title": "Popout Autocomplete experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: New autocomplete style"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_fullyemojiautocomplete",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Hide Stickers, only show 10 Emojis",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_fullyemojiautocomplete"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3138896883,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Only show emoji in autocomplete",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Hide Stickers, only show 10 Emojis",
-      "Treatment 2: Hide Stickers, show more Emojis without scrollbar",
-      "Treatment 3: Hide Stickers, show more Emojis with scrollbar",
-      "Treatment 4: Show Autocomplete Stickers Toggle on mobile"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4
-    ]
-  },
-  {
-    "id": "2023-07_autocomplete_emojis_nitro_upsell",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show emoji autocomplete upsell",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_autocomplete_emojis_nitro_upsell"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1322503781,
-    "creationDate": 1688762585,
-    "type": "user",
-    "title": "Autocomplete Emojis Nitro Upsell",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show emoji autocomplete upsell"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_timestamp_tooltip",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_timestamp_tooltip"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1978665225,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Timestamp Tooltip",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_unified_chat_input_expression_icon",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable unified chat input expression icon opening last viewed tab",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_unified_chat_input_expression_icon"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3165668470,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Unified chat input expression icon",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable unified chat input expression icon opening last viewed tab",
-      "Treatment 2: Enable unified chat input expression icon opening emoji tab"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-07_allow_welcome_message_replies",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_allow_welcome_message_replies"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1487316075,
-    "creationDate": 1688762585,
-    "type": "guild",
-    "title": "Allow replies to welcome messages",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2020-01_in_app_reporting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "None",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Control: No changes",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2020-01_in_app_reporting"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4181417939,
-    "creationDate": 1578429785,
-    "type": "user",
-    "title": "2020-29 Exp: Report TOS violating messages in-app via new modal",
-    "description": [
-      "An experiment that tests if in-app reporting is useful for Trust & Safety",
-      "Control: No changes",
-      "Treatment 1: Add menu options to report message"
-    ],
-    "buckets": [
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-07_system_dm_safety_onboarding",
-    "defaultConfig": {
-      "systemDMRedesignEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled, v1 copy",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-07_system_dm_safety_onboarding"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 488500683,
-    "creationDate": 1657226585,
-    "type": "user",
-    "title": "System DM Safety Onboarding",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled, v1 copy",
-      "Treatment 2: Enabled, v2 copy"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-08_self_mod_stranger_danger_teens",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable stranger danger for teens",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_self_mod_stranger_danger_teens"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1533516732,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Stranger Danger Teens",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable stranger danger for teens"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_channel_name_emojis",
-    "defaultConfig": {
-      "enabled": false,
-      "left": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable channel name emojis",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_channel_name_emojis"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3524854832,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Channel Emojis",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable channel name emojis",
-      "Treatment 2: Emojis to left of channel icon"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
     "id": "2022-12_home_header_redesign",
     "defaultConfig": {
       "hasNewHeader": false
@@ -15165,71 +16213,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: New Header"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_guild_member_mod_view",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Guild Member Mod View",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_guild_member_mod_view"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2342285461,
-    "creationDate": 1691440985,
-    "type": "guild",
-    "title": "Guild Member Mod View",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Guild Member Mod View"
     ],
     "buckets": [
       -1,
@@ -15381,71 +16364,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Last page of onboarding is rules"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_activities_game_night_coach_mark",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Activities Game Night",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_activities_game_night_coach_mark"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2171590360,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Activities Game Night Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Activities Game Night"
     ],
     "buckets": [
       -1,
@@ -15795,72 +16713,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2021-11_hub_events",
-    "defaultConfig": {
-      "showHubEventsList": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 3333
-                },
-                {
-                  "start": 3333,
-                  "end": 6666
-                },
-                {
-                  "start": 6666,
-                  "end": 9999
-                },
-                {
-                  "start": 9999,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "hub_type"
-            }
-          ]
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Show Hub Events List",
-          "bucket": 1,
-          "ids": [
-            "882680660588904448"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 1107510295,
-    "creationDate": 1636317785,
-    "type": "guild",
-    "title": "Hub Events",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show Hub Events List"
     ],
     "buckets": [
       -1,
@@ -16770,71 +17622,6 @@
     ]
   },
   {
-    "id": "2021-04_longer_group_dm_invites",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Makes group DM invites expire after 1 week.",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-04_longer_group_dm_invites"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1693164202,
-    "creationDate": 1617828185,
-    "type": "user",
-    "title": "Longer Group DM Invites",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Makes group DM invites expire after 1 week."
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-05_clear_pending_incoming_friend_requests",
     "defaultConfig": {
       "enabled": false
@@ -16897,793 +17684,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-01_shared_canvas",
-    "defaultConfig": {
-      "isSharedCanvasEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Shared Canvas",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "SHARED_CANVAS_FRIENDS_AND_FAMILY_TEST"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enable Shared Canvas",
-          "bucket": 1,
-          "ids": [
-            "1078807279979221032",
-            "942879381230063656",
-            "172056827335409665",
-            "993957185493160057",
-            "334452829731422209",
-            "225077695141117955",
-            "678742032415588412",
-            "460657173417164800",
-            "976581767068786728",
-            "426609467535392778",
-            "133838756447911936",
-            "175987125626339328",
-            "537070934553526272",
-            "862059423949127741",
-            "710677407257854033",
-            "132751006349000704",
-            "822219052402606132",
-            "1021074787025555567",
-            "900242963358179368",
-            "315263844207558671",
-            "862757171887603722",
-            "222852163368386560",
-            "696480667348893696",
-            "409190184744255490",
-            "764656846777745429"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 280866660,
-    "creationDate": 1673124185,
-    "type": "guild",
-    "title": "Shared Canvas",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Shared Canvas"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_activities_auto_suggest",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable VC Activities Mini Shelf",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_activities_auto_suggest"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2732395257,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Activities Auto Suggest",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable VC Activities Mini Shelf"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_activitieswatchtogetherpromo",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable Watch Together promo",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_activitieswatchtogetherpromo"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3238880497,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Activities Watch Together Promo",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable Watch Together promo"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_activities_watch_together_promo_sparkles_week_1",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable Watch Together promo week 1 sparkles",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_activities_watch_together_promo_sparkles_week_1"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1312040082,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Activities Watch Together Promo Week 1 Sparkles",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable Watch Together promo week 1 sparkles"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_activities_watch_together_promo_sparkles_week_2",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable Watch Together promo week 2 sparkles",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_activities_watch_together_promo_sparkles_week_2"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1736363471,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Activities Watch Together Promo Week 2 Sparkles",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable Watch Together promo week 2 sparkles"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_birthday_activities",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Birthday Activities",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_birthday_activities"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1389690772,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Birthday Activities",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Birthday Activities",
-      "Treatment 2: Geo test Enable Birthday Activities but no share"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-06_birthday_goodbye",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Activities Free Forever",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_birthday_goodbye"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2205929113,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Activities Free Forever",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Activities Free Forever"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_activity_shelf_order",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Activity Shelf Order: Most Recently Used",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_activity_shelf_order"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 677690720,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Activity Shelf Order",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Activity Shelf Order: Most Recently Used",
-      "Treatment 2: Activity Shelf Order: Most Used",
-      "Treatment 3: Activity Shelf Order: Weighted Most Used"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "2023-06_activity_shelf_to_detail_page",
-    "defaultConfig": {
-      "enableBigShelf": false,
-      "enableShelfToDetailPage": false,
-      "enableSocialProofActivityDetails": false,
-      "enableMinimalActivityDetails": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Big Shelf",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_activity_shelf_to_detail_page"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2451628514,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Activity Shelf to Detail Page",
-    "description": [
-      "Not Eligible",
-      "Treatment 0: Control",
-      "Treatment 1: Enable Big Shelf",
-      "Treatment 2: Enable Activity Shelf to Detail Page",
-      "Treatment 3: Enable social-proof shelf details",
-      "Treatment 4: Enable minimal shelf details",
-      "Treatment 5: Enable minimal shelf details and route to detail page"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "2023-03_pax_vc_tile_activities",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable PAX VC Tile Activities",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_pax_vc_tile_activities"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3149823763,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "PAX VC Tile Activities",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable PAX VC Tile Activities"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-01_vc_tile_activities_entry_point",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-01_vc_tile_activities_entry_point"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1289034223,
-    "creationDate": 1673124185,
-    "type": "user",
-    "title": "VC Tile Activities Entry Point",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable one or two users VC Tile Activities Entry Point",
-      "Treatment 2: Enable any number of users VC Tile Activities Entry Point"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   },
   {
