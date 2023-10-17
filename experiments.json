@@ -11175,6 +11175,335 @@
     ]
   },
   {
+    "id": "2023-08_iar_fraud_impersonation",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_iar_fraud_impersonation"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 868088545,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "In App Reports Fruad & Impersonation",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_iframe_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable iFrameModal",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_iframe_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 135503004,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "iFrame Modal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable iFrameModal"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_iframe_modal_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable iFrame Modal Guild",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_iframe_modal_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3482606388,
+    "creationDate": 1691440985,
+    "type": "guild",
+    "title": "iFrame Modal guild experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable iFrame Modal Guild"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_remix_ga",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Remix for Nitro Subscribers",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_remix_ga"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3382036696,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Remix General Available",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Remix for Nitro Subscribers",
+      "Treatment 3: Upsell Remix for Non-Nitro Users",
+      "Treatment 5: Remix GA for everyone"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      3,
+      5
+    ]
+  },
+  {
+    "id": "2023-09_iar_dsa_webform",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_iar_dsa_webform"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1438986391,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Safety Experience Unauthenticated Report Form",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_voice_channel_statuses",
     "defaultConfig": {
       "enabled": false
@@ -12890,75 +13219,6 @@
     ]
   },
   {
-    "id": "2023-08_remix_ga",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Remix for Nitro Subscribers",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_remix_ga"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3382036696,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Remix General Available",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Remix for Nitro Subscribers",
-      "Treatment 3: Upsell Remix for Non-Nitro Users",
-      "Treatment 5: Remix GA for everyone"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      3,
-      5
-    ]
-  },
-  {
     "id": "2022-09_inboxes_v2_frontend",
     "defaultConfig": {
       "enabled": false
@@ -13547,201 +13807,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Users will see the birthday moment referral trial UX"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_iar_fraud_impersonation",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_iar_fraud_impersonation"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 868088545,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "In App Reports Fruad & Impersonation",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-07_iframe_modal",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable iFrameModal",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_iframe_modal"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 135503004,
-    "creationDate": 1688762585,
-    "type": "user",
-    "title": "iFrame Modal",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable iFrameModal"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_iframe_modal_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable iFrame Modal Guild",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_iframe_modal_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3482606388,
-    "creationDate": 1691440985,
-    "type": "guild",
-    "title": "iFrame Modal guild experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable iFrame Modal Guild"
     ],
     "buckets": [
       -1,
@@ -19353,6 +19418,73 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt",
+      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   }
 ]
