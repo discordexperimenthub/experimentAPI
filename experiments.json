@@ -3635,6 +3635,71 @@
     ]
   },
   {
+    "id": "2023-10_video_hook_disable",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Video Hook disabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_video_hook_disable"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1363886659,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Video Hook disable on Windows 11",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Video Hook disabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2021-03_videotoolbox_rate_optimization",
     "defaultConfig": {
       "enabled": false
@@ -3955,71 +4020,6 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: Users will only see DCs that bypass the holdout"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_client_themes_16thru21",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: New themes enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_client_themes_16thru21"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1212874525,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Client Themes New Themes",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: New themes enabled"
     ],
     "buckets": [
       -1,
@@ -6258,6 +6258,1459 @@
     ]
   },
   {
+    "id": "2023-08_activities_in_text",
+    "defaultConfig": {
+      "isActivitiesInTextEnabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable Activities in text channels",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_activities_in_text"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1295440499,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Activities in Text",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable Activities in text channels"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_clyde_ai_proactive_guilds",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable proactive clyde",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_clyde_ai_proactive_guilds"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3041932109,
+    "creationDate": 1688762585,
+    "type": "guild",
+    "title": "Proactive Clyde",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable proactive clyde"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_clyde_ai",
+    "defaultConfig": {
+      "experimentState": 0
+    },
+    "rollout": {
+      "revision": 2,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled (Default Off)",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "CLYDE_EXPERIMENT_ENABLED",
+                "INTERNAL_EMPLOYEE_ONLY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "COMMUNITY"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 2200,
+                  "end": 10000
+                }
+              ]
+            },
+            {
+              "treatment": "Treatment 1: Enabled (Default Off)",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 100
+                }
+              ]
+            },
+            {
+              "treatment": "Treatment 3: Enabled (Default On)",
+              "bucket": 3,
+              "rollouts": [
+                {
+                  "start": 200,
+                  "end": 1200
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "member_count",
+              "range": {
+                "start": 0,
+                "end": 100
+              }
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 2000,
+                  "end": 10000
+                }
+              ]
+            },
+            {
+              "treatment": "Treatment 3: Enabled (Default On)",
+              "bucket": 3,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 1000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "member_count",
+              "range": {
+                "start": 101,
+                "end": 200
+              }
+            }
+          ]
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enabled (Default Off)",
+          "bucket": 1,
+          "ids": [
+            "860609921602682910",
+            "869772539071713340",
+            "993957185493160057",
+            "690040107322966037",
+            "954241501922213940",
+            "411964563278397440",
+            "363154169294618625",
+            "819703530423975956",
+            "132189483301863424",
+            "132751006349000704",
+            "133838756447911936",
+            "409190184744255490",
+            "922748688403693578",
+            "772904309264089089",
+            "358811058489524225",
+            "576105656881512450",
+            "612443491770957833",
+            "116294130149097479",
+            "309711518948392961",
+            "209707792314007552",
+            "883039603144155197",
+            "878697917374939256",
+            "771800742977077289"
+          ]
+        },
+        {
+          "treatment": "Treatment 3: Enabled (Default On)",
+          "bucket": 3,
+          "ids": [
+            "1097934938763968565"
+          ]
+        },
+        {
+          "treatment": "Treatment 4: Coming Soon",
+          "bucket": 4,
+          "ids": [
+            "938884225459957902"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 4083096281,
+    "creationDate": 1678221785,
+    "type": "guild",
+    "title": "ClydeAI",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled (Default Off)",
+      "Treatment 3: Enabled (Default On)",
+      "Treatment 4: Coming Soon",
+      "Treatment 5: Clyde Profiles"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "2023-06_clyde_ai_gdm",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable clyde in gdms",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_clyde_ai_gdm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1195502096,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Clyde in DMs/GDMs",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable clyde in gdms"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_local_message_background_sending",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable Background Sending",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_local_message_background_sending"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1704787863,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Send Messages In The Backgrounded",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable Background Sending"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-01_silent_messages",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Allow sending @silent messages",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-01_silent_messages"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 183688925,
+    "creationDate": 1673124185,
+    "type": "user",
+    "title": "Silent Messages",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Allow sending @silent messages"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-12_forum_activity",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-12_forum_activity"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 828081447,
+    "creationDate": 1670445785,
+    "type": "user",
+    "title": "Increased activity view for Forums, per user",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-01_forums_activity_2_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 1,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [
+        {
+          "treatment": "Treatment 1: Enabled",
+          "bucket": 1,
+          "ids": [
+            "651595875897835540",
+            "889924024367452241",
+            "1012394956247269376",
+            "936317138904440892",
+            "257310633211461633",
+            "525734532440260618",
+            "353315134678106113",
+            "274702265321783297",
+            "182121241111560192",
+            "929506677512867911",
+            "740310317954891846",
+            "86312116675448832",
+            "891286303574994974",
+            "246604458744610816"
+          ]
+        }
+      ],
+      "overrides_formatted": []
+    },
+    "hash": 4081692393,
+    "creationDate": 1673124185,
+    "type": "guild",
+    "title": "Increased activity view for Forums, per guild",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-01_activities_in_gdm",
+    "defaultConfig": {
+      "isActivitiesInGdmEnabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable Activities in GDMs",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-01_activities_in_gdm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1834860859,
+    "creationDate": 1673124185,
+    "type": "user",
+    "title": "Activities in GDM",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable Activities in GDMs"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-03_april_fools",
+    "defaultConfig": {
+      "allowAprilFoolsSoundpack": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: April Fools 2023",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_april_fools"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3971730794,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "April Fools 2023",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: April Fools 2023"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-05_inventory_guild_packs",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Desktop view/use/collect",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_inventory_guild_packs"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1473329304,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "Inventory Guild Packs Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Desktop view/use/collect",
+      "Treatment 2: Desktop view/use/collect and mobile view/use",
+      "Treatment 3: Read-only pack emoji for logged out users",
+      "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
+      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3,
+      4,
+      5
+    ]
+  },
+  {
+    "id": "2023-06_inventory_guild_setting",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Show settings toggle, but collection is not allowed.",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_inventory_guild_setting"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3883768363,
+    "creationDate": 1686170585,
+    "type": "guild",
+    "title": "Inventory Guild Settings Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Show settings toggle, but collection is not allowed.",
+      "Treatment 2: Show settings toggle, and collection is allowed sometime in August.",
+      "Treatment 3: Show settings toggle, and collection is allowed in late August."
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2,
+      3
+    ]
+  },
+  {
+    "id": "2023-05_clyde_ai_dm",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable dms to clyde",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-05_clyde_ai_dm"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1906632964,
+    "creationDate": 1683492185,
+    "type": "user",
+    "title": "DMs to Clyde",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable dms to clyde"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-01_emoji_discovery_backfill",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Backfills Hotrail With Emojis",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-01_emoji_discovery_backfill"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2013557659,
+    "creationDate": 1673124185,
+    "type": "user",
+    "title": "Emoji Hotrail Backfill",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Backfills Hotrail With Emojis"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_explicit_media_redaction",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable explicit media redaction",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_explicit_media_redaction"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3220737601,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Explicit Media Redaction",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable explicit media redaction"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_explicit_media_redaction_teen",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable explicit media redaction for teens",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_explicit_media_redaction_teen"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 438549105,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Explicit Media Redaction for Teens",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable explicit media redaction for teens"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-02_p13n_summarization",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 2,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 2: Enable channel summaries GA",
+              "bucket": 2,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "SUMMARIES_ENABLED_GA"
+              ]
+            }
+          ]
+        },
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable channel summaries",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "feature",
+              "features": [
+                "SUMMARIES_ENABLED"
+              ]
+            }
+          ]
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": []
+    },
+    "hash": 1504498621,
+    "creationDate": 1675802585,
+    "type": "guild",
+    "title": "Channel Summaries Guild Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable channel summaries",
+      "Treatment 2: Enable channel summaries GA"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-03_p13n_summarization_user",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable channel summaries",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-03_p13n_summarization_user"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3283745071,
+    "creationDate": 1678221785,
+    "type": "user",
+    "title": "Channel Summaries User Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable channel summaries",
+      "Treatment 2: Enable channel summaries (force)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-06_p13n_summarization_mobile_ux",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable mobile UX for channel summaries",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_p13n_summarization_mobile_ux"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3780014786,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "Channel Summaries UX on Mobile Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable mobile UX for channel summaries"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_p13n_guild_dock_summaries",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable guild dock summaries mobile UX",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_p13n_guild_dock_summaries"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 727554173,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "Guild Dock Summaries on Mobile Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable guild dock summaries mobile UX"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-04_server_products",
     "defaultConfig": {
       "enabled": false
@@ -7044,2242 +8497,6 @@
     ]
   },
   {
-    "id": "2023-07_clyde_ai_proactive_guilds",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable proactive clyde",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_clyde_ai_proactive_guilds"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3041932109,
-    "creationDate": 1688762585,
-    "type": "guild",
-    "title": "Proactive Clyde",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable proactive clyde"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_clyde_ai",
-    "defaultConfig": {
-      "experimentState": 0
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled (Default Off)",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "CLYDE_EXPERIMENT_ENABLED",
-                "INTERNAL_EMPLOYEE_ONLY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "COMMUNITY"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 2200,
-                  "end": 10000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 1: Enabled (Default Off)",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 100
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 3: Enabled (Default On)",
-              "bucket": 3,
-              "rollouts": [
-                {
-                  "start": 200,
-                  "end": 1200
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "member_count",
-              "range": {
-                "start": 0,
-                "end": 100
-              }
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 2000,
-                  "end": 10000
-                }
-              ]
-            },
-            {
-              "treatment": "Treatment 3: Enabled (Default On)",
-              "bucket": 3,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 1000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "member_count",
-              "range": {
-                "start": 101,
-                "end": 200
-              }
-            }
-          ]
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enabled (Default Off)",
-          "bucket": 1,
-          "ids": [
-            "860609921602682910",
-            "869772539071713340",
-            "993957185493160057",
-            "690040107322966037",
-            "954241501922213940",
-            "411964563278397440",
-            "363154169294618625",
-            "819703530423975956",
-            "132189483301863424",
-            "132751006349000704",
-            "133838756447911936",
-            "409190184744255490",
-            "922748688403693578",
-            "772904309264089089",
-            "358811058489524225",
-            "576105656881512450",
-            "612443491770957833",
-            "116294130149097479",
-            "309711518948392961",
-            "209707792314007552",
-            "883039603144155197",
-            "878697917374939256",
-            "771800742977077289"
-          ]
-        },
-        {
-          "treatment": "Treatment 3: Enabled (Default On)",
-          "bucket": 3,
-          "ids": [
-            "1097934938763968565"
-          ]
-        },
-        {
-          "treatment": "Treatment 4: Coming Soon",
-          "bucket": 4,
-          "ids": [
-            "938884225459957902"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 4083096281,
-    "creationDate": 1678221785,
-    "type": "guild",
-    "title": "ClydeAI",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled (Default Off)",
-      "Treatment 3: Enabled (Default On)",
-      "Treatment 4: Coming Soon",
-      "Treatment 5: Clyde Profiles"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "2023-06_clyde_ai_gdm",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable clyde in gdms",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_clyde_ai_gdm"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1195502096,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Clyde in DMs/GDMs",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable clyde in gdms"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_local_message_background_sending",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable Background Sending",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_local_message_background_sending"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1704787863,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Send Messages In The Backgrounded",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable Background Sending"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-01_silent_messages",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Allow sending @silent messages",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-01_silent_messages"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 183688925,
-    "creationDate": 1673124185,
-    "type": "user",
-    "title": "Silent Messages",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Allow sending @silent messages"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-12_forum_activity",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-12_forum_activity"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 828081447,
-    "creationDate": 1670445785,
-    "type": "user",
-    "title": "Increased activity view for Forums, per user",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-01_forums_activity_2_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 1,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [
-        {
-          "treatment": "Treatment 1: Enabled",
-          "bucket": 1,
-          "ids": [
-            "651595875897835540",
-            "889924024367452241",
-            "1012394956247269376",
-            "936317138904440892",
-            "257310633211461633",
-            "525734532440260618",
-            "353315134678106113",
-            "274702265321783297",
-            "182121241111560192",
-            "929506677512867911",
-            "740310317954891846",
-            "86312116675448832",
-            "891286303574994974",
-            "246604458744610816"
-          ]
-        }
-      ],
-      "overrides_formatted": []
-    },
-    "hash": 4081692393,
-    "creationDate": 1673124185,
-    "type": "guild",
-    "title": "Increased activity view for Forums, per guild",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_inventory_guild_packs",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Desktop view/use/collect",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_inventory_guild_packs"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1473329304,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "Inventory Guild Packs Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Desktop view/use/collect",
-      "Treatment 2: Desktop view/use/collect and mobile view/use",
-      "Treatment 3: Read-only pack emoji for logged out users",
-      "Treatment 4: Mobile/desktop view/use/collect, and show Try Packs Modal",
-      "Treatment 5: Mobile/desktop view/use/collect, and show Try Packs Modal (second group)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3,
-      4,
-      5
-    ]
-  },
-  {
-    "id": "2023-06_inventory_guild_setting",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Show settings toggle, but collection is not allowed.",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_inventory_guild_setting"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3883768363,
-    "creationDate": 1686170585,
-    "type": "guild",
-    "title": "Inventory Guild Settings Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Show settings toggle, but collection is not allowed.",
-      "Treatment 2: Show settings toggle, and collection is allowed sometime in August.",
-      "Treatment 3: Show settings toggle, and collection is allowed in late August."
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2,
-      3
-    ]
-  },
-  {
-    "id": "2023-01_emoji_discovery_backfill",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Backfills Hotrail With Emojis",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-01_emoji_discovery_backfill"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2013557659,
-    "creationDate": 1673124185,
-    "type": "user",
-    "title": "Emoji Hotrail Backfill",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Backfills Hotrail With Emojis"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-03_block_russian_purchases",
-    "defaultConfig": {
-      "paymentsBlocked": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Payments Blocked",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-03_block_russian_purchases"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3011681066,
-    "creationDate": 1646685785,
-    "type": "user",
-    "title": "Block purchases based on country",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Payments Blocked"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-03_block_russian_purchases_desktop",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Check Payment Source",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-03_block_russian_purchases_desktop"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1814483290,
-    "creationDate": 1646685785,
-    "type": "user",
-    "title": "Block purchases based on country (desktop specific flags)",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Check Payment Source"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-06_bogo_announcement_modal",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Users will see the BOGO announcement modal",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_bogo_announcement_modal"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2338915282,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "BOGO Announcement Modal",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Users will see the BOGO announcement modal"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-07_bogo_marketing_materials_experiment",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable BOGO marketing materials",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_bogo_marketing_materials_experiment"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1350945791,
-    "creationDate": 1688762585,
-    "type": "user",
-    "title": "BOGO Marketing Materials",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable BOGO marketing materials"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-06_bogo_promotion_gate",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable BOGO Promotion Manager",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_bogo_promotion_gate"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 680908968,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "BOGO Promotion Manager",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable BOGO Promotion Manager"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2021-06_preview_promotions",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Preview Enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2021-06_preview_promotions"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3704699110,
-    "creationDate": 1623098585,
-    "type": "user",
-    "title": "Promotions Preview",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Preview Enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2022-08_amoled_mode_web",
-    "defaultConfig": {
-      "enabledAMOLEDThemeOption": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enabled AMOLED Theme Option",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2022-08_amoled_mode_web"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4202366309,
-    "creationDate": 1659904985,
-    "type": "user",
-    "title": "Enabled AMOLED Mode on Web",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enabled AMOLED Theme Option"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-01_activities_in_gdm",
-    "defaultConfig": {
-      "isActivitiesInGdmEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable Activities in GDMs",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-01_activities_in_gdm"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1834860859,
-    "creationDate": 1673124185,
-    "type": "user",
-    "title": "Activities in GDM",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable Activities in GDMs"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_activities_in_text",
-    "defaultConfig": {
-      "isActivitiesInTextEnabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable Activities in text channels",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_activities_in_text"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1295440499,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Activities in Text",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable Activities in text channels"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_client_theme_coachmark_reintro",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable the coachmark",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_client_theme_coachmark_reintro"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1017818703,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Experiment to reintroduce the client themes experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable the coachmark"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_premium_tutorial_for_all",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: All net new users (exclude trial) receive premium tutorial experience",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_premium_tutorial_for_all"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1899757821,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Premium Tutorial Experience For All",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-02_nitroduction_experience",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: One month trial users recieve the Nitroduction experience",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-02_nitroduction_experience"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2956169075,
-    "creationDate": 1675802585,
-    "type": "user",
-    "title": "Nitroduction Experience",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: One month trial users recieve the Nitroduction experience"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_limited_time_custom_app_icons",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show custom app icons setting",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_limited_time_custom_app_icons"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 4133484951,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Limited-time icons",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: show custom app icons setting"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-09_deskop_in_app_icon",
-    "defaultConfig": {
-      "showIconSetting": false,
-      "persistIcon": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: only show the icon when active",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_deskop_in_app_icon"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1066761149,
-    "creationDate": 1694119385,
-    "type": "user",
-    "title": "Desktop In-App Icons",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: only show the icon when active",
-      "Treatment 2: persist the icon"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-08_custom_app_icons",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: show custom app icons setting",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_custom_app_icons"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2089092680,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Custom App Icons",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: show custom app icons setting"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-03_april_fools",
-    "defaultConfig": {
-      "allowAprilFoolsSoundpack": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: April Fools 2023",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_april_fools"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3971730794,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "April Fools 2023",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: April Fools 2023"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-05_clyde_ai_dm",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: enable dms to clyde",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-05_clyde_ai_dm"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 1906632964,
-    "creationDate": 1683492185,
-    "type": "user",
-    "title": "DMs to Clyde",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: enable dms to clyde"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-08_explicit_media_redaction",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable explicit media redaction",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-08_explicit_media_redaction"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3220737601,
-    "creationDate": 1691440985,
-    "type": "user",
-    "title": "Explicit Media Redaction",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable explicit media redaction"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-02_p13n_summarization",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 2,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 2: Enable channel summaries GA",
-              "bucket": 2,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "SUMMARIES_ENABLED_GA"
-              ]
-            }
-          ]
-        },
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable channel summaries",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "feature",
-              "features": [
-                "SUMMARIES_ENABLED"
-              ]
-            }
-          ]
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": []
-    },
-    "hash": 1504498621,
-    "creationDate": 1675802585,
-    "type": "guild",
-    "title": "Channel Summaries Guild Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable channel summaries",
-      "Treatment 2: Enable channel summaries GA"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-03_p13n_summarization_user",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable channel summaries",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-03_p13n_summarization_user"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3283745071,
-    "creationDate": 1678221785,
-    "type": "user",
-    "title": "Channel Summaries User Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable channel summaries",
-      "Treatment 2: Enable channel summaries (force)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
-    ]
-  },
-  {
-    "id": "2023-06_p13n_summarization_mobile_ux",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable mobile UX for channel summaries",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-06_p13n_summarization_mobile_ux"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3780014786,
-    "creationDate": 1686170585,
-    "type": "user",
-    "title": "Channel Summaries UX on Mobile Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable mobile UX for channel summaries"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
-    "id": "2023-07_p13n_guild_dock_summaries",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Enable guild dock summaries mobile UX",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-07_p13n_guild_dock_summaries"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 727554173,
-    "creationDate": 1688762585,
-    "type": "user",
-    "title": "Guild Dock Summaries on Mobile Experiment",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Enable guild dock summaries mobile UX"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2023-07_p13n_summarization_model_swap",
     "defaultConfig": {
       "enabled": false
@@ -9581,6 +8798,136 @@
       "Not Eligible",
       "Control Bucket",
       "Treatment 1: On"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-03_block_russian_purchases",
+    "defaultConfig": {
+      "paymentsBlocked": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Payments Blocked",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-03_block_russian_purchases"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3011681066,
+    "creationDate": 1646685785,
+    "type": "user",
+    "title": "Block purchases based on country",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Payments Blocked"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-03_block_russian_purchases_desktop",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Check Payment Source",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-03_block_russian_purchases_desktop"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1814483290,
+    "creationDate": 1646685785,
+    "type": "user",
+    "title": "Block purchases based on country (desktop specific flags)",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Check Payment Source"
     ],
     "buckets": [
       -1,
@@ -10048,6 +9395,266 @@
     ]
   },
   {
+    "id": "2023-06_bogo_announcement_modal",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Users will see the BOGO announcement modal",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_bogo_announcement_modal"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2338915282,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "BOGO Announcement Modal",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Users will see the BOGO announcement modal"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-07_bogo_marketing_materials_experiment",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable BOGO marketing materials",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-07_bogo_marketing_materials_experiment"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1350945791,
+    "creationDate": 1688762585,
+    "type": "user",
+    "title": "BOGO Marketing Materials",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable BOGO marketing materials"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-06_bogo_promotion_gate",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enable BOGO Promotion Manager",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-06_bogo_promotion_gate"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 680908968,
+    "creationDate": 1686170585,
+    "type": "user",
+    "title": "BOGO Promotion Manager",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enable BOGO Promotion Manager"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2021-06_preview_promotions",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Preview Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2021-06_preview_promotions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3704699110,
+    "creationDate": 1623098585,
+    "type": "user",
+    "title": "Promotions Preview",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Preview Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-09_trigger_debugging_aa",
     "defaultConfig": {
       "enabled": false
@@ -10177,6 +9784,529 @@
       0,
       1,
       2
+    ]
+  },
+  {
+    "id": "2023-10_call_banner_bg",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_call_banner_bg"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2681214381,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Call Banner Background Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_client_theme_coachmark_reintro",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: enable the coachmark",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_client_theme_coachmark_reintro"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1017818703,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Experiment to reintroduce the client themes experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: enable the coachmark"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-08_premium_tutorial_for_all",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: All net new users (exclude trial) receive premium tutorial experience",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_premium_tutorial_for_all"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1899757821,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Premium Tutorial Experience For All",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: All net new users (exclude trial) receive premium tutorial experience"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-02_nitroduction_experience",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: One month trial users recieve the Nitroduction experience",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-02_nitroduction_experience"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2956169075,
+    "creationDate": 1675802585,
+    "type": "user",
+    "title": "Nitroduction Experience",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: One month trial users recieve the Nitroduction experience"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_limited_time_custom_app_icons",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show custom app icons setting",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_limited_time_custom_app_icons"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4133484951,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Limited-time icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show custom app icons setting"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2023-09_deskop_in_app_icon",
+    "defaultConfig": {
+      "showIconSetting": false,
+      "persistIcon": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: only show the icon when active",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_deskop_in_app_icon"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 1066761149,
+    "creationDate": 1694119385,
+    "type": "user",
+    "title": "Desktop In-App Icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: only show the icon when active",
+      "Treatment 2: persist the icon"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
+    "id": "2023-08_custom_app_icons",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: show custom app icons setting",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-08_custom_app_icons"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2089092680,
+    "creationDate": 1691440985,
+    "type": "user",
+    "title": "Custom App Icons",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: show custom app icons setting"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
+    "id": "2022-08_amoled_mode_web",
+    "defaultConfig": {
+      "enabledAMOLEDThemeOption": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled AMOLED Theme Option",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2022-08_amoled_mode_web"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 4202366309,
+    "creationDate": 1659904985,
+    "type": "user",
+    "title": "Enabled AMOLED Mode on Web",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled AMOLED Theme Option"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
     ]
   },
   {
