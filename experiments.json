@@ -10310,6 +10310,71 @@
     ]
   },
   {
+    "id": "2023-10_halloween_2023",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Halloween assets enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_halloween_2023"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3705895930,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Halloween assets 2023",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Halloween assets enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-02_mfa_remove_phone",
     "defaultConfig": {
       "enabled": false
@@ -16210,6 +16275,71 @@
     ]
   },
   {
+    "id": "2023-10_collectibles_shop_for_all",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Collectibles Shop For All",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_collectibles_shop_for_all"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 640079350,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Collectibles Shop For All",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Collectibles Shop For All"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-01_discovery_iar",
     "defaultConfig": {
       "canSeeInAppReportingButtons": false
@@ -18664,71 +18794,6 @@
     ]
   },
   {
-    "id": "2023-10_halloween_2023",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: Halloween assets enabled",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-10_halloween_2023"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 3705895930,
-    "creationDate": 1696711385,
-    "type": "user",
-    "title": "Halloween assets 2023",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: Halloween assets enabled"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1
-    ]
-  },
-  {
     "id": "2022-02_guild_audit_log_user",
     "defaultConfig": {
       "enabled": false
@@ -19418,6 +19483,73 @@
       -1,
       0,
       1
+    ]
+  },
+  {
+    "id": "2023-09_gaming_stats_prompt_guild",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-09_gaming_stats_prompt_guild"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 2478854553,
+    "creationDate": 1694119385,
+    "type": "guild",
+    "title": "Gaming stats prompt",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: ability to trigger gaming stats prompt",
+      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
     ]
   }
 ]
