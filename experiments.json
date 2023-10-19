@@ -17442,6 +17442,71 @@
     ]
   },
   {
+    "id": "2023-10_collectibles_shop_for_all",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enables Collectibles Shop For All",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_collectibles_shop_for_all"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 640079350,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Collectibles Shop For All",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enables Collectibles Shop For All"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2022-04_account_profile_popout",
     "defaultConfig": {
       "enabled": false
