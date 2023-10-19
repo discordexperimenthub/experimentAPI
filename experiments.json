@@ -11370,6 +11370,73 @@
     ]
   },
   {
+    "id": "2023-10_social_proofing_message_nitro_badge",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Prefer BOTH nitro badge AND role icon(s)",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_social_proofing_message_nitro_badge"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 725728798,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Social Proofing Message Nitro Badge",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Prefer BOTH nitro badge AND role icon(s)",
+      "Treatment 2: Prefer role icon(s) over nitro badge if both are present"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1,
+      2
+    ]
+  },
+  {
     "id": "2023-08_remix_ga",
     "defaultConfig": {
       "enabled": false
