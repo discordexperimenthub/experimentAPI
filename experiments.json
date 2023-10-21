@@ -7116,6 +7116,71 @@
     ]
   },
   {
+    "id": "2023-10_emoji_captions",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Enabled",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_emoji_captions"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3610590624,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Emoji Captions Experiment",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Enabled"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2023-01_emoji_discovery_backfill",
     "defaultConfig": {
       "enabled": false
@@ -19290,73 +19355,6 @@
       -1,
       0,
       1
-    ]
-  },
-  {
-    "id": "2023-09_gaming_stats_prompt_guild",
-    "defaultConfig": {
-      "enabled": false
-    },
-    "rollout": {
-      "revision": 0,
-      "populations": [
-        {
-          "position": [
-            {
-              "treatment": "Not Eligible",
-              "bucket": -1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 10000
-                }
-              ]
-            }
-          ],
-          "filters": []
-        }
-      ],
-      "overrides": [],
-      "overrides_formatted": [
-        {
-          "position": [
-            {
-              "treatment": "Treatment 1: ability to trigger gaming stats prompt",
-              "bucket": 1,
-              "rollouts": [
-                {
-                  "start": 0,
-                  "end": 500
-                }
-              ]
-            }
-          ],
-          "filters": [
-            {
-              "type": "build_override",
-              "experiments": [
-                "2023-09_gaming_stats_prompt_guild"
-              ]
-            }
-          ]
-        }
-      ]
-    },
-    "hash": 2478854553,
-    "creationDate": 1694119385,
-    "type": "guild",
-    "title": "Gaming stats prompt",
-    "description": [
-      "Not Eligible",
-      "Control Bucket",
-      "Treatment 1: ability to trigger gaming stats prompt",
-      "Treatment 2: ability to trigger gaming stats prompt (leaderboard)"
-    ],
-    "buckets": [
-      -1,
-      0,
-      1,
-      2
     ]
   }
 ]
