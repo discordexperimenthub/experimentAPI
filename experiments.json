@@ -14438,6 +14438,71 @@
     ]
   },
   {
+    "id": "2023-10_social_proofing_file_size",
+    "defaultConfig": {
+      "enabled": false
+    },
+    "rollout": {
+      "revision": 0,
+      "populations": [
+        {
+          "position": [
+            {
+              "treatment": "Not Eligible",
+              "bucket": -1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 10000
+                }
+              ]
+            }
+          ],
+          "filters": []
+        }
+      ],
+      "overrides": [],
+      "overrides_formatted": [
+        {
+          "position": [
+            {
+              "treatment": "Treatment 1: Should show nitro upsell for large files",
+              "bucket": 1,
+              "rollouts": [
+                {
+                  "start": 0,
+                  "end": 500
+                }
+              ]
+            }
+          ],
+          "filters": [
+            {
+              "type": "build_override",
+              "experiments": [
+                "2023-10_social_proofing_file_size"
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    "hash": 3258058784,
+    "creationDate": 1696711385,
+    "type": "user",
+    "title": "Social Proofing File Size",
+    "description": [
+      "Not Eligible",
+      "Control Bucket",
+      "Treatment 1: Should show nitro upsell for large files"
+    ],
+    "buckets": [
+      -1,
+      0,
+      1
+    ]
+  },
+  {
     "id": "2020-01_in_app_reporting",
     "defaultConfig": {
       "enabled": false
